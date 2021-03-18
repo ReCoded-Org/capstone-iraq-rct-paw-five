@@ -12,5 +12,13 @@ module.exports = {
         sourceType: 'module',
     },
     plugins: ['react'],
-    rules: {},
+    rules: {
+        "camelcase": [
+            2, {
+              "properties": "never",
+              "ignoreImports": true
+            }
+          ],
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+    },
 }
