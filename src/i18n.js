@@ -3,19 +3,19 @@ import { initReactI18next } from 'react-i18next';
 import Backend from 'i18next-http-backend';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
-import home_en from './translations/en/home.json';
-import home_ar from './translations/ar/home.json';
-import home_krd from './translations/krd/home.json';
+import translation_en from "./translations/en/translation.json"
+import translation_ar from "./translations/ar/translation.json"
+import translation_krd from "./translations/krd/translation.json"
 
 const resources = {
   en: {
-    home: home_en,
+    translation: translation_en,
   },
   ar: {
-    home: home_ar,
+    translation: translation_ar,
   },
   krd: {
-    home: home_krd,
+    translation: translation_krd,
   },
 };
 
