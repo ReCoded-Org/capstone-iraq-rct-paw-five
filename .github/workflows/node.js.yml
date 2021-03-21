@@ -4,6 +4,8 @@
 name: paw-five
 
 on:
+  push:
+    branches: [ dev ]
   pull_request:
     branches: [ dev ]
 
@@ -23,5 +25,6 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: yarn install
+    - run: yarn run fix
     - run: "[[ -z $(git --no-pager diff -- . ':(exclude)yarn.lock' ':(exclude)yarn.lock') ]]"
     - run: yarn run test --passWithNoTests
