@@ -2,12 +2,12 @@ import React, { Suspense } from 'react'
 import ReactDOM from 'react-dom'
 import { createStore } from 'redux'
 import { Provider } from 'react-redux'
+import './i18n'
 import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import './i18n'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
-import AllReducers from './Redux/Reducers/AllReducers'
+import AllReducers from './redux/reducers/AllReducers'
 
 const store = createStore(AllReducers)
 
