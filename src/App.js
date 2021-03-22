@@ -1,19 +1,21 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import NavBar from './components/NavBar/NavBar';
 
 function App() {
  
   return (
     <Router>
+      <NavBar/>
       <Switch>
-        <Route path="/">{/**<Home/> */}</Route>
-        <Route path="/AdoptionPage">{/**<AdoptionPage/> */}</Route>
-        <Route path="/ResourcePage">{/**<ResourcePage/> */}</Route>
-        <Route path="/Aboutus">{/**<Aboutus/> */}</Route>
-        <Route path="/DetailsPage">{/**<DetailsPage/> */}</Route>
-        <Route path="/ContactUs">{/**<ContactUs/> */}</Route>
-        <Route path="/Login">{/**<Login/> */}</Route>
-        <Route path="/Signup">{/**<Signup/> */}</Route>
+        <Route path="/" exact>{/** <Home/> */}</Route>
+        <Route path="/Adopt" exact>{/** <AdoptionPage/> */}</Route>
+        <Route path="/ResourcePage" exact>{/** <ResourcePage/> */}</Route>
+        <Route path="/areeg" exact>{/** <Aboutus/> */}</Route>
+        <Route path="/DetailsPage" exact>{/** <DetailsPage/> */}</Route>
+        <Route path="/ContactUs" exact>{/** <ContactUs/> */}</Route>
+        <Route path="/Login" exact>{/** <Login/> */}</Route>
+        <Route path="/Signup" exact>{/** <Signup/> */}</Route>
       </Switch>
     </Router>
   );
