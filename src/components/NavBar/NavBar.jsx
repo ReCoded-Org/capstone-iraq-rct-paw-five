@@ -138,7 +138,7 @@ export default function NavBar() {
                                     </option>
                                     <option value='en'>English</option>
                                     <option value='ar'>عربي</option>
-                                    <option value='krd'>كردى</option>
+                                    <option value='kr'>كردى</option>
                                 </Form.Control>
                             </Nav.Link>
                         </Nav>

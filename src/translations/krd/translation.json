@@ -1,17 +1,17 @@
 {
-    "language": "krd",
+    "language": "kr",
     "langText": "كوردى",
     "navbar": {
-        "home": "Home",
-        "adopt":"Adopt",
-        "contact": "Contact Us",
+        "home": "سەرەکی",
+        "adopt":"هەڵگرتنەوە",
+        "contact": "پەیوەندی",
         "resources": [
-            "Resources",
-            "Tibs about cats",
-            "Tibs about dogs"
+            "سەرچاوەکان",
+            "سەگ",
+            "پشیلە"
         ],
-        "about": "About",
-        "logIn": "Log In",
-        "signUp": "Sign Up"
+        "about": "دەربارە",
+        "logIn": "چوونە ژوورەوە",
+        "signUp": "تۆمارکردن"
     }
 }
