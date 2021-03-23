@@ -1,83 +1,150 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import { Navbar, Nav, NavDropdown, Form } from 'react-bootstrap'
+import { useTranslation } from 'react-i18next'
+import i18next from 'i18next'
+import { BrowserRouter as Router, NavLink } from 'react-router-dom'
 import './NavBar.css'
-import { Navbar, Nav, NavDropdown } from 'react-bootstrap'
-// import { Nav } from "react-bootstrap";
-import { Link, NavLink } from 'react-router-dom'
-// import { NavDropdown } from "react-bootstrap";
+import {
+    HOME_ROUTE,
+    ADOPT_ROUTE,
+    ABOUT_ROUTE,
+    RESOURCE_CAT_ROUTE,
+    RESOURCE_DOG_ROUTE,
+    LOGIN_ROUTE,
+    CONTACT_US_ROUTE,
+} from '../../routes'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import logo from '../../images/logo.ico'
 
 export default function NavBar() {
+    const { t } = useTranslation()
+    const [dirProperties, setDir] = useState({
+        dir: 'ltr',
+        className: 'ml-auto',
+    })
+
+    const selectedLanguage = (lang) => {
+        i18next.changeLanguage(lang)
+    }
+    const handelOption = (e) => {
+        selectedLanguage(e.target.value)
+    }
+
+    const handelDir = () => {
+        if (localStorage.getItem('i18nextLng') !== 'en') {
+            const newDir = 'rtl'
+            const newClassName = 'mr-auto'
+            const newdirProperties = { ...dirProperties }
+            newdirProperties.dir = newDir
+            newdirProperties.className = newClassName
+            setDir(newdirProperties)
+        } else {
+            const newDir = 'ltr'
+            const newClassName = 'ml-auto'
+            const newdirProperties = { ...dirProperties }
+            newdirProperties.dir = newDir
+            newdirProperties.className = newClassName
+            setDir(newdirProperties)
+        }
+    }
+
+    useEffect(() => {
+        handelDir()
+    }, [localStorage.getItem('i18nextLng')])
+
     return (
-        <div>
-            <Navbar expand="lg">
-                <Navbar.Brand className="logo" as={Link} to="/">
-                    <img src={logo} alt="" />
-                </Navbar.Brand>
-                <Navbar.Toggle />
-                <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="ml-auto">
-                        <Nav.Link 
-                            as={NavLink}
-                            to="/"
-                            activeClassName="selected"
-                            exact
-                        >
-                            Home
-                        </Nav.Link>
-                        <Nav.Link
-                            as={NavLink}
-                            to="/About"
-                            activeClassName="selected"
-                            exact
-                        >
-                            About
-                        </Nav.Link>
-                        <Nav.Link
-                            as={NavLink}
-                            to="/Adopt"
-                            activeClassName="selected"
-                            exact
-                        >
-                            Adopt
-                        </Nav.Link>
-                        <NavDropdown className="drop" title="Resources">
-                            <NavDropdown.Item
+        <div dir={dirProperties.dir} data-testid="NavBar">
+            <Router>
+                <Navbar className="navBar" expand="lg">
+                    <Navbar.Brand className="logo" as={NavLink} to={HOME_ROUTE}>
+                        <img src={logo} alt="" />
+                    </Navbar.Brand>
+                    <Navbar.Toggle />
+                    <Navbar.Collapse id="basic-navbar-nav">
+                        <Nav className={dirProperties.className}>
+                            <Nav.Link
+                                as={NavLink}
+                                to={HOME_ROUTE}
+                                activeClassName="selected"
+                                exact
+                            >
+                                {t('navbar.home')}
+                            </Nav.Link>
+                            <Nav.Link
+                                as={NavLink}
+                                to={ABOUT_ROUTE}
+                                activeClassName="selected"
+                                exact
+                            >
+                                {t('navbar.about')}
+                            </Nav.Link>
+                            <Nav.Link
+                                as={NavLink}
+                                to={ADOPT_ROUTE}
+                                RESOURCE_CAT_ROUTE
+                                activeClassName="selected"
+                                exact
+                            >
+                                {t('navbar.adopt')}
+                            </Nav.Link>
+                            <NavDropdown
+                                className="drop"
+                                title={t('navbar.resources.0')}
+                            >
+                                <NavDropdown.Item
+                                    as={NavLink}
+                                    activeClassName="selected"
+                                    exact
+                                    to={RESOURCE_CAT_ROUTE}
+                                >
+                                    {t('navbar.resources.1')}
+                                </NavDropdown.Item>
+                                <NavDropdown.Item
+                                    as={NavLink}
+                                    activeClassName="selected"
+                                    exact
+                                    to={RESOURCE_DOG_ROUTE}
+                                >
+                                    {t('navbar.resources.2')}
+                                </NavDropdown.Item>
+                            </NavDropdown>
+                            <Nav.Link
                                 as={NavLink}
                                 activeClassName="selected"
                                 exact
-                                to="/Cat"
+                                to={CONTACT_US_ROUTE}
                             >
-                                Cat
-                            </NavDropdown.Item>
-                            <NavDropdown.Item
+                                {t('navbar.contact')}
+                            </Nav.Link>
+                            <Nav.Link
                                 as={NavLink}
                                 activeClassName="selected"
                                 exact
-                                to="/Dog"
+                                to={LOGIN_ROUTE}
                             >
-                                Dog
-                            </NavDropdown.Item>
-                        </NavDropdown>
-                        <Nav.Link
-                            as={NavLink}
-                            activeClassName="selected"
-                            exact
-                            to="/Contactus"
-                        >
-                            Contact Us
-                        </Nav.Link>
-                        <Nav.Link
-                            as={NavLink}
-                            activeClassName="selected"
-                            exact
-                            to="/Login"
-                        >
-                            Login
-                        </Nav.Link>
-                    </Nav>
-                </Navbar.Collapse>
-            </Navbar>
+                                {t('navbar.logIn')}
+                            </Nav.Link>
+                            <Nav.Link className="fa">
+                                <Form.Control
+                                    className="selectLang"
+                                    onChange={handelOption}
+                                    as="select"
+                                    size="sm"
+                                    custom
+                                    value=""
+                                >
+                                    <option selected className="firstOption fa">
+                                        &#xf1ab;
+                                    </option>
+                                    <option value='en'>English</option>
+                                    <option value='ar'>عربي</option>
+                                    <option value='krd'>كردى</option>
+                                </Form.Control>
+                            </Nav.Link>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Navbar>
+            </Router>
         </div>
     )
 }
