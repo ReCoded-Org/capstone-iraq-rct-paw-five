@@ -1,3 +1,17 @@
 {
-    
+    "language": "krd",
+    "langText": "كوردى",
+    "navbar": {
+        "home": "Home",
+        "adopt":"Adopt",
+        "contact": "Contact Us",
+        "resources": [
+            "Resources",
+            "Tibs about cats",
+            "Tibs about dogs"
+        ],
+        "about": "About",
+        "logIn": "Log In",
+        "signUp": "Sign Up"
+    }
 }
