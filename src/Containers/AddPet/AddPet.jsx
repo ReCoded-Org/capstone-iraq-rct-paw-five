@@ -6,8 +6,8 @@ import { useTranslation } from 'react-i18next'
 import { Form, Col, Button } from 'react-bootstrap'
 import firebase, { storage } from '../../firebase'
 import 'firebase/firestore'
-import Cat from '../../Images/pets-vectors/addPetCat.svg'
-import Paw from '../../Images/icons/paw.svg'
+import Cat from '../../images/pets-vectors/addPetCat.svg'
+import Paw from '../../images/icons/paw.svg'
 
 function AddPet() {
     const { t } = useTranslation()
@@ -56,7 +56,7 @@ function AddPet() {
             address: '',
         },
         validationSchema,
-        onSubmit() {
+        onSubmit()  {
             const uploadTask = storage
                 .ref(`petImages/${values.file.name}`)
                 .put(values.file)
