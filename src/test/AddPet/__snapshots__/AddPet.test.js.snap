@@ -1,0 +1,374 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <div
+    className="header"
+  >
+    <div
+      className="header__text"
+    >
+      <div
+        className="add-pet-header"
+      >
+        <img
+          alt="paw"
+          className="paw-logo"
+          src="paw.svg"
+        />
+        <h1>
+          add-pet.add for adoption
+        </h1>
+      </div>
+      <div
+        className="add-pet-subheader"
+      >
+        <h4>
+          add-pet.make-pets-happy
+        </h4>
+      </div>
+    </div>
+    <div
+      className="header__photo"
+    >
+      <img
+        alt="cat"
+        src="addPetCat.svg"
+      />
+    </div>
+  </div>
+  <div
+    className="addpet-form"
+  >
+    <h2>
+      add-pet.pets-info
+    </h2>
+    <form
+      className=""
+      onSubmit={[Function]}
+    >
+      <div
+        className="form-row"
+      >
+        <div
+          className="col-xl col-lg"
+        >
+          <input
+            className="form-control"
+            name="petName"
+            onBlur={[Function]}
+            onChange={[Function]}
+            placeholder="add-pet.pet-name"
+            value=""
+          />
+          <div
+            className="field-margin error-message"
+          >
+             
+          </div>
+        </div>
+        <div
+          className="addpet-row-space col-xl col-lg"
+        >
+          <input
+            className="form-control"
+            name="age"
+            onBlur={[Function]}
+            onChange={[Function]}
+            placeholder="add-pet.pet-age"
+            value=""
+          />
+          <div
+            className="field-margin"
+          >
+             
+          </div>
+        </div>
+      </div>
+      <div
+        className="form-row"
+      >
+        <div
+          className="col-xl col-lg"
+        >
+          <input
+            className="form-control"
+            name="species"
+            onBlur={[Function]}
+            onChange={[Function]}
+            placeholder="add-pet.pet-species"
+            value=""
+          />
+          <div
+            className="field-margin"
+          >
+             
+          </div>
+        </div>
+        <div
+          className="addpet-row-space col-xl col-lg"
+        >
+          <input
+            className="form-control"
+            name="weight"
+            onBlur={[Function]}
+            onChange={[Function]}
+            placeholder="add-pet.pet-weight"
+            value=""
+          />
+          <div
+            className="field-margin"
+          >
+             
+          </div>
+        </div>
+      </div>
+      <div
+        className="form-row"
+      >
+        <div
+          className="col-xl col-lg"
+        >
+          <input
+            className="form-control"
+            name="color"
+            onBlur={[Function]}
+            onChange={[Function]}
+            placeholder="add-pet.pet-color"
+            value=""
+          />
+          <div
+            className="field-margin"
+          >
+             
+          </div>
+        </div>
+        <div
+          className="addpet-row-space col-xl col-lg"
+        >
+          <p>
+            add-pet.gender
+          </p>
+          <div
+            className="addpet-radios"
+          >
+            <div
+              className="addpet-radio form-check"
+            >
+              <input
+                className="form-check-input position-static"
+                disabled={false}
+                name="gender"
+                onBlur={[Function]}
+                onChange={[Function]}
+                type="radio"
+                value="Male"
+              />
+            </div>
+            <label
+              className="form-label"
+            >
+              add-pet.male
+            </label>
+            <div
+              className="addpet-radio form-check"
+            >
+              <input
+                className="form-check-input position-static"
+                disabled={false}
+                name="gender"
+                onChange={[Function]}
+                type="radio"
+                value="Female"
+              />
+            </div>
+            <label
+              className="form-label"
+            >
+              add-pet.female
+            </label>
+          </div>
+          <div
+            className="field-margin"
+          >
+             
+          </div>
+        </div>
+      </div>
+      <div
+        className="form-row"
+      >
+        <div
+          className="col-xl col-lg"
+        >
+          <input
+            className="form-control"
+            name="story"
+            onBlur={[Function]}
+            onChange={[Function]}
+            placeholder="add-pet.pet-story"
+            value=""
+          />
+          <div
+            className="field-margin"
+          >
+             
+          </div>
+        </div>
+        <div
+          className="addpet-row-space col-xl col-lg"
+        >
+          <div
+            className="upload-container"
+          >
+            <label
+              className="custom-file-upload form-label"
+              htmlFor="file"
+            >
+              <p>
+                add-pet.upload-photo
+              </p>
+            </label>
+          </div>
+          <input
+            accept="images/*"
+            id="file"
+            name="file"
+            onChange={[Function]}
+            type="file"
+          />
+        </div>
+      </div>
+      <h2>
+        add-pet.contact-info
+      </h2>
+      <div
+        className="form-row"
+      >
+        <div
+          className="col-xl col-lg"
+        >
+          <input
+            className="form-control"
+            name="ownerName"
+            onBlur={[Function]}
+            onChange={[Function]}
+            placeholder="add-pet.ownerName"
+            value=""
+          />
+          <div
+            className="field-margin"
+          >
+             
+          </div>
+        </div>
+        <div
+          className="addpet-row-space col-xl col-lg"
+        >
+          <input
+            className="form-control"
+            name="aboutOwner"
+            onBlur={[Function]}
+            onChange={[Function]}
+            placeholder="add-pet.aboutOwner"
+            value=""
+          />
+          <div
+            className="field-margin"
+          >
+             
+          </div>
+        </div>
+      </div>
+      <div
+        className="form-row"
+      >
+        <div
+          className="col-xl col-lg"
+        >
+          <input
+            className="form-control"
+            name="email"
+            onBlur={[Function]}
+            onChange={[Function]}
+            placeholder="add-pet.email"
+            type="email"
+            value=""
+          />
+          <div
+            className="field-margin"
+          >
+             
+          </div>
+        </div>
+        <div
+          className="addpet-row-space col-xl col-lg"
+        >
+          <input
+            className="form-control"
+            name="phoneNumber"
+            onBlur={[Function]}
+            onChange={[Function]}
+            placeholder="add-pet.phoneNumber"
+            value=""
+          />
+          <div
+            className="field-margin"
+          >
+             
+          </div>
+        </div>
+      </div>
+      <div
+        className="form-row"
+      >
+        <div
+          className="col-xl col-lg"
+        >
+          <input
+            className="form-control"
+            name="city"
+            onBlur={[Function]}
+            onChange={[Function]}
+            placeholder="add-pet.city"
+            value=""
+          />
+          <div
+            className="field-margin"
+          >
+             
+          </div>
+        </div>
+        <div
+          className="addpet-row-space col-xl col-lg"
+        >
+          <input
+            className="form-control"
+            name="address"
+            onBlur={[Function]}
+            onChange={[Function]}
+            placeholder="add-pet.address"
+            value=""
+          />
+          <div
+            className="field-margin"
+          >
+             
+          </div>
+        </div>
+      </div>
+      <div
+        className="button-container"
+      >
+        <button
+          className="btn btn btn-primary"
+          disabled={false}
+          type="submit"
+        >
+          add-pet.submit
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+`;
