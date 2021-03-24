@@ -1,4 +1,21 @@
 {
+    
+
+    "language": "en",
+    "langText": "english",
+    "navbar": {
+        "home": "Home",
+        "adopt":"Adopt",
+        "contact": "Contact Us",
+        "resources": [
+            "Resources",
+            "Tibs about cats",
+            "Tibs about dogs"
+        ],
+        "about": "About",
+        "logIn": "Log In",
+        "signUp": "Sign Up"
+    },
     "add-pet":{
         "required":"This field is required !!",
         "email.validation":"You need to write a valid email",
@@ -25,6 +42,5 @@
         "city":"City",
         "address":"Address",
         "submit":"Submit"
-
     }
 }

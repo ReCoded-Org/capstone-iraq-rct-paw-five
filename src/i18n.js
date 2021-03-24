@@ -7,6 +7,8 @@ import translationEn from "./translations/en/translation.json"
 import translationAr from "./translations/ar/translation.json"
 import translationKrd from "./translations/krd/translation.json"
 
+const language = ['en','kr','ar']
+
 const resources = {
   en: {
     translation: translationEn,
@@ -25,7 +27,8 @@ i18n
   .use(initReactI18next)
   .init({
     resources,
-    lng: 'en',
+    // lng: 'en',
+    whitelist:language,
 
     interpolation: {
       escapeValue: false,
