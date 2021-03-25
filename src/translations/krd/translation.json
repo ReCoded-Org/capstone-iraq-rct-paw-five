@@ -1,3 +1,40 @@
 {
-    
+    "language": "kr",
+    "langText": "كوردى",
+    "navbar": {
+        "home": "سەرەکی",
+        "adopt": "هەڵگرتنەوە",
+        "contact": "پەیوەندی",
+        "resources": [
+            "سەرچاوەکان",
+            "سەگ",
+            "پشیلە"
+        ],
+        "about": "دەربارە",
+        "logIn": "چوونە ژوورەوە",
+        "signUp": "تۆمارکردن"
+    },
+    "footer": {
+        "explorLinks": "Explor Links",
+        "contactInfo": "Contact Info",
+        "pageDescription": "Paw-five is an online, searchable database of pets who need homes in all provinces of Iraq.",
+        "cites": "Baghdad, Erbil",
+        "phoneNo": "0770028374323",
+        "email": " example@example.com",
+        "workTime": "sun - Tur 9:00 AM - 4:00 PM",
+        "copyright": "2021 Paw-five team"
+    },
+    "contactus":{
+        "title":"Contact Us",
+        "name": "Name",
+        "email":"Email",
+        "phone":"Phone",
+        "message":"Mesage",
+        "subject":"Subject",
+        "submit":"Submit",
+        "required":"this field required",
+        "h1text":"Maxime placeat facere possimus omnis",
+        "h4text":"5,700+",
+        "h6text":"customers served"
+    }
 }

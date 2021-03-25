@@ -4,10 +4,38 @@
     background-color: #fc9842;
     background-image: linear-gradient(315deg, #fc9842 0%, #fe5f75 74%);
     border-radius: 40px;
+    display: grid;
+    box-shadow: 0 20px 50px rgba(88, 65, 51, 0.7);
 }
 
 .title_contactus {
     color: white;
+}
+
+.contactus {
+    max-width: 500px !important;
+    height: fit-content;
+    max-height: fit-content !important;
+}
+.error {
+    font-size: 10px;
+    text-align: left;
+    /* margin-right: 15px; */
+    margin-top: 48px;
+    color: rgba(201, 201, 198, 0.938);
+    position: absolute;
+}
+
+.input-error {
+    margin-bottom: 5px !important;
+}
+
+.errorofMessage {
+    font-size: 10px;
+    text-align: right !important;
+    margin-top: 170px;
+    color: rgba(201, 201, 198, 0.938);
+    position: absolute;
 }
 
 .contactus input,
@@ -20,28 +48,30 @@
     border-radius: 10px;
     color: white;
     border: 2px solid rgba(230, 226, 226, 0.692);
-    
+    margin: 10px;
 }
 
 .text > h4,
 h1,
 h6 {
-    background: -webkit-linear-gradient(45deg, #ff4a71, #ff8e53 100%);
+    background: -webkit-linear-gradient(45deg, #ff4a71, #f7a173 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .contactus input::placeholder,
 textarea::placeholder {
-    color: white !important;
+    color: rgba(255, 255, 255, 0.918) !important;
+    font-size: 10px !important;
+    padding: 10px !important;
 }
 .mapHeight {
     height: 500px !important;
 }
 .submitButton {
     background: linear-gradient(45deg, #ff4a71, #ff8e53 100%);
-    color: white !important;
-    font-size: 16px !important;
+    color: rgba(255, 255, 255, 0.788) !important;
+    font-size: 13px !important;
     height: 40px;
     width: 130px;
     border-radius: 25px !important;

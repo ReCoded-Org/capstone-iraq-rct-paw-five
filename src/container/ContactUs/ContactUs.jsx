@@ -1,114 +1,155 @@
-import React from 'react'
-import emailjs from 'emailjs-com'
-import { Formik, Form } from 'formik';
+
+import React, { useState, useEffect } from 'react'
+// import emailjs from 'emailjs-com'
+import { Formik, Form, Field, ErrorMessage } from 'formik'
+// import * as Yup from 'yup'
+import { useTranslation } from 'react-i18next'
+
 import './ContactUs.css'
-import {
-    Container,
-    Row,
-    Col,
-    ResponsiveEmbed,
-    Form,
-    Button,
-} from 'react-bootstrap'
+import { Container, Row, Col, ResponsiveEmbed, Button } from 'react-bootstrap'
+import {emailSchema, initialValues,sendEmail } from './helper'
 
 export default function ContactUs() {
-    const sendEmail = (e) => {
-        e.preventDefault()
+    const { t } = useTranslation()
 
-        emailjs
-            .sendForm(
-                'service_vg9bk5b',
-                'template_snre7hs',
-                e.target,
-                'user_E56W1Sop4bo4PGpuGBxld'
-            )
-            .then(
-                (result) => {
-                    console.log(result.text)
-                },
-                (error) => {
-                    console.log(error.text)
-                }
-            )
-        e.target.reset()
+    const [dir, setDir] = useState({})
+    // const [dirButtom, setDirButton] = useState('float-right')
+
+    const changeDir = () => {
+        if (
+            localStorage.getItem('i18nextLng') !== 'en' &&
+            localStorage.getItem('i18nextLng') !== null
+        ) {
+            const newDir = {...dir};
+            newDir.dir='rtl';
+            newDir.dirButtom="float-left";
+            newDir.mdir="ml-3";
+            setDir(newDir);
+            
+        } else {
+            const newDir = {...dir};
+            newDir.dir='ltr';
+            newDir.dirButtom="float-right";
+            newDir.mdir="mr-3";
+            setDir(newDir);
+            
+        }
     }
 
+    useEffect(() => {
+        changeDir()
+    }, [localStorage.getItem('i18nextLng')])
+
+
+
+
     return (
-        <div className=" justify-content-center">
-            <Container className="d-felx mt-5 justify-content-center">
-                <Row className="d-felx justify-content-center">
-                    <Col  md="10" lg="6" xs="12" sm="12">
-                        <Container  className="contactus">
+        <div dir={dir.dir} className="mt-5">
+            <Container>
+                <Row>
+                    <Col md="12" lg="6" xs="12" sm="12">
+                        <Container id="demo3" className="contactus">
                             <Container align="center" className="m-4">
                                 <h3 className="mb-0 title_contactus">
-                                    Contact Us
+                                {t('contactus.title')}
                                 </h3>
                             </Container>
-                            <Container  className="card-body">
-                                <Form
-                                    className="form"
+                            <Container className="card-body ">
+                                <Formik
+                                    initialValues={initialValues}
+                                    validationSchema={emailSchema(t('contactus.required'))}
                                     onSubmit={sendEmail}
-                                    autoComplete="off"
                                 >
-                                    <fieldset>
-                                        <Container className="row m-1 ">
-                                            <Container className="col-lg-6 col-md-6 mb-4">
-                                                <Form.Control
-                                                    type="text"
-                                                    name="name"
-                                                    placeholder="Name"
-                                                    required
-                                                />
-                                            </Container>
-                                            <Container className="col-lg-6 col-md-6 mb-4 ">
-                                                <Form.Control
-                                                    type="email"
-                                                    name="email"
-                                                    placeholder="Email"
-                                          
-                                                />
-                                            </Container>
-                                        </Container>
-                                        <Container className="row m-1 ">
-                                            <Container className="col-lg-6 col-md-6 mb-4 ">
-                                                <Form.Control
-                                                    type="text"
-                                                    name="phone"
-                                                    placeholder="Phone"
-                                             
-                                                />
-                                            </Container>
-                                            <Container className="col-lg-6 col-md-6 mb-4 ">
-                                                <Form.Control
-                                                    type="text"
-                                                    name="subject"
-                                                    placeholder="Subject"
-                                                   
-                                                    required
-                                                />
-                                            </Container>
-                                        </Container>
+                                    {(formik) => {
+                                        const {
+                                            // errors,
+                                            // touched,
+                                            isValid,
+                                            dirty,
+                                        } = formik
+                                        return (
+                                            <Form onSubmit={sendEmail}>
+                                                <div className="row ">
+                                                    <div className="col-lg-6 col-md-6 d-flex flex-column justify-content-around ">
+                                                        <Field
+                                                            type="text"
+                                                            name="name"
+                                                            placeholder={t('contactus.name')}
+                                                            className="input-error"
+                                                        />
 
-                                        <Container className="row m-1 mb-4">
-                                            <Container className="col-lg-12">
-                                                <textarea
-                                                    rows="6"
-                                                    name="message"
-                                                    placeholder="Message"
-                                                    id="message2"
-                                                    className="form-control"
-                                                    required
-                                                />
-                                            </Container>
-                                        </Container>
-                                        <Button
-                                            type="submit"
-                                            className="btn  btn-lg submitButton float-right"
-                                        >
-                                            Submit
-                                        </Button>
-                                    </fieldset>
-                                </Form>
+                                                        <ErrorMessage
+                                                            name="name"
+                                                            component="div"
+                                                            className={`error  ${dir.mdir}`}
+                                                        />
+                                                    </div>
+                                                    <div className="col-lg-6 col-md-6 d-flex flex-column justify-content-center  ">
+                                                        <Field
+                                                            type="email"
+                                                            name="email"
+                                                            placeholder={t('contactus.email')}
+                                                            className="input-error"
+                                                        />
+
+                                                        <ErrorMessage
+                                                            name="email"
+                                                            component="span"
+                                                            className={`error  ${dir.mdir}`}
+                                                        />
+                                                    </div>
+                                                </div>
+
+                                                <div className="row">
+                                                    <div className="col-lg-6 col-md-6 d-flex flex-column justify-content-center ">
+                                                        <Field
+                                                            type="text"
+                                                            name="phone"
+                                                            placeholder={t('contactus.phone')}
+                                                            className="input-error"
+                                                        />
+                                                    </div>
+                                                    <div className="col-lg-6 col-md-6 d-flex flex-column justify-content-center">
+                                                        <Field
+                                                            type="text"
+                                                            name="subject"
+                                                            placeholder={t('contactus.subject')}
+                                                            className="input-error"
+                                                        />
+                                                    </div>
+                                                </div>
+
+                                                <div className="row mb-4 ">
+                                                    <div className="col-lg-12 d-flex justify-content-center">
+                                                        <Field
+                                                            as="textarea"
+                                                            rows="6"
+                                                            name="message"
+                                                            placeholder={t('contactus.message')}
+                                                            id="message2"
+                                                            className="form-control"
+                                                            required
+                                                        />
+                                                        <ErrorMessage
+                                                            name="message"
+                                                            component="span"
+                                                            className="errorofMessage ml-1"
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <Button 
+                                                    type="submit"
+                                                    className={`btn  btn-lg submitButton  ${dir.dirButtom}`}
+                                                    disabled={
+                                                        !(dirty && isValid)
+                                                    }
+                                                >
+                                                    {t('contactus.submit')}
+                                                </Button>
+                                            </Form>
+                                        )
+                                    }}
+                                </Formik>
                             </Container>
                         </Container>
                     </Col>
@@ -118,12 +159,11 @@ export default function ContactUs() {
                         xs="12"
                         sm="12"
                         align="center"
-                        className="align-self-center mt-4 text"
-                        
+                        className="align-self-center text mt-5"
                     >
-                        <h4>Maxime placeat facere possimus omnis </h4>
-                        <h1>5,700+</h1>
-                        <h6>customers served</h6>
+                        <h4>{t('contactus.h4text')}</h4>
+                        <h1>{t('contactus.h1text')}</h1>
+                        <h6>{t('contactus.h6text')}</h6>
                     </Col>
                 </Row>
             </Container>
