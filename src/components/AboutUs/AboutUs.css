@@ -1,0 +1,34 @@
+.cat-pic {
+    z-index: -1;
+}
+
+.main-title,
+.main-title-s2 {
+    font-weight: Light;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
+    letter-spacing: 1px;
+}
+.main-title-s2 {
+    color: #5d62b5;
+}
+.about-us-outline {
+    line-height: 42px;
+    font-weight: Bolder;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
+}
+.about-us-text {
+    letter-spacing: 0.15px;
+    line-height: 24px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
+}
+.grey-bg {
+    background-image: url('../../images/About-us/greyFooterBg.svg');
+    min-width: 100%;
+    min-height: 50vh;
+}
+.story-section {
+    padding-left: 10em;
+    padding-top: 1em;
+}
