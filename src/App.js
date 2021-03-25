@@ -1,12 +1,13 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch } from "react-router-dom";
+import ContactUs from './container/ContactUs/ContactUs';
 
 function App() {
  
   return (
     <Router>
       <Switch>
-       <p>Hello wordl!</p>
+       <ContactUs/>
       </Switch>
     </Router>
   );

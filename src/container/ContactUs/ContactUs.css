@@ -1,0 +1,51 @@
+.contactus {
+    border: 1px solid orange;
+    background: linear-gradient(#e66465, #9198e5);
+    background-color: #fc9842;
+    background-image: linear-gradient(315deg, #fc9842 0%, #fe5f75 74%);
+    border-radius: 40px;
+}
+
+.title_contactus {
+    color: white;
+}
+
+.contactus input,
+.contactus input:active,
+.contactus input:focus,
+.contactus textarea,
+.contactus textarea:active,
+.contactus textarea:focus {
+    background: transparent;
+    border-radius: 10px;
+    color: white;
+    border: 2px solid rgba(230, 226, 226, 0.692);
+    
+}
+
+.text > h4,
+h1,
+h6 {
+    background: -webkit-linear-gradient(45deg, #ff4a71, #ff8e53 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contactus input::placeholder,
+textarea::placeholder {
+    color: white !important;
+}
+.mapHeight {
+    height: 500px !important;
+}
+.submitButton {
+    background: linear-gradient(45deg, #ff4a71, #ff8e53 100%);
+    color: white !important;
+    font-size: 16px !important;
+    height: 40px;
+    width: 130px;
+    border-radius: 25px !important;
+    border: none;
+    outline: none;
+    border: coral !important;
+}

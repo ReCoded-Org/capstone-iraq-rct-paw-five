@@ -6,6 +6,7 @@ import './index.css'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
 import AllReducers from './redux/reducers/AllReducers'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const store = createStore(AllReducers)
 
