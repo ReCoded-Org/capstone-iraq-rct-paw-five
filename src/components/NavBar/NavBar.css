@@ -43,7 +43,7 @@ a.dropdown-item {
     height: 55px;
 }
 .navbar-light .navbar-toggler-icon {
-    background-image: url('../../images/burger.png');
+    background-image: url('../../Images/burger.png');
 }
 
 .navbar-toggler-icon {
@@ -72,13 +72,12 @@ a.dropdown-item {
     box-shadow: none;
 }
 .selectLang option {
-  color: #ff8e53 !important;
-  font-weight: 300;
-  font-size: 18px !important;
-  text-align: center;
+    color: #ff8e53 !important;
+    font-weight: 300;
+    font-size: 18px !important;
+    text-align: center;
 }
 
-.firstOption{
-  display: none;
+.firstOption {
+    display: none;
 }
-

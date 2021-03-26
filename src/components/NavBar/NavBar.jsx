@@ -14,7 +14,7 @@ import {
     CONTACT_US_ROUTE,
 } from '../../routes'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import logo from '../../images/logo.ico'
+import logo from '../../Images/logo.ico'
 
 export default function NavBar() {
     const { t } = useTranslation()
@@ -136,9 +136,9 @@ export default function NavBar() {
                                     <option selected className="firstOption fa">
                                         &#xf1ab;
                                     </option>
-                                    <option value='en'>English</option>
-                                    <option value='ar'>عربي</option>
-                                    <option value='krd'>كردى</option>
+                                    <option value="en">English</option>
+                                    <option value="ar">عربي</option>
+                                    <option value="krd">كردى</option>
                                 </Form.Control>
                             </Nav.Link>
                         </Nav>

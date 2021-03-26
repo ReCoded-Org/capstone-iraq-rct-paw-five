@@ -6,7 +6,7 @@ import './i18n'
 import './index.css'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
-import AllReducers from './redux/reducers/AllReducers'
+import AllReducers from './Redux/reducers/AllReducers'
 
 const store = createStore(AllReducers)
 
