@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import NavBar from './components/NavBar'
-import PetCard from './components/PetCard'
+// import PetCard from './components/PetCard'
 import { ContextDataProvider } from './contextApi/ContextApi'
 
 import {
