@@ -14,8 +14,6 @@ import {
     ADD_PET_ROUTE,
 } from './routes'
 
-import AddPet from './Containers/AddPet'
-
 function App() {
     return (
         <Router>

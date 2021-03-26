@@ -14,7 +14,7 @@ import {
     CONTACT_US_ROUTE,
 } from '../../routes'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import logo from '../../Images/logo.ico'
+import logo from '../../images/logo.ico'
 
 export default function NavBar() {
     const { t } = useTranslation()
