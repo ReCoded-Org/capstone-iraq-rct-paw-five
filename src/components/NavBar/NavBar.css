@@ -1,0 +1,84 @@
+.navBar {
+    background: linear-gradient(45deg, #fe6b8b, #ff8e53 100%);
+    padding: 0 !important;
+}
+
+.navBar a {
+    text-decoration: none;
+    color: rgb(255, 246, 246) !important;
+    margin-right: 25px;
+    margin-left: 25px;
+    font-weight: 400;
+}
+
+a.dropdown-item {
+    margin: auto;
+}
+
+.selected {
+    border-bottom: 2px solid white;
+    margin-bottom: 3px;
+}
+
+.nav-link {
+    transition: color 0.5s;
+}
+.nav-link:hover {
+    color: #696964 !important;
+}
+
+a.dropdown-item {
+    color: #ff8e53 !important;
+    margin: auto;
+}
+
+.dropdown-item:active {
+    background: white;
+}
+.logo {
+    margin-left: 10px;
+}
+.logo img {
+    width: 55px;
+    height: 55px;
+}
+.navbar-light .navbar-toggler-icon {
+    background-image: url('../../images/burger.png');
+}
+
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.3em;
+    height: 1em;
+}
+.navbar-light .navbar-toggler {
+    border-color: rgba(0, 0, 0, 0);
+}
+
+.selectLang {
+    background: none;
+    color: rgb(255, 246, 246) !important;
+    font-weight: 400;
+    border: none;
+    margin-right: 0px;
+    padding: 10;
+    outline-style: none;
+    box-shadow: none;
+    border-color: transparent;
+}
+
+.selectLang:focus {
+    outline: none;
+    box-shadow: none;
+}
+.selectLang option {
+  color: #ff8e53 !important;
+  font-weight: 300;
+  font-size: 18px !important;
+  text-align: center;
+}
+
+.firstOption{
+  display: none;
+}
+
