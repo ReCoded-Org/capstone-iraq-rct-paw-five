@@ -1,9 +1,13 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import { Navbar, Nav, NavDropdown, Form } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
 import i18next from 'i18next'
 import { BrowserRouter as Router, NavLink } from 'react-router-dom'
+import ContextData from '../../contextApi'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './NavBar.css'
+
+
 import {
     HOME_ROUTE,
     ADOPT_ROUTE,
@@ -13,10 +17,13 @@ import {
     LOGIN_ROUTE,
     CONTACT_US_ROUTE,
 } from '../../routes'
-import 'bootstrap/dist/css/bootstrap.min.css'
+
 import logo from '../../images/logo.ico'
 
 export default function NavBar() {
+
+    const contextData = useContext(ContextData)
+
     const { t } = useTranslation()
     const [dirProperties, setDir] = useState({
         dir: 'ltr',
@@ -25,13 +32,16 @@ export default function NavBar() {
 
     const selectedLanguage = (lang) => {
         i18next.changeLanguage(lang)
+        contextData.setLang(lang)
+        
     }
     const handelOption = (e) => {
         selectedLanguage(e.target.value)
+
     }
 
     const handelDir = () => {
-        if (localStorage.getItem('i18nextLng') !== 'en') {
+        if (contextData.lang !== 'en') {
             const newDir = 'rtl'
             const newClassName = 'mr-auto'
             const newdirProperties = { ...dirProperties }
@@ -50,7 +60,7 @@ export default function NavBar() {
 
     useEffect(() => {
         handelDir()
-    }, [localStorage.getItem('i18nextLng')])
+    },[contextData.lang])
 
     return (
         <div dir={dirProperties.dir} data-testid="NavBar">
@@ -133,8 +143,8 @@ export default function NavBar() {
                                     custom
                                     value=""
                                 >
-                                    <option selected className="firstOption fa">
-                                        &#xf1ab;
+                                    <option  selected className="firstOption fa">
+                                        &#xf0ac;
                                     </option>
                                     <option value='en'>English</option>
                                     <option value='ar'>عربي</option>

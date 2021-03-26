@@ -1,0 +1,48 @@
+.card,
+.card img {
+    border-radius: 20px;
+}
+
+.petLocation {
+    position: absolute;
+    text-align: end;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.466);
+    border-radius: 60px;
+}
+.petLocationIcon {
+    color: #878787;
+}
+.petGender {
+    color: #ec6161;
+    
+}
+.petGenderIcon{
+    color: #878787;
+}
+
+
+.detailsBtn {
+    border-radius: 30px;
+    width: 90px;
+    background-color: #ffc533;
+    color: white;
+    transition: background 0.5s;
+    transition:  box-shadow 0.5s;
+    border: none;
+}
+
+.detailsBtn:hover,
+.detailsBtn:active,
+.detailsBtn:focus {
+    background-color: #f85e49 !important;
+    outline: 0 !important;
+    box-shadow: 2px 1px 2px 1px #888888 !important;
+    border: 0px !important;
+}
+
+
+.petTitle {
+    color: #d18d28;
+}
+

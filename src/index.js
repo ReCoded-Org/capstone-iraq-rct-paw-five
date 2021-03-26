@@ -10,6 +10,7 @@ import './i18n'
 
 const store = createStore(AllReducers)
 
+
 ReactDOM.render(
     <Provider store={store}>
         <React.StrictMode>
