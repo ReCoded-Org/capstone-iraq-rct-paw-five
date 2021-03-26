@@ -1,6 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import NavBar from './components/NavBar/NavBar'
+import Resources from './components/ResourcePage/Resources'
 import {
     HOME_ROUTE,
     ADOPT_ROUTE,
@@ -22,7 +23,7 @@ function App() {
                 <Route path={LOGIN_ROUTE}>{/** <LOGIN_ROUTE/> */}</Route>
                 <Route path={SIGNUP_ROUTE}>{/** <SIGNUP_ROUTE/> */}</Route>
                 <Route path={RESOURCE_CAT_ROUTE}>
-                    {/** <RESOURCE_CAT_ROUTE/> */}
+                    <Resources />
                 </Route>
                 <Route path={RESOURCE_DOG_ROUTE}>
                     {/** <RESOURCE_DOG_ROUTE/> */}
