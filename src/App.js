@@ -24,7 +24,7 @@ function App() {
             <Router>
                 <ContextDataProvider value={{ lang, setLang }}>
                     <NavBar />
-                    <PetCard />
+                    {/* <PetCard /> */}
                 </ContextDataProvider>
 
                 <Switch>
