@@ -3,11 +3,12 @@ import './AddPet.css'
 import { useFormik } from 'formik'
 import * as Yup from 'yup'
 import { useTranslation } from 'react-i18next'
+import { Form, Col, Button } from 'react-bootstrap'
 import firebase, { storage } from '../../firebase'
-import 'firebase/firestore'
-import Cat from '../../Images/pets-vectors/addPetCat.svg'
-import Paw from '../../Images/icons/paw.svg'
 import AddPetForm from './AddPetForm'
+import 'firebase/firestore'
+import Cat from '../../images/pets-vectors/addPetCat.svg'
+import Paw from '../../images/icons/paw.svg'
 
 function AddPet() {
     const { t } = useTranslation()

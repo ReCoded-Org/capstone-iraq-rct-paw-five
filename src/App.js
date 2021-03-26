@@ -14,6 +14,8 @@ import {
     ADD_PET_ROUTE,
 } from './routes'
 
+import AddPet from './Containers/AddPet'
+
 function App() {
     return (
         <Router>
@@ -26,6 +28,9 @@ function App() {
                 <Route path={ABOUT_ROUTE}>{/** <ABOUT_ROUTE/> */}</Route>
                 <Route path={LOGIN_ROUTE}>{/** <LOGIN_ROUTE/> */}</Route>
                 <Route path={SIGNUP_ROUTE}>{/** <SIGNUP_ROUTE/> */}</Route>
+                <Route path={ADD_PET_ROUTE}>
+                    <AddPet />
+                </Route>
                 <Route path={RESOURCE_CAT_ROUTE}>
                     {/** <RESOURCE_CAT_ROUTE/> */}
                 </Route>
