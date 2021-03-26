@@ -10,11 +10,11 @@ import {
     ABOUT_ROUTE,
     RESOURCE_CAT_ROUTE,
     RESOURCE_DOG_ROUTE,
-    LOGIN_ROUTE,
     CONTACT_US_ROUTE,
 } from '../../routes'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import logo from '../../images/logo.ico'
+import Login from '../Modals/Login/Login'
 
 export default function NavBar() {
     const { t } = useTranslation()
@@ -22,6 +22,7 @@ export default function NavBar() {
         dir: 'ltr',
         className: 'ml-auto',
     })
+    const [showLoginModal, setShowLoginModal] = useState(false)
 
     const selectedLanguage = (lang) => {
         i18next.changeLanguage(lang)
@@ -117,10 +118,10 @@ export default function NavBar() {
                                 {t('navbar.contact')}
                             </Nav.Link>
                             <Nav.Link
-                                as={NavLink}
                                 activeClassName="selected"
-                                exact
-                                to={LOGIN_ROUTE}
+                                onClick={() => {
+                                    setShowLoginModal(!showLoginModal)
+                                }}
                             >
                                 {t('navbar.logIn')}
                             </Nav.Link>
@@ -136,15 +137,22 @@ export default function NavBar() {
                                     <option selected className="firstOption fa">
                                         &#xf1ab;
                                     </option>
-                                    <option value='en'>English</option>
-                                    <option value='ar'>عربي</option>
-                                    <option value='krd'>كردى</option>
+                                    <option value="en">English</option>
+                                    <option value="ar">عربي</option>
+                                    <option value="krd">كردى</option>
                                 </Form.Control>
                             </Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
             </Router>
+            {showLoginModal ? (
+                <Login
+                    onHide={() => {
+                        setShowLoginModal(!showLoginModal)
+                    }}
+                />
+            ) : null}
         </div>
     )
 }
