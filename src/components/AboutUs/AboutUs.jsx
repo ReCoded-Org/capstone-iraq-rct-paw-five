@@ -12,87 +12,83 @@ import './AboutUs.css'
 
 function AboutUs() {
     return (
-        <div>
+        <Container fluid>
             {/* first section */}
-            <Container className="mt-5">
-                <Row>
-                    <Col className="rectangle mb-4 mr-5 d-flex align-items-center">
-                        {' '}
-                        <img src={RectangleAboutUs} alt="about-us-rectangle" />
-                        <Container className="w-100 position-absolute text-left ml-5 text-light">
-                            <h6 className="main-title">
-                                <img src={OverlineMark} alt="OverlineMark" />{' '}
-                                Who we are
-                            </h6>
-                            <h2 className="about-us-outline ml-2 mt-4">
-                                We Are a Paw Project Team Working from Re:Coded
-                            </h2>
-                            <p className="about-us-text ml-5 mt-3">
-                                Ut enim ad minima veniam, quis nostrum
-                                exercitationem ullam corporis suscipit
-                                laboriosam, nisi ut aliquid ex ea commodi
-                                consequatur. Quis autem vel eum iure
-                                reprehenderit qui in ea voluptate velit esse
-                                quam nihil molestiae consequatur, vel illum qui
-                                dolorem eum fugiat quo voluptas nulla pariatur.
-                            </p>
-                        </Container>
-                    </Col>
-                    <Col className="cat-pic">
-                        {' '}
-                        <img src={CatNextToRectangle} alt="about-us-cat-pic" />
-                    </Col>
-                </Row>
-            </Container>
-            {/* Second Section */}
-            <Container className="grey-bg">
-                <Row className="story-section">
-                    <Col>
-                        <h6 className="main-title-s2 ml-5">
-                            <img
-                                src={OverlineMarkIconPurple}
-                                alt="OverlineMark"
-                            />{' '}
-                            Story
+            <Row className="about-us-section ml-5 mt-3">
+                <Col className="rectangle mb-4 ml-5 d-flex align-items-center">
+                    {' '}
+                    <img src={RectangleAboutUs} alt="about-us-rectangle" />
+                    <Container className="w-75 position-absolute ml-4 text-light">
+                        <h6 className="main-title">
+                            <img src={OverlineMark} alt="OverlineMark" /> Who we
+                            are
                         </h6>
-                        <img
-                            className="service1"
-                            src={ServiceRectangle}
-                            alt="serviceRectangle"
-                        />{' '}
-                        <p className="position-absolute text-dark box-text ml-5">
-                            “Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore ex magna aliqua. Ut enim illum ad minim
-                            veniam, quis ea exercitation ullamco cillum ut enim
-                            dolore.”
+                        <h2 className="about-us-outline ml-3 mt-4">
+                            We Are a Paw Project Team Working from Re:Coded
+                        </h2>
+                        <p className="about-us-text ml-5 mt-3">
+                            Ut enim ad minima veniam, quis nostrum
+                            exercitationem ullam corporis suscipit laboriosam,
+                            nisi ut aliquid ex ea commodi consequatur. Quis
+                            autem vel eum iure reprehenderit qui in ea voluptate
+                            velit esse quam nihil molestiae consequatur, vel
+                            illum qui dolorem eum fugiat quo voluptas nulla
+                            pariatur.
                         </p>
-                        <img
-                            className="service1"
-                            src={ServiceRectangle}
-                            alt="serviceRectangle"
-                        />{' '}
-                        <p className="position-absolute text-dark box-text2">
-                            “Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore ex magna aliqua. Ut enim illum ad minim
-                            veniam, quis ea exercitation ullamco cillum ut enim
-                            dolore.”
-                        </p>
-                        <img
-                            className="w-10  position-absolute story-pic2"
-                            src={StoryPic2}
-                            alt="StoryPic2"
-                        />{' '}
-                        <img
-                            className="w-10 position-absolute story-pic"
-                            src={StoryPic}
-                            alt="StoryPic"
-                        />{' '}
-                    </Col>
-                </Row>
-            </Container>
-        </div>
+                    </Container>
+                </Col>
+                <Col className="cat-pic">
+                    {' '}
+                    <img src={CatNextToRectangle} alt="about-us-cat-pic" />
+                </Col>
+            </Row>
+
+            {/* Story Section */}
+            <Row className="story-section grey-bg">
+                <Col>
+                    <h6 className="main-title-s2 ml-5">
+                        <img src={OverlineMarkIconPurple} alt="OverlineMark" />{' '}
+                        Story
+                    </h6>
+                    <img
+                        className="service1"
+                        src={ServiceRectangle}
+                        alt="serviceRectangle"
+                    />{' '}
+                    <p className="position-absolute text-dark box-text ml-5">
+                        “Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore ex magna aliqua. Ut enim illum ad minim veniam,
+                        quis ea exercitation ullamco cillum ut enim dolore.”
+                    </p>
+                    <img
+                        className="service1"
+                        src={ServiceRectangle}
+                        alt="serviceRectangle"
+                    />{' '}
+                    <p className="position-absolute text-dark box-text2">
+                        “Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore ex magna aliqua. Ut enim illum ad minim veniam,
+                        quis ea exercitation ullamco cillum ut enim dolore.”
+                    </p>
+                    <img
+                        className="w-10  position-absolute story-pic2"
+                        src={StoryPic2}
+                        alt="StoryPic2"
+                    />{' '}
+                    <img
+                        className="w-10 position-absolute story-pic"
+                        src={StoryPic}
+                        alt="StoryPic"
+                    />{' '}
+                </Col>
+            </Row>
+            {/* our impact Section */}
+            <Row className="our-impact">
+                <Col>hhh</Col>
+            </Row>
+        </Container>
     )
 }
 

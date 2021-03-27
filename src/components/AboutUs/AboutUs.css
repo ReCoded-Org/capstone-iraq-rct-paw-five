@@ -1,5 +1,6 @@
 .cat-pic {
     z-index: -1;
+    right: 7em;
 }
 
 .main-title,
@@ -24,8 +25,7 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
 }
 .grey-bg {
-    background-image: url('../../images/About-us/greyFooterBg.svg');
-    min-width: 100%;
+    background-color: #f2f2f2;
     min-height: 70vh;
 }
 .story-section {
@@ -53,4 +53,7 @@
 }
 .box-text2 {
     margin-left: 25em;
+}
+
+.our-impact {
 }
