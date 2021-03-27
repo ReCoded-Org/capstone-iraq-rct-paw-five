@@ -1,12 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Modal, Button } from 'react-bootstrap'
+import { useTranslation } from 'react-i18next'
 import './Login.css'
 import Close from '../../../images/login/close.svg'
 import Google from '../../../images/login/search.svg'
 import Facebook from '../../../images/login/facebook.svg'
 
 function Login({ onHide }) {
+    const { t } = useTranslation()
     return (
         <div>
             <Modal show centered className="rounded">
@@ -25,7 +27,7 @@ function Login({ onHide }) {
                         </button>
                     </div>
                     <div className="d-flex justify-content-center text-white mt-2">
-                        <h3>Log In</h3>
+                        <h3>{t('login.log-in')}</h3>
                     </div>
                     <div className="d-flex justify-content-center mt-5 mb-5">
                         <Button className="bg-white text-black w-50 rounded d-flex justify-content-center align-items-center py-2">
@@ -37,7 +39,7 @@ function Login({ onHide }) {
                                 className="d-block mt-1 mx-2 "
                             />
                             <p className="text-dark my-auto text-size-modal">
-                                Sign in with google
+                                {t('login.google')}
                             </p>
                         </Button>
                     </div>
@@ -51,7 +53,7 @@ function Login({ onHide }) {
                                 className="d-block mt-0 mx-2 "
                             />
                             <p className="text-white my-auto text-size-modal text-size-facebook">
-                                Sign in with facebook
+                                {t('login.facebook')}
                             </p>
                         </Button>
                     </div>
