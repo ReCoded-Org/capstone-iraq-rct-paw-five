@@ -4,7 +4,9 @@ import CatNextToRectangle from '../../images/About-us/CatNextToRectangle.svg'
 import RectangleAboutUs from '../../images/About-us/RectangleAboutUs.svg'
 import OverlineMark from '../../images/About-us/Overline Mark.svg'
 import OverlineMarkIconPurple from '../../images/About-us/Overline Mark Purple.svg'
-// import greyFooterBg from '../../images/About-us/greyFooterBg.svg'
+import ServiceRectangle from '../../images/About-us/service rectangle.svg'
+import StoryPic from '../../images/About-us/storypic (1).svg'
+import StoryPic2 from '../../images/About-us/storypic (2).svg'
 
 import './AboutUs.css'
 
@@ -17,7 +19,7 @@ function AboutUs() {
                     <Col className="rectangle mb-4 mr-5 d-flex align-items-center">
                         {' '}
                         <img src={RectangleAboutUs} alt="about-us-rectangle" />
-                        <div className="w-100 position-absolute text-left ml-5 text-light">
+                        <Container className="w-100 position-absolute text-left ml-5 text-light">
                             <h6 className="main-title">
                                 <img src={OverlineMark} alt="OverlineMark" />{' '}
                                 Who we are
@@ -34,7 +36,7 @@ function AboutUs() {
                                 quam nihil molestiae consequatur, vel illum qui
                                 dolorem eum fugiat quo voluptas nulla pariatur.
                             </p>
-                        </div>
+                        </Container>
                     </Col>
                     <Col className="cat-pic">
                         {' '}
@@ -42,15 +44,53 @@ function AboutUs() {
                     </Col>
                 </Row>
             </Container>
-
             {/* Second Section */}
             <Container className="grey-bg">
-                <div className="story-section">
-                    <h6 className="main-title-s2">
-                        <img src={OverlineMarkIconPurple} alt="OverlineMark" />{' '}
-                        Story
-                    </h6>
-                </div>
+                <Row className="story-section">
+                    <Col>
+                        <h6 className="main-title-s2 ml-5">
+                            <img
+                                src={OverlineMarkIconPurple}
+                                alt="OverlineMark"
+                            />{' '}
+                            Story
+                        </h6>
+                        <img
+                            className="service1"
+                            src={ServiceRectangle}
+                            alt="serviceRectangle"
+                        />{' '}
+                        <p className="position-absolute text-dark box-text ml-5">
+                            “Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore ex magna aliqua. Ut enim illum ad minim
+                            veniam, quis ea exercitation ullamco cillum ut enim
+                            dolore.”
+                        </p>
+                        <img
+                            className="service1"
+                            src={ServiceRectangle}
+                            alt="serviceRectangle"
+                        />{' '}
+                        <p className="position-absolute text-dark box-text2">
+                            “Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore ex magna aliqua. Ut enim illum ad minim
+                            veniam, quis ea exercitation ullamco cillum ut enim
+                            dolore.”
+                        </p>
+                        <img
+                            className="w-10  position-absolute story-pic2"
+                            src={StoryPic2}
+                            alt="StoryPic2"
+                        />{' '}
+                        <img
+                            className="w-10 position-absolute story-pic"
+                            src={StoryPic}
+                            alt="StoryPic"
+                        />{' '}
+                    </Col>
+                </Row>
             </Container>
         </div>
     )
