@@ -1,0 +1,64 @@
+.main-image {
+    width: auto;
+    height: auto;
+    border-radius: 10%;
+}
+h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 22px;
+    letter-spacing: 0.15px;
+
+    color: #e79559;
+}
+.h2 {
+    color: white;
+}
+@media only screen and (max-width: 600px) {
+    .tips {
+        font-size: 23px;
+    }
+}
+.label {
+    /* Story : */
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 22px;
+    letter-spacing: 0.15px;
+    color: #e79559;
+}
+.text {
+    /* Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. */
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.15px;
+    color: #000000;
+    padding: 10px;
+}
+.contactinfo {
+    background: #f2f2f2;
+    height: auto;
+}
+.img {
+    border-radius: 26px;
+    width: auto;
+    height: auto;
+}
+.pet-gallery {
+    background: linear-gradient(
+        88.51deg,
+        #dc4946 0.29%,
+        #f2726f 49.91%,
+        #ffc533 100%
+    );
+    height: auto;
+}

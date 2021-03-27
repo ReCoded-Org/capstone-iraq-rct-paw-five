@@ -2,6 +2,8 @@ import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import NavBar from './components/NavBar/NavBar'
 import Resources from './components/ResourcePage/Resources'
+import Deatils from './components/Deatils-page/Detail'
+
 import {
     HOME_ROUTE,
     ADOPT_ROUTE,
@@ -11,6 +13,7 @@ import {
     LOGIN_ROUTE,
     SIGNUP_ROUTE,
     CONTACT_US_ROUTE,
+    DETAILS_ROUTE,
 } from './routes'
 
 function App() {
@@ -32,7 +35,10 @@ function App() {
                     {/** <CONTACT_US_ROUTE/> */}
                 </Route>
                 <Route path={HOME_ROUTE} exact>
-                    {/** <HOME_ROUTE/> */}
+                    <Deatils />
+                </Route>
+                <Route path={DETAILS_ROUTE} exact>
+                    {/** */}
                 </Route>
             </Switch>
         </Router>
