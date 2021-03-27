@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Row, Col } from 'react-bootstrap'
+import { Container, Row, Col, Card, CardColumns } from 'react-bootstrap'
 import CatNextToRectangle from '../../images/About-us/CatNextToRectangle.svg'
 import RectangleAboutUs from '../../images/About-us/RectangleAboutUs.svg'
 import OverlineMark from '../../images/About-us/Overline Mark.svg'
@@ -12,6 +12,11 @@ import PuppyBath from '../../images/About-us/dog_grooming_24x.svg'
 import DogsBoard from '../../images/About-us/dog_stream_24x.svg'
 import PupsTrained from '../../images/About-us/dog_love_24x.svg'
 import MealsServed from '../../images/About-us/dog_vet_24x.svg'
+import MembersImg from '../../images/About-us/Group 51.svg'
+import Facebook from '../../images/About-us/facebook 1.svg'
+import Youtube from '../../images/About-us/youtube 1.svg'
+import Twitter from '../../images/About-us/twitter 1.svg'
+import Instagram from '../../images/About-us/instagram.svg'
 
 import './AboutUs.css'
 
@@ -19,7 +24,7 @@ function AboutUs() {
     return (
         <Container fluid>
             {/* first section */}
-            <Row className="about-us-section ml-5 mt-3">
+            <Row className="about-us-section ml-3 mt-3">
                 <Col className="rectangle mb-4 ml-5 d-flex align-items-center">
                     {' '}
                     <img src={RectangleAboutUs} alt="about-us-rectangle" />
@@ -90,13 +95,13 @@ function AboutUs() {
                 </Col>
             </Row>
             {/* our impact Section */}
-            <Row xs={1} md={2} className="our-impact">
+            <Row className="our-impact">
                 <Col
                     md="4"
                     className="w-50 position-absolute text-light our-impact-title"
                 >
                     {' '}
-                    <h6 className="main-title">
+                    <h6 className="main-title ml-2">
                         <img src={OverlineMark} alt="OverlineMark" /> Our impact
                     </h6>
                     <h2 className="about-us-outline ml-3 mt-4">
@@ -170,6 +175,303 @@ function AboutUs() {
                         </Col>
                     </Row>
                 </Col>
+            </Row>
+            {/* our members */}
+            <Row className="our-members-section">
+                <Col>
+                    <h6 className="main-title-s2 ml-5 mt-4">
+                        <img src={OverlineMarkIconPurple} alt="OverlineMark" />{' '}
+                        Our members
+                    </h6>
+                </Col>
+            </Row>
+            <Row className="m-5">
+                <CardColumns>
+                    <Card>
+                        <Card.Img
+                            variant="top"
+                            src={MembersImg}
+                            alt="MembersImg"
+                        />
+                        <Card.Body className="text-center">
+                            <Card.Title>Sara Lara</Card.Title>
+                            <Card.Text>
+                                “Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore ex magna aliqua.
+                                Ut enim illum ad minim veniam, quis ea
+                                exercitation ullamco cillum ut enim
+                                dolore.”“Lorem ipsum dolor sit amet, .{' '}
+                                <ul className="list-unstyled list-inline font-small mt-3">
+                                    <li className="list-inline-item pr-2">
+                                        <a href="#!" className="white-text">
+                                            <img
+                                                src={Facebook}
+                                                alt="facebook"
+                                            />{' '}
+                                        </a>
+                                    </li>
+                                    <li className="list-inline-item pr-2">
+                                        <a href="#!" className="white-text">
+                                            <img src={Twitter} alt="twitter" />{' '}
+                                        </a>
+                                    </li>
+                                    <li className="list-inline-item">
+                                        <a href="#!" className="white-text">
+                                            <img
+                                                src={Instagram}
+                                                alt="Instagram"
+                                            />{' '}
+                                        </a>
+                                    </li>
+                                    <li className="list-inline-item">
+                                        <a href="#!" className="white-text">
+                                            <img src={Youtube} alt="Youtube" />{' '}
+                                        </a>
+                                    </li>
+                                </ul>
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+
+                    <Card>
+                        <Card.Img
+                            variant="top"
+                            src={MembersImg}
+                            alt="MembersImg"
+                        />
+                        <Card.Body className="text-center">
+                            <Card.Title>Sara Lara</Card.Title>
+                            <Card.Text>
+                                “Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore ex magna aliqua.
+                                Ut enim illum ad minim veniam, quis ea
+                                exercitation ullamco cillum ut enim
+                                dolore.”“Lorem ipsum dolor sit amet, .{' '}
+                                <ul className="list-unstyled list-inline font-small mt-3">
+                                    <li className="list-inline-item pr-2">
+                                        <a href="#!" className="white-text">
+                                            <img
+                                                src={Facebook}
+                                                alt="facebook"
+                                            />{' '}
+                                        </a>
+                                    </li>
+                                    <li className="list-inline-item pr-2">
+                                        <a href="#!" className="white-text">
+                                            <img src={Twitter} alt="twitter" />{' '}
+                                        </a>
+                                    </li>
+                                    <li className="list-inline-item">
+                                        <a href="#!" className="white-text">
+                                            <img
+                                                src={Instagram}
+                                                alt="Instagram"
+                                            />{' '}
+                                        </a>
+                                    </li>
+                                    <li className="list-inline-item">
+                                        <a href="#!" className="white-text">
+                                            <img src={Youtube} alt="Youtube" />{' '}
+                                        </a>
+                                    </li>
+                                </ul>
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+
+                    <Card>
+                        <Card.Img
+                            variant="top"
+                            src={MembersImg}
+                            alt="MembersImg"
+                        />
+                        <Card.Body className="text-center">
+                            <Card.Title>Sara Lara</Card.Title>
+                            <Card.Text>
+                                “Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore ex magna aliqua.
+                                Ut enim illum ad minim veniam, quis ea
+                                exercitation ullamco cillum ut enim
+                                dolore.”“Lorem ipsum dolor sit amet, .{' '}
+                                <ul className="list-unstyled list-inline font-small mt-3">
+                                    <li className="list-inline-item pr-2">
+                                        <a href="#!" className="white-text">
+                                            <img
+                                                src={Facebook}
+                                                alt="facebook"
+                                            />{' '}
+                                        </a>
+                                    </li>
+                                    <li className="list-inline-item pr-2">
+                                        <a href="#!" className="white-text">
+                                            <img src={Twitter} alt="twitter" />{' '}
+                                        </a>
+                                    </li>
+                                    <li className="list-inline-item">
+                                        <a href="#!" className="white-text">
+                                            <img
+                                                src={Instagram}
+                                                alt="Instagram"
+                                            />{' '}
+                                        </a>
+                                    </li>
+                                    <li className="list-inline-item">
+                                        <a href="#!" className="white-text">
+                                            <img src={Youtube} alt="Youtube" />{' '}
+                                        </a>
+                                    </li>
+                                </ul>
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                </CardColumns>
+            </Row>
+            <Row className="m-5">
+                <CardColumns>
+                    <Card>
+                        <Card.Img
+                            variant="top"
+                            src={MembersImg}
+                            alt="MembersImg"
+                        />
+                        <Card.Body className="text-center">
+                            <Card.Title>Sara Lara</Card.Title>
+                            <Card.Text>
+                                “Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore ex magna aliqua.
+                                Ut enim illum ad minim veniam, quis ea
+                                exercitation ullamco cillum ut enim
+                                dolore.”“Lorem ipsum dolor sit amet, .{' '}
+                                <ul className="list-unstyled list-inline font-small mt-3">
+                                    <li className="list-inline-item pr-2">
+                                        <a href="#!" className="white-text">
+                                            <img
+                                                src={Facebook}
+                                                alt="facebook"
+                                            />{' '}
+                                        </a>
+                                    </li>
+                                    <li className="list-inline-item pr-2">
+                                        <a href="#!" className="white-text">
+                                            <img src={Twitter} alt="twitter" />{' '}
+                                        </a>
+                                    </li>
+                                    <li className="list-inline-item">
+                                        <a href="#!" className="white-text">
+                                            <img
+                                                src={Instagram}
+                                                alt="Instagram"
+                                            />{' '}
+                                        </a>
+                                    </li>
+                                    <li className="list-inline-item">
+                                        <a href="#!" className="white-text">
+                                            <img src={Youtube} alt="Youtube" />{' '}
+                                        </a>
+                                    </li>
+                                </ul>
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+
+                    <Card>
+                        <Card.Img
+                            variant="top"
+                            src={MembersImg}
+                            alt="MembersImg"
+                        />
+                        <Card.Body className="text-center">
+                            <Card.Title>Sara Lara</Card.Title>
+                            <Card.Text>
+                                “Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore ex magna aliqua.
+                                Ut enim illum ad minim veniam, quis ea
+                                exercitation ullamco cillum ut enim
+                                dolore.”“Lorem ipsum dolor sit amet, .{' '}
+                                <ul className="list-unstyled list-inline font-small mt-3">
+                                    <li className="list-inline-item pr-2">
+                                        <a href="#!" className="white-text">
+                                            <img
+                                                src={Facebook}
+                                                alt="facebook"
+                                            />{' '}
+                                        </a>
+                                    </li>
+                                    <li className="list-inline-item pr-2">
+                                        <a href="#!" className="white-text">
+                                            <img src={Twitter} alt="twitter" />{' '}
+                                        </a>
+                                    </li>
+                                    <li className="list-inline-item">
+                                        <a href="#!" className="white-text">
+                                            <img
+                                                src={Instagram}
+                                                alt="Instagram"
+                                            />{' '}
+                                        </a>
+                                    </li>
+                                    <li className="list-inline-item">
+                                        <a href="#!" className="white-text">
+                                            <img src={Youtube} alt="Youtube" />{' '}
+                                        </a>
+                                    </li>
+                                </ul>
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+
+                    <Card>
+                        <Card.Img
+                            variant="top"
+                            src={MembersImg}
+                            alt="MembersImg"
+                        />
+                        <Card.Body className="text-center">
+                            <Card.Title>Sara Lara</Card.Title>
+                            <Card.Text>
+                                “Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore ex magna aliqua.
+                                Ut enim illum ad minim veniam, quis ea
+                                exercitation ullamco cillum ut enim
+                                dolore.”“Lorem ipsum dolor sit amet, .{' '}
+                                <ul className="list-unstyled list-inline font-small mt-3">
+                                    <li className="list-inline-item pr-2">
+                                        <a href="#!" className="white-text">
+                                            <img
+                                                src={Facebook}
+                                                alt="facebook"
+                                            />{' '}
+                                        </a>
+                                    </li>
+                                    <li className="list-inline-item pr-2">
+                                        <a href="#!" className="white-text">
+                                            <img src={Twitter} alt="twitter" />{' '}
+                                        </a>
+                                    </li>
+                                    <li className="list-inline-item">
+                                        <a href="#!" className="white-text">
+                                            <img
+                                                src={Instagram}
+                                                alt="Instagram"
+                                            />{' '}
+                                        </a>
+                                    </li>
+                                    <li className="list-inline-item">
+                                        <a href="#!" className="white-text">
+                                            <img src={Youtube} alt="Youtube" />{' '}
+                                        </a>
+                                    </li>
+                                </ul>
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                </CardColumns>
             </Row>
         </Container>
     )
