@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import { Modal, Button } from 'react-bootstrap'
 import './Login.css'
 import Close from '../../../images/login/close.svg'
+import Google from '../../../images/login/search.svg'
+import Facebook from '../../../images/login/facebook.svg'
 
 function Login({ onHide }) {
     return (
@@ -26,29 +28,32 @@ function Login({ onHide }) {
                         <h3>Log In</h3>
                     </div>
                     <div className="d-flex justify-content-center mt-5 mb-5">
-                        <Button className="bg-white w-50">
-                            <div className="col s12 m6 offset-m3 center-align">
-                                <div
-                                    className="oauth-container btn darken-4 white black-text d-flex"
-                                    style={{ textTransform: 'none' }}
-                                >
-                                    <div className="left">
-                                        <img
-                                            width="20px"
-                                            style={{
-                                                marginRight: '8px',
-                                            }}
-                                            alt="Google sign-in"
-                                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png"
-                                        />
-                                    </div>
-                                    Login with Google
-                                </div>
-                            </div>
+                        <Button className="bg-white text-black w-50 rounded d-flex justify-content-center align-items-center py-2">
+                            <img
+                                src={Google}
+                                alt="google icon"
+                                width="19"
+                                height="19"
+                                className="d-block mt-1 mx-2 "
+                            />
+                            <p className="text-dark my-auto text-size-modal">
+                                Sign in with google
+                            </p>
                         </Button>
                     </div>
                     <div className="d-flex justify-content-center mb-5 pb-5">
-                        <Button className="bg-white w-50">Light</Button>
+                        <Button className="bg-facebook text-black w-50 rounded d-flex justify-content-center align-items-center py-2">
+                            <img
+                                src={Facebook}
+                                alt="Facebook icon"
+                                width="21"
+                                height="21"
+                                className="d-block mt-0 mx-2 "
+                            />
+                            <p className="text-white my-auto text-size-modal text-size-facebook">
+                                Sign in with facebook
+                            </p>
+                        </Button>
                     </div>
                 </div>
             </Modal>

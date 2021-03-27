@@ -3,9 +3,35 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-color: #f2726f;
+    border: #f2726f 1px solid;
+}
+.bg-facebook {
+    background-color: #4267b2;
 }
 
+.btn {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus,
+.btn:hover {
+    outline: none;
+    box-shadow: none;
+    border: none;
+    background-color: #4267b2;
+}
 @media (max-width: 522px) {
+    .text-size-modal {
+        font-size: 12px;
+        margin-top: 4px;
+    }
     .bg-modal-login {
         background-image: url('../../../images/login/bg-modal.svg');
         background-repeat: no-repeat;
@@ -17,5 +43,17 @@
         background-repeat: no-repeat;
         background-position: 15% 15%;
         background-size: cover;
+    }
+}
+@media (max-width: 350px) {
+    .text-size-modal {
+        font-size: 10px;
+        margin-top: 4px;
+    }
+}
+@media (max-width: 369px) {
+    .text-size-facebook {
+        font-size: 9px;
+        margin-top: 4px;
     }
 }
