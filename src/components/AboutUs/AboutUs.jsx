@@ -7,6 +7,11 @@ import OverlineMarkIconPurple from '../../images/About-us/Overline Mark Purple.s
 import ServiceRectangle from '../../images/About-us/service rectangle.svg'
 import StoryPic from '../../images/About-us/storypic (1).svg'
 import StoryPic2 from '../../images/About-us/storypic (2).svg'
+import Blob from '../../images/About-us/Blob 2.svg'
+import PuppyBath from '../../images/About-us/dog_grooming_24x.svg'
+import DogsBoard from '../../images/About-us/dog_stream_24x.svg'
+import PupsTrained from '../../images/About-us/dog_love_24x.svg'
+import MealsServed from '../../images/About-us/dog_vet_24x.svg'
 
 import './AboutUs.css'
 
@@ -85,8 +90,86 @@ function AboutUs() {
                 </Col>
             </Row>
             {/* our impact Section */}
-            <Row className="our-impact">
-                <Col>hhh</Col>
+            <Row xs={1} md={2} className="our-impact">
+                <Col
+                    md="4"
+                    className="w-50 position-absolute text-light our-impact-title"
+                >
+                    {' '}
+                    <h6 className="main-title">
+                        <img src={OverlineMark} alt="OverlineMark" /> Our impact
+                    </h6>
+                    <h2 className="about-us-outline ml-3 mt-4">
+                        We Are a Paw Project Team Working from Re:Coded
+                    </h2>
+                </Col>
+                <Col
+                    md={{ span: 4, offset: 5 }}
+                    className="position-absolute our-impact-blob"
+                >
+                    <img src={Blob} alt="Blob" />
+                </Col>{' '}
+                <Col className="our-service our-ser-1" md={2}>
+                    <Row>
+                        <Col>
+                            {' '}
+                            <img src={PuppyBath} alt="PuppyBath" />{' '}
+                        </Col>
+                        <Col>
+                            <h2 className="title-our-impact-services-number">
+                                3,700
+                            </h2>
+                            <p className="title-our-impact-services">
+                                puppy baths
+                            </p>
+                        </Col>
+                    </Row>
+                </Col>
+                <Col className=" our-service our-ser-2" md={2}>
+                    <Row>
+                        <Col>
+                            <img src={DogsBoard} alt="DogsBoard" />{' '}
+                        </Col>
+                        <Col>
+                            <h2 className="title-our-impact-services-number">
+                                4,500
+                            </h2>
+                            <p className="title-our-impact-services">
+                                dogs boarded
+                            </p>
+                        </Col>
+                    </Row>
+                </Col>
+                <Col className="our-service our-ser-3" md={2}>
+                    <Row>
+                        <Col>
+                            <img src={PupsTrained} alt="PupsTrained" />{' '}
+                        </Col>
+                        <Col>
+                            <h2 className="title-our-impact-services-number">
+                                2,900
+                            </h2>
+                            <p className="title-our-impact-services">
+                                pups trained
+                            </p>
+                        </Col>
+                    </Row>
+                </Col>
+                <Col className="our-service our-ser-4" md={2}>
+                    <Row>
+                        <Col>
+                            <img src={MealsServed} alt="MealsServed" />{' '}
+                        </Col>
+                        <Col>
+                            <h2 className="title-our-impact-services-number">
+                                12K+
+                            </h2>
+                            <p className="title-our-impact-services">
+                                meals served
+                            </p>
+                        </Col>
+                    </Row>
+                </Col>
             </Row>
         </Container>
     )
