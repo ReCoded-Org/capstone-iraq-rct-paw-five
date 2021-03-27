@@ -35,10 +35,11 @@ function App() {
                     {/** <CONTACT_US_ROUTE/> */}
                 </Route>
                 <Route path={HOME_ROUTE} exact>
-                    <Deatils />
+                    {}
                 </Route>
                 <Route path={DETAILS_ROUTE} exact>
                     {/** */}
+                    <Deatils />
                 </Route>
             </Switch>
         </Router>
