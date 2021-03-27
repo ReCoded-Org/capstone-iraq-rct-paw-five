@@ -3,20 +3,22 @@
 exports[`renders correctly 1`] = `
 <div>
   <div
-    className="header"
+    className="d-flex flex-column flex-lg-row justify-content-lg-between"
   >
     <div
       className="header__text"
     >
       <div
-        className="add-pet-header"
+        className="d-flex flex-column-reverse align-items-center flex-md-row justify-content-md-center justify-content-lg-start mt-4 mb-4"
       >
         <img
           alt="paw"
-          className="paw-logo"
+          className="mt-4 mt-md-0 "
           src="paw.svg"
         />
-        <h1>
+        <h1
+          className="add-pet-header"
+        >
           add-pet.add for adoption
         </h1>
       </div>
@@ -40,7 +42,9 @@ exports[`renders correctly 1`] = `
   <div
     className="addpet-form"
   >
-    <h2>
+    <h2
+      className="font-weight-bold text-center text-lg-left mb-5 mt-4"
+    >
       add-pet.pets-info
     </h2>
     <form
@@ -150,10 +154,10 @@ exports[`renders correctly 1`] = `
             add-pet.gender
           </p>
           <div
-            className="addpet-radios"
+            className="d-flex justify-content-start"
           >
             <div
-              className="addpet-radio form-check"
+              className="mr-1 form-check"
             >
               <input
                 className="form-check-input position-static"
@@ -218,20 +222,21 @@ exports[`renders correctly 1`] = `
         <div
           className="addpet-row-space col-xl col-lg"
         >
-          <div
-            className="upload-container"
-          >
+          <div>
             <label
-              className="custom-file-upload form-label"
+              className=" text-center d-flex flex-column align-items-center justify-content-center bg-transparent custom-file-upload form-label"
               htmlFor="file"
             >
-              <p>
+              <p
+                className="d-block text-center my-auto py-2"
+              >
                 add-pet.upload-photo
               </p>
             </label>
           </div>
           <input
             accept="images/*"
+            className="d-none"
             id="file"
             name="file"
             onChange={[Function]}
@@ -239,7 +244,9 @@ exports[`renders correctly 1`] = `
           />
         </div>
       </div>
-      <h2>
+      <h2
+        className="font-weight-bold text-center text-lg-left mb-5 mt-5"
+      >
         add-pet.contact-info
       </h2>
       <div
@@ -358,7 +365,7 @@ exports[`renders correctly 1`] = `
         </div>
       </div>
       <div
-        className="button-container"
+        className="d-flex d-flex justify-content-center"
       >
         <button
           className="btn btn btn-primary"
