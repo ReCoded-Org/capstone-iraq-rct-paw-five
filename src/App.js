@@ -1,6 +1,8 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import NavBar from './components/NavBar/NavBar'
+import './Style.css'
+import Footer from './components/Footer'
 import {
     HOME_ROUTE,
     ADOPT_ROUTE,
@@ -16,6 +18,7 @@ function App() {
     return (
         <Router>
             <NavBar />
+            <Footer/>
             <Switch>
                 <Route path={ADOPT_ROUTE}>{/** <ADOPT_ROUTE/> */}</Route>
                 <Route path={ABOUT_ROUTE}>{/** <ABOUT_ROUTE/> */}</Route>

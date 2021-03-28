@@ -8,6 +8,8 @@ import reportWebVitals from './reportWebVitals'
 import AllReducers from './redux/reducers/AllReducers'
 import './i18n'
 
+
+
 const store = createStore(AllReducers)
 
 ReactDOM.render(

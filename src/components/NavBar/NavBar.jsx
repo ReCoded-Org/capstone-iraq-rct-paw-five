@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Navbar, Nav, NavDropdown, Form } from 'react-bootstrap'
+import { Navbar, Nav, Dropdown, Form } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
 import i18next from 'i18next'
 import { BrowserRouter as Router, NavLink } from 'react-router-dom'
@@ -11,6 +11,7 @@ import {
     RESOURCE_CAT_ROUTE,
     RESOURCE_DOG_ROUTE,
     LOGIN_ROUTE,
+    ADD_APET_ROUTE,
     CONTACT_US_ROUTE,
 } from '../../routes'
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -21,6 +22,7 @@ export default function NavBar() {
     const [dirProperties, setDir] = useState({
         dir: 'ltr',
         className: 'ml-auto',
+        textDir:'text-left'
     })
 
     const selectedLanguage = (lang) => {
@@ -34,16 +36,20 @@ export default function NavBar() {
         if (localStorage.getItem('i18nextLng') !== 'en') {
             const newDir = 'rtl'
             const newClassName = 'mr-auto'
+            const newtextDir = 'text-right'
             const newdirProperties = { ...dirProperties }
             newdirProperties.dir = newDir
             newdirProperties.className = newClassName
+            newdirProperties.textDir= newtextDir
             setDir(newdirProperties)
         } else {
             const newDir = 'ltr'
             const newClassName = 'ml-auto'
+            const newtextDir = 'text-left'
             const newdirProperties = { ...dirProperties }
             newdirProperties.dir = newDir
             newdirProperties.className = newClassName
+            newdirProperties.textDir= newtextDir
             setDir(newdirProperties)
         }
     }
@@ -53,28 +59,38 @@ export default function NavBar() {
     }, [localStorage.getItem('i18nextLng')])
 
     return (
-        <div dir={dirProperties.dir} data-testid="NavBar">
+        <div dir={dirProperties.dir}>
             <Router>
-                <Navbar className="navBar" expand="lg">
-                    <Navbar.Brand className="logo" as={NavLink} to={HOME_ROUTE}>
-                        <img src={logo} alt="" />
+                <Navbar className={`theme-color ${dirProperties.textDir} p-0 border-0 `} expand="lg">
+                    <Navbar.Brand as={NavLink} to={HOME_ROUTE}>
+                        <img src={logo} className='ml-1 mr-1' width="55px" height="55px" alt="" />
                     </Navbar.Brand>
                     <Navbar.Toggle />
-                    <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className={dirProperties.className}>
+                    <Navbar.Collapse  >
+                        <Nav
+                            className={` text-light  ${dirProperties.className}`}
+                        >
                             <Nav.Link
                                 as={NavLink}
                                 to={HOME_ROUTE}
-                                activeClassName="selected"
+                                activeStyle={{
+                                    fontWeight: 'bold',
+                                    borderBottom: '2px solid white',
+                                }}
                                 exact
+                                className="ml-4 mr-4 p-0 text-light"
                             >
                                 {t('navbar.home')}
                             </Nav.Link>
                             <Nav.Link
                                 as={NavLink}
                                 to={ABOUT_ROUTE}
-                                activeClassName="selected"
+                                activeStyle={{
+                                    fontWeight: 'bold',
+                                    borderBottom: '2px solid white',
+                                }}
                                 exact
+                                className="ml-4 mr-4 p-0 text-light"
                             >
                                 {t('navbar.about')}
                             </Nav.Link>
@@ -82,65 +98,97 @@ export default function NavBar() {
                                 as={NavLink}
                                 to={ADOPT_ROUTE}
                                 RESOURCE_CAT_ROUTE
-                                activeClassName="selected"
+                                activeStyle={{
+                                    fontWeight: 'bold',
+                                    borderBottom: '2px solid white',
+                                }}
                                 exact
+                                className="ml-4 mr-4 p-0 text-light"
                             >
                                 {t('navbar.adopt')}
                             </Nav.Link>
-                            <NavDropdown
-                                className="drop"
-                                title={t('navbar.resources.0')}
-                            >
-                                <NavDropdown.Item
-                                    as={NavLink}
-                                    activeClassName="selected"
-                                    exact
-                                    to={RESOURCE_CAT_ROUTE}
-                                >
-                                    {t('navbar.resources.1')}
-                                </NavDropdown.Item>
-                                <NavDropdown.Item
-                                    as={NavLink}
-                                    activeClassName="selected"
-                                    exact
-                                    to={RESOURCE_DOG_ROUTE}
-                                >
-                                    {t('navbar.resources.2')}
-                                </NavDropdown.Item>
-                            </NavDropdown>
                             <Nav.Link
                                 as={NavLink}
-                                activeClassName="selected"
+                                activeStyle={{
+                                    fontWeight: 'bold',
+                                    borderBottom: '2px solid white',
+                                }}
+                                exact
+                                to={ADD_APET_ROUTE}
+                                className="ml-4 mr-4 p-0 text-light"
+                            >
+                                {t('navbar.addapet')}
+                            </Nav.Link>
+                            <Dropdown  >
+                                <Dropdown.Toggle
+
+                                    className="text-light bg-transparent  border-0 p-0 ml-4 mr-4 " 
+                                    >
+                                    {t('navbar.resources.0')}
+                                </Dropdown.Toggle>
+                                <Dropdown.Menu>
+                                <Dropdown.Item className="text-danger bg-light" as={NavLink} to={RESOURCE_DOG_ROUTE}>{t('navbar.resources.2')}</Dropdown.Item>
+                                    <Dropdown.Item className="text-danger bg-light" as={NavLink} to={RESOURCE_CAT_ROUTE}>{t('navbar.resources.1')}</Dropdown.Item>
+                                </Dropdown.Menu>
+                            </Dropdown>
+
+                            <Nav.Link
+                                as={NavLink}
+                                activeStyle={{
+                                    fontWeight: 'bold',
+                                    borderBottom: '2px solid white',
+                                }}
                                 exact
                                 to={CONTACT_US_ROUTE}
+                                className="ml-4 mr-4 p-0 text-light"
                             >
                                 {t('navbar.contact')}
                             </Nav.Link>
                             <Nav.Link
                                 as={NavLink}
-                                activeClassName="selected"
+                                activeStyle={{
+                                    fontWeight: 'bold',
+                                    borderBottom: '2px solid white',
+                                }}
                                 exact
                                 to={LOGIN_ROUTE}
+                                className="ml-4 mr-4 p-0 text-light"
                             >
                                 {t('navbar.logIn')}
                             </Nav.Link>
-                            <Nav.Link className="fa">
+                            <Nav.Link
+                                as={NavLink}
+                                activeStyle={{
+                                    fontWeight: 'bold',
+                                    borderBottom: '2px solid white',
+                                }}
+                                exact
+                                to={LOGIN_ROUTE}
+                                className="ml-4 mr-4 p-0 text-light"
+                            >
+                                {t('navbar.logIn')}
+                            </Nav.Link>
                                 <Form.Control
-                                    className="selectLang"
+                                    className=" fa ml-4 mr-4 text-light text-danger bg-transparent border-0 "
                                     onChange={handelOption}
                                     as="select"
                                     size="sm"
                                     custom
                                     value=""
+                                    style={{ maxWidth: '50px' }}
                                 >
-                                    <option selected className="firstOption fa">
+                                    <option
+                                        
+                                        style={{ display: 'none' }}
+                                        className="fas p-0"
+                                    >
                                         &#xf1ab;
                                     </option>
-                                    <option value='en'>English</option>
-                                    <option value='ar'>عربي</option>
-                                    <option value='krd'>كردى</option>
+                                    <option className='text-danger' value="en">English</option>
+                                    <option className='text-danger' value="ar">عربي</option>
+                                    <option className='text-danger' value="krd">كردى</option>
                                 </Form.Control>
-                            </Nav.Link>
+                          
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
