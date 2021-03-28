@@ -3,6 +3,7 @@ import { Navbar, Nav, NavDropdown, Form } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
 import i18next from 'i18next'
 import { BrowserRouter as Router, NavLink } from 'react-router-dom'
+import Login from '../Modals/Login/Login'
 import './NavBar.css'
 import {
     HOME_ROUTE,
@@ -10,7 +11,6 @@ import {
     ABOUT_ROUTE,
     RESOURCE_CAT_ROUTE,
     RESOURCE_DOG_ROUTE,
-    LOGIN_ROUTE,
     CONTACT_US_ROUTE,
 } from '../../routes'
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -22,6 +22,7 @@ export default function NavBar() {
         dir: 'ltr',
         className: 'ml-auto',
     })
+    const [showLoginModal, setShowLoginModal] = useState(false)
 
     const selectedLanguage = (lang) => {
         i18next.changeLanguage(lang)
@@ -117,10 +118,10 @@ export default function NavBar() {
                                 {t('navbar.contact')}
                             </Nav.Link>
                             <Nav.Link
-                                as={NavLink}
                                 activeClassName="selected"
-                                exact
-                                to={LOGIN_ROUTE}
+                                onClick={() => {
+                                    setShowLoginModal(!showLoginModal)
+                                }}
                             >
                                 {t('navbar.logIn')}
                             </Nav.Link>
@@ -136,15 +137,22 @@ export default function NavBar() {
                                     <option selected className="firstOption fa">
                                         &#xf1ab;
                                     </option>
-                                    <option value='en'>English</option>
-                                    <option value='ar'>عربي</option>
-                                    <option value='krd'>كردى</option>
+                                    <option value="en">English</option>
+                                    <option value="ar">عربي</option>
+                                    <option value="krd">كردى</option>
                                 </Form.Control>
                             </Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
             </Router>
+            {showLoginModal ? (
+                <Login
+                    onHide={() => {
+                        setShowLoginModal(!showLoginModal)
+                    }}
+                />
+            ) : null}
         </div>
     )
 }

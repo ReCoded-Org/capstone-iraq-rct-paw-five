@@ -13,5 +13,10 @@
         "about": "About",
         "logIn": "Log In",
         "signUp": "Sign Up"
+    },
+    "login":{
+        "log-in":" Log in",
+        "google":"Sign in",
+        "facebook":"Sign in"
     }
 }
