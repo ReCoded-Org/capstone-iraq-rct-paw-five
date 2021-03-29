@@ -3,7 +3,6 @@ import { Navbar, Nav, NavDropdown, Form } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
 import i18next from 'i18next'
 import { BrowserRouter as Router, NavLink } from 'react-router-dom'
-import './NavBar.css'
 import {
     HOME_ROUTE,
     ADOPT_ROUTE,
