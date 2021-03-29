@@ -24,5 +24,18 @@
         "email":" example@example.com",
         "workTime":"sun - Tur 9:00 AM - 4:00 PM",
         "copyright":"2021 Paw-five team"
+    },
+    "contactus":{
+        "title":"Contact Us",
+        "name": "Name",
+        "email":"Email",
+        "phone":"Phone",
+        "subject":"Subject",
+        "submit":"Submit",
+        "required":"this field required",
+        "message":"Mesage",
+        "h1text":"Maxime placeat facere possimus omnis",
+        "h4text":"5,700+",
+        "h6text":"customers served"
     }
 }

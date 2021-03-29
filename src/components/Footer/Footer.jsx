@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react'
-import './Footer.css'
-import { BrowserRouter as Router, NavLink } from 'react-router-dom'
-import { Container, Row, Col, Image } from 'react-bootstrap'
-import { useTranslation } from 'react-i18next'
 
+import {  NavLink } from 'react-router-dom'
+import { Container, Row, Col, Image } from 'react-bootstrap'
+import { useSelector} from 'react-redux'
+import { useTranslation } from 'react-i18next'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMapMarkerAlt,faMobile,faEnvelope,faPowerOff } from '@fortawesome/free-solid-svg-icons'
 import { faFacebookF,faTwitter,faInstagram,faYoutube } from '@fortawesome/free-brands-svg-icons'
@@ -22,13 +22,15 @@ import {
 } from '../../routes'
 
 export default function Footer() {
+
+    const globaleLang = useSelector(state => state.langReducer)
     const { t } = useTranslation()
     const [dir, setDir] = useState('ltr')
 
     const changeDir = () => {
         if (
-            localStorage.getItem('i18nextLng') !== 'en' &&
-            localStorage.getItem('i18nextLng') !== null
+            localStorage.getItem('lang')!== 'en' &&
+            localStorage.getItem('lang') !== null
         ) {
             setDir('rtl')
         } else {
@@ -38,7 +40,7 @@ export default function Footer() {
 
     useEffect(() => {
         changeDir()
-    }, [localStorage.getItem('i18nextLng')])
+    }, [globaleLang])
 
     return (
         <div dir={dir}>
@@ -59,7 +61,7 @@ export default function Footer() {
                             {t('footer.explorLinks')}
                         </h5>
                         <Container fluid className="">
-                            <Router >
+                            
                                 <div className="list-unstyled row text-center">
                                 <li className='col-6 p-2 '>
                                     <NavLink to={HOME_ROUTE} className='text-dark'>
@@ -102,7 +104,7 @@ export default function Footer() {
                                     </NavLink>
                                 </li>
                                 </div>
-                            </Router>
+                            
                         </Container>
                     </Col>
                     <Col className="m-auto"lg={4} md={6}>

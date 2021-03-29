@@ -1,9 +1,14 @@
 import React, { useState, useEffect } from 'react'
+
 import { Navbar, Nav, Dropdown, Form } from 'react-bootstrap'
+import { useSelector, useDispatch} from 'react-redux'
 import { useTranslation } from 'react-i18next'
 import i18next from 'i18next'
-import { BrowserRouter as Router, NavLink } from 'react-router-dom'
-import './NavBar.css'
+import { NavLink } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
+import {selectedLang} from '../../redux/actions/actions'
+
 import {
     HOME_ROUTE,
     ADOPT_ROUTE,
@@ -11,6 +16,7 @@ import {
     RESOURCE_CAT_ROUTE,
     RESOURCE_DOG_ROUTE,
     LOGIN_ROUTE,
+    SIGNUP_ROUTE,
     ADD_APET_ROUTE,
     CONTACT_US_ROUTE,
 } from '../../routes'
@@ -18,6 +24,9 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import logo from '../../images/logo.ico'
 
 export default function NavBar() {
+
+    const globaleLang = useSelector(state => state.langReducer)
+    const dispatch = useDispatch();
     const { t } = useTranslation()
     const [dirProperties, setDir] = useState({
         dir: 'ltr',
@@ -29,11 +38,13 @@ export default function NavBar() {
         i18next.changeLanguage(lang)
     }
     const handelOption = (e) => {
+        localStorage.setItem('lang',e.target.value)
+        dispatch(selectedLang(e.target.value))
         selectedLanguage(e.target.value)
     }
 
     const handelDir = () => {
-        if (localStorage.getItem('i18nextLng') !== 'en') {
+        if (localStorage.getItem('lang')!== 'en' && localStorage.getItem('lang') !== null ) {
             const newDir = 'rtl'
             const newClassName = 'mr-auto'
             const newtextDir = 'text-right'
@@ -56,17 +67,18 @@ export default function NavBar() {
 
     useEffect(() => {
         handelDir()
-    }, [localStorage.getItem('i18nextLng')])
+    },[globaleLang])
 
     return (
         <div dir={dirProperties.dir}>
-            <Router>
+            <h1>{localStorage.getItem('lang')}</h1>
+            {/* <Router> */}
                 <Navbar className={`theme-color ${dirProperties.textDir} p-0 border-0 `} expand="lg">
                     <Navbar.Brand as={NavLink} to={HOME_ROUTE}>
                         <img src={logo} className='ml-1 mr-1' width="55px" height="55px" alt="" />
                     </Navbar.Brand>
-                    <Navbar.Toggle />
-                    <Navbar.Collapse  >
+                    <Navbar.Toggle className="border-0 text-light"><FontAwesomeIcon icon={faBars}/></Navbar.Toggle>
+                    <Navbar.Collapse   >
                         <Nav
                             className={` text-light  ${dirProperties.className}`}
                         >
@@ -78,7 +90,7 @@ export default function NavBar() {
                                     borderBottom: '2px solid white',
                                 }}
                                 exact
-                                className="ml-4 mr-4 p-0 text-light"
+                                className="m-3 p-0 text-light"
                             >
                                 {t('navbar.home')}
                             </Nav.Link>
@@ -90,7 +102,7 @@ export default function NavBar() {
                                     borderBottom: '2px solid white',
                                 }}
                                 exact
-                                className="ml-4 mr-4 p-0 text-light"
+                                className="m-3 p-0 text-light"
                             >
                                 {t('navbar.about')}
                             </Nav.Link>
@@ -103,7 +115,7 @@ export default function NavBar() {
                                     borderBottom: '2px solid white',
                                 }}
                                 exact
-                                className="ml-4 mr-4 p-0 text-light"
+                                className="m-3 p-0 text-light"
                             >
                                 {t('navbar.adopt')}
                             </Nav.Link>
@@ -115,14 +127,14 @@ export default function NavBar() {
                                 }}
                                 exact
                                 to={ADD_APET_ROUTE}
-                                className="ml-4 mr-4 p-0 text-light"
+                                className="m-3 p-0 text-light"
                             >
                                 {t('navbar.addapet')}
                             </Nav.Link>
                             <Dropdown  >
                                 <Dropdown.Toggle
 
-                                    className="text-light bg-transparent  border-0 p-0 ml-4 mr-4 " 
+                                    className="text-light bg-transparent  border-0 p-0 m-3 " 
                                     >
                                     {t('navbar.resources.0')}
                                 </Dropdown.Toggle>
@@ -140,7 +152,7 @@ export default function NavBar() {
                                 }}
                                 exact
                                 to={CONTACT_US_ROUTE}
-                                className="ml-4 mr-4 p-0 text-light"
+                                className="m-3 p-0 text-light"
                             >
                                 {t('navbar.contact')}
                             </Nav.Link>
@@ -152,7 +164,7 @@ export default function NavBar() {
                                 }}
                                 exact
                                 to={LOGIN_ROUTE}
-                                className="ml-4 mr-4 p-0 text-light"
+                                className="m-3 p-0 text-light"
                             >
                                 {t('navbar.logIn')}
                             </Nav.Link>
@@ -163,13 +175,13 @@ export default function NavBar() {
                                     borderBottom: '2px solid white',
                                 }}
                                 exact
-                                to={LOGIN_ROUTE}
-                                className="ml-4 mr-4 p-0 text-light"
+                                to={SIGNUP_ROUTE}
+                                className="m-3 p-0 text-light"
                             >
-                                {t('navbar.logIn')}
+                                {t('navbar.signUp')}
                             </Nav.Link>
                                 <Form.Control
-                                    className=" fa ml-4 mr-4 text-light text-danger bg-transparent border-0 "
+                                    className=" fa m-3 text-light text-danger shadow-none bg-transparent border-0 "
                                     onChange={handelOption}
                                     as="select"
                                     size="sm"
@@ -186,13 +198,13 @@ export default function NavBar() {
                                     </option>
                                     <option className='text-danger' value="en">English</option>
                                     <option className='text-danger' value="ar">عربي</option>
-                                    <option className='text-danger' value="krd">كردى</option>
+                                    <option className='text-danger' value="kr">كوردى</option>
                                 </Form.Control>
                           
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
-            </Router>
+            {/* </Router> */}
         </div>
     )
 }
