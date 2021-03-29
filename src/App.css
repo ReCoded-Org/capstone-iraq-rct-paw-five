@@ -32,4 +32,6 @@ input:-webkit-autofill
   background: linear-gradient(45deg, #ff4a71, #ff8e53 100%);
   border-radius: 25px !important;
 }
-
+.custom-select{
+  background: none !important;
+}

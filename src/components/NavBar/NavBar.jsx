@@ -5,8 +5,8 @@ import { useSelector, useDispatch} from 'react-redux'
 import { useTranslation } from 'react-i18next'
 import i18next from 'i18next'
 import { NavLink } from 'react-router-dom'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 import {selectedLang} from '../../redux/actions/actions'
 
 import {
@@ -71,13 +71,12 @@ export default function NavBar() {
 
     return (
         <div dir={dirProperties.dir}>
-            <h1>{localStorage.getItem('lang')}</h1>
-            {/* <Router> */}
+
                 <Navbar className={`theme-color ${dirProperties.textDir} p-0 border-0 `} expand="lg">
                     <Navbar.Brand as={NavLink} to={HOME_ROUTE}>
                         <img src={logo} className='ml-1 mr-1' width="55px" height="55px" alt="" />
                     </Navbar.Brand>
-                    <Navbar.Toggle className="border-0 text-light">/</Navbar.Toggle>
+                    <Navbar.Toggle className="border-0 text-light"><FontAwesomeIcon icon={faBars}/></Navbar.Toggle>
                     <Navbar.Collapse   >
                         <Nav
                             className={` text-light  ${dirProperties.className}`}
@@ -90,7 +89,7 @@ export default function NavBar() {
                                     borderBottom: '2px solid white',
                                 }}
                                 exact
-                                className="m-3 p-0 text-light"
+                                className="m-3  p-0 text-light"
                             >
                                 {t('navbar.home')}
                             </Nav.Link>
@@ -134,7 +133,7 @@ export default function NavBar() {
                             <Dropdown  >
                                 <Dropdown.Toggle
 
-                                    className="text-light bg-transparent  border-0 p-0 m-3 " 
+                                    className="text-light bg-transparent shadow-none  border-0 p-0 m-3 " 
                                     >
                                     {t('navbar.resources.0')}
                                 </Dropdown.Toggle>
@@ -181,7 +180,7 @@ export default function NavBar() {
                                 {t('navbar.signUp')}
                             </Nav.Link>
                                 <Form.Control
-                                    className=" fa m-3 text-light text-danger shadow-none bg-transparent border-0 "
+                                    className=" fa   m-3 text-light text-danger shadow-none bg-transparent  border-0 "
                                     onChange={handelOption}
                                     as="select"
                                     size="sm"
