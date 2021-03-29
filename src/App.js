@@ -11,6 +11,7 @@ import {
     SIGNUP_ROUTE,
     CONTACT_US_ROUTE,
 } from './routes'
+import './App.css'
 
 function App() {
     return (

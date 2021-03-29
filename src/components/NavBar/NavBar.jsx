@@ -5,8 +5,8 @@ import { useSelector, useDispatch} from 'react-redux'
 import { useTranslation } from 'react-i18next'
 import i18next from 'i18next'
 import { NavLink } from 'react-router-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faBars } from '@fortawesome/free-solid-svg-icons'
 import {selectedLang} from '../../redux/actions/actions'
 
 import {
@@ -77,7 +77,7 @@ export default function NavBar() {
                     <Navbar.Brand as={NavLink} to={HOME_ROUTE}>
                         <img src={logo} className='ml-1 mr-1' width="55px" height="55px" alt="" />
                     </Navbar.Brand>
-                    <Navbar.Toggle className="border-0 text-light"><FontAwesomeIcon icon={faBars}/></Navbar.Toggle>
+                    <Navbar.Toggle className="border-0 text-light">/</Navbar.Toggle>
                     <Navbar.Collapse   >
                         <Nav
                             className={` text-light  ${dirProperties.className}`}
