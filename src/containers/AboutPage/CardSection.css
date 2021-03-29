@@ -1,0 +1,3 @@
+.d-flex > div {
+    flex-basis: calc(34% - 50px);
+}

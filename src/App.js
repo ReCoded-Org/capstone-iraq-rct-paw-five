@@ -2,8 +2,9 @@ import React from 'react'
 // import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 //  import NavBar from './components/NavBar/NavBar'
 import AboutUs from './components/AboutUs/AboutUs'
+
 // import {
-// import AboutUs from './components/AboutUs/AboutUs';
+// import CardSection from './containers/AboutPage/CardSection';
 // HOME_ROUTE,
 //     ADOPT_ROUTE,
 //     ABOUT_ROUTE,
@@ -16,7 +17,9 @@ import AboutUs from './components/AboutUs/AboutUs'
 
 function App() {
     return (
-        <AboutUs />
+        <div>
+            <AboutUs />
+        </div>
         // <Router>
         //     <NavBar />
         //     <Switch>
