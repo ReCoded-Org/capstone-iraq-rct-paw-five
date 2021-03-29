@@ -44,7 +44,7 @@ export default function NavBar() {
     }
 
     const handelDir = () => {
-        if (localStorage.getItem('lang')!== 'en') {
+        if (localStorage.getItem('lang')!== 'en'  && localStorage.getItem('lang') !==null) {
             const newDir = 'rtl'
             const newClassName = 'mr-auto'
             const newtextDir = 'text-right'
