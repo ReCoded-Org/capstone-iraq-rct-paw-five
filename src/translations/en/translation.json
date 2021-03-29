@@ -4,6 +4,7 @@
     "navbar": {
         "home": "Home",
         "adopt":"Adopt",
+        "addapet":"Add a pet",
         "contact": "Contact Us",
         "resources": [
             "Resources",
