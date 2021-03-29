@@ -28,10 +28,6 @@
     background-color: #f2f2f2;
     min-height: 70vh;
 }
-.story-section {
-    padding-left: 4em;
-    padding-top: 1em;
-}
 
 .story-pic2 {
     margin-left: -3em;
@@ -81,7 +77,4 @@
     font-weight: bold;
     font-size: 14px;
     margin-top: 2.5em;
-}
-.our-members-section {
-    margin: 3em;
 }

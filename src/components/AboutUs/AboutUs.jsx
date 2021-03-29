@@ -50,7 +50,7 @@ function AboutUs() {
             </Row>
 
             {/* Story Section */}
-            <Row className="story-section grey-bg">
+            <Row className="story-section grey-bg pl-4 pt-1">
                 <Col>
                     <h6 className="main-title-s2 ml-5">
                         <img src={OverlineMarkIconPurple} alt="OverlineMark" />{' '}
@@ -173,7 +173,7 @@ function AboutUs() {
                 </Col>
             </Row>
             {/* our members */}
-            <Row className="our-members-section">
+            <Row className="our-members-section m-3">
                 <Col>
                     <h6 className="main-title-s2 ml-5 mt-4">
                         <img src={OverlineMarkIconPurple} alt="OverlineMark" />{' '}
