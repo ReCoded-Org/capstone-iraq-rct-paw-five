@@ -1,5 +1,6 @@
 export const HOME_ROUTE = '/';
 export const ADOPT_ROUTE= '/adopt';
+export const ADD_APET_ROUTE= '/addpet';
 export const ABOUT_ROUTE= '/about';
 export const RESOURCE_CAT_ROUTE= '/cat';
 export const RESOURCE_DOG_ROUTE= '/dog';
