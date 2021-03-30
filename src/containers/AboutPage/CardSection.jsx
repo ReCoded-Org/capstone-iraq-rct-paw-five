@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Container } from 'react-bootstrap'
+import { Card, Container, Row } from 'react-bootstrap'
 import Ellipsemember from '../../images/About-us/Ellipse 15.svg'
 import MemberBg from '../../images/About-us/bgmembers.svg'
 import Facebook from '../../images/About-us/facebook 1.svg'
@@ -13,55 +13,55 @@ const CardSection = () => {
     const cardInfo = [
         {
             MemberBg: { MemberBg },
-            Ellipsemember: { Ellipsemember },
-            Youtube: { Youtube },
-            Facebook: { Facebook },
-            Twitter: { Twitter },
-            Instagram: { Instagram },
+            Ellipsemember: '',
+            Youtube: 'https://www.youtube.com/',
+            Facebook: 'https://www.facebook.com/',
+            Twitter: 'https://www.twitter.com/',
+            Instagram: 'https://www.instagram.com/',
             title: 'Sara Lara',
             text:
                 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore ex magna aliqua Ut enim illum ad minim veniam, quis ea exercitation ullamco cillum ut enim dolore',
         },
         {
             MemberBg: { MemberBg },
-            Ellipsemember: { Ellipsemember },
-            Youtube: { Youtube },
-            Facebook: { Facebook },
-            Twitter: { Twitter },
-            Instagram: { Instagram },
+            Ellipsemember: '',
+            Youtube: 'https://www.youtube.com/',
+            Facebook: 'https://www.facebook.com/',
+            Twitter: 'https://www.twitter.com/',
+            Instagram: 'https://www.instagram.com/',
             title: 'Sara Lara',
             text:
                 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore ex magna aliqua Ut enim illum ad minim veniam, quis ea exercitation ullamco cillum ut enim dolore',
         },
         {
             MemberBg: { MemberBg },
-            Ellipsemember: { Ellipsemember },
-            Youtube: { Youtube },
-            Facebook: { Facebook },
-            Twitter: { Twitter },
-            Instagram: { Instagram },
+            Ellipsemember: '',
+            Youtube: 'https://www.youtube.com/',
+            Facebook: 'https://www.facebook.com/',
+            Twitter: 'https://www.twitter.com/',
+            Instagram: 'https://www.instagram.com/',
             title: 'Sara Lara',
             text:
                 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore ex magna aliqua Ut enim illum ad minim veniam, quis ea exercitation ullamco cillum ut enim dolore',
         },
         {
             MemberBg: { MemberBg },
-            Ellipsemember: { Ellipsemember },
-            Youtube: { Youtube },
-            Facebook: { Facebook },
-            Twitter: { Twitter },
-            Instagram: { Instagram },
+            Ellipsemember: '',
+            Youtube: 'https://www.youtube.com/',
+            Facebook: 'https://www.facebook.com/',
+            Twitter: 'https://www.twitter.com/',
+            Instagram: 'https://www.instagram.com/',
             title: 'Sara Lara',
             text:
                 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore ex magna aliqua Ut enim illum ad minim veniam, quis ea exercitation ullamco cillum ut enim dolore',
         },
         {
             MemberBg: { MemberBg },
-            Ellipsemember: { Ellipsemember },
-            Youtube: { Youtube },
-            Facebook: { Facebook },
-            Twitter: { Twitter },
-            Instagram: { Instagram },
+            Ellipsemember: '',
+            Youtube: 'https://www.youtube.com/',
+            Facebook: 'https://www.facebook.com/',
+            Twitter: 'https://www.twitter.com/',
+            Instagram: 'https://www.instagram.com/',
             title: 'Sara Lara',
             text:
                 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore ex magna aliqua Ut enim illum ad minim veniam, quis ea exercitation ullamco cillum ut enim dolore',
@@ -70,31 +70,33 @@ const CardSection = () => {
             MemberBg: { MemberBg },
             Ellipsemember:
                 'https://cdn.vox-cdn.com/thumbor/M1qLla2h-V_2yV_Z4nF_NHH_tjA=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/18286450/usa_today_12495932.jpg',
-            Youtube: { Youtube },
-            Facebook: { Facebook },
-            Twitter: { Twitter },
-            Instagram: { Instagram },
+            Youtube: 'https://www.youtube.com/',
+            Facebook: 'https://www.facebook.com/',
+            Twitter: 'https://www.twitter.com/',
+            Instagram: 'https://www.instagram.com/',
             title: 'Sara Lara',
             text:
                 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore ex magna aliqua Ut enim illum ad minim veniam, quis ea exercitation ullamco cillum ut enim dolore',
         },
     ]
     const renderCard = (card, index) => (
-        <Card style={{ width: '10rem' }} key={index} className="m-3 box">
+        <Card style={{ width: '25rem' }} key={index} className="m-3 box">
             <Card.Header
                 // style={{ height: '125px', backgroundImage: { MemberBg } }}
-                style={{
-                    height: '125px',
-                    backgroundColor: '#f7b42c',
-                    backgroundImage:
-                        'linear-gradient(315deg, #f7b42c 0%, #fc575e 74%)',
-                }}
-                className="aqua-gradient text-center"
+                // style={{
+                //     height: '125px',
+                //     backgroundColor: '#f7b42c',
+                //     backgroundImage:
+                //         'linear-gradient(315deg, #f7b42c 0%, #fc575e 74%)',
+                // }}
+                className="aqua-gradient text-center "
             >
                 <Card.Img
                     style={{}}
                     variant="top"
-                    src={Ellipsemember}
+                    src={
+                        card.Ellipsemember ? card.Ellipsemember : Ellipsemember
+                    }
                     alt="Ellipsemember"
                     className="w-50 px-3 h-100 rounded-circle mt-5"
                 />
@@ -105,22 +107,26 @@ const CardSection = () => {
                     {card.text}
                     <ul className="list-unstyled list-inline font-small mt-3">
                         <li className="list-inline-item pr-2">
-                            <a href="#!" className="white-text">
+                            <a
+                                href={card.Facebook}
+                                target="_blank"
+                                rel="noreferrer"
+                            >
                                 <img src={Facebook} alt="facebook" />{' '}
                             </a>
                         </li>
                         <li className="list-inline-item pr-2">
-                            <a href="#!" className="white-text">
+                            <a href={card.Twitter}>
                                 <img src={Twitter} alt="twitter" />{' '}
                             </a>
                         </li>
                         <li className="list-inline-item">
-                            <a href="#!" className="white-text">
+                            <a href={card.Instagram}>
                                 <img src={Instagram} alt="Instagram" />{' '}
                             </a>
                         </li>
                         <li className="list-inline-item">
-                            <a href="#!" className="white-text">
+                            <a href={card.Youtube}>
                                 <img src={Youtube} alt="Youtube" />{' '}
                             </a>
                         </li>
@@ -131,12 +137,8 @@ const CardSection = () => {
     )
 
     return (
-        <Container
-            style={{ width: '90%' }}
-            fluid
-            className="d-flex flex-row flex-wrap avatar-container"
-        >
-            {cardInfo.map(renderCard)}
+        <Container fluid style={{ width: '90%' }}>
+            <Row>{cardInfo.map(renderCard)}</Row>
         </Container>
     )
 }
