@@ -116,17 +116,29 @@ const CardSection = () => {
                             </a>
                         </li>
                         <li className="list-inline-item pr-2">
-                            <a href={card.Twitter}>
+                            <a
+                                href={card.Twitter}
+                                target="_blank"
+                                rel="noreferrer"
+                            >
                                 <img src={Twitter} alt="twitter" />{' '}
                             </a>
                         </li>
                         <li className="list-inline-item">
-                            <a href={card.Instagram}>
+                            <a
+                                href={card.Instagram}
+                                target="_blank"
+                                rel="noreferrer"
+                            >
                                 <img src={Instagram} alt="Instagram" />{' '}
                             </a>
                         </li>
                         <li className="list-inline-item">
-                            <a href={card.Youtube}>
+                            <a
+                                href={card.Youtube}
+                                target="_blank"
+                                rel="noreferrer"
+                            >
                                 <img src={Youtube} alt="Youtube" />{' '}
                             </a>
                         </li>
