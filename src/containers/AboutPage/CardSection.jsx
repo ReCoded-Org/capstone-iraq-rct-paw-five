@@ -83,27 +83,18 @@ const CardSection = () => {
         },
     ]
     const renderCard = (card, index) => (
-        <Card
-            style={{ width: '10rem', height: 'auto' }}
-            key={index}
-            className="m-3 box"
-        >
+        <Card style={{ width: '10rem' }} key={index} className="m-3 h-auto box">
             <Card.Header
-                // style={{ height: '150px', backgroundImage: { MemberBg } }}
+                // style={{ backgroundImage: { MemberBg } }}
                 style={{ height: '150px', backgroundColor: '#E79559' }}
-                className="aqua-gradient"
+                className="aqua-gradient text-center"
             >
                 <Card.Img
-                    style={{
-                        height: '120px',
-                        width: '120px',
-                        borderRadius: '50%',
-                        marginLeft: '6em',
-                    }}
+                    style={{}}
                     variant="top"
                     src={card.memberImg}
                     alt="Ellipsemember"
-                    className="circle mt-5"
+                    className="w-50 px-3 h-100 rounded-circle mt-5"
                 />
             </Card.Header>
             <Card.Body className="text-center mt-3">
