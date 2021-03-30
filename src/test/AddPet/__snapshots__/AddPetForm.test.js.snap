@@ -1,0 +1,356 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="py-1 px-5"
+  style={
+    Object {
+      "backgroundColor": "#f2f2f2",
+    }
+  }
+>
+  <div
+    className="px-lg-5"
+  >
+    <h2
+      className="font-weight-bold text-center text-lg-left mb-5 mt-4"
+      style={
+        Object {
+          "color": "var(--orange)",
+        }
+      }
+    >
+      add-pet.pets-info
+    </h2>
+    <form
+      className=""
+      onSubmit={true}
+    >
+      <div
+        className="form-row"
+      >
+        <div
+          className="col-xl col-lg"
+        >
+          <input
+            className="mb-5 form-borders rounded-0 border-0 w-75 w-form form-control"
+            name="petName"
+            onBlur={true}
+            onChange={true}
+            placeholder="add-pet.pet-name"
+          />
+          <div
+            className="mb-5"
+          >
+             
+          </div>
+        </div>
+        <div
+          className="a col-xl col-lg"
+        >
+          <input
+            className="mb-5 form-borders rounded-0 border-0 w-75 w-form form-control"
+            name="age"
+            onBlur={true}
+            onChange={true}
+            placeholder="add-pet.pet-age"
+          />
+          <div
+            className="mb-5"
+          >
+             
+          </div>
+        </div>
+      </div>
+      <div
+        className="form-row"
+      >
+        <div
+          className="col-xl col-lg"
+        >
+          <input
+            className="mb-5 form-borders rounded-0 border-0 w-75 w-form form-control"
+            name="species"
+            onBlur={true}
+            onChange={true}
+            placeholder="add-pet.pet-species"
+          />
+          <div
+            className="mb-5"
+          >
+             
+          </div>
+        </div>
+        <div
+          className="col-xl col-lg"
+        >
+          <input
+            className="mb-5 form-borders rounded-0 border-0 w-75 w-form form-control"
+            name="weight"
+            onBlur={true}
+            onChange={true}
+            placeholder="add-pet.pet-weight"
+          />
+          <div
+            className="mb-5"
+          >
+             
+          </div>
+        </div>
+      </div>
+      <div
+        className="form-row"
+      >
+        <div
+          className="col-xl col-lg"
+        >
+          <input
+            className="mb-5 form-borders rounded-0 border-0 w-75 w-form form-control"
+            name="color"
+            onBlur={true}
+            onChange={true}
+            placeholder="add-pet.pet-color"
+          />
+          <div
+            className="mb-5"
+          >
+             
+          </div>
+        </div>
+        <div
+          className="col-xl col-lg"
+        >
+          <p>
+            add-pet.gender
+          </p>
+          <div
+            className="d-flex justify-content-start mb-4"
+          >
+            <div
+              className="mr-3 form-check"
+            >
+              <input
+                className="form-check-input position-static"
+                disabled={false}
+                name="gender"
+                onBlur={true}
+                onChange={[Function]}
+                type="radio"
+                value="Male"
+              />
+            </div>
+            <label
+              className="mr-3 form-label"
+            >
+              add-pet.male
+            </label>
+            <div
+              className="mr-3 form-check"
+            >
+              <input
+                className="form-check-input position-static"
+                disabled={false}
+                name="gender"
+                onChange={[Function]}
+                type="radio"
+                value="Female"
+              />
+            </div>
+            <label
+              className="mr-3 form-label"
+            >
+              add-pet.female
+            </label>
+          </div>
+          <div
+            className="mb-5"
+          >
+             
+          </div>
+        </div>
+      </div>
+      <div
+        className="form-row"
+      >
+        <div
+          className="col-xl col-lg"
+        >
+          <input
+            className="mb-5 form-borders rounded-0 border-0 w-75 w-form form-control"
+            name="story"
+            onBlur={true}
+            onChange={true}
+            placeholder="add-pet.pet-story"
+          />
+          <div
+            className="mb-5"
+          >
+             
+          </div>
+        </div>
+        <div
+          className="col-xl col-lg"
+        >
+          <div>
+            <label
+              className=" text-center d-flex flex-column align-items-center justify-content-center bg-transparent border rounded uplod-border rounded-3 w-75 w-form mt-3 form-label"
+              htmlFor="file"
+            >
+              <p
+                className="d-block text-center my-auto py-2"
+              >
+                add-pet.upload-photo
+              </p>
+            </label>
+          </div>
+          <input
+            accept="images/*"
+            className="d-none"
+            id="file"
+            name="file"
+            onChange={[Function]}
+            type="file"
+          />
+          <img
+            alt="your pet"
+            className="d-block mt-4 mx-auto"
+            height="200"
+            src={true}
+            width="200"
+          />
+        </div>
+      </div>
+      <h2
+        className="font-weight-bold text-center text-lg-left mb-5 mt-5"
+        style={
+          Object {
+            "color": "var(--orange)",
+          }
+        }
+      >
+        add-pet.contact-info
+      </h2>
+      <div
+        className="form-row"
+      >
+        <div
+          className="col-xl col-lg"
+        >
+          <input
+            className="mb-5 form-borders rounded-0 border-0 w-75 w-form form-control"
+            name="ownerName"
+            onBlur={true}
+            onChange={true}
+            placeholder="add-pet.ownerName"
+          />
+          <div
+            className="mb-5"
+          >
+             
+          </div>
+        </div>
+        <div
+          className="addpet-row-space col-xl col-lg"
+        >
+          <input
+            className=" mb-5 form-borders rounded-0 border-0 w-75 w-form form-control"
+            name="aboutOwner"
+            onBlur={true}
+            onChange={true}
+            placeholder="add-pet.aboutOwner"
+          />
+        </div>
+      </div>
+      <div
+        className="form-row"
+      >
+        <div
+          className="col-xl col-lg"
+        >
+          <input
+            className="mb-5 form-borders rounded-0 border-0 w-75 w-form form-control"
+            name="email"
+            onBlur={true}
+            onChange={true}
+            placeholder="add-pet.email"
+            type="email"
+          />
+          <div
+            className="mb-5"
+          >
+             
+          </div>
+        </div>
+        <div
+          className="col-xl col-lg"
+        >
+          <input
+            className="mb-5 form-borders rounded-0 border-0 w-75 w-form form-control"
+            name="phoneNumber"
+            onBlur={true}
+            onChange={true}
+            placeholder="add-pet.phoneNumber"
+          />
+          <div
+            className="mb-5"
+          >
+             
+          </div>
+        </div>
+      </div>
+      <div
+        className="form-row"
+      >
+        <div
+          className="col-xl col-lg"
+        >
+          <input
+            className="mb-5 form-borders rounded-0 border-0 w-75 w-form form-control"
+            name="city"
+            onBlur={true}
+            onChange={true}
+            placeholder="add-pet.city"
+          />
+          <div
+            className="mb-5"
+          >
+             
+          </div>
+        </div>
+        <div
+          className="addpet-row-space col-xl col-lg"
+        >
+          <input
+            className="mb-5 form-borders rounded-0 border-0 w-75 w-form form-control"
+            name="address"
+            onBlur={true}
+            onChange={true}
+            placeholder="add-pet.address"
+          />
+          <div
+            className="mb-5"
+          >
+             
+          </div>
+        </div>
+      </div>
+      <div
+        className="d-flex d-flex justify-content-center mr-lg-5"
+      >
+        <button
+          className="btn px-5 mr-lg-5 my-4 text-dark border-0 btn btn-primary"
+          disabled={false}
+          style={
+            Object {
+              "backgroundColor": "#e79559",
+            }
+          }
+          type="submit"
+        >
+          add-pet.submit
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+`;
