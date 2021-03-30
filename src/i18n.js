@@ -10,28 +10,29 @@ import translationKrd from './translations/krd/translation.json'
 const language = ['en', 'kr', 'ar']
 
 const resources = {
-    en: {
-        translation: translationEn,
-    },
-    ar: {
-        translation: translationAr,
-    },
-    krd: {
-        translation: translationKrd,
-    },
+  en: {
+    translation: translationEn,
+  },
+  ar: {
+    translation: translationAr,
+  },
+  krd: {
+    translation: translationKrd,
+  },
 }
 
-i18n.use(Backend)
-    .use(LanguageDetector)
-    .use(initReactI18next)
-    .init({
-        resources,
-        // lng: 'en',
-        whitelist: language,
+i18n
+  .use(Backend)
+  .use(LanguageDetector)
+  .use(initReactI18next)
+  .init({
+    resources,
+    // lng: 'en',
+    whitelist: language,
 
-        interpolation: {
-            escapeValue: false,
-        },
-    })
+    interpolation: {
+      escapeValue: false,
+    },
+  })
 
 export default i18n

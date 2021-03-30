@@ -11,14 +11,14 @@ import './i18n'
 const store = createStore(AllReducers)
 
 ReactDOM.render(
-    <Provider store={store}>
-        <React.StrictMode>
-            <Suspense fallback={<div>Loding ~~~~</div>}>
-                <App />
-            </Suspense>
-        </React.StrictMode>
-    </Provider>,
-    document.getElementById('root')
+  <Provider store={store}>
+    <React.StrictMode>
+      <Suspense fallback={<div>Loding ~~~~</div>}>
+        <App />
+      </Suspense>
+    </React.StrictMode>
+  </Provider>,
+  document.getElementById('root')
 )
 
 // If you want to start measuring performance in your app, pass a function
