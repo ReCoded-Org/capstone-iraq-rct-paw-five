@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import NavBar from './components/NavBar/NavBar'
+import NavBar from './components/NavBar'
 import {
   HOME_ROUTE,
   ADOPT_ROUTE,
@@ -11,6 +11,7 @@ import {
   SIGNUP_ROUTE,
   CONTACT_US_ROUTE,
 } from './routes'
+import './App.css'
 
 function App() {
   return (

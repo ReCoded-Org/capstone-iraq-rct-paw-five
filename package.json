@@ -19,7 +19,10 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "redux": "^4.0.5",
-    "web-vitals": "^1.0.1"
+    "web-vitals": "^1.0.1",
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14"
   },
   "scripts": {
     "start": "react-scripts start",
