@@ -34,3 +34,16 @@ input:-webkit-autofill {
 .custom-select {
   background: none !important;
 }
+.form-control:focus,
+.form-control:active,
+.form-control {
+  outline: none !important;
+  box-shadow: none;
+}
+.btn:focus,
+.btn:active,
+.btn:hover,
+.btn {
+  outline: none !important;
+  box-shadow: none;
+}
