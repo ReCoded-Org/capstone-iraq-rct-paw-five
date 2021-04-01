@@ -1,23 +1,22 @@
 .form-borders {
-    background-color: #f2f2f2 !important;
-    border-bottom: 2px solid #e79559 !important;
+  background-color: #f2f2f2 !important;
+  border-bottom: 2px solid #e79559 !important;
+}
+.uplod-border {
+  border: 1px solid #e79559 !important;
+  cursor: pointer;
+}
+
+@media (min-width: 992px) {
+  .cat-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
   }
-  .uplod-border {
-    border: 1px solid #e79559 !important;
-    cursor: pointer;
+}
+@media (max-width: 992px) {
+  .w-form {
+    width: 100% !important;
   }
-   
-  @media (min-width: 992px) {
-    .cat-image {
-      position: absolute;
-      top: 0;
-      right: 0;
-      z-index: 10;
-    }
-  }
-  @media (max-width: 992px) {
-    .w-form {
-      width: 100% !important;
-    }
-  }
-  
+}
