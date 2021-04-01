@@ -1,6 +1,8 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import NavBar from './components/NavBar'
+import Footer from './components/Footer'
+import ContactUs from './containers/ContactUs'
 import {
   HOME_ROUTE,
   ADOPT_ROUTE,
@@ -24,11 +26,12 @@ function App() {
         <Route path={SIGNUP_ROUTE}>{/** <SIGNUP_ROUTE/> */}</Route>
         <Route path={RESOURCE_CAT_ROUTE}>{/** <RESOURCE_CAT_ROUTE/> */}</Route>
         <Route path={RESOURCE_DOG_ROUTE}>{/** <RESOURCE_DOG_ROUTE/> */}</Route>
-        <Route path={CONTACT_US_ROUTE}>{/** <CONTACT_US_ROUTE/> */}</Route>
+        <Route path={CONTACT_US_ROUTE} component={ContactUs} />
         <Route path={HOME_ROUTE} exact>
           {/** <HOME_ROUTE/> */}
         </Route>
       </Switch>
+      <Footer />
     </Router>
   )
 }

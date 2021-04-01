@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+
 import { Navbar, Nav, Dropdown, Form } from 'react-bootstrap'
 import { useSelector, useDispatch } from 'react-redux'
 import { useTranslation } from 'react-i18next'
@@ -72,6 +73,8 @@ export default function NavBar() {
 
   return (
     <div dir={dirProperties.dir}>
+      <h1>{localStorage.getItem('lang')}</h1>
+      {/* <Router> */}
       <Navbar
         className={`theme-color ${dirProperties.textDir} p-0 border-0 `}
         expand="lg"
@@ -98,7 +101,7 @@ export default function NavBar() {
                 borderBottom: '2px solid white',
               }}
               exact
-              className="m-3  p-0 text-light"
+              className="m-3 p-0 text-light"
             >
               {t('navbar.home')}
             </Nav.Link>
@@ -140,7 +143,7 @@ export default function NavBar() {
               {t('navbar.addapet')}
             </Nav.Link>
             <Dropdown>
-              <Dropdown.Toggle className="text-light bg-transparent shadow-none  border-0 p-0 m-3 ">
+              <Dropdown.Toggle className="text-light bg-transparent  border-0 p-0 m-3 ">
                 {t('navbar.resources.0')}
               </Dropdown.Toggle>
               <Dropdown.Menu>
@@ -198,7 +201,7 @@ export default function NavBar() {
               {t('navbar.signUp')}
             </Nav.Link>
             <Form.Control
-              className=" fa   m-3 text-light text-danger shadow-none bg-transparent  border-0 "
+              className=" fa m-3 text-light text-danger shadow-none bg-transparent border-0 "
               onChange={handelOption}
               as="select"
               size="sm"

@@ -5,9 +5,7 @@ export function selectedLang(lang) {
   }
 }
 
-//   to acept export statement and pass eslintrc
-
-export function text(lang) {
+export function anotheraction(lang) {
   return {
     type: 'SELECTED_LANG',
     payload: lang,

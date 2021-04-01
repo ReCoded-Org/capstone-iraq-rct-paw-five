@@ -13,7 +13,7 @@ const store = createStore(AllReducers)
 ReactDOM.render(
   <Provider store={store}>
     <React.StrictMode>
-      <Suspense fallback={<div>Loding ~~~~</div>}>
+      <Suspense fallback={<div>Loding...</div>}>
         <App />
       </Suspense>
     </React.StrictMode>

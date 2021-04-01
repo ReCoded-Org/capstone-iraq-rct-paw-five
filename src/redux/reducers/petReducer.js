@@ -7,7 +7,6 @@ export const langReducer = (state = localStorage.getItem('lang'), action) => {
   }
 }
 
-//   to acept export statement and pass eslintrc
 export const test = (state = localStorage.getItem('lang'), action) => {
   switch (action.type) {
     case 'SELECTED_LANG':
