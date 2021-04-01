@@ -1,9 +1,11 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import NavBar from './components/NavBar'
+import AddPet from './components/AddPet/AddPet'
 import {
   HOME_ROUTE,
   ADOPT_ROUTE,
+  ADD_APET_ROUTE,
   ABOUT_ROUTE,
   RESOURCE_CAT_ROUTE,
   RESOURCE_DOG_ROUTE,
@@ -19,6 +21,7 @@ function App() {
       <NavBar />
       <Switch>
         <Route path={ADOPT_ROUTE}>{/** <ADOPT_ROUTE/> */}</Route>
+        <Route path={ADD_APET_ROUTE}> <AddPet /> </Route>
         <Route path={ABOUT_ROUTE}>{/** <ABOUT_ROUTE/> */}</Route>
         <Route path={LOGIN_ROUTE}>{/** <LOGIN_ROUTE/> */}</Route>
         <Route path={SIGNUP_ROUTE}>{/** <SIGNUP_ROUTE/> */}</Route>
