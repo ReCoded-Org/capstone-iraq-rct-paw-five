@@ -14,6 +14,7 @@ import {
   CONTACT_US_ROUTE,
 } from './routes'
 import './App.css'
+import Footer from './components/Footer/Footer'
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         <Route path={CONTACT_US_ROUTE}>{/** <CONTACT_US_ROUTE/> */}</Route>
         <Route path={HOME_ROUTE} exact>
           {/** <HOME_ROUTE/> */}
+          <Footer />
         </Route>
       </Switch>
     </Router>

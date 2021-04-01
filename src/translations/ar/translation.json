@@ -37,5 +37,16 @@
     "city": "المدينة",
     "address": "العنوان",
     "submit": "إرسال"
+  },
+  "footer":{
+      "explorLinks":"اكتشف الروابط",
+      "contactInfo":"تواصل معنا",
+      "pageDescription":"Paw-Five هي قاعدة بيانات عبر الإنترنت يمكن البحث فيها عن الحيوانات الأليفة التي تحتاج إلى منازل في جميع محافظات العراق.",
+      "cites":"بغداد, اربيل",
+      "phoneNo":"٠٧٧٠١٢٣٤٥٦٧",
+      "email":" example@example.com",
+      "workTime":" الاحد - الخميس ٩ صباحاً - ٤ مساءً",
+      "copyright":"فريق Paw-five"
   }
+  
 }
