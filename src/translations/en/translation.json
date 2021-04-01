@@ -62,5 +62,10 @@
     "email":" example@example.com",
     "workTime":"sun - Tur 9:00 AM - 4:00 PM",
     "copyright":"2021 Paw-five team"
-  }
+  },
+  "login":{
+    "log-in":" Log in",
+    "google":"Sign in",
+    "facebook":"Sign in"
+}
 }

@@ -7,15 +7,13 @@ import { NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { selectedLang } from '../../redux/actions/actions'
-
+import Login from '../Modals/Login/Login'
 import {
   HOME_ROUTE,
   ADOPT_ROUTE,
   ABOUT_ROUTE,
   RESOURCE_CAT_ROUTE,
   RESOURCE_DOG_ROUTE,
-  LOGIN_ROUTE,
-  SIGNUP_ROUTE,
   ADD_APET_ROUTE,
   CONTACT_US_ROUTE,
 } from '../../routes'
@@ -31,6 +29,7 @@ export default function NavBar() {
     className: 'ml-auto',
     textDir: 'text-left',
   })
+  const [showLoginModal, setShowLoginModal] = useState(false)
 
   const selectedLanguage = lang => {
     i18next.changeLanguage(lang)
@@ -174,26 +173,26 @@ export default function NavBar() {
               {t('navbar.contact')}
             </Nav.Link>
             <Nav.Link
-              as={NavLink}
               activeStyle={{
                 fontWeight: 'bold',
                 borderBottom: '2px solid white',
               }}
-              exact
-              to={LOGIN_ROUTE}
               className="m-3 p-0 text-light"
+              onClick={() => {
+                setShowLoginModal(!showLoginModal)}}
+              
             >
               {t('navbar.logIn')}
             </Nav.Link>
             <Nav.Link
-              as={NavLink}
               activeStyle={{
                 fontWeight: 'bold',
                 borderBottom: '2px solid white',
               }}
-              exact
-              to={SIGNUP_ROUTE}
               className="m-3 p-0 text-light"
+              onClick={() => {
+                setShowLoginModal(!showLoginModal)
+            }}
             >
               {t('navbar.signUp')}
             </Nav.Link>
@@ -223,6 +222,13 @@ export default function NavBar() {
         </Navbar.Collapse>
       </Navbar>
       {/* </Router> */}
+      {showLoginModal ? (
+                <Login
+                    onHide={() => {
+                        setShowLoginModal(!showLoginModal)
+                    }}
+                />
+            ) : null}
     </div>
   )
 }

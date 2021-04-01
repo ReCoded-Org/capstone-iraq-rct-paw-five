@@ -60,5 +60,10 @@
       "email":" example@example.com",
       "workTime":" الاحد - الخميس ٩ صباحاً - ٤ مساءً",
       "copyright":"فريق Paw-five"
-  }
-  }
+  },
+  "login":{
+    "log-in":"تسجيل الدخول",
+    "google":"تسجيل الدخول ",
+    "facebook":"تسجيل الدخول  "
+}
+}
