@@ -39,5 +39,18 @@
     "city": "City",
     "address": "Address",
     "submit": "Submit"
-  }
+  },
+  "contactus":{
+    "title":"Contact Us",
+    "name": "Name",
+    "email":"Email",
+    "phone":"Phone",
+    "subject":"Subject",
+    "submit":"Submit",
+    "required":"this field required",
+    "message":"Mesage",
+    "h1text":"Maxime placeat facere possimus omnis",
+    "h4text":"5,700+",
+    "h6text":"customers served"
+}
 }
