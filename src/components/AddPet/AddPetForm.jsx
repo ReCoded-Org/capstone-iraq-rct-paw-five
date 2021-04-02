@@ -1,7 +1,7 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { useTranslation } from 'react-i18next'
 import { Form, Col, Button } from 'react-bootstrap'
-import PropTypes from 'prop-types'
 import './AddPet.css'
 
 function AddPetForm({
