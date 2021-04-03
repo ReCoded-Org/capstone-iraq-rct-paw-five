@@ -16,12 +16,16 @@ import {
 } from './routes'
 import './App.css'
 import Footer from './components/Footer/Footer'
+import Home from './containers/Home/Home'
 
 function App() {
   return (
     <Router>
       <NavBar />
       <Switch>
+        <Route path={`${ADOPT_ROUTE}/:id`} exact>
+          {/** <ADOPT_ROUTE/> */}
+        </Route>
         <Route path={ADOPT_ROUTE}>{/** <ADOPT_ROUTE/> */}</Route>
         <Route path={ADD_APET_ROUTE}>
           {' '}
@@ -35,11 +39,11 @@ function App() {
         <Route path={CONTACT_US_ROUTE} component={ContacUS}>
           {/** <CONTACT_US_ROUTE/> */}
         </Route>
-        <Route path={HOME_ROUTE} exact>
+        <Route path={HOME_ROUTE} exact component={Home}>
           {/** <HOME_ROUTE/> */}
-          <Footer />
         </Route>
       </Switch>
+      <Footer />
     </Router>
   )
 }

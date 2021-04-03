@@ -1,0 +1,26 @@
+
+.petLocation {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.466);
+    border-radius: 60px;
+}
+
+.detailsBtn {
+    border-radius: 30px;
+    width: 90px;
+    background-color: #ffc533;
+    color: white;
+    transition: background 0.5s;
+    transition:  box-shadow 0.5s;
+    border: none;
+}
+
+.detailsBtn:hover,
+.detailsBtn:active,
+.detailsBtn:focus {
+    background-color: #f85e49 !important;
+    outline: 0 !important; 
+}
+
+
+
