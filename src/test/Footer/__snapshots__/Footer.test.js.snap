@@ -191,7 +191,7 @@ exports[`renders correctly 1`] = `
               <a
                 aria-current={null}
                 className="text-dark"
-                href="/signup"
+                href="/contactus"
                 onClick={[Function]}
               >
                 navbar.contact
