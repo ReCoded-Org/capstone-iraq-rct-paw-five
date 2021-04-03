@@ -25,7 +25,6 @@ import Home from './containers/Home/Home'
 
 import AdoptionPage from './component/adoptionPage/adoptionPage'
 
-
 function App() {
   return (
     <Router>

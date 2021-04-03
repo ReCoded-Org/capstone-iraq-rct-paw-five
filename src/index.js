@@ -5,10 +5,7 @@ import store from './redux/store'
 import './index.css'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
-import AllReducers from './redux/reducers/AllReducers'
 import './i18n'
-
-const store = createStore(AllReducers)
 
 ReactDOM.render(
   <Provider store={store}>
