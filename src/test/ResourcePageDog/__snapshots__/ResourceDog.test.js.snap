@@ -1,0 +1,261 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="container-fluid"
+>
+  <div
+    className="row justify-content-center pt-3  row"
+  >
+    <h3
+      className="font-weight-bold"
+    >
+      Resource.Tips for the First 30 Days of cat Adoption
+    </h3>
+  </div>
+  <div
+    className="row justify-content-center pt-3 pb-5  row"
+  >
+    <img
+      alt=""
+      className=" img-fluid"
+      src="Rectangle 1.svg"
+      style={
+        Object {
+          "height": "auto",
+          "width": "auto",
+        }
+      }
+    />
+  </div>
+  <div
+    className="pt-3 pl-5   row"
+    style={
+      Object {
+        "background": "#F2F2F2",
+      }
+    }
+  >
+     
+    <div
+      className="col"
+    />
+    <div
+      className="col-lg-10 col-sm-12"
+    >
+       
+      <h4>
+        Resource.Before You Bring Your Cat Home
+      </h4>
+    </div>
+    <div
+      className="col"
+    />
+  </div>
+  <div
+    className="row  pt-2 pt-3 pb-4  row"
+    style={
+      Object {
+        "background": "#F2F2F2",
+      }
+    }
+  >
+    <div
+      className="col"
+    />
+    <div
+      className="col-lg-10 col-md-12 col-sm-12"
+    >
+      <ol
+        style={
+          Object {
+            "listStyle": "none",
+          }
+        }
+      >
+        <li>
+          Resource.text1
+        </li>
+        <li
+          className="pt-4"
+        >
+          Resource.text2
+        </li>
+        <li
+          className="pt-4"
+        >
+          Resource.text3
+        </li>
+        <li
+          className="pt-4"
+        >
+          Resource.text4
+        </li>
+      </ol>
+    </div>
+    <div
+      className="col"
+    />
+  </div>
+  <div
+    className="row justify-content-center pt-5 img-background-color pb-5 row"
+  >
+    <img
+      alt=""
+      className=" img-fluid"
+      src="Rectangle 2.svg"
+      style={
+        Object {
+          "height": "auto",
+          "width": "auto",
+        }
+      }
+    />
+  </div>
+  <div
+    className=" pt-5  pl-5  row"
+    style={
+      Object {
+        "background": "#F2F2F2",
+      }
+    }
+  >
+     
+    <div
+      className="col"
+    />
+    <div
+      className="col-lg-10 col-md-12 col-sm-12 col-12"
+    >
+       
+      <h3>
+        Resource.First Day
+      </h3>
+    </div>
+    <div
+      className="col"
+    />
+  </div>
+  <div
+    className="row    row"
+    style={
+      Object {
+        "backgroundColor": "#F2F2F2",
+        "paddingBottom": "170px",
+      }
+    }
+  >
+    <div
+      className="col"
+    />
+    <div
+      className="col-lg-10 col-md-12"
+    >
+      <ol
+        style={
+          Object {
+            "listStyle": "none",
+          }
+        }
+      >
+        <li
+          className="pt-4 "
+        >
+          Resource.text5
+        </li>
+        <li
+          className="pt-4 "
+        >
+          Resource.text6
+        </li>
+      </ol>
+    </div>
+    <div
+      className="col"
+    />
+  </div>
+   
+  <div
+    className="row justify-content-center pb-5 pt-5 row"
+    style={
+      Object {
+        "marginTop": "-200px",
+      }
+    }
+  >
+     
+    <img
+      alt=""
+      className=" img-fluid"
+      src="Rectangle 3.svg"
+      style={
+        Object {
+          "height": "auto",
+          "width": "auto",
+        }
+      }
+    />
+  </div>
+  <div
+    className="pl-5 row row-cols-md-12 row-cols-sm-12"
+  >
+     
+    <div
+      className="col"
+    />
+    <div
+      className="col-lg-10"
+    >
+       
+      <h3>
+        Resource.FollowingWeeks
+      </h3>
+      <h5
+        className="pt-3"
+        style={
+          Object {
+            "fontWeight": 100,
+          }
+        }
+      >
+        Resource.Itmaytakeyourcataweek or two to adjustBe patient
+      </h5>
+    </div>
+    <div
+      className="col"
+    />
+  </div>
+  <div
+    className="row justify-content-center  pt-2 pb-5  row"
+  >
+    <div
+      className="col"
+    />
+    <div
+      className="col-lg-10 col-md-12 col-sm-12"
+    >
+      <ol
+        style={
+          Object {
+            "listStyle": "none",
+          }
+        }
+      >
+        <li
+          className="pt-4 pb-1 "
+        >
+          Resource.text7
+        </li>
+        <li
+          className="pt-3 "
+        >
+          Resource.text8
+        </li>
+      </ol>
+    </div>
+    <div
+      className="col"
+    />
+  </div>
+</div>
+`;
