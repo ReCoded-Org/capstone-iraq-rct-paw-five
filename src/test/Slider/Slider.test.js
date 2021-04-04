@@ -6,7 +6,7 @@ describe('Slider', () => {
   test('renders App component', () => {
     render(
 
-          <Slider/>
+          <Slider pets={[]}/>
 
     )
   })
