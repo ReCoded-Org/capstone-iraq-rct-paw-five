@@ -3,6 +3,11 @@
 exports[`renders correctly 1`] = `
 <div
   dir="ltr"
+  style={
+    Object {
+      "backgroundColor": "#F2F2F2",
+    }
+  }
 >
   <div
     className="container"
@@ -191,7 +196,7 @@ exports[`renders correctly 1`] = `
               <a
                 aria-current={null}
                 className="text-dark"
-                href="/signup"
+                href="/contactus"
                 onClick={[Function]}
               >
                 navbar.contact
