@@ -130,11 +130,13 @@ input:-webkit-autofill {
 .outline {
   outline: none !important;
 }
+
 @media screen and (max-width: 480px) {
   .text-size {
     font-size: 8px !important;
   }
 }
+
 #content {
   background: #f2f2f2;
 }
