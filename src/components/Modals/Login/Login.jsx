@@ -11,7 +11,7 @@ function Login({ onHide }) {
     const { t } = useTranslation()
     return (
         <div>
-            <Modal show centered className="rounded">
+            <Modal animation={false} show centered className="rounded">
                 <div className="bg-modal-login bg-modal-login-2">
                     <div className="d-flex justify-content-end">
                         <button
@@ -68,7 +68,10 @@ function Login({ onHide }) {
 }
 
 Login.propTypes = {
-    onHide: PropTypes.func.isRequired,
+    onHide: PropTypes.func,
+}
+Login.defaultProps={
+    onHide:{}
 }
 
 export default Login
