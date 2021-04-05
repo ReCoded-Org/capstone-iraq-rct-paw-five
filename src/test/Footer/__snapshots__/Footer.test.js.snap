@@ -3,6 +3,11 @@
 exports[`renders correctly 1`] = `
 <div
   dir="ltr"
+  style={
+    Object {
+      "backgroundColor": "#F2F2F2",
+    }
+  }
 >
   <div
     className="container"

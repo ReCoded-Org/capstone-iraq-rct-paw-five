@@ -53,6 +53,11 @@
     "h4text": "5,700+",
     "h6text": "customers served"
   },
+  "login": {
+    "log-in": " Log in",
+    "google": "Sign in",
+    "facebook": "Sign in"
+  },
   "footer": {
     "explorLinks": "Explor Links",
     "contactInfo": "Contact Info",
@@ -63,9 +68,38 @@
     "workTime": "sun - Tur 9:00 AM - 4:00 PM",
     "copyright": "2021 Paw-five team"
   },
-  "login": {
-    "log-in": " Log in",
-    "google": "Sign in",
-    "facebook": "Sign in"
+  "homepage": {
+    "heading": {
+      "tilte": "Adopt a Pet today!",
+      "descrption": "Search out list of dogs, and cats availabe for adoption near you"
+    },
+    "inputs": {
+      "age": "Age",
+      "type": "Type",
+      "city": "City",
+      "find": "Find A pet",
+      "adopt": "Adopt"
+    },
+    "recentpet": "Recent Pets",
+    "seemore": "See More",
+    "welcome": "Welcome to Paw-five",
+    "whoweare": {
+      "whoweare": "Who we are",
+      "title": "Paw-five is an online, searchable database of pets who need homes.",
+      "descripton": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur."
+    },
+    "somestories": "Some stories",
+    "story1": {
+      "title": "Lorem ipsum dolor",
+      "story": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, nulla. Voluptatibus quis voluptates quas, autem, molestiae, pariatur quibusdam deserunt nobis possimus delectus animi. Repellendus atque fuga cum cumque explicabo provident!"
+    },
+    "story2": {
+      "title": "Lorem ipsum dolor",
+      "story": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, nulla. Voluptatibus quis voluptates quas, autem, molestiae, pariatur quibusdam deserunt nobis possimus delectus animi. Repellendus atque fuga cum cumque explicabo provident!"
+    },
+    "story3": {
+      "title": "Lorem ipsum dolor",
+      "story": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, nulla. Voluptatibus quis voluptates quas, autem, molestiae, pariatur quibusdam deserunt nobis possimus delectus animi. Repellendus atque fuga cum cumque explicabo provident!"
+    }
   }
 }
