@@ -1,21 +1,21 @@
 .bg-modal-login {
-    background-image: url('../../../images/login/bg-modal.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  background-image: url('../../../images/login/bg-modal.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 @media (max-width: 522px) {
-    .bg-modal-login {
-        background-image: url('../../../images/login/bg-modal.svg');
-        background-repeat: no-repeat;
-        background-position: right;
-        background-size: cover;
-    }
-    .bg-modal-login-2 {
-        background-image: url('../../../images/login/bg-modal.svg');
-        background-repeat: no-repeat;
-        background-position: 15% 15%;
-        background-size: cover;
-    }
+  .bg-modal-login {
+    background-image: url('../../../images/login/bg-modal.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+  }
+  .bg-modal-login-2 {
+    background-image: url('../../../images/login/bg-modal.svg');
+    background-repeat: no-repeat;
+    background-position: 15% 15%;
+    background-size: cover;
+  }
 }

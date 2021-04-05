@@ -179,8 +179,8 @@ export default function NavBar() {
               }}
               className="m-3 p-0 text-light"
               onClick={() => {
-                setShowLoginModal(!showLoginModal)}}
-              
+                setShowLoginModal(!showLoginModal)
+              }}
             >
               {t('navbar.logIn')}
             </Nav.Link>
@@ -192,7 +192,7 @@ export default function NavBar() {
               className="m-3 p-0 text-light"
               onClick={() => {
                 setShowLoginModal(!showLoginModal)
-            }}
+              }}
             >
               {t('navbar.signUp')}
             </Nav.Link>
@@ -223,12 +223,12 @@ export default function NavBar() {
       </Navbar>
       {/* </Router> */}
       {showLoginModal ? (
-                <Login
-                    onHide={() => {
-                        setShowLoginModal(!showLoginModal)
-                    }}
-                />
-            ) : null}
+        <Login
+          onHide={() => {
+            setShowLoginModal(!showLoginModal)
+          }}
+        />
+      ) : null}
     </div>
   )
 }
