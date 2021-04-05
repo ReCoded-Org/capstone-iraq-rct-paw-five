@@ -49,21 +49,12 @@ export default function ContactUs() {
   const sendEmail = e => {
     e.preventDefault()
 
-    emailjs
-      .sendForm(
-        'service_vg9bk5b',
-        'template_snre7hs',
-        e.target,
-        'user_E56W1Sop4bo4PGpuGBxld'
-      )
-      .then(
-        result => {
-          console.log(result.text)
-        },
-        error => {
-          console.log(error.text)
-        }
-      )
+    emailjs.sendForm(
+      'service_vg9bk5b',
+      'template_snre7hs',
+      e.target,
+      'user_E56W1Sop4bo4PGpuGBxld'
+    )
     e.target.reset()
   }
 
