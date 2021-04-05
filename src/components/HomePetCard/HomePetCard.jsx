@@ -78,7 +78,9 @@ export default function PetCard({ pet }) {
             <Card.Title style={{ color: '#d18d28' }} align="center">
               {pet.petName}
             </Card.Title>
-            <Card.Text align="center">{pet.story?(pet.story).substring(0, 80):""}</Card.Text>
+            <Card.Text align="center">
+              {pet.story ? pet.story.substring(0, 80) : ''}
+            </Card.Text>
             <span className={`${dirProperties.gender}`}>
               <FontAwesomeIcon className="petGenderIcon" icon={faMars} />{' '}
               <span className="p-1 text-danger">{pet.gender}</span>
