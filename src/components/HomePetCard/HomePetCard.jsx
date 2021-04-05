@@ -9,6 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMars, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 import { ADOPT_ROUTE } from '../../routes'
+import Loadingg from '../Loading/Loading'
 
 import './HomePetCard.css'
 
@@ -48,8 +49,11 @@ export default function PetCard({ pet }) {
   }, [globaleLang])
 
   return (
-    <div dir={dirProperties.dir}>
-      {pet ? (
+    <div dir="rtl">
+      {/* <Loading/> */}
+      {!pet.file ? (
+        <Loadingg />
+      ) : (
         <Card
           style={{ maxWidth: '360px', maxHeight: '591px' }}
           className="w-100 mx-lg-5 m-md-3 m-sm-1 card my-3 position-relative"
@@ -95,8 +99,6 @@ export default function PetCard({ pet }) {
             </Button>
           </Card.Body>
         </Card>
-      ) : (
-        ''
       )}
     </div>
   )
