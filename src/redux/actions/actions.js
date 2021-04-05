@@ -4,7 +4,7 @@ export function selectedLang(lang) {
     payload: lang,
   }
 }
-
+ 
 //   to acept export statement and pass eslintrc
 
 export function text(lang) {

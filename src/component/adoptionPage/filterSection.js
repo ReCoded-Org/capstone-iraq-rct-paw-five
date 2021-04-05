@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import TopSection2 from './topSection2'
 import Select from './select'
 import { FilterPets } from '../../redux/actions/pets'
-
+ 
 function FilterSection() {
   const { data, filters } = useSelector(state => state.pets)
   const dispatch = useDispatch()
