@@ -1,0 +1,233 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="container-fluid"
+>
+  <div
+    className="row a justify-content-center pt-3 row"
+  >
+    <h3
+      className="font-weight-bold"
+    >
+      Resource1.Tips for the First 30 Days of cat Adoption
+    </h3>
+  </div>
+  <div
+    className="row justify-content-center pt-3 pb-5  row"
+  >
+    <img
+      alt=""
+      className="img-fluid"
+      src="5 1.svg"
+    />
+  </div>
+  <div
+    className="pt-3 pl-5 content row"
+    id="content"
+  >
+     
+    <div
+      className="col"
+    />
+    <div
+      className="col-lg-10 col-sm-12"
+    >
+       
+      <h4>
+        Resource1.Before You Bring Your Cat Home
+      </h4>
+    </div>
+    <div
+      className="col"
+    />
+  </div>
+  <div
+    className="pt-2 pt-3 pb-4 row"
+    id="content"
+  >
+    <div
+      className="col"
+    />
+    <div
+      className="col-lg-10 col-md-12 col-sm-12"
+    >
+      <ol
+        style={
+          Object {
+            "listStyle": "none",
+          }
+        }
+      >
+        <li
+          className="pt-4"
+        >
+          Resource1.text1
+        </li>
+        <li
+          className="pt-4"
+        >
+          Resource1.text2
+        </li>
+        <li
+          className="pt-4"
+        >
+          Resource1.text3
+        </li>
+        <li
+          className="pt-4"
+        >
+          Resource1.text4
+        </li>
+      </ol>
+    </div>
+    <div
+      className="col"
+    />
+  </div>
+  <div
+    className="row justify-content-center pt-5 img-background-color pb-5 row"
+  >
+    <img
+      alt=""
+      className="img-fluid"
+      src="image11.svg"
+    />
+  </div>
+  <div
+    className=" pt-5  pl-5 contnet row"
+    id="content"
+  >
+     
+    <div
+      className="col"
+    />
+    <div
+      className="col-lg-10 col-md-12 col-sm-12 col-12"
+    >
+       
+      <h3>
+        Resource1.First Day
+      </h3>
+    </div>
+    <div
+      className="col"
+    />
+  </div>
+  <div
+    className="row    row"
+    id="content"
+    style={
+      Object {
+        "paddingBottom": "170px",
+      }
+    }
+  >
+    <div
+      className="col"
+    />
+    <div
+      className="col-lg-10 col-md-12"
+    >
+      <ol
+        style={
+          Object {
+            "listStyle": "none",
+          }
+        }
+      >
+        <li
+          className="pt-4 "
+        >
+          Resource1.text5
+        </li>
+        <li
+          className="pt-4 "
+        >
+          Resource1.text6
+        </li>
+      </ol>
+    </div>
+    <div
+      className="col"
+    />
+  </div>
+   
+  <div
+    className="row justify-content-center pb-5 pt-5 row"
+    style={
+      Object {
+        "marginTop": "-200px",
+      }
+    }
+  >
+     
+    <img
+      alt=""
+      className=" img-fluid"
+      src="image12.svg"
+    />
+  </div>
+  <div
+    className="pl-5 row row-cols-md-12 row-cols-sm-12"
+  >
+     
+    <div
+      className="col"
+    />
+    <div
+      className="col-lg-10"
+    >
+       
+      <h3>
+        Resource1.FollowingWeeks
+      </h3>
+      <h5
+        className="pt-3"
+        style={
+          Object {
+            "fontWeight": 100,
+          }
+        }
+      >
+        Resource1.Itmaytakeyourcataweek or two to adjustBe patient
+      </h5>
+    </div>
+    <div
+      className="col"
+    />
+  </div>
+  <div
+    className="row justify-content-center  pt-2 pb-5  row"
+  >
+    <div
+      className="col"
+    />
+    <div
+      className="col-lg-10 col-md-12 col-sm-12"
+    >
+      <ol
+        style={
+          Object {
+            "listStyle": "none",
+          }
+        }
+      >
+        <li
+          className="pt-4 pb-1 "
+        >
+          Resource1.text7
+        </li>
+        <li
+          className="pt-3 "
+        >
+          Resource1.text8
+        </li>
+      </ol>
+    </div>
+    <div
+      className="col"
+    />
+  </div>
+</div>
+`;

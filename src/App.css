@@ -4,6 +4,19 @@
 .contact-us {
   box-shadow: 0 20px 50px rgba(88, 65, 51, 0.7);
 }
+.img-fluid {
+  height: auto;
+  width: auto;
+}
+.img-background-color {
+  background: linear-gradient(
+    88.51deg,
+    #dc4946 0.29%,
+    #f2726f 49.91%,
+    #ffc533 100%
+  );
+}
+
 .gradient-text {
   background: -webkit-linear-gradient(45deg, #ec869c, #f7a173 100%);
   background-clip: text;
@@ -121,4 +134,7 @@ input:-webkit-autofill {
   .text-size {
     font-size: 8px !important;
   }
+}
+#content {
+  background: #f2f2f2;
 }

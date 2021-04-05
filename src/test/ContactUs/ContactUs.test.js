@@ -5,6 +5,7 @@ import { createStore } from 'redux'
 import { BrowserRouter as Router } from 'react-router-dom'
 import ContactUs from '../../containers/ContactUs/ContactUs'
 import AllReducers from '../../redux/reducers/AllReducers'
+
 const store = createStore(AllReducers)
 
 it('renders correctly', () => {
