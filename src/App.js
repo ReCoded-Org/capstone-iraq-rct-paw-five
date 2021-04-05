@@ -23,7 +23,7 @@ import {
 import './App.css'
 import Home from './containers/Home/Home'
 
-import AdoptionPage from './component/adoptionPage/adoptionPage'
+import AdoptionPage from './containers/adoptionPage'
 
 function App() {
   return (

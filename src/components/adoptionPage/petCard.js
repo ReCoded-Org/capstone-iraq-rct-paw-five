@@ -1,10 +1,12 @@
 import React from 'react'
 import { Card, Row, Col } from 'react-bootstrap'
+import { useTranslation } from 'react-i18next'
 import { PropTypes } from 'prop-types'
-
 import 'font-awesome/css/font-awesome.min.css'
 
 function PetCard({ pet }) {
+  const { t } = useTranslation()
+
   return (
     <Card
       style={{ width: '95%', height: '18rem' }}
@@ -35,8 +37,8 @@ function PetCard({ pet }) {
           {pet.des}
         </Card.Text>
 
-        <Row className="px-2 pb-4 d-flex justify-content-around mb-3">
-          <Col className="align-self-end">
+        <Row className="px-2 pb-4 d-flex  justify-content-between mb-3">
+          <Col className="align-self-center">
             {pet.gender === 'male' ? (
               <i className="fa fa-mars ">
                 <p className="text-danger d-inline-block p-1 m-0">
@@ -51,13 +53,13 @@ function PetCard({ pet }) {
               </i>
             )}
           </Col>
-          <Col>
+          <Col className="">
             <button
               type="button"
               href="/DetailsPage"
-              className="rounded py-1 px-4 bg-warning"
+              className="rounded py-1 px-4 bg-warning "
             >
-              Details
+             {t('adoption-page.details')}
             </button>
           </Col>
         </Row>

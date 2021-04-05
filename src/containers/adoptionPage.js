@@ -2,12 +2,12 @@ import React, { useEffect } from 'react'
 import { Container, Row } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 
-import { setPetsInfo, setLoading } from '../../redux/actions/pets'
-import './style.css'
-import ListPets from './listCards'
-import Pagination from './pagination'
-import firebase from '../../firebase'
-import FilterSection from './filterSection'
+import { setPetsInfo, setLoading } from '../redux/actions/pets'
+import '../components/adoptionPage/style.css'
+import ListPets from '../components/adoptionPage/listCards'
+import Pagination from '../components/adoptionPage/pagination'
+import firebase from '../firebase'
+import FilterSection from '../components/adoptionPage/filterSection'
 
 function AdoptionPage() {
   const dispatch = useDispatch()

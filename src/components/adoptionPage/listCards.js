@@ -36,8 +36,6 @@ function ListPets() {
 
   return (
     <>
-      {width}
-      {postPerPage}
       <ul className="d-flex flex-wrap width p-0 m-0">
         {currentPets.map(pet => (
           <Col className="px-4 px-sm-1 px-md-1 col-10 col-sm-6  col-md-6 col-lg-4">
