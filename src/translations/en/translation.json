@@ -143,5 +143,9 @@
       "months": "months"
     },
     "details": "Details"
+  },
+  "NotFoundPage":{
+    "error404":"Page Not Found",
+    "returnHome":"Return to Home page"
   }
 }
