@@ -52,7 +52,7 @@ export default function Footer() {
   }, [globaleLang])
 
   return (
-    <div dir={dir} style={{ backgroundColor: '#F2F2F2' }}>
+    <div dir={dir} style={{ backgroundColor: '#F2F2F1' }}>
       <Container>
         <Row>
           <Col className="text-center pt-5" lg={4} md={6}>
