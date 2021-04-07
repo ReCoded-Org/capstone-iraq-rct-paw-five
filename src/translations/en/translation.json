@@ -131,5 +131,17 @@
     "FollowingWeeks": "Following Weeks:",
     "text7": "People often say they don’t see their dog’s true personality until several weeks after adoption. Your dog maybe a bit uneasy at first as he gets to know you. Be patient and understanding while also keeping to the schedule you intend to maintain for feeding, walks, etc. This schedule will show your dog what is expected of him as well as what he can expect from you.",
     "text8": "After discussing it with your veterinarian to ensure your dog has all the necessary vaccines, you may wish to take your dog to group training classes or the dog park. Pay close attention to your dog’s body language to be sure he’s having a good time — and is not fearful or a dog park bully "
+  },
+  "adoption-page": {
+    "filters": {
+      "gender": "Gender",
+      "address": "Address",
+      "age": "Age",
+      "findAPet": "Find A Pet",
+      "male": "Male",
+      "female": "Female",
+      "months": "months"
+    },
+    "details": "Details"
   }
 }
