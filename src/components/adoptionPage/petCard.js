@@ -59,7 +59,7 @@ function PetCard({ pet }) {
               href="/DetailsPage"
               className="rounded py-1 px-4 bg-warning "
             >
-             {t('adoption-page.details')}
+              {t('adoption-page.details')}
             </button>
           </Col>
         </Row>

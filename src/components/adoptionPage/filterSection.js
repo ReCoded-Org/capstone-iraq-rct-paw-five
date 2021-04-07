@@ -1,11 +1,11 @@
-import React,{useEffect,useState} from 'react'
+import React, { useEffect, useState } from 'react'
 import { Col } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 import { useTranslation } from 'react-i18next'
 import TopSection2 from './topSection2'
 import Select from './select'
 import { FilterPets } from '../../redux/actions/pets'
- 
+
 function FilterSection() {
   const { t } = useTranslation()
   const { data, filters } = useSelector(state => state.pets)
@@ -15,7 +15,7 @@ function FilterSection() {
   const [dir, setDir] = useState('ltr')
 
   const changeDir = () => {
-    if (globaleLang ==='en') {
+    if (globaleLang === 'en') {
       setDir('ltr')
     } else {
       setDir('rtl')

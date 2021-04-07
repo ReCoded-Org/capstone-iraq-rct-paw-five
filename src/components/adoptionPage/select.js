@@ -21,7 +21,10 @@ function Select({ title, options }) {
         className=" text-center btn_width  py-2 px-4 rounded bg-white font-weight-bold "
         onChange={handelChange}
       >
-      <option  value="" selected style={{display:'none'}}> {t(`adoption-page.filters.${title}`)} </option>
+        <option value="" selected style={{ display: 'none' }}>
+          {' '}
+          {t(`adoption-page.filters.${title}`)}{' '}
+        </option>
         {options.map(option => (
           <option value={option}>{option}</option>
         ))}
