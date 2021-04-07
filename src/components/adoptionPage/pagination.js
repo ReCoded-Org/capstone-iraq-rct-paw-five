@@ -7,7 +7,6 @@ import arrowLeft from './arrowLeft.svg'
 function Pagination() {
   const { data, currentPage, postPerPage } = useSelector(state => state.pets)
   const dispatch = useDispatch()
-  console.log('from pagination', data, data.length)
   const totalPets = data.length
 
   return (
@@ -19,7 +18,7 @@ function Pagination() {
           onClick={() =>
             currentPage > 1
               ? dispatch(setCurrentPage(currentPage - 1))
-              : console.log('out of number of pages')
+              : null
           }
         >
           <img
@@ -35,7 +34,7 @@ function Pagination() {
           onClick={() =>
             currentPage <= Math.ceil(totalPets / postPerPage) - 1
               ? dispatch(setCurrentPage(currentPage + 1))
-              : console.log('out of number of pages')
+              : null
           }
         >
           <img
