@@ -9,7 +9,7 @@
     "resources": ["Resources", "Tibs about cats", "Tibs about dogs"],
     "about": "About",
     "logIn": "Log In",
-    "signUp": "Sign Up"
+    "logOut": "Log Out"
   },
   "add-pet": {
     "required": "This field is required !!",
