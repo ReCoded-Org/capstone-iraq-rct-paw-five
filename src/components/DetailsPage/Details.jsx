@@ -85,7 +85,7 @@ function Detail() {
                 <label className="label" id="colorset">
                   color:
                 </label>
-                <span className="span pl-2">gray</span>
+                <span className="pl-2">gray</span>
               </Col>
               <Col>{}</Col>
             </Row>
