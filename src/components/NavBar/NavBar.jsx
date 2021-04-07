@@ -20,7 +20,7 @@ import {
 import 'bootstrap/dist/css/bootstrap.min.css'
 import logo from '../../images/logo.ico'
 import firebase from '../../firebase'
-import userStatus from '../../redux/actions/user'
+import userStatus,{setUserInfo} from '../../redux/actions/user'
 
 export default function NavBar() {
   const globaleLang = useSelector(state => state.langReducer)
@@ -35,22 +35,21 @@ export default function NavBar() {
   const [showLoginModal, setShowLoginModal] = useState(false)
 // check the user if loggedin or not
   useEffect(()=>{
-    firebase.auth().onAuthStateChanged(function(user) {
+    firebase.auth().onAuthStateChanged((user) => {
         if (user) {
          dispatch(userStatus(true))
+         dispatch(setUserInfo({name:user.displayName,uid:user.uid}))
         } else {
          dispatch(userStatus(false))
         } 
       })
 })
 
-console.log("isLoggedIn>>",userState)
 const handelLogout=()=>{
   firebase.auth().signOut().then(() => {
     dispatch(userStatus(false))
     Redirect('/')
   }).catch(() => {
-    console.log('error throught logout')
   });
 }
 
