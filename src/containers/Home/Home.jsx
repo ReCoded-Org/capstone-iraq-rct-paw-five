@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react'
-
 import { Col, Row, Button, Container } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
 import { useTranslation } from 'react-i18next'
 import { useSelector } from 'react-redux'
 
@@ -47,10 +45,6 @@ export default function Home() {
   const [selectedType, setselectedType] = useState('')
   const [selectedCity, setselectedCity] = useState('')
   const [selectedAge, setselectedAge] = useState('')
-
-  console.log(selectedType)
-  console.log(selectedCity)
-  console.log(selectedAge)
 
   useEffect(() => {
     const allType = firebase
@@ -113,14 +107,11 @@ export default function Home() {
         <Row className=" w-100 mx-0 my-5">
           <Col className=" col-lg-4 col-md-8 col-sm-12 text-left ">
             <p className="text-light text-center mx-0 mt-5 h1 text-sh ">
-              {/* Adopt a Pet today! */}
               {t('homepage.heading.tilte')}
             </p>
 
             <p className="text-light text-center mx-0 mt-5 h4 text-sh  ">
               {t('homepage.heading.descrption')}
-              {/* Search out list of dogs, and cats availabe for
-                            adoption near you{' '} */}
             </p>
           </Col>
         </Row>

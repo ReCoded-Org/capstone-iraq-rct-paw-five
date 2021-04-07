@@ -3,7 +3,7 @@ import { Card, Button } from 'react-bootstrap'
 
 import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
-// import { PropTypes } from 'prop-types'
+import { PropTypes } from 'prop-types'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -103,7 +103,7 @@ export default function PetCard({ pet }) {
 }
 
 PetCard.propTypes = {
-  pet: null,
+  pet: PropTypes.func,
 }
 
 PetCard.defaultProps = {

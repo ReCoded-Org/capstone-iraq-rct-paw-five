@@ -5,12 +5,12 @@ exports[`renders correctly 1`] = `
   className="container-fluid"
 >
   <div
-    className="row justify-content-center pt-3  row"
+    className="row a justify-content-center pt-3 row"
   >
     <h3
       className="font-weight-bold"
     >
-      Resource.Tips for the First 30 Days of cat Adoption
+      Resource1.Tips for the First 30 Days of cat Adoption
     </h3>
   </div>
   <div
@@ -18,23 +18,13 @@ exports[`renders correctly 1`] = `
   >
     <img
       alt=""
-      className=" img-fluid"
-      src="Rectangle 1.svg"
-      style={
-        Object {
-          "height": "auto",
-          "width": "auto",
-        }
-      }
+      className="img-fluid"
+      src="5 1.svg"
     />
   </div>
   <div
-    className="pt-3 pl-5   row"
-    style={
-      Object {
-        "background": "#F2F2F2",
-      }
-    }
+    className="pt-3 pl-5 content row"
+    id="content"
   >
      
     <div
@@ -45,7 +35,7 @@ exports[`renders correctly 1`] = `
     >
        
       <h4>
-        Resource.Before You Bring Your Cat Home
+        Resource1.Before You Bring Your Cat Home
       </h4>
     </div>
     <div
@@ -53,12 +43,8 @@ exports[`renders correctly 1`] = `
     />
   </div>
   <div
-    className="row  pt-2 pt-3 pb-4  row"
-    style={
-      Object {
-        "background": "#F2F2F2",
-      }
-    }
+    className="pt-2 pt-3 pb-4 row"
+    id="content"
   >
     <div
       className="col"
@@ -73,23 +59,25 @@ exports[`renders correctly 1`] = `
           }
         }
       >
-        <li>
-          Resource.text1
+        <li
+          className="pt-4"
+        >
+          Resource1.text1
         </li>
         <li
           className="pt-4"
         >
-          Resource.text2
+          Resource1.text2
         </li>
         <li
           className="pt-4"
         >
-          Resource.text3
+          Resource1.text3
         </li>
         <li
           className="pt-4"
         >
-          Resource.text4
+          Resource1.text4
         </li>
       </ol>
     </div>
@@ -102,23 +90,13 @@ exports[`renders correctly 1`] = `
   >
     <img
       alt=""
-      className=" img-fluid"
-      src="Rectangle 2.svg"
-      style={
-        Object {
-          "height": "auto",
-          "width": "auto",
-        }
-      }
+      className="img-fluid"
+      src="image11.svg"
     />
   </div>
   <div
-    className=" pt-5  pl-5  row"
-    style={
-      Object {
-        "background": "#F2F2F2",
-      }
-    }
+    className=" pt-5  pl-5 contnet row"
+    id="content"
   >
      
     <div
@@ -129,7 +107,7 @@ exports[`renders correctly 1`] = `
     >
        
       <h3>
-        Resource.First Day
+        Resource1.First Day
       </h3>
     </div>
     <div
@@ -138,9 +116,9 @@ exports[`renders correctly 1`] = `
   </div>
   <div
     className="row    row"
+    id="content"
     style={
       Object {
-        "backgroundColor": "#F2F2F2",
         "paddingBottom": "170px",
       }
     }
@@ -161,12 +139,12 @@ exports[`renders correctly 1`] = `
         <li
           className="pt-4 "
         >
-          Resource.text5
+          Resource1.text5
         </li>
         <li
           className="pt-4 "
         >
-          Resource.text6
+          Resource1.text6
         </li>
       </ol>
     </div>
@@ -187,13 +165,7 @@ exports[`renders correctly 1`] = `
     <img
       alt=""
       className=" img-fluid"
-      src="Rectangle 3.svg"
-      style={
-        Object {
-          "height": "auto",
-          "width": "auto",
-        }
-      }
+      src="image12.svg"
     />
   </div>
   <div
@@ -208,7 +180,7 @@ exports[`renders correctly 1`] = `
     >
        
       <h3>
-        Resource.FollowingWeeks
+        Resource1.FollowingWeeks
       </h3>
       <h5
         className="pt-3"
@@ -218,7 +190,7 @@ exports[`renders correctly 1`] = `
           }
         }
       >
-        Resource.Itmaytakeyourcataweek or two to adjustBe patient
+        Resource1.Itmaytakeyourcataweek or two to adjustBe patient
       </h5>
     </div>
     <div
@@ -244,12 +216,12 @@ exports[`renders correctly 1`] = `
         <li
           className="pt-4 pb-1 "
         >
-          Resource.text7
+          Resource1.text7
         </li>
         <li
           className="pt-3 "
         >
-          Resource.text8
+          Resource1.text8
         </li>
       </ol>
     </div>

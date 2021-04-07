@@ -4,8 +4,8 @@ import React from 'react'
 import '../../App.css'
 import { useTranslation } from 'react-i18next'
 import im from '../../images/ResourcePageDog/5 1.svg'
-import im2 from '../../images/ResourcePageDog/image 11 (1).svg'
-import im3 from '../../images/ResourcePageDog/image 12 (1).svg'
+import im2 from '../../images/ResourcePageDog/image11.svg'
+import im3 from '../../images/ResourcePageDog/image12.svg'
 
 export default function Resources() {
   const { t } = useTranslation()
