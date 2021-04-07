@@ -99,6 +99,53 @@
     "story3": {
       "title": "قصه من القصص",
       "story": "خلافاَ للاعتقاد السائد فإن لوريم إيبسوم ليس نصاَ عشوائياً، بل إن له جذور في الأدب اللاتيني الكلاسيكي منذ العام 45 قبل الميلاد. من كتاب 345678هخححول أقاصي الخير والشر!"
-    }
+    },
+  "Resource": {
+    "Tips for the First 30 Days of cat Adoption": "Tips for the First 30 Days of cat Adoption",
+    "Before You Bring Your Cat Home": "Before You Bring Your Cat Home",
+    "text1": "1- Cats are territorial and coming into a new home leaves them feeling uneasy. There’s all that  unexplored space, and who knows what may lurk there. Do her a favor and provide a small area to  call her own for the first few days or weeks. A bathroom or laundry room works well. Furnish the room with cat amenities, such as food, water and a litter box. You’ll want to spend time with your  cat, so make sure there’s a comfortable place for you to sit as well.  ",
+    "text2": "2- Fill a litter box with one or two inches of litter and place it in her room where she can use it undisturbed. After all, everyone deserves a modicum of privacy when pottying!    ",
+    "text3": "3- Set up a feeding station with food and water bowls. Locate it away from the litter box.   ",
+    "text4": "4- Cats love to get away from it all in small places. If she came home in a cat carrier, you can use that.  You can also make one by cutting a doorway in the end of a cardboard box, or simply buy a covered  cat bed at a pet supply store. Whatever you choose, make sure the space is big enough for the cat to  stand up and turn around in. Make sure she can see the door to the room, so she won’t be startled. ",
+    "First Day": "First Day: ",
+    "text5": "Now you’re ready for your cat’s homecoming. Bring her home in a cat carrier, if possible. She’s seen a lot  of excitement, so take her directly to her new room (make sure the toilet lid is down, if she’s acclimating  in your bathroom). Ideally, you would restrict her exposure to the whole family, but naturally, everyone is  going to want to see her. Remind them of the ground rules you’ve set up.",
+    "text6": "Sit on the floor and let her come to you. Don’t force her. Just let her get acquainted on her own  terms. If she doesn’t approach, leave her alone and try again later. Some cats are particularly  frightened, and she may retreat to her hidey hole and not come out when you’re around at all. She may only come out at night when the house is quiet. Give her time.",
+    "Itmaytakeyourcataweek or two to adjustBe patient": "It may take your cat a week or two to adjust. Be patient.",
+    "FollowingWeeks": "Following Weeks:",
+
+    "text7": "Within a week of being adopted, take your newly adopted cat for her first wellness visit with a  veterinarian. If you have a record of immunizations from the shelter, take it with you.    ",
+    "text8": "As your cat adjusts, she’ll show signs that she wants to explore outside her safe‐haven. Make sure other pets or family memberswon’tstartle her while she gradually expands her territory. She may be ready to play, so you can furnish some toys. Many catslike feather wands from the pet supply store, but homemade toys are often favored. A wad of a tissue paper to bat around or a paper bag to hide in can be fun.  "
+  },
+  "Resource1": {
+    "Tips for the First 30 Days of cat Adoption": "Tips for the First 30 Days of Dog Adoption",
+    "Before You Bring Your Cat Home": "Before You Bring Your Dog Home",
+    "text1": "1-Determine where your dog will be spending most of his time for the first few weeks or months. Because he will be under a lot of stress with the change of environment (from shelter or foster home to your house), he may forget any housebreaking (if any) he’s learned. Often a kitchen will work best for easy clean-up. ",
+    "text2": "2-Dog-proof the area where your pooch will spend most of his time during the first few months. This may meantaping loose electrical cords to baseboards; storing household chemicals on high shelves; removing plants, rugs, and breakables; setting up the crate, and installing baby gates. ",
+    "text3": "3-Training your dog will start the first moment you have him. Take time to create a vocabulary list everyone willuse when giving your dog directions. This will help prevent confusion and help your dog learn his commandsmore quickly. No matter the age or size of the dog, it is recommended that you begin with positive training classes within the first month after adoption. ",
+    "text4": "4-Bring an ID tag with your phone number on it with you when you pick up your dog so that he has an extra measure of safety for the ride home and the first few uneasy days. If he is microchipped, be sure to registeryour contact information with the chip’s company, if the rescue or shelter did not already do so.",
+    "First Day": "First Day: ",
+    "text5": "We know moving is stressful — and your new dog feels the same way! Give him time to acclimate to your home and family before introducing him to strangers. Limit visitors for the first week. We understand that youwant to show off your new dog and many want to meet your new family member but allow your dog some timeto become comfortable with the family and new home before introducing new people. Make sure children know    how to approach the dog without overwhelming him",
+    "text6": "When you pick up your dog, remember to ask what and when he was fed. Replicate that schedule for at leastthe first few days to avoid gastric distress. If you wish to switch to a different brand, do so over a period ofabout a week by adding one part new food to three parts of the old for several days; then switch to half newfood, half old, and then one part old to three parts new. ",
+    "Itmaytakeyourcataweek or two to adjustBe patient": "It may take your Dog a week or two to adjust. Be patient.",
+    "FollowingWeeks": "Following Weeks:",
+
+    "text7": "People often say they don’t see their dog’s true personality until several weeks after adoption. Your dog maybe a bit uneasy at first as he gets to know you. Be patient and understanding while also keeping to the schedule you intend to maintain for feeding, walks, etc. This schedule will show your dog what is expected of him as well as what he can expect from you.",
+    "text8": "After discussing it with your veterinarian to ensure your dog has all the necessary vaccines, you may wish to take your dog to group training classes or the dog park. Pay close attention to your dog’s body language to be sure he’s having a good time — and is not fearful or a dog park bully "
+  },
+  "adoption-page": {
+    "filters": {
+      "gender": "الجنس",
+      "address": "العنوان",
+      "age": "العمر",
+      "findAPet": "ابحث",
+      "male": "ذكر",
+      "female": "انثى",
+      "months": "اشهر"
+    },
+    "details": "التفاصيل"
+  },
+  "NotFoundPage": {
+    "error404": "الصفحة غير موجودة",
+    "returnHome": "عد للصفحة الرئيسة"
   }
 }

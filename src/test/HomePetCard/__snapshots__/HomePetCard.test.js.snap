@@ -2,109 +2,52 @@
 
 exports[`renders correctly 1`] = `
 <div
-  dir="ltr"
+  dir="rtl"
 >
   <div
-    className="w-100 mx-lg-5 m-md-3 m-sm-1 card my-3 position-relative card"
-    style={
-      Object {
-        "maxHeight": "591px",
-        "maxWidth": "360px",
-      }
-    }
+    className="p-5 m-5"
+    dir="ltr"
   >
-    <img
-      className="card-img-top"
-      src="undefined"
+    <h2
       style={
         Object {
-          "height": "14rem",
+          "color": "#A9A9A9",
+        }
+      }
+    >
+      Loading ...
+    </h2>
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<svg xmlns=\\"http://www.w3.org/2000/svg\\" viewBox=\\"0 0 32 32\\">
+  <path transform=\\"translate(2)\\" d=\\"M0 12 V20 H4 V12z\\"> 
+    <animate attributeName=\\"d\\" values=\\"M0 12 V20 H4 V12z; M0 4 V28 H4 V4z; M0 12 V20 H4 V12z; M0 12 V20 H4 V12z\\" dur=\\"1.2s\\" repeatCount=\\"indefinite\\" begin=\\"0\\" keytimes=\\"0;.2;.5;1\\" keySplines=\\"0.2 0.2 0.4 0.8;0.2 0.6 0.4 0.8;0.2 0.8 0.4 0.8\\" calcMode=\\"spline\\"  />
+  </path>
+  <path transform=\\"translate(8)\\" d=\\"M0 12 V20 H4 V12z\\">
+    <animate attributeName=\\"d\\" values=\\"M0 12 V20 H4 V12z; M0 4 V28 H4 V4z; M0 12 V20 H4 V12z; M0 12 V20 H4 V12z\\" dur=\\"1.2s\\" repeatCount=\\"indefinite\\" begin=\\"0.2\\" keytimes=\\"0;.2;.5;1\\" keySplines=\\"0.2 0.2 0.4 0.8;0.2 0.6 0.4 0.8;0.2 0.8 0.4 0.8\\" calcMode=\\"spline\\"  />
+  </path>
+  <path transform=\\"translate(14)\\" d=\\"M0 12 V20 H4 V12z\\">
+    <animate attributeName=\\"d\\" values=\\"M0 12 V20 H4 V12z; M0 4 V28 H4 V4z; M0 12 V20 H4 V12z; M0 12 V20 H4 V12z\\" dur=\\"1.2s\\" repeatCount=\\"indefinite\\" begin=\\"0.4\\" keytimes=\\"0;.2;.5;1\\" keySplines=\\"0.2 0.2 0.4 0.8;0.2 0.6 0.4 0.8;0.2 0.8 0.4 0.8\\" calcMode=\\"spline\\" />
+  </path>
+  <path transform=\\"translate(20)\\" d=\\"M0 12 V20 H4 V12z\\">
+    <animate attributeName=\\"d\\" values=\\"M0 12 V20 H4 V12z; M0 4 V28 H4 V4z; M0 12 V20 H4 V12z; M0 12 V20 H4 V12z\\" dur=\\"1.2s\\" repeatCount=\\"indefinite\\" begin=\\"0.6\\" keytimes=\\"0;.2;.5;1\\" keySplines=\\"0.2 0.2 0.4 0.8;0.2 0.6 0.4 0.8;0.2 0.8 0.4 0.8\\" calcMode=\\"spline\\" />
+  </path>
+  <path transform=\\"translate(26)\\" d=\\"M0 12 V20 H4 V12z\\">
+    <animate attributeName=\\"d\\" values=\\"M0 12 V20 H4 V12z; M0 4 V28 H4 V4z; M0 12 V20 H4 V12z; M0 12 V20 H4 V12z\\" dur=\\"1.2s\\" repeatCount=\\"indefinite\\" begin=\\"0.8\\" keytimes=\\"0;.2;.5;1\\" keySplines=\\"0.2 0.2 0.4 0.8;0.2 0.6 0.4 0.8;0.2 0.8 0.4 0.8\\" calcMode=\\"spline\\" />
+  </path>
+</svg>
+",
+        }
+      }
+      style={
+        Object {
+          "fill": "#FF7F50",
+          "height": "100%",
+          "width": "100%",
         }
       }
     />
-    <span
-      className="position-absolute p-1"
-      style={
-        Object {
-          "backgroundColor": "rgba(255, 255, 255, 0.466)",
-          "borderRadius": "15px",
-          "left": "220px",
-          "top": "10px",
-        }
-      }
-    >
-      <svg
-        aria-hidden="true"
-        className="svg-inline--fa fa-map-marker-alt fa-w-12 petLocationIcon"
-        data-icon="map-marker-alt"
-        data-prefix="fas"
-        focusable="false"
-        role="img"
-        style={Object {}}
-        viewBox="0 0 384 512"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"
-          fill="currentColor"
-          style={Object {}}
-        />
-      </svg>
-       
-       
-    </span>
-    <div
-      className="card-body"
-    >
-      <div
-        align="center"
-        className="card-title h5"
-        style={
-          Object {
-            "color": "#d18d28",
-          }
-        }
-      />
-      <p
-        align="center"
-        className="card-text"
-      >
-        
-      </p>
-      <span
-        className="float-left"
-      >
-        <svg
-          aria-hidden="true"
-          className="svg-inline--fa fa-mars fa-w-12 petGenderIcon"
-          data-icon="mars"
-          data-prefix="fas"
-          focusable="false"
-          role="img"
-          style={Object {}}
-          viewBox="0 0 384 512"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M372 64h-79c-10.7 0-16 12.9-8.5 20.5l16.9 16.9-80.7 80.7c-22.2-14-48.5-22.1-76.7-22.1C64.5 160 0 224.5 0 304s64.5 144 144 144 144-64.5 144-144c0-28.2-8.1-54.5-22.1-76.7l80.7-80.7 16.9 16.9c7.6 7.6 20.5 2.2 20.5-8.5V76c0-6.6-5.4-12-12-12zM144 384c-44.1 0-80-35.9-80-80s35.9-80 80-80 80 35.9 80 80-35.9 80-80 80z"
-            fill="currentColor"
-            style={Object {}}
-          />
-        </svg>
-         
-        <span
-          className="p-1 text-danger"
-        />
-      </span>
-      <a
-        className="detailsBtn border-0 float-right btn btn-primary"
-        disabled={false}
-        href="/adopt/undefined"
-        onClick={[Function]}
-      >
-        Details
-      </a>
-    </div>
   </div>
 </div>
 `;

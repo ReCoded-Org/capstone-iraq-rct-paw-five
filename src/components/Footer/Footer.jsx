@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-
 import { NavLink } from 'react-router-dom'
 import { Container, Row, Col, Image } from 'react-bootstrap'
 import { useSelector } from 'react-redux'

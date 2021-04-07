@@ -18,7 +18,7 @@ export default function Slider({ pets }) {
                 alt=""
                 style={{
                   borderRadius: '40px',
-                  height: '500px',
+                  height: '22rem',
                 }}
               />
             </div>

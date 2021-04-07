@@ -8,7 +8,8 @@
   height: auto;
   width: auto;
 }
-.img-background-color {
+.img-background-color,
+.pet-gallery {
   background: linear-gradient(
     88.51deg,
     #dc4946 0.29%,
@@ -16,7 +17,22 @@
     #ffc533 100%
   );
 }
+#colorset {
+  color: #e79559;
+  font-weight: bold;
+  font-size: 20px;
+}
+#colorset1 {
+  color: #e79559;
+  font-weight: 700;
+}
+.main-image {
+  width: 650px;
+}
 
+.gradient-background{
+  background: -webkit-linear-gradient(45deg, #ec869c, #f7a173 100%);
+}
 .gradient-text {
   background: -webkit-linear-gradient(45deg, #ec869c, #f7a173 100%);
   background-clip: text;
@@ -130,11 +146,15 @@ input:-webkit-autofill {
 .outline {
   outline: none !important;
 }
+
 @media screen and (max-width: 480px) {
   .text-size {
     font-size: 8px !important;
   }
 }
-#content {
+
+#content,
+.contactinfo,
+#contact-header {
   background: #f2f2f2;
 }
