@@ -110,8 +110,8 @@
     },
     "details": "التفاصيل"
   },
-  "NotFoundPage":{
-    "error404":"الصفحة غير موجودة",
-    "returnHome":"عد للصفحة الرئيسة"
+  "NotFoundPage": {
+    "error404": "الصفحة غير موجودة",
+    "returnHome": "عد للصفحة الرئيسة"
   }
 }

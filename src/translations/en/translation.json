@@ -144,8 +144,8 @@
     },
     "details": "Details"
   },
-  "NotFoundPage":{
-    "error404":"Page Not Found",
-    "returnHome":"Return to Home page"
+  "NotFoundPage": {
+    "error404": "Page Not Found",
+    "returnHome": "Return to Home page"
   }
 }
