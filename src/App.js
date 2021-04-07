@@ -5,6 +5,9 @@ import AddPet from './components/AddPet/AddPet'
 import ContacUS from './containers/ContactUs/ContactUs'
 import ResourceCat from './components/ResourcePageCat/ResourceCat'
 import ResourceDog from './components/ResourcePageDog/ResourceDog'
+import Details from './components/DetailsPage/Details'
+import Footer from './components/Footer/Footer'
+
 import {
   HOME_ROUTE,
   ADOPT_ROUTE,
@@ -15,9 +18,9 @@ import {
   LOGIN_ROUTE,
   SIGNUP_ROUTE,
   CONTACT_US_ROUTE,
+  DETAILS_ROUTE,
 } from './routes'
 import './App.css'
-import Footer from './components/Footer/Footer'
 
 function App() {
   return (
@@ -44,6 +47,8 @@ function App() {
         <Route path={HOME_ROUTE} exact>
           {/** <HOME_ROUTE/> */}
         </Route>
+        <Route path={DETAILS_ROUTE} component={Details} />
+        <Route />
       </Switch>
       <Footer />
     </Router>

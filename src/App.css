@@ -8,13 +8,26 @@
   height: auto;
   width: auto;
 }
-.img-background-color {
+.img-background-color,
+.pet-gallery {
   background: linear-gradient(
     88.51deg,
     #dc4946 0.29%,
     #f2726f 49.91%,
     #ffc533 100%
   );
+}
+#colorset {
+  color: #e79559;
+  font-weight: bold;
+  font-size: 20px;
+}
+#colorset1 {
+  color: #e79559;
+  font-weight: 700;
+}
+.main-image {
+  width: 650px;
 }
 
 .gradient-text {
@@ -60,6 +73,8 @@ input:-webkit-autofill {
   outline: none !important;
   box-shadow: none;
 }
-#content {
+#content,
+.contactinfo,
+#contact-header {
   background: #f2f2f2;
 }
