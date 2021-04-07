@@ -16,9 +16,7 @@ function Pagination() {
           type="button"
           className="hidden_border btn_bg"
           onClick={() =>
-            currentPage > 1
-              ? dispatch(setCurrentPage(currentPage - 1))
-              : null
+            currentPage > 1 ? dispatch(setCurrentPage(currentPage - 1)) : null
           }
         >
           <img

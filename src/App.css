@@ -30,6 +30,9 @@
   width: 650px;
 }
 
+.gradient-background{
+  background: -webkit-linear-gradient(45deg, #ec869c, #f7a173 100%);
+}
 .gradient-text {
   background: -webkit-linear-gradient(45deg, #ec869c, #f7a173 100%);
   background-clip: text;
