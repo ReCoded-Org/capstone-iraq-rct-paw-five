@@ -2,6 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Modal, Button } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
+import { useSelector } from 'react-redux'
+import firebase from '../../../firebase'
 import './Login.css'
 import Close from '../../../images/login/close.svg'
 import Google from '../../../images/login/google.svg'
@@ -9,6 +11,14 @@ import Facebook from '../../../images/login/facebook.svg'
 
 function Login({ onHide }) {
   const { t } = useTranslation()
+  const userState= useSelector(state => state.user)
+
+  const handelLogin=()=>{
+    const provider = new firebase.auth.GoogleAuthProvider();
+
+    firebase.auth()
+  .signInWithPopup(provider)
+}
   return (
     <div>
       <Modal animation={false} show centered className="rounded">
@@ -26,7 +36,7 @@ function Login({ onHide }) {
             <h4>{t('login.log-in')}</h4>
           </div>
           <div className="d-flex justify-content-center mt-5 mb-5">
-            <Button className="bg-white text-black w-50 rounded d-flex justify-content-center align-items-center py-2 border-0">
+            <Button onClick={handelLogin} className="bg-white text-black w-50 rounded d-flex justify-content-center align-items-center py-2 border-0">
               <img
                 src={Google}
                 alt="google icon"
@@ -56,6 +66,7 @@ function Login({ onHide }) {
             </Button>
           </div>
         </div>
+          {userState? onHide() :''}
       </Modal>
     </div>
   )

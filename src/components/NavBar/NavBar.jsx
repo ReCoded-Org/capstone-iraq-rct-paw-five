@@ -195,8 +195,7 @@ const handelLogout=()=>{
             >
               {t('navbar.contact')}
             </Nav.Link>
-            {userState?  <button
-            type="button"
+            {userState? <Nav.Link
               activeStyle={{
                 fontWeight: 'bold',
                 borderBottom: '2px solid white',
@@ -206,7 +205,7 @@ const handelLogout=()=>{
             
             onClick={handelLogout}
             > {t('navbar.logOut')}
-            </button>
+            </Nav.Link>
             : <Nav.Link
             activeStyle={{
               fontWeight: 'bold',
