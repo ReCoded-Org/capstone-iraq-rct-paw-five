@@ -1,3 +1,7 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
 .theme-color {
   background-image: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%);
 }
@@ -30,7 +34,7 @@
   width: 650px;
 }
 
-.gradient-background{
+.gradient-background {
   background: -webkit-linear-gradient(45deg, #ec869c, #f7a173 100%);
 }
 .gradient-text {
@@ -115,7 +119,6 @@ input:-webkit-autofill {
     background-size: cover;
     width: 100% !important;
     height: auto;
-    
   }
 }
 
@@ -157,4 +160,21 @@ input:-webkit-autofill {
 .contactinfo,
 #contact-header {
   background: #f2f2f2;
+}
+
+/* https://i.pinimg.com/originals/f2/1b/24/f21b241d1a99309b7616cd4131cca911.gif
+https://i.makeagif.com/media/2-08-2017/BfEXDC.gif
+
+*/
+
+.aqua-gradient {
+  background-image: url('./images//About-us//BfEXDC.gif');
+  height: 160px;
+}
+.card {
+  border-radius: 5px;
+}
+.img {
+  height: 190px;
+  width: 195px;
 }
