@@ -8,8 +8,8 @@ export function selectedLang(lang) {
 }
 // desc
 
-export function fetchMyPets(name,sortType) {
-    return (dispatch) => {
+export function fetchMyPets (name,sortType) {
+    return async (dispatch) => {
         if (name === null ) {
             firebase
                 .firestore()

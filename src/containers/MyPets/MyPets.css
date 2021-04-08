@@ -1,58 +1,74 @@
 .paginationBttns {
-    width: 80%;
-    height: 40px;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: inherit;
-    color: rgb(134, 134, 132);
-  }
-  
-  .paginationBttns a {
-    padding: 10px;
-    margin: 8px;
-    border-radius: 5px;
-    border: 1px solid #b3a5a586;
-    color: rgb(247, 189, 113);
-    cursor: pointer;
-  }
-  
-  .paginationBttns a:hover {
-    color: white !important;
-    background-color: #f37A69;
-    
-    
+  width: 80%;
+  height: 40px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: inherit;
+  color: rgb(134, 134, 132);
+}
 
-  }
-  
-  .paginationActive a {
-    color: white !important;
-    background-color: #f37A69;
-    outline: none !important;
-  }
-  
-  .paginationDisabled a {
-    color: rgb(247, 189, 113);
-    background-color: rgb(255, 255, 254);
-  }
-  ul .paginationBttns{
-      padding:inherit !important
-  }
+.paginationBttns a {
+  padding: 10px;
+  margin: 8px;
+  border-radius: 5px;
+  border: 1px solid #b3a5a586;
+  color: rgb(247, 189, 113);
+  cursor: pointer;
+}
+
+.paginationBttns a:hover {
+  color: white !important;
+  background-color: #f37a69;
+}
+
+.paginationActive a {
+  color: white !important;
+  background-color: #f37a69;
+  outline: none !important;
+}
+
+.paginationDisabled a {
+  color: rgb(247, 189, 113);
+  background-color: rgb(255, 255, 254);
+}
+ul .paginationBttns {
+  padding: inherit !important;
+}
 
 .modal-backdrop.fade {
   opacity: 0;
   filter: alpha(opacity=0);
-  }
-  .modal-backdrop.in {
+}
+.modal-backdrop.in {
   opacity: 0.5;
   filter: alpha(opacity=50);
-  }
-  
-  .modal-backdrop.fade {
+}
+
+.modal-backdrop.fade {
   opacity: 0;
   filter: alpha(opacity=0);
-  }
-  .modal-backdrop.fade.in {
+}
+.modal-backdrop.fade.in {
   opacity: 0.5;
   filter: alpha(opacity=50);
-  }
+}
+
+.mypet{
+  background-color: #ffc6a975;
+  background-image: linear-gradient(315deg, #f3f0f038 0%, #f1c18a02 74%);
+}
+
+.bg-select{
+  background-color: azure !important;
+  border-radius: 20px !important;
+}
+.left-raduis{
+  border-top-left-radius: 20px !important;
+  border-bottom-left-radius:20px ;
+}
+
+.right-raduis{
+  border-bottom-right-radius: 20px !important;
+  border-top-right-radius: 20px !important;
+}

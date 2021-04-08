@@ -147,5 +147,16 @@
   "NotFoundPage": {
     "error404": "Page Not Found",
     "returnHome": "Return to Home page"
+  },
+  "mypets":{
+    "welcome":"Welcome",
+    "petname":"Pet Name",
+    "name":"Name",
+    "age":"Age",
+    "city":"City",
+    "adopted":"Adopted",
+    "yes":"Yes",
+    "no":"No",
+    "warningmessage":"Do you sure to delete"
   }
 }
