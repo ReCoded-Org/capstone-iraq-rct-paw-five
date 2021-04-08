@@ -8,7 +8,7 @@ import Twitter from '../../images/About-us/twitter 1.svg'
 import Instagram from '../../images/About-us/instagram.svg'
 
 const CardSection = () => {
-  const cardInfo = [
+  const cardInfo1 = [
     {
       MemberBg: { MemberBg },
       Ellipsemember: '',
@@ -21,7 +21,7 @@ const CardSection = () => {
         'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore ex magna aliqua Ut enim illum ad minim veniam, quis ea exercitation ullamco cillum ut enim dolore',
     },
   ]
-  const one = [
+  const cardInfo2 = [
     {
       MemberBg: { MemberBg },
       Ellipsemember: '',
@@ -34,7 +34,7 @@ const CardSection = () => {
         'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore ex magna aliqua Ut enim illum ad minim veniam, quis ea exercitation ullamco cillum ut enim dolore',
     },
   ]
-  const a = [
+  const cardInfo3 = [
     {
       MemberBg: { MemberBg },
       Ellipsemember: '',
@@ -47,7 +47,7 @@ const CardSection = () => {
         'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore ex magna aliqua Ut enim illum ad minim veniam, quis ea exercitation ullamco cillum ut enim dolore',
     },
   ]
-  const three = [
+  const cardInfo4 = [
     {
       MemberBg: { MemberBg },
       Ellipsemember: '',
@@ -61,7 +61,7 @@ const CardSection = () => {
     },
   ]
 
-  const b = [
+  const cardInfo5 = [
     {
       MemberBg: { MemberBg },
       Ellipsemember: '',
@@ -74,7 +74,7 @@ const CardSection = () => {
         'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore ex magna aliqua Ut enim illum ad minim veniam, quis ea exercitation ullamco cillum ut enim dolore',
     },
   ]
-  const four = [
+  const cardInfo6 = [
     {
       MemberBg: { MemberBg },
 
@@ -133,27 +133,27 @@ const CardSection = () => {
     <Container fluid style={{ width: '100%' }}>
       <Row>
         <Col lg={4} md={6}>
-          {cardInfo.map(renderCard)}
+          {cardInfo1.map(renderCard)}
         </Col>
         <Col lg={4} md={6}>
           {' '}
-          {b.map(renderCard)}
+          {cardInfo2.map(renderCard)}
         </Col>
         <Col lg={4} md={6}>
           {' '}
-          {a.map(renderCard)}
+          {cardInfo3.map(renderCard)}
         </Col>
         <Col lg={4} md={6}>
           {' '}
-          {one.map(renderCard)}
+          {cardInfo4.map(renderCard)}
         </Col>
         <Col lg={4} md={6}>
           {' '}
-          {three.map(renderCard)}
+          {cardInfo5.map(renderCard)}
         </Col>
         <Col lg={4} md={6}>
           {' '}
-          {four.map(renderCard)}
+          {cardInfo1.map(renderCard)}
         </Col>
       </Row>
     </Container>
