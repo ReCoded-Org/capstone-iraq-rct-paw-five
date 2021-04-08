@@ -148,5 +148,16 @@
   "NotFoundPage": {
     "error404": "الصفحة غير موجودة",
     "returnHome": "عد للصفحة الرئيسة"
+  },
+  "mypets":{
+    "welcome":"اهلا بك",
+    "petname":"اسم اليفك",
+    "name":"الاسم",
+    "age":"العمر",
+    "city":"المدينة",
+    "adopted":"متبنى",
+    "yes":"نعم",
+    "no":"لا",
+    "warningmessage":"هل تريد فعلا حذف"
   }
 }
