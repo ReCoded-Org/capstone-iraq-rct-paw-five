@@ -182,7 +182,6 @@ const handelLogout=()=>{
                 </Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
-
             <Nav.Link
               as={NavLink}
               activeStyle={{
