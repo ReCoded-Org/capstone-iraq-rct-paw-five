@@ -14,6 +14,8 @@ import ResourceDog from './components/ResourcePageDog/ResourceDog'
 import Details from './components/DetailsPage/Details'
 import MyPets from './containers/MyPets/MyPets'
 import Footer from './components/Footer/Footer'
+import About from './components/AboutsUs/AboutUs'
+import Home from './containers/Home/Home'
 import ScrollToTop from './helpers/ScrollToTop'
 
 import {
@@ -29,7 +31,6 @@ import {
   MY_PETS,
 } from './routes'
 import './App.css'
-import Home from './containers/Home/Home'
 import NotFound from './components/NotFound/NotFound'
 import AdoptionPage from './containers/adoptionPage'
 import { fetchPetsInfo } from './redux/actions/pets'
@@ -47,7 +48,7 @@ function App() {
         <Route path={ADOPT_ROUTE} component={AdoptionPage} />
         <Route path={DETAILS_ROUTE} component={Details} />
         <Route path={ADD_APET_ROUTE} component={AddPet} />
-        <Route path={ABOUT_ROUTE}>{/** <ABOUT_ROUTE/> */}</Route>
+        <Route path={ABOUT_ROUTE} component={About} />
         <Route path={RESOURCE_CAT_ROUTE} component={ResourceCat} />
         <Route path={RESOURCE_DOG_ROUTE} component={ResourceDog} />
         <Route path={CONTACT_US_ROUTE} component={ContacUS} />
