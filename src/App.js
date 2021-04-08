@@ -26,6 +26,7 @@ import {
   NOT_FOUND,
 } from './routes'
 import './App.css'
+import Home from './containers/Home/Home'
 import NotFound from './components/NotFound/NotFound'
 
 import AdoptionPage from './containers/adoptionPage'
@@ -43,7 +44,7 @@ function App() {
         <Route path={RESOURCE_DOG_ROUTE} component={ResourceDog} />
         <Route path={CONTACT_US_ROUTE} component={ContacUS} />
         <Route path={NOT_FOUND} component={NotFound} />
-        <Route path={HOME_ROUTE} exact />
+        <Route path={HOME_ROUTE} exact component={Home} />
         <Redirect to={NOT_FOUND} />
       </Switch>
       <Footer />
