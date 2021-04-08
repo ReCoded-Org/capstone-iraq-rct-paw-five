@@ -153,7 +153,7 @@ const CardSection = () => {
         </Col>
         <Col lg={4} md={6}>
           {' '}
-          {cardInfo1.map(renderCard)}
+          {cardInfo6.map(renderCard)}
         </Col>
       </Row>
     </Container>
