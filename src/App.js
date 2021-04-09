@@ -13,6 +13,7 @@ import ResourceDog from './components/ResourcePageDog/ResourceDog'
 import Details from './components/DetailsPage/Details'
 import MyPets from './containers/MyPets/MyPets'
 import Footer from './components/Footer/Footer'
+import ScrollToTop from './helpers/ScrollToTop'
 
 import {
   HOME_ROUTE,
@@ -34,6 +35,7 @@ import AdoptionPage from './containers/adoptionPage'
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <NavBar />
       <Switch>
         <Route path={ADOPT_ROUTE} component={AdoptionPage} />

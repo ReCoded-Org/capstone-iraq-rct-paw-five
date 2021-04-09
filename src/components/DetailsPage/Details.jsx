@@ -1,95 +1,84 @@
-/* eslint-disable jsx-a11y/label-has-associated-control */
-import { Row, Container, Col } from 'react-bootstrap'
-import 'bootstrap/dist/css/bootstrap.min.css'
 import React from 'react'
+import { Row, Container, Col } from 'react-bootstrap'
+import { useTranslation } from 'react-i18next'
+import { PropTypes } from 'prop-types'
+import { useSelector} from 'react-redux'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import '../../App.css'
-import im1 from '../../images/details-page/Rectangle 68.svg'
 import im2 from '../../images/details-page/Rectangle 79.svg'
 import im3 from '../../images/details-page/Rectangle 80.svg'
 import im4 from '../../images/details-page/image 15.svg'
 
-function Detail() {
+function Detail({match}) {
+  const { t } = useTranslation()
+  const { currentPets} = useSelector(
+    state => state.pets
+  )
   return (
     <Container fluid>
       <Row>
         <Col>
           <h2 className="row justify-content-center pt-5 pb-5 " id="colorset1">
-            pet Details
+           {t('detalis-page.PetDetalis')}
           </h2>
         </Col>
       </Row>
-      <Row className=" pr-3 pb-5">
+      {currentPets.map(pet=>(
+        pet.petName===match.params.petName?( <div> <Row className=" pr-3 pb-5">
         {/** image column */}
         <Col>{}</Col>
         <Col lg={5} sm={12} md={12} xs={12} className="pt-3 ">
           {' '}
-          <img src={im1} alt="" className="main-image img-fluid " />
+          <img src={pet.file} alt="pet" className="main-image img-fluid mx-2" />
         </Col>
         {/** image column */}
 
-        <Col lg={5} className="pb-5">
-          <h3 className="pb-5 pt-3 tips" id="colorset1">
-            some tips to care about your pit
+        <Col lg={5} className="pb-3">
+          <h3 className="pb-2 pt-3 tips text-center text-lg-left" id="colorset1">
+            {pet.petName}
           </h3>
-          <label className="label" id="colorset">
-            story:
-          </label>
-          <span className="span text pb-5">
-            The history of pets is intertwined with the process of animal d
-            omestication, and it is likely that the dog, as the first
-            domesticated species, was also the first pet. Perhaps the initial
-            steps toward domestication were taken largely through the widespread
-            human practice of making pets of captured young wild animals.
-          </span>
-          <div className="pt-4">
+          <Col lg={8} md={12} sm={12}>
+          <div className="pt-3">
             <label className="label" id="colorset">
-              species:{' '}
+            {t('detalis-page.pet-species')}
             </label>
-            <span className="span text  pt-5">
-              gs are highly unusual in their variation, from the Chihuahua to
-              the Great Dane.
+            <span className="pl-2 pr-5 ">
+              {pet.species}
             </span>
           </div>
-          <div>
-            <Row className="pt-5 ">
-              <Col>
-                <label className="label" id="colorset">
-                  Age:
-                </label>
-                <span className="pl-2">21</span>
-              </Col>
-              <Col>
-                <label className="label" id="colorset">
-                  size:
-                </label>
-                <span className="span pl-2">23</span>
-              </Col>
-              <Col>
-                <label className="label" id="colorset">
-                  gender:
-                </label>
-                <span className="span pl-2">male</span>
-              </Col>
-            </Row>
+          <div className="pt-3">
+            <label className="label" id="colorset">
+            {t('detalis-page.pet-age')}
+            </label>
+            <span className="pl-2">{pet.age}</span>
           </div>
-          <div>
-            <Row className="pt-5">
-              <Col>
-                <label className="label" id="colorset">
-                  weight:
-                </label>
-                <span className="span pl-2">19</span>
-              </Col>
-
-              <Col>
-                <label className="label" id="colorset">
-                  color:
-                </label>
-                <span className="pl-2">gray</span>
-              </Col>
+          <div className="pt-3">
+            <label className="label" id="colorset">
+            {t('detalis-page.pet-color')}
+            </label>
+            <span className="pl-2">{pet.color}</span>
+          </div>
+          <div className="pt-3">
+            <label className="label" id="colorset">
+            {t('detalis-page.gender')}
+            </label>
+            <span className="pl-2">{pet.gender}</span>
+          </div>
+          <div className="pt-3">
+            <label className="label" id="colorset">
+            {t('detalis-page.pet-weight')}
+            </label>
+            <span className="pl-2">{pet.weight}</span>
+          </div>
+          <div className="pt-3">
+            <label className="label" id="colorset">
+             {t('detalis-page.pet-story')}
+            </label>
+            <span className="text pl-2">{pet.story}</span>
+          </div>
+        </Col>
+         
               <Col>{}</Col>
-            </Row>
-          </div>
         </Col>
         <Col>{}</Col>
       </Row>
@@ -98,7 +87,7 @@ function Detail() {
       <Row id="contact-header">
         <Col>
           <h2 className="row justify-content-center pt-5 pb-5 " id="colorset1">
-            Contact info
+          {t('detalis-page.contact-info')}
           </h2>
         </Col>
       </Row>
@@ -108,41 +97,41 @@ function Detail() {
         <Col lg={8} md={12} sm={12}>
           <div>
             <label className="label" id="colorset">
-              name:{' '}
+            {t('detalis-page.ownerName')}
             </label>
-            <span className="span pl-2">Ali Mustafa</span>
+            <span className="span pl-2">{pet.ownerName}</span>
           </div>
           <div className="pt-3">
             <label className="label" id="colorset">
-              About:{' '}
+            {t('detalis-page.aboutOwner')}
             </label>
             <span className="pl-2 pr-5 ">
-              Despite their radically different appearances, all domestic dogs
-              are still genetically the same species. In a word, All domestic
-              dog breeds are able to interbreed to give birth to reproductively
-              viable offspring. Despite their radically different appearances,
-              all domestic dogs are still genetically the same species. In a
-              word, All domestic dog breeds are able to interbreed to give birth
-              to reproductively viable offspring.
+              {pet.aboutOwner}
             </span>
           </div>
           <div className="pt-3">
             <label className="label" id="colorset">
-              Location:
+            {t('detalis-page.city')}
             </label>
-            <span className="pl-2">Erbil</span>
+            <span className="pl-2">{pet.city}</span>
           </div>
           <div className="pt-3">
             <label className="label" id="colorset">
-              Email:
+            {t('detalis-page.address')}
             </label>
-            <span className="pl-2">ali.00622274@gmail.com</span>
+            <span className="pl-2">{pet.address}</span>
           </div>
           <div className="pt-3">
             <label className="label" id="colorset">
-              phone number:
+            {t('detalis-page.email')}
             </label>
-            <span className="pl-2">0750111111</span>
+            <span className="pl-2">{pet.email}</span>
+          </div>
+          <div className="pt-3">
+            <label className="label" id="colorset">
+            {t('detalis-page.phoneNumber')}
+            </label>
+            <span className="pl-2">{pet.phoneNumber}</span>
           </div>
         </Col>
         <Col lg={3}>{}</Col>
@@ -154,7 +143,7 @@ function Detail() {
             style={{ color: 'white' }}
             className=" row justify-content-center pt-3 pb-3 "
           >
-            Pet Gallery
+           {t('detalis-page.petGallery')}
           </h2>
         </Col>
       </Row>
@@ -172,8 +161,19 @@ function Detail() {
           <img src={im4} className="img-fluid img pt-4 " alt="" />
         </Col>
       </Row>
+      </div> ):null
+      ))}
+   
     </Container>
   )
+}
+
+Detail.propTypes = {
+  match: PropTypes.arrayOf,
+}
+
+Detail.defaultProps = {
+  match: {},
 }
 
 export default Detail
