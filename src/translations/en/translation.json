@@ -147,5 +147,22 @@
   "NotFoundPage": {
     "error404": "Page Not Found",
     "returnHome": "Return to Home page"
+  },
+  "detalis-page":{
+    "PetDetalis":"Pet Details",
+    "pet-age": "Pet Age:",
+    "pet-species": "Pet Species:",
+    "pet-weight": "Pet Weight:",
+    "pet-color": "Pet Color:",
+    "gender": "Pet gender:",
+    "pet-story": "Pet story:",
+    "contact-info": "Contact Info",
+    "ownerName": "Owner Name:",
+    "aboutOwner": "About Owner:",
+    "email": "Email:",
+    "phoneNumber": "Phone Number:",
+    "city": "City:",
+    "address": "Address:",
+    "petGallery":"Pet Gallery"
   }
 }
