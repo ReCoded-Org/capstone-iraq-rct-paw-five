@@ -48,6 +48,7 @@ export default function NavBar() {
 const handelLogout=()=>{
   firebase.auth().signOut().then(() => {
     dispatch(userStatus(false))
+ 
     Redirect('/')
   }).catch(() => {
   });
