@@ -20,11 +20,11 @@ import {
 import 'bootstrap/dist/css/bootstrap.min.css'
 import logo from '../../images/logo.ico'
 import firebase from '../../firebase'
-import userStatus,{setUserInfo} from '../../redux/actions/user'
+import userStatus, { setUserInfo } from '../../redux/actions/user'
 
 export default function NavBar() {
   const globaleLang = useSelector(state => state.langReducer)
- const userState= useSelector(state => state.user)
+  const userState = useSelector(state => state.user)
   const dispatch = useDispatch()
   const { t } = useTranslation()
   const [dirProperties, setDir] = useState({
@@ -33,26 +33,29 @@ export default function NavBar() {
     textDir: 'text-left',
   })
   const [showLoginModal, setShowLoginModal] = useState(false)
-// check the user if loggedin or not
-  useEffect(()=>{
-    firebase.auth().onAuthStateChanged((user) => {
-        if (user) {
-         dispatch(userStatus(true))
-         dispatch(setUserInfo({name:user.displayName,uid:user.uid}))
-        } else {
-         dispatch(userStatus(false))
-        } 
-      })
-})
+  // check the user if loggedin or not
+  useEffect(() => {
+    firebase.auth().onAuthStateChanged(user => {
+      if (user) {
+        dispatch(userStatus(true))
+        dispatch(setUserInfo({ name: user.displayName, uid: user.uid }))
+      } else {
+        dispatch(userStatus(false))
+      }
+    })
+  })
 
-const handelLogout=()=>{
-  firebase.auth().signOut().then(() => {
-    dispatch(userStatus(false))
- 
-    Redirect('/')
-  }).catch(() => {
-  });
-}
+  const handelLogout = () => {
+    firebase
+      .auth()
+      .signOut()
+      .then(() => {
+        dispatch(userStatus(false))
+
+        Redirect('/')
+      })
+      .catch(() => {})
+  }
 
   const selectedLanguage = lang => {
     i18next.changeLanguage(lang)
@@ -149,18 +152,22 @@ const handelLogout=()=>{
             >
               {t('navbar.adopt')}
             </Nav.Link>
-            {userState?<Nav.Link
-              as={NavLink}
-              activeStyle={{
-                fontWeight: 'bold',
-                borderBottom: '2px solid white',
-              }}
-              exact
-              to={ADD_APET_ROUTE}
-              className="m-3 p-0 text-light"
-            >
-              {t('navbar.addapet')}
-            </Nav.Link>:'' } 
+            {userState ? (
+              <Nav.Link
+                as={NavLink}
+                activeStyle={{
+                  fontWeight: 'bold',
+                  borderBottom: '2px solid white',
+                }}
+                exact
+                to={ADD_APET_ROUTE}
+                className="m-3 p-0 text-light"
+              >
+                {t('navbar.addapet')}
+              </Nav.Link>
+            ) : (
+              ''
+            )}
             <Dropdown>
               <Dropdown.Toggle className="text-light bg-transparent shadow-none  border-0 p-0 m-3 ">
                 {t('navbar.resources.0')}
@@ -194,29 +201,33 @@ const handelLogout=()=>{
             >
               {t('navbar.contact')}
             </Nav.Link>
-            {userState? <Nav.Link
-              activeStyle={{
-                fontWeight: 'bold',
-                borderBottom: '2px solid white',
-              }}
-              style={{border:'none',background:'none'}}
-              className="m-3 p-0 text-light"
-            
-            onClick={handelLogout}
-            > {t('navbar.logOut')}
-            </Nav.Link>
-            : <Nav.Link
-            activeStyle={{
-              fontWeight: 'bold',
-              borderBottom: '2px solid white',
-            }}
-            className="m-3 p-0 text-light"
-            onClick={() => {
-              setShowLoginModal(!showLoginModal)
-            }}
-          >
-            {t('navbar.logIn')}
-          </Nav.Link>}
+            {userState ? (
+              <Nav.Link
+                activeStyle={{
+                  fontWeight: 'bold',
+                  borderBottom: '2px solid white',
+                }}
+                style={{ border: 'none', background: 'none' }}
+                className="m-3 p-0 text-light"
+                onClick={handelLogout}
+              >
+                {' '}
+                {t('navbar.logOut')}
+              </Nav.Link>
+            ) : (
+              <Nav.Link
+                activeStyle={{
+                  fontWeight: 'bold',
+                  borderBottom: '2px solid white',
+                }}
+                className="m-3 p-0 text-light"
+                onClick={() => {
+                  setShowLoginModal(!showLoginModal)
+                }}
+              >
+                {t('navbar.logIn')}
+              </Nav.Link>
+            )}
             <Form.Control
               className=" fa   m-3 text-light text-danger shadow-none bg-transparent  border-0 "
               onChange={handelOption}

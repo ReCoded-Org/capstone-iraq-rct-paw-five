@@ -11,25 +11,18 @@ import Facebook from '../../../images/login/facebook.svg'
 
 function Login({ onHide }) {
   const { t } = useTranslation()
-  const userState= useSelector(state => state.user)
+  const userState = useSelector(state => state.user)
 
-  const handelLoginWithGoogle=()=>{
-    const provider = new firebase.auth.GoogleAuthProvider();
+  const handelLoginWithGoogle = () => {
+    const provider = new firebase.auth.GoogleAuthProvider()
 
-    firebase.auth()
-  .signInWithPopup(provider)
- 
-}
+    firebase.auth().signInWithPopup(provider)
+  }
 
-
-const handelLoginWithFacebook=()=>{
-  const provider = new firebase.auth.FacebookAuthProvider();
-  firebase
-  .auth()
-  .signInWithPopup(provider)
-}
-
-
+  const handelLoginWithFacebook = () => {
+    const provider = new firebase.auth.FacebookAuthProvider()
+    firebase.auth().signInWithPopup(provider)
+  }
 
   return (
     <div>
@@ -48,7 +41,10 @@ const handelLoginWithFacebook=()=>{
             <h4>{t('login.log-in')}</h4>
           </div>
           <div className="d-flex justify-content-center mt-5 mb-5">
-            <Button onClick={handelLoginWithGoogle} className="bg-white text-black w-50 rounded d-flex justify-content-center align-items-center py-2 border-0">
+            <Button
+              onClick={handelLoginWithGoogle}
+              className="bg-white text-black w-50 rounded d-flex justify-content-center align-items-center py-2 border-0"
+            >
               <img
                 src={Google}
                 alt="google icon"
@@ -60,7 +56,10 @@ const handelLoginWithFacebook=()=>{
             </Button>
           </div>
           <div className="d-flex justify-content-center mb-5 pb-5">
-            <Button onClick={handelLoginWithFacebook} className="background-facebook text-black w-50 rounded d-flex justify-content-center align-items-center py-2 border-0">
+            <Button
+              onClick={handelLoginWithFacebook}
+              className="background-facebook text-black w-50 rounded d-flex justify-content-center align-items-center py-2 border-0"
+            >
               <img
                 src={Facebook}
                 alt="Facebook icon"
@@ -78,7 +77,7 @@ const handelLoginWithFacebook=()=>{
             </Button>
           </div>
         </div>
-          {userState? onHide() :''}
+        {userState ? onHide() : ''}
       </Modal>
     </div>
   )
