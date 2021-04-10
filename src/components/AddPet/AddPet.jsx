@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
-
+import { useSelector } from 'react-redux'
 import { useFormik } from 'formik'
 import * as Yup from 'yup'
 import { useTranslation } from 'react-i18next'
 import { Row, Col } from 'react-bootstrap'
+import { Redirect } from 'react-router-dom'
 import firebase, { storage } from '../../firebase'
 import AddPetForm from './AddPetForm'
 import 'firebase/firestore'
@@ -13,6 +14,7 @@ import Paw from '../../images/Add-pet/paw.svg'
 function AddPet() {
   const { t } = useTranslation()
   const [file, setFile] = useState(null)
+  const userState = useSelector(state => state.user)
 
   const validationSchema = Yup.object().shape({
     petName: Yup.string().required(t('add-pet.required')),
@@ -99,7 +101,9 @@ function AddPet() {
   if (values.file != null) {
     reader.readAsDataURL(values.file)
   }
-  return (
+  return !userState ? (
+    <Redirect to="/login" />
+  ) : (
     <div className="overflow-hidden">
       {/* page header */}
       <Row className="mb-4">

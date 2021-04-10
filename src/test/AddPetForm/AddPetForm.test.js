@@ -1,6 +1,6 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import AddPetForm from '../../components/AddPet'
+import { AddPetForm } from '../../components/AddPet'
 
 it('renders correctly', () => {
   const tree = renderer
