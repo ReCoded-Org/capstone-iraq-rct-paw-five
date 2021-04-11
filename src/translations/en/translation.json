@@ -9,7 +9,8 @@
     "resources": ["Resources", "Tibs about cats", "Tibs about dogs"],
     "about": "About",
     "logIn": "Log In",
-    "logOut": "Log Out"
+    "signUp": "Sign Up",
+    "logOut":"Logout"
   },
   "add-pet": {
     "required": "This field is required !!",
@@ -147,5 +148,16 @@
   "NotFoundPage": {
     "error404": "Page Not Found",
     "returnHome": "Return to Home page"
+  },
+  "mypets":{
+    "welcome":"Welcome",
+    "petname":"Pet Name",
+    "name":"Name",
+    "age":"Age",
+    "city":"City",
+    "adopted":"Adopted",
+    "yes":"Yes",
+    "no":"No",
+    "warningmessage":"Do you to delete "
   }
 }
