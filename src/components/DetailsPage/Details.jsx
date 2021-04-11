@@ -14,6 +14,7 @@ function Detail({match}) {
   const { currentPets} = useSelector(
     state => state.pets
   )
+  const petInfo=currentPets.find(pet=>pet.petName===match.params.petName)
   return (
     <Container fluid>
       <Row>
@@ -23,58 +24,58 @@ function Detail({match}) {
           </h2>
         </Col>
       </Row>
-      {currentPets.map(pet=>(
-        pet.petName===match.params.petName?( <div> <Row className=" pr-3 pb-5">
+  
+      <div> <Row className=" pr-3 pb-5">
         {/** image column */}
         <Col>{}</Col>
         <Col lg={5} sm={12} md={12} xs={12} className="pt-3 ">
           {' '}
-          <img src={pet.file} alt="pet" className="main-image img-fluid mx-2" />
+          <img src={petInfo.file} alt="pet" className="main-image img-fluid mx-2" />
         </Col>
         {/** image column */}
 
         <Col lg={5} className="pb-3">
           <h3 className="pb-2 pt-3 tips text-center text-lg-left" id="colorset1">
-            {pet.petName}
+            {petInfo.petName}
           </h3>
           <Col lg={8} md={12} sm={12}>
           <div className="pt-3">
-            <label className="label" id="colorset">
+            <label htmlFor="pet species" className="label" id="colorset">
             {t('detalis-page.pet-species')}
             </label>
             <span className="pl-2 pr-5 ">
-              {pet.species}
+              {petInfo.species}
             </span>
           </div>
           <div className="pt-3">
-            <label className="label" id="colorset">
+            <label htmlFor="pet age" className="label" id="colorset">
             {t('detalis-page.pet-age')}
             </label>
-            <span className="pl-2">{pet.age}</span>
+            <span className="pl-2">{petInfo.age}</span>
           </div>
           <div className="pt-3">
-            <label className="label" id="colorset">
+            <label htmlFor="pet-info" className="label" id="colorset">
             {t('detalis-page.pet-color')}
             </label>
-            <span className="pl-2">{pet.color}</span>
+            <span className="pl-2">{petInfo.color}</span>
           </div>
           <div className="pt-3">
-            <label className="label" id="colorset">
+            <label htmlFor="pet gender" className="label" id="colorset">
             {t('detalis-page.gender')}
             </label>
-            <span className="pl-2">{pet.gender}</span>
+            <span className="pl-2">{petInfo.gender}</span>
           </div>
           <div className="pt-3">
-            <label className="label" id="colorset">
+            <label htmlFor="pet weight" className="label" id="colorset">
             {t('detalis-page.pet-weight')}
             </label>
-            <span className="pl-2">{pet.weight}</span>
+            <span className="pl-2">{petInfo.weight}</span>
           </div>
           <div className="pt-3">
-            <label className="label" id="colorset">
+            <label htmlFor="pet story" className="label" id="colorset">
              {t('detalis-page.pet-story')}
             </label>
-            <span className="text pl-2">{pet.story}</span>
+            <span className="text pl-2">{petInfo.story}</span>
           </div>
         </Col>
          
@@ -91,47 +92,47 @@ function Detail({match}) {
           </h2>
         </Col>
       </Row>
-      <Row className="contactinfo pb-5 ">
+      <Row className="contactinfo pb-5 pl-3 pl-lg-0 ">
         <Col>{}</Col>
 
         <Col lg={8} md={12} sm={12}>
           <div>
-            <label className="label" id="colorset">
+            <label htmlFor="owner name" className="label" id="colorset">
             {t('detalis-page.ownerName')}
             </label>
-            <span className="span pl-2">{pet.ownerName}</span>
+            <span className="span pl-2">{petInfo.ownerName}</span>
           </div>
           <div className="pt-3">
-            <label className="label" id="colorset">
+            <label htmlFor="about owner" className="label" id="colorset">
             {t('detalis-page.aboutOwner')}
             </label>
             <span className="pl-2 pr-5 ">
-              {pet.aboutOwner}
+              {petInfo.aboutOwner}
             </span>
           </div>
           <div className="pt-3">
-            <label className="label" id="colorset">
+            <label htmlFor="city" className="label" id="colorset">
             {t('detalis-page.city')}
             </label>
-            <span className="pl-2">{pet.city}</span>
+            <span className="pl-2">{petInfo.city}</span>
           </div>
           <div className="pt-3">
-            <label className="label" id="colorset">
+            <label htmlFor="address" className="label" id="colorset">
             {t('detalis-page.address')}
             </label>
-            <span className="pl-2">{pet.address}</span>
+            <span className="pl-2">{petInfo.address}</span>
           </div>
           <div className="pt-3">
-            <label className="label" id="colorset">
+            <label htmlFor="email" className="label" id="colorset">
             {t('detalis-page.email')}
             </label>
-            <span className="pl-2">{pet.email}</span>
+            <span className="pl-2">{petInfo.email}</span>
           </div>
           <div className="pt-3">
-            <label className="label" id="colorset">
+            <label htmlFor="phone number" className="label" id="colorset">
             {t('detalis-page.phoneNumber')}
             </label>
-            <span className="pl-2">{pet.phoneNumber}</span>
+            <span className="pl-2">{petInfo.phoneNumber}</span>
           </div>
         </Col>
         <Col lg={3}>{}</Col>
@@ -161,8 +162,7 @@ function Detail({match}) {
           <img src={im4} className="img-fluid img pt-4 " alt="" />
         </Col>
       </Row>
-      </div> ):null
-      ))}
+      </div> 
    
     </Container>
   )
