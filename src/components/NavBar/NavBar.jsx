@@ -16,6 +16,7 @@ import {
   RESOURCE_DOG_ROUTE,
   ADD_APET_ROUTE,
   CONTACT_US_ROUTE,
+  MY_PETS
 } from '../../routes'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import logo from '../../images/logo.ico'
@@ -201,6 +202,26 @@ export default function NavBar() {
             >
               {t('navbar.contact')}
             </Nav.Link>
+
+
+            {userState ? (
+              <Nav.Link
+                as={NavLink}
+                activeStyle={{
+                  fontWeight: 'bold',
+                  borderBottom: '2px solid white',
+                }}
+                exact
+                to={MY_PETS}
+                className="m-3 p-0 text-light"
+              >
+                {t('navbar.mypets')}
+              </Nav.Link>
+            ) : (
+              ''
+            )}
+
+
             {userState ? (
               <Nav.Link
                 activeStyle={{

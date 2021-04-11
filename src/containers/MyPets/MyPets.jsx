@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import ReactPaginate from 'react-paginate'
+import { Redirect } from 'react-router-dom'
 import './MyPets.css'
 import {
   Col,
@@ -25,7 +26,7 @@ export default function FetchMyPets() {
   const [pageNumber, setPageNumber] = useState(0)
 
   const MyPets = useSelector(state => state.myPets)
-  const currentUserId = useSelector(state => state.user)
+  const currentUser = useSelector(state => state.user)
   
 
   const petPerPage = Math.ceil(MyPets.length / 3)
@@ -73,21 +74,23 @@ export default function FetchMyPets() {
   const [uid, setuid] = useState('')
 
  const checkUid=()=>{
-  if(currentUserId.user){
-    setuid(currentUserId.user.uid)
+  if(currentUser.user){
+    setuid(currentUser.user.uid)
   }
 }
 
 useEffect(()=>{
   checkUid();
-},[currentUserId])
+},[currentUser])
 
   useEffect(() => {
     dispatch(fetchMyPets(name, sort, uid))
   }, [name, sort,uid])
 
 
-  return (
+  return !currentUser ? (
+    <Redirect to="/login" />
+  ) : (
     <div>
       
       <Container className=" slid p-5" fluid >

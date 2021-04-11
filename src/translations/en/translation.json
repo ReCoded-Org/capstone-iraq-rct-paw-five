@@ -10,7 +10,8 @@
     "about": "About",
     "logIn": "Log In",
     "signUp": "Sign Up",
-    "logOut":"Logout"
+    "logOut":"Logout",
+    "mypets":"My Pets"
   },
   "add-pet": {
     "required": "This field is required !!",
