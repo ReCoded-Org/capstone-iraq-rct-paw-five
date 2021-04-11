@@ -43,7 +43,7 @@ export default function NavBar() {
         dispatch(userStatus(false))
       }
     })
-  })
+  },[])
 
   const handelLogout = () => {
     firebase
