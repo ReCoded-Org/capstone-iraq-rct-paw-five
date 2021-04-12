@@ -12,7 +12,7 @@ import im4 from '../../images/details-page/image 15.svg'
 function Detail({ match }) {
   const { t } = useTranslation()
   const { currentPets } = useSelector(state => state.pets)
-  const petInfo = currentPets.find(pet => pet.petName === match.params.petName)
+  const petInfo = currentPets.find(pet => pet.id === match.params.id)
   return (
     <Container fluid>
       <Row>
