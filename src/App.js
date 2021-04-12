@@ -11,6 +11,7 @@ import ContacUS from './containers/ContactUs/ContactUs'
 import ResourceCat from './components/ResourcePageCat/ResourceCat'
 import ResourceDog from './components/ResourcePageDog/ResourceDog'
 import Details from './components/DetailsPage/Details'
+import MyPets from './containers/MyPets/MyPets'
 import Footer from './components/Footer/Footer'
 import About from './components/AboutsUs/AboutUs'
 
@@ -24,11 +25,11 @@ import {
   CONTACT_US_ROUTE,
   DETAILS_ROUTE,
   NOT_FOUND,
+  MY_PETS,
 } from './routes'
 import './App.css'
 import Home from './containers/Home/Home'
 import NotFound from './components/NotFound/NotFound'
-
 import AdoptionPage from './containers/adoptionPage'
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
         <Route path={CONTACT_US_ROUTE} component={ContacUS} />
         <Route path={NOT_FOUND} component={NotFound} />
         <Route path={HOME_ROUTE} exact component={Home} />
+        <Route path={MY_PETS} exact component={MyPets} />
         <Redirect to={NOT_FOUND} />
       </Switch>
       <Footer />
