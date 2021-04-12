@@ -54,21 +54,21 @@ ul .paginationBttns {
   filter: alpha(opacity=50);
 }
 
-.mypet{
+.mypet {
   background-color: #ffffff75;
   background-image: linear-gradient(315deg, #f3f0f038 0%, #f1c18a02 74%);
 }
 
-.bg-select{
+.bg-select {
   background-color: azure !important;
   border-radius: 20px !important;
 }
-.left-raduis{
+.left-raduis {
   border-top-left-radius: 20px !important;
-  border-bottom-left-radius:20px ;
+  border-bottom-left-radius: 20px;
 }
 
-.right-raduis{
+.right-raduis {
   border-bottom-right-radius: 20px !important;
   border-top-right-radius: 20px !important;
 }

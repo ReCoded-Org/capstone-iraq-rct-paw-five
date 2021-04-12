@@ -1,5 +1,10 @@
 import { combineReducers } from 'redux'
-import petReducer, { langReducer,myPets, deleteMyPet, updateMyPet } from './petReducer'
+import petReducer, {
+  langReducer,
+  myPets,
+  deleteMyPet,
+  updateMyPet,
+} from './petReducer'
 import user from './user'
 
 export default combineReducers({
@@ -8,6 +13,5 @@ export default combineReducers({
   user,
   myPets,
   deleteMyPet,
-  updateMyPet
-  
+  updateMyPet,
 })

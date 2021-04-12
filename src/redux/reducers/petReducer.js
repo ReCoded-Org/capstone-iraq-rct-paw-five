@@ -9,29 +9,28 @@ export const langReducer = (state = localStorage.getItem('lang'), action) => {
 
 export const myPets = (state = [], action) => {
   switch (action.type) {
-      case 'FETCH_MY_PETS':
-          return action.payload
-      default:
-          return state
+    case 'FETCH_MY_PETS':
+      return action.payload
+    default:
+      return state
   }
 }
 
-export const deleteMyPet = (state=null, action) => {
+export const deleteMyPet = (state = null, action) => {
   switch (action.type) {
-      case 'DELETE_MY_PET':
-          return null
-      default:
-          return state
+    case 'DELETE_MY_PET':
+      return null
+    default:
+      return state
   }
 }
 
-
-export const updateMyPet = (state=false, action) => {
+export const updateMyPet = (state = false, action) => {
   switch (action.type) {
-      case 'UPDATE_MY_PET':
-          return null
-      default:
-          return state
+    case 'UPDATE_MY_PET':
+      return null
+    default:
+      return state
   }
 }
 

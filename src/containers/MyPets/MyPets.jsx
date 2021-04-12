@@ -27,12 +27,10 @@ export default function FetchMyPets() {
 
   const MyPets = useSelector(state => state.myPets)
   const currentUser = useSelector(state => state.user)
-  
 
   const petPerPage = Math.ceil(MyPets.length / 3)
   const pagesVisited = pageNumber * petPerPage
   const pageCount = Math.ceil(MyPets.length / petPerPage)
-
 
   const [show, setShow] = useState(false)
 
@@ -73,39 +71,39 @@ export default function FetchMyPets() {
 
   const [uid, setuid] = useState('')
 
- const checkUid=()=>{
-  if(currentUser.user){
-    setuid(currentUser.user.uid)
+  const checkUid = () => {
+    if (currentUser.user) {
+      setuid(currentUser.user.uid)
+    }
   }
-}
 
-useEffect(()=>{
-  checkUid();
-},[currentUser])
+  useEffect(() => {
+    checkUid()
+  }, [currentUser])
 
   useEffect(() => {
     dispatch(fetchMyPets(name, sort, uid))
-  }, [name, sort,uid])
-
+  }, [name, sort, uid])
 
   return !currentUser ? (
     <Redirect to="/login" />
   ) : (
     <div>
-      
-      <Container className=" slid p-5" fluid >
-        <h2 className="text-center text-white p-3">{t('mypets.welcome')} Paw-five</h2>
+      <Container className=" slid p-5" fluid>
+        <h2 className="text-center text-white p-3">
+          {t('mypets.welcome')} Paw-five
+        </h2>
         <Row>
           <Col className="col-7 d-flex justify-content-center">
             <InputGroup className="w-75 text-center">
               <FormControl
                 id="inlineFormInputGroupUsername"
-                placeholder={`${t('mypets.petname')}`} 
+                placeholder={`${t('mypets.petname')}`}
                 className="text-danger text-size left-raduis"
                 onChange={changeName}
                 value={name}
               />
-              <InputGroup.Prepend  >
+              <InputGroup.Prepend>
                 <InputGroup.Text className="right-raduis">
                   <FontAwesomeIcon icon={faSearch} className="text-size" />{' '}
                 </InputGroup.Text>
@@ -135,7 +133,7 @@ useEffect(()=>{
                 className="card text-center m-lg-5 m-md-3 m-sm-2 m-2 shadow-lg  mypet rounded "
                 key={pet.id}
               >
-                <h5 className="p-3 text-left " >{pet.petName}</h5>
+                <h5 className="p-3 text-left ">{pet.petName}</h5>
                 <Row className="d-flex align-items-center">
                   <Col lg={3} md={6} className="d-flex justify-content-center">
                     {' '}
@@ -144,17 +142,15 @@ useEffect(()=>{
                       style={{
                         height: 'auto',
                         minWidth: '200px',
-                        borderRadius:'15px'
+                        borderRadius: '15px',
                       }}
                       src={pet.file}
                       alt=""
-                      
                     />
                   </Col>
 
                   <Col>
                     <div className="card-body justify-content-center">
-                      
                       <p className="card-text text-center">
                         {pet.story.substr(0, 150)}
                       </p>

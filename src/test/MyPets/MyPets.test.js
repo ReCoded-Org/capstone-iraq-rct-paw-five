@@ -13,7 +13,7 @@ it('renders correctly', () => {
     .create(
       <Provider store={store}>
         <Router>
-          <MyPets store={store}/>
+          <MyPets store={store} />
         </Router>
       </Provider>
     )

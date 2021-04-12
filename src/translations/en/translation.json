@@ -10,8 +10,8 @@
     "about": "About",
     "logIn": "Log In",
     "signUp": "Sign Up",
-    "logOut":"Logout",
-    "mypets":"My Pets"
+    "logOut": "Logout",
+    "mypets": "My Pets"
   },
   "add-pet": {
     "required": "This field is required !!",
@@ -150,15 +150,15 @@
     "error404": "Page Not Found",
     "returnHome": "Return to Home page"
   },
-  "mypets":{
-    "welcome":"Welcome",
-    "petname":"Pet Name",
-    "name":"Name",
-    "age":"Age",
-    "city":"City",
-    "adopted":"Adopted",
-    "yes":"Yes",
-    "no":"No",
-    "warningmessage":"Do you to delete "
+  "mypets": {
+    "welcome": "Welcome",
+    "petname": "Pet Name",
+    "name": "Name",
+    "age": "Age",
+    "city": "City",
+    "adopted": "Adopted",
+    "yes": "Yes",
+    "no": "No",
+    "warningmessage": "Do you to delete "
   }
 }

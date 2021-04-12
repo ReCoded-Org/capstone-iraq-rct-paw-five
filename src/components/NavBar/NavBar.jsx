@@ -16,7 +16,7 @@ import {
   RESOURCE_DOG_ROUTE,
   ADD_APET_ROUTE,
   CONTACT_US_ROUTE,
-  MY_PETS
+  MY_PETS,
 } from '../../routes'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import logo from '../../images/logo.ico'
@@ -44,7 +44,7 @@ export default function NavBar() {
         dispatch(userStatus(false))
       }
     })
-  },[])
+  }, [])
 
   const handelLogout = () => {
     firebase
@@ -203,7 +203,6 @@ export default function NavBar() {
               {t('navbar.contact')}
             </Nav.Link>
 
-
             {userState ? (
               <Nav.Link
                 as={NavLink}
@@ -220,7 +219,6 @@ export default function NavBar() {
             ) : (
               ''
             )}
-
 
             {userState ? (
               <Nav.Link
