@@ -162,8 +162,8 @@
     "no": "لا",
     "warningmessage": "هل تريد فعلا حذف"
   },
-  "detalis-page":{
-    "PetDetalis":"تفاصيل الحيوان الأليف",
+  "detalis-page": {
+    "PetDetalis": "تفاصيل الحيوان الأليف",
     "pet-age": ":العمر",
     "pet-species": ":صنف الحيوان الأليف",
     "pet-weight": ":وزن الحيوان الأليف",
@@ -177,6 +177,6 @@
     "phoneNumber": ":رقم الهاتف",
     "city": ":المدينة",
     "address": ":العنوان",
-    "petGallery":"معرض صور الحيوان الأليف"
+    "petGallery": "معرض صور الحيوان الأليف"
   }
 }
