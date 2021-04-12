@@ -7,11 +7,28 @@ export const langReducer = (state = localStorage.getItem('lang'), action) => {
   }
 }
 
-//   to acept export statement and pass eslintrc
-export const test = (state = localStorage.getItem('lang'), action) => {
+export const myPets = (state = [], action) => {
   switch (action.type) {
-    case 'SELECTED_LANG':
+    case 'FETCH_MY_PETS':
       return action.payload
+    default:
+      return state
+  }
+}
+
+export const deleteMyPet = (state = null, action) => {
+  switch (action.type) {
+    case 'DELETE_MY_PET':
+      return null
+    default:
+      return state
+  }
+}
+
+export const updateMyPet = (state = false, action) => {
+  switch (action.type) {
+    case 'UPDATE_MY_PET':
+      return null
     default:
       return state
   }

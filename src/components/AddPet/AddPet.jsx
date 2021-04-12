@@ -10,6 +10,7 @@ import AddPetForm from './AddPetForm'
 import 'firebase/firestore'
 import Cat from '../../images/Add-pet/AddPetCat.svg'
 import Paw from '../../images/Add-pet/paw.svg'
+import date from './currentDate'
 
 function AddPet() {
   const { t } = useTranslation()
@@ -64,6 +65,8 @@ function AddPet() {
       phoneNumber: '',
       city: '',
       address: '',
+      // date:currentDate,
+      adopted: false,
     },
     validationSchema,
     onSubmit() {
@@ -79,14 +82,19 @@ function AddPet() {
             .child(values.file.name)
             .getDownloadURL()
             .then(link => {
-              firebase
-                .firestore()
-                .collection('pets')
-                .add({
-                  ...values,
-                  file: link,
-                })
-                .then(() => resetForm())
+              if (userState.user) {
+                firebase
+                  .firestore()
+                  .collection('pets')
+                  .add({
+                    ...values,
+                    adopted: false,
+                    currentDate: date,
+                    uid: userState.user.uid,
+                    file: link,
+                  })
+                  .then(() => resetForm())
+              }
             })
         }
       )
