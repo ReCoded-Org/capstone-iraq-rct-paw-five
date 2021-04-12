@@ -15,7 +15,7 @@ import date from './currentDate'
 function AddPet() {
   const { t } = useTranslation()
   const [file, setFile] = useState(null)
-  const userState = useSelector(state => state.user)
+  const userState = useSelector(state => state.user.isLoggedIn)
 
   const validationSchema = Yup.object().shape({
     petName: Yup.string().required(t('add-pet.required')),

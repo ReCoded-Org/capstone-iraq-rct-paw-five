@@ -7,7 +7,7 @@ export default function user(
 ) {
   switch (action.type) {
     case 'USER_STATUS':
-      return action.payload
+      return { ...state,isLoggedIn:action.payload}
     case 'USER_INFO':
       return { ...state, user: action.payload }
     default:

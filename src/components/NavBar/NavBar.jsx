@@ -21,11 +21,11 @@ import {
 import 'bootstrap/dist/css/bootstrap.min.css'
 import logo from '../../images/logo.ico'
 import firebase from '../../firebase'
-import userStatus, { setUserInfo } from '../../redux/actions/user'
+import userStatus,{setUserInfo} from '../../redux/actions/user'
 
 export default function NavBar() {
   const globaleLang = useSelector(state => state.langReducer)
-  const userState = useSelector(state => state.user)
+  const userState = useSelector(state => state.user.isLoggedIn)
   const dispatch = useDispatch()
   const { t } = useTranslation()
   const [dirProperties, setDir] = useState({
@@ -39,7 +39,7 @@ export default function NavBar() {
     firebase.auth().onAuthStateChanged(user => {
       if (user) {
         dispatch(userStatus(true))
-        dispatch(setUserInfo({ name: user.displayName, uid: user.uid }))
+       dispatch(setUserInfo({ name: user.displayName, uid: user.uid }))
       } else {
         dispatch(userStatus(false))
       }

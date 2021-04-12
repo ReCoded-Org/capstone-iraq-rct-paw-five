@@ -11,7 +11,7 @@ import Facebook from '../../../images/login/facebook.svg'
 
 function Login({ onHide }) {
   const { t } = useTranslation()
-  const userState = useSelector(state => state.user)
+  const userState = useSelector(state => state.user.isLoggedIn)
 
   const handelLoginWithGoogle = () => {
     const provider = new firebase.auth.GoogleAuthProvider()
