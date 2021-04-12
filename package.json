@@ -39,9 +39,10 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test -u",
     "eject": "react-scripts eject",
-    "fix": "prettier --write 'src/**/*.js*' 'src/**/*.css' '!src/**/*/*.snap'"
+    "fix": "prettier --write 'src/**/*.js*' 'src/**/*.css' '!src/**/*/*.snap'",
+    "style":" prettier --write ./src"
   },
   "eslintConfig": {
     "extends": [

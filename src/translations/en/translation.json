@@ -148,8 +148,8 @@
     "error404": "Page Not Found",
     "returnHome": "Return to Home page"
   },
-  "detalis-page":{
-    "PetDetalis":"Pet Details",
+  "detalis-page": {
+    "PetDetalis": "Pet Details",
     "pet-age": "Pet Age:",
     "pet-species": "Pet Species:",
     "pet-weight": "Pet Weight:",
@@ -163,6 +163,6 @@
     "phoneNumber": "Phone Number:",
     "city": "City:",
     "address": "Address:",
-    "petGallery":"Pet Gallery"
+    "petGallery": "Pet Gallery"
   }
 }
