@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { Container, Row } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
-
+import { PropTypes } from 'prop-types'
 import { setPetsInfo, setLoading } from '../redux/actions/pets'
 import '../components/adoptionPage/style.css'
 import ListPets from '../components/adoptionPage/listCards'
@@ -9,10 +9,99 @@ import Pagination from '../components/adoptionPage/pagination'
 import firebase from '../firebase'
 import FilterSection from '../components/adoptionPage/filterSection'
 
-function AdoptionPage() {
+function AdoptionPage({ location }) {
   const dispatch = useDispatch()
   const { loading } = useSelector(state => state.pets)
-  const petsRef = firebase.firestore().collection('pets')
+  console.log(location)
+
+  let petsRef = null
+  if (location.query) {
+    if (
+      location.query.city !== '' &&
+      location.query.age !== '' &&
+      location.query.type !== ''
+    ) {
+      petsRef = firebase
+        .firestore()
+        .collection('pets')
+        .where('city', '==', location.query.city)
+        .where('species', '==', location.query.type)
+        .where('age', '==', location.query.age)
+    }
+
+    if (
+      location.query.city !== '' &&
+      location.query.age !== '' &&
+      location.query.type === ''
+    ) {
+      petsRef = firebase
+        .firestore()
+        .collection('pets')
+        .where('city', '==', location.query.city)
+        .where('age', '==', location.query.age)
+    }
+
+    if (
+      location.query.type !== '' &&
+      location.query.age !== '' &&
+      location.query.city === ''
+    ) {
+      petsRef = firebase
+        .firestore()
+        .collection('pets')
+        .where('species', '==', location.query.type)
+        .where('age', '==', location.query.age)
+    }
+
+    if (
+      location.query.type !== '' &&
+      location.query.city !== '' &&
+      location.query.age === ''
+    ) {
+      petsRef = firebase
+        .firestore()
+        .collection('pets')
+        .where('species', '==', location.query.type)
+        .where('city', '==', location.query.city)
+    }
+
+    if (
+      location.query.type !== '' &&
+      location.query.city === '' &&
+      location.query.age === ''
+    ) {
+      petsRef = firebase
+        .firestore()
+        .collection('pets')
+        .where('species', '==', location.query.type)
+    }
+
+    if (
+      location.query.type === '' &&
+      location.query.city !== '' &&
+      location.query.age === ''
+    ) {
+      petsRef = firebase
+        .firestore()
+        .collection('pets')
+        .where('city', '==', location.query.city)
+    }
+
+    if (
+      location.query.type === '' &&
+      location.query.city === '' &&
+      location.query.age !== ''
+    ) {
+      petsRef = firebase
+        .firestore()
+        .collection('pets')
+        .where('age', '==', location.query.age)
+    }
+  }
+
+  if (petsRef === null) {
+    petsRef = firebase.firestore().collection('pets')
+  }
 
   useEffect(() => {
     const fetchPetsInfo = () => {
@@ -47,6 +136,14 @@ function AdoptionPage() {
       )}
     </Container>
   )
+}
+
+AdoptionPage.propTypes = {
+  location: PropTypes,
+}
+
+AdoptionPage.defaultProps = {
+  location: {},
 }
 
 export default AdoptionPage
