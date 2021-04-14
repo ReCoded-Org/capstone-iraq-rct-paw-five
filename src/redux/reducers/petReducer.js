@@ -1,3 +1,5 @@
+import * as t from '../types'
+
 export const langReducer = (state = localStorage.getItem('lang'), action) => {
   switch (action.type) {
     case 'SELECTED_LANG':
@@ -45,17 +47,17 @@ const petReducer = (
   action
 ) => {
   switch (action.type) {
-    case 'SET_PETS':
+    case t.SET_PETS:
       return { ...state, data: action.payload, filteredPets: action.payload }
-    case 'SET_CURRENT_PETS':
+    case t.SET_CURRENT_PETS:
       return { ...state, currentPets: action.payload }
-    case 'SET_CURRENT_PAGE':
+    case t.SET_CURRENT_PAGE:
       return { ...state, currentPage: action.payload }
-    case 'SET_POST_PER_PAGE':
+    case t.SET_POST_PER_PAGE:
       return { ...state, postPerPage: action.payload }
-    case 'SET_LOADING':
+    case t.SET_LOADING:
       return { ...state, loading: action.payload }
-    case 'SET_FILTERS':
+    case t.SET_FILTERS:
       return {
         ...state,
         filters: {
@@ -63,7 +65,7 @@ const petReducer = (
           [action.payload.key]: action.payload.value,
         },
       }
-    case 'FILTER_PETS':
+    case t.FILTER_PETS:
       return { ...state, filteredPets: action.payload.filteredPets }
     default:
       return { ...state }
