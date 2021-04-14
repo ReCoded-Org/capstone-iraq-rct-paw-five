@@ -36,11 +36,11 @@ export const updateMyPet = (state = false, action) => {
 
 const petReducer = (
   state = {
-    currentPage: 1,
-    loading: true,
-    filters: {},
     currentPets: [],
     data: [],
+    filters: {},
+    currentPage: 1,
+    loading: true,
   },
   action
 ) => {
