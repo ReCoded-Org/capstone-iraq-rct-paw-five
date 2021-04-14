@@ -1,7 +1,7 @@
 import firebase from '../../firebase'
 import * as t from '../types'
 
-const petsRef = firebase.firestore().collection('pets')
+
 
 
 export const setLoading = status => ({
@@ -14,7 +14,97 @@ export const setPetsInfo = pets => ({
   payload: pets,
 })
 
-export const fetchPetsInfo = () => {
+export const fetchPetsInfo = (location) => {
+  let petsRef = null
+
+  if (location.query) {
+    if (
+      location.query.city !== '' &&
+      location.query.age !== '' &&
+      location.query.type !== ''
+    ) {
+      petsRef = firebase
+        .firestore()
+        .collection('pets')
+        .where('city', '==', location.query.city)
+        .where('species', '==', location.query.type)
+        .where('age', '==', location.query.age)
+    }
+
+    if (
+      location.query.city !== '' &&
+      location.query.age !== '' &&
+      location.query.type === ''
+    ) {
+      petsRef = firebase
+        .firestore()
+        .collection('pets')
+        .where('city', '==', location.query.city)
+        .where('age', '==', location.query.age)
+    }
+
+    if (
+      location.query.type !== '' &&
+      location.query.age !== '' &&
+      location.query.city === ''
+    ) {
+      petsRef = firebase
+        .firestore()
+        .collection('pets')
+        .where('species', '==', location.query.type)
+        .where('age', '==', location.query.age)
+    }
+
+    if (
+      location.query.type !== '' &&
+      location.query.city !== '' &&
+      location.query.age === ''
+    ) {
+      petsRef = firebase
+        .firestore()
+        .collection('pets')
+        .where('species', '==', location.query.type)
+        .where('city', '==', location.query.city)
+    }
+
+    if (
+      location.query.type !== '' &&
+      location.query.city === '' &&
+      location.query.age === ''
+    ) {
+      petsRef = firebase
+        .firestore()
+        .collection('pets')
+        .where('species', '==', location.query.type)
+    }
+
+    if (
+      location.query.type === '' &&
+      location.query.city !== '' &&
+      location.query.age === ''
+    ) {
+      petsRef = firebase
+        .firestore()
+        .collection('pets')
+        .where('city', '==', location.query.city)
+    }
+
+    if (
+      location.query.type === '' &&
+      location.query.city === '' &&
+      location.query.age !== ''
+    ) {
+      petsRef = firebase
+        .firestore()
+        .collection('pets')
+        .where('age', '==', location.query.age)
+    }
+  }
+
+  if (petsRef === null) {
+    petsRef = firebase.firestore().collection('pets')
+  }
+
   return async dispatch => {
     // dispatch({type:"SET_LOADING",loading:true})
     return petsRef.onSnapshot(snapshot => {
