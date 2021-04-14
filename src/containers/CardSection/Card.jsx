@@ -95,7 +95,7 @@ const CardSection = () => {
           variant="top"
           src={card.Ellipsemember ? card.Ellipsemember : Ellipsemember}
           alt="Ellipsemember"
-          className="img  rounded-circle "
+          className="imgCard  rounded-circle "
         />
       </Card.Header>
       <Card.Body className="text-center mt-3">

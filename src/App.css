@@ -175,7 +175,17 @@ https://i.makeagif.com/media/2-08-2017/BfEXDC.gif
 .card {
   border-radius: 5px;
 }
-.img {
+.imgCard {
   height: 190px;
   width: 195px;
+}
+.im2 {
+  width: 900px;
+  margin-top: 80px;
+}
+.im3 {
+  width: 508px;
+  margin-left: -90px;
+  margin-top: 20px;
+  height: 421px;
 }
