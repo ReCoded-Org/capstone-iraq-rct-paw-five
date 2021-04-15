@@ -18,6 +18,7 @@ export const myPets = (state = [], action) => {
   }
 }
 
+
 export const deleteMyPet = (state = null, action) => {
   switch (action.type) {
     case 'DELETE_MY_PET':
@@ -35,6 +36,19 @@ export const updateMyPet = (state = false, action) => {
       return state
   }
 }
+
+export const getPetDataByIdReducer = (state = [], action) => {
+  switch (action.type) {
+    case 'GET_DATA_BY_ID':
+      return action.payload
+    default:
+      return state
+  }
+}
+
+
+
+
 
 const petReducer = (
   state = {

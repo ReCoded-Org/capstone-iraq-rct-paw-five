@@ -2,8 +2,6 @@ import firebase from '../../firebase'
 import * as t from '../types'
 
 
-
-
 export const setLoading = status => ({
   type: t.SET_LOADING,
   payload: status,
@@ -110,7 +108,11 @@ export const fetchPetsInfo = (location) => {
     return petsRef.onSnapshot(snapshot => {
       const petsArray = []
       snapshot.forEach(petDoc => {
-        petsArray.push(petDoc.data())
+        const pets={
+          id:petDoc.id,
+         ...petDoc.data()
+        }
+        petsArray.push(pets)
       })
       dispatch({ type: 'SET_PETS', payload: petsArray })
       dispatch({ type: 'SET_LOADING', payload: false })

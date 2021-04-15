@@ -4,6 +4,7 @@ import petReducer, {
   myPets,
   deleteMyPet,
   updateMyPet,
+  getPetDataByIdReducer
 } from './petReducer'
 import user from './user'
 
@@ -14,4 +15,5 @@ export default combineReducers({
   myPets,
   deleteMyPet,
   updateMyPet,
+  getPetDataByIdReducer
 })

@@ -67,3 +67,21 @@ export function UpdateMyPett(id, adopt) {
     })
   }
 }
+
+export function getPetDataById(id) {
+  return dispatch => {
+    let mydata
+    firebase
+      .firestore()
+      .collection('pets')
+      .doc(id)
+      .get()
+      .then(doc => {
+        mydata = doc.data()
+        dispatch({
+          type: 'GET_DATA_BY_ID',
+          payload: mydata,
+        })
+      })
+  }
+}
