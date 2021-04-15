@@ -110,7 +110,8 @@ export const fetchPetsInfo = (location) => {
     return petsRef.onSnapshot(snapshot => {
       const petsArray = []
       snapshot.forEach(petDoc => {
-        petsArray.push(petDoc.data())
+        petsArray.push({ id: petDoc.id,
+              ...petDoc.data(),})
       })
       dispatch({ type: 'SET_PETS', payload: petsArray })
       dispatch({ type: 'SET_LOADING', payload: false })

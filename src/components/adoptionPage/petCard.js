@@ -2,11 +2,11 @@ import React from 'react'
 import { Card, Row, Col } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
 import { PropTypes } from 'prop-types'
+import { Link } from 'react-router-dom'
 import 'font-awesome/css/font-awesome.min.css'
 
 function PetCard({ pet }) {
   const { t } = useTranslation()
-
   return (
     <Card
       style={{ width: '95%', height: '18rem' }}
@@ -54,13 +54,11 @@ function PetCard({ pet }) {
             )}
           </Col>
           <Col className="">
-            <button
-              type="button"
-              href="/DetailsPage"
-              className="rounded py-1 px-4 bg-warning "
-            >
-              {t('adoption-page.details')}
-            </button>
+            <Link to={`/details/${pet.id}`}>
+              <button type="button" className="rounded py-1 px-4 bg-warning ">
+                {t('adoption-page.details')}
+              </button>
+            </Link>
           </Col>
         </Row>
       </Card.Body>
