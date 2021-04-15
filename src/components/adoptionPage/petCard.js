@@ -7,7 +7,6 @@ import 'font-awesome/css/font-awesome.min.css'
 
 function PetCard({ pet }) {
   const { t } = useTranslation()
-
   return (
     <Card
       style={{ width: '95%', height: '18rem' }}
@@ -55,7 +54,7 @@ function PetCard({ pet }) {
             )}
           </Col>
           <Col className="">
-            <Link to={`/details/${pet.petName}`}>
+            <Link to={`/details/${pet.id}`}>
               <button type="button" className="rounded py-1 px-4 bg-warning ">
                 {t('adoption-page.details')}
               </button>
