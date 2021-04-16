@@ -10,7 +10,7 @@ import {
   faQuoteRight,
 } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
-import { ADOPT_ROUTE, ADD_APET_ROUTE } from '../../routes'
+import { ADOPT_ROUTE, ADOPT_ROUTE } from '../../routes'
 import firebase from '../../firebase'
 import PetCard from '../../components/HomePetCard/HomePetCard'
 import Slider from '../../components/Slider/Slider'
@@ -188,7 +188,7 @@ export default function Home() {
 
             <Link
               as={Link}
-              to={ADD_APET_ROUTE}
+              to={ADOPT_ROUTE}
               style={{ color: '#f2726f' }}
               className=" bg-white text-size home-btn my-auto ml-5 text-center  w-25 border-0 shadow-none   py-3 px-1"
             >
