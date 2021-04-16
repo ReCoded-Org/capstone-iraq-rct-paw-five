@@ -1,18 +1,21 @@
 import React, { useState } from 'react'
-
+import { useSelector } from 'react-redux'
 import { useFormik } from 'formik'
 import * as Yup from 'yup'
 import { useTranslation } from 'react-i18next'
 import { Row, Col } from 'react-bootstrap'
+import { Redirect } from 'react-router-dom'
 import firebase, { storage } from '../../firebase'
 import AddPetForm from './AddPetForm'
 import 'firebase/firestore'
 import Cat from '../../images/Add-pet/AddPetCat.svg'
 import Paw from '../../images/Add-pet/paw.svg'
+import date from './currentDate'
 
 function AddPet() {
   const { t } = useTranslation()
   const [file, setFile] = useState(null)
+  const userState = useSelector(state => state.user.isLoggedIn)
 
   const validationSchema = Yup.object().shape({
     petName: Yup.string().required(t('add-pet.required')),
@@ -62,6 +65,8 @@ function AddPet() {
       phoneNumber: '',
       city: '',
       address: '',
+      // date:currentDate,
+      adopted: false,
     },
     validationSchema,
     onSubmit() {
@@ -77,14 +82,19 @@ function AddPet() {
             .child(values.file.name)
             .getDownloadURL()
             .then(link => {
-              firebase
-                .firestore()
-                .collection('pets')
-                .add({
-                  ...values,
-                  file: link,
-                })
-                .then(() => resetForm())
+              if (userState.user) {
+                firebase
+                  .firestore()
+                  .collection('pets')
+                  .add({
+                    ...values,
+                    adopted: false,
+                    currentDate: date,
+                    uid: userState.user.uid,
+                    file: link,
+                  })
+                  .then(() => resetForm())
+              }
             })
         }
       )
@@ -99,7 +109,9 @@ function AddPet() {
   if (values.file != null) {
     reader.readAsDataURL(values.file)
   }
-  return (
+  return !userState ? (
+    <Redirect to="/login" />
+  ) : (
     <div className="overflow-hidden">
       {/* page header */}
       <Row className="mb-4">
