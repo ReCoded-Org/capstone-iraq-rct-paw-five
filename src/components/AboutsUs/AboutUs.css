@@ -1,0 +1,35 @@
+.im3 {
+  margin-top: 5em;
+  z-index: 1;
+}
+.im2,
+.txt-box {
+  z-index: 3;
+}
+
+/* @media (min-width: 992px) {
+  .im3 {
+  }
+}
+@media (max-width: 992px) {
+}
+
+@media (max-width: 800px) {
+} */
+
+@media (max-width: 600px) {
+  .im2 {
+    width: 100% !important;
+    margin-top: 3em;
+  }
+  .main-title {
+    font-size: 16px;
+    margin-top: 2em;
+  }
+  .second-title {
+    font-size: 18px;
+  }
+  .paragraph-text {
+    font-size: 14px;
+  }
+}
