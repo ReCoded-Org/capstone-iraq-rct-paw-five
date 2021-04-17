@@ -10,7 +10,7 @@ import {
   faQuoteRight,
 } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
-import { ADOPT_ROUTE, ADOPT_ROUTE } from '../../routes'
+import { ADOPT_ROUTE } from '../../routes'
 import firebase from '../../firebase'
 import PetCard from '../../components/HomePetCard/HomePetCard'
 import Slider from '../../components/Slider/Slider'
