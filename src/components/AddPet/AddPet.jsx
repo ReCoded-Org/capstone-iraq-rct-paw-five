@@ -20,13 +20,23 @@ function AddPet() {
   const validationSchema = Yup.object().shape({
     petName: Yup.string().required(t('add-pet.required')),
     species: Yup.string().required(t('add-pet.required')),
-    age: Yup.string(t('add-pet.must-number')).max(
-      2,
-      t('add-pet.age-validation')
+    vaccinationStatus: Yup.string().required(t('add-pet.required')),
+    fertilizationStatus: Yup.string().required(t('add-pet.required')),
+    dewormingStatus: Yup.string().required(t('add-pet.required')),
+    petHealth: Yup.string().required(t('add-pet.required')),
+    file: Yup.string(t('add-pet.required'))
+      .required(t('add-pet.required'))
+      .nullable(),
+    gender: Yup.string().required(t('add-pet.required')),
+    age: Yup.number().test(
+      'maxDigits',
+      t('add-pet.age-validation'),
+      number => String(number).length <= 2
     ),
-    weight: Yup.string(t('add-pet.weight-validation')).max(
-      3,
-      t('add-pet.weight-validation')
+    weight: Yup.number().test(
+      'maxDigits',
+      t('add-pet.weight-validation'),
+      number => String(number).length <= 3
     ),
     color: Yup.string().required(t('add-pet.required')),
     story: Yup.string().required(t('add-pet.required')),
@@ -55,6 +65,10 @@ function AddPet() {
       age: '',
       species: '',
       weight: '',
+      vaccinationStatus: '',
+      fertilizationStatus: '',
+      dewormingStatus: '',
+      petHealth: '',
       color: '',
       gender: '',
       story: '',

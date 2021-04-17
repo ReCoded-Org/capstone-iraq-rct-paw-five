@@ -16,6 +16,27 @@ function AddPetForm({
 }) {
   const { t } = useTranslation()
   const Values = values
+  const iraqCities = [
+    t('add-pet.Baghdad'),
+    t('add-pet.Basra'),
+    t('add-pet.Najaf'),
+    t('add-pet.AlAnbar'),
+    t('add-pet.Babil'),
+    t('add-pet.AlMuthanna'),
+    t('add-pet.Erbil'),
+    t('add-pet.Sulaymaniyah'),
+    t('add-pet.Maysan'),
+    t('add-pet.Karbala'),
+    t('add-pet.Wasit'),
+    t('add-pet.DhiQar'),
+    t('add-pet.Diyala'),
+    t('add-pet.Duhok'),
+    t('add-pet.Kirkuk'),
+    t('add-pet.Halabja'),
+    t('add-pet.Salahaldin'),
+    t('add-pet.Mosul'),
+    t('add-pet.AlDiwaniya'),
+  ]
   return (
     <div className="py-1 px-5" style={{ backgroundColor: '#f2f2f2' }}>
       <div className="px-lg-5">
@@ -69,15 +90,19 @@ function AddPetForm({
           <Form.Row>
             <Col lg xl>
               <Form.Control
+                as="select"
                 onChange={handleChange}
                 name="species"
                 onBlur={handleBlur}
                 value={values.species}
-                placeholder={t('add-pet.pet-species')}
                 className={`${
                   touched.species && errors.species ? 'mb-2' : 'mb-5'
                 } form-borders rounded-0 border-0 w-75 w-form`}
-              />
+              >
+                <option hidden>{t('add-pet.pet-species')}</option>
+                <option>{t('add-pet.dog')}</option>
+                <option>{t('add-pet.cat')}</option>
+              </Form.Control>
               {touched.species && errors.species ? (
                 <div className="mb-2 text-center text-lg-left text-danger">
                   {errors.species}
@@ -86,7 +111,7 @@ function AddPetForm({
                 <div className="mb-5"> </div>
               )}
             </Col>
-            <Col lg xl className="">
+            <Col lg xl>
               <Form.Control
                 onChange={handleChange}
                 name="weight"
@@ -100,6 +125,112 @@ function AddPetForm({
               {touched.weight && errors.weight ? (
                 <div className="mb-2 text-center text-lg-left text-danger">
                   {errors.weight}
+                </div>
+              ) : (
+                <div className="mb-5"> </div>
+              )}
+            </Col>
+          </Form.Row>
+          <Form.Row>
+            <Col lg xl>
+              <Form.Control
+                as="select"
+                onChange={handleChange}
+                name="vaccinationStatus"
+                onBlur={handleBlur}
+                value={values.vaccinationStatus}
+                className={`${
+                  touched.vaccinationStatus && errors.vaccinationStatus
+                    ? 'mb-2'
+                    : 'mb-5'
+                } form-borders rounded-0 border-0 w-75 w-form`}
+              >
+                <option hidden>{t('add-pet.vaccinationStatus')}</option>
+                <option>{t('add-pet.yes')}</option>
+                <option>{t('add-pet.no')}</option>
+                <option>{t('add-pet.notKnown')}</option>
+              </Form.Control>
+              {touched.vaccinationStatus && errors.vaccinationStatus ? (
+                <div className="mb-2 text-center text-lg-left text-danger">
+                  {errors.vaccinationStatus}
+                </div>
+              ) : (
+                <div className="mb-5"> </div>
+              )}
+            </Col>
+            <Col lg xl>
+              <Form.Control
+                as="select"
+                onChange={handleChange}
+                name="fertilizationStatus"
+                onBlur={handleBlur}
+                value={values.fertilizationStatus}
+                className={`${
+                  touched.fertilizationStatus && errors.fertilizationStatus
+                    ? 'mb-2'
+                    : 'mb-5'
+                } form-borders rounded-0 border-0 w-75 w-form`}
+              >
+                <option hidden>{t('add-pet.fertilizationStatus')} </option>
+                <option>{t('add-pet.yes')}</option>
+                <option>{t('add-pet.no')}</option>
+                <option>{t('add-pet.notKnown')}</option>
+              </Form.Control>
+              {touched.fertilizationStatus && errors.fertilizationStatus ? (
+                <div className="mb-2 text-center text-lg-left text-danger">
+                  {errors.species}
+                </div>
+              ) : (
+                <div className="mb-5"> </div>
+              )}
+            </Col>
+          </Form.Row>
+          <Form.Row>
+            <Col lg xl>
+              <Form.Control
+                as="select"
+                onChange={handleChange}
+                name="dewormingStatus"
+                onBlur={handleBlur}
+                value={values.dewormingStatus}
+                className={`${
+                  touched.dewormingStatus && errors.dewormingStatus
+                    ? 'mb-3'
+                    : 'mb-5'
+                } form-borders rounded-0 border-0 w-75 w-form`}
+              >
+                <option hidden>{t('add-pet.dewormingStatus')}</option>
+                <option>{t('add-pet.yes')}</option>
+                <option>{t('add-pet.no')}</option>
+                <option>{t('add-pet.notKnown')}</option>
+              </Form.Control>
+              {touched.dewormingStatus && errors.dewormingStatus ? (
+                <div className="mb-2 text-center text-lg-left text-danger">
+                  {errors.dewormingStatus}
+                </div>
+              ) : (
+                <div className="mb-5"> </div>
+              )}
+            </Col>
+            <Col lg xl>
+              <Form.Control
+                as="select"
+                onChange={handleChange}
+                name="petHealth"
+                onBlur={handleBlur}
+                value={values.petHealth}
+                className={`${
+                  touched.petHealth && errors.petHealth ? 'mb-3' : 'mb-5'
+                } form-borders rounded-0 border-0 w-75 w-form`}
+              >
+                <option hidden>{t('add-pet.petHealth')}</option>
+                <option>{t('add-pet.good')}</option>
+                <option>{t('add-pet.treatment')}</option>
+                <option>{t('add-pet.bad')}</option>
+              </Form.Control>
+              {touched.petHealth && errors.petHealth ? (
+                <div className="mb-2 text-center text-lg-left text-danger">
+                  {errors.petHealth}
                 </div>
               ) : (
                 <div className="mb-5"> </div>
@@ -151,8 +282,28 @@ function AddPetForm({
                   value="Female"
                 />
                 <Form.Label className="mr-3">{t('add-pet.female')}</Form.Label>
+                <Form.Check
+                  className="mr-3"
+                  onChange={() => {
+                    Values.gender = 'not known'
+                  }}
+                  type="radio"
+                  onBlur={handleBlur}
+                  name="gender"
+                  value="Male"
+                />
+
+                <Form.Label className="mr-3">
+                  {t('add-pet.notKnown')}
+                </Form.Label>
               </div>
-              <div className="mb-5"> </div>
+              {touched.gender && errors.gender ? (
+                <div className="mb-2 text-center text-lg-left text-danger">
+                  {errors.gender}
+                </div>
+              ) : (
+                <div className="mb-5"> </div>
+              )}
             </Col>
           </Form.Row>
           <Form.Row>
@@ -194,7 +345,9 @@ function AddPetForm({
                 onChange={e => {
                   setFieldValue('file', e.currentTarget.files[0])
                 }}
-                className="d-none"
+                className={`${
+                  touched.story && errors.story ? 'mb-2' : 'mb-5'
+                } d-none`}
               />
 
               {file && (
@@ -205,6 +358,13 @@ function AddPetForm({
                   width="200"
                   height="200"
                 />
+              )}
+              {touched.file && errors.file ? (
+                <div className="mb-2 text-center text-lg-left text-danger">
+                  {errors.file}
+                </div>
+              ) : (
+                <div className="mb-5"> </div>
               )}
             </Col>
           </Form.Row>
@@ -289,15 +449,20 @@ function AddPetForm({
           <Form.Row>
             <Col lg xl>
               <Form.Control
+                as="select"
                 onChange={handleChange}
                 name="city"
                 onBlur={handleBlur}
                 value={values.city}
-                placeholder={t('add-pet.city')}
                 className={`${
                   touched.city && errors.city ? 'mb-2' : 'mb-5'
                 } form-borders rounded-0 border-0 w-75 w-form`}
-              />
+              >
+                <option hidden>{t('add-pet.city')}</option>
+                {iraqCities.map(city => (
+                  <option>{city}</option>
+                ))}
+              </Form.Control>
               {touched.city && errors.city ? (
                 <div className="mb-2 text-center text-lg-left text-danger">
                   {errors.city}
