@@ -328,9 +328,9 @@ export default function Home() {
               </Col>
               <Col className="col-lg-9 col-md-9  text-justify" sm={9}>
                 <h5 className=" text-danger text-center">
-                  {t('homepage.story2.title')}{' '}
+                  {t('homepage.story3.title')}{' '}
                 </h5>
-                {t('homepage.story2.story')}
+                {t('homepage.story3.story')}
               </Col>
             </Row>
           </Col>
