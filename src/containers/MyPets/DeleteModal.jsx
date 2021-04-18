@@ -62,7 +62,7 @@ export default function DeleteModal({
           <Modal.Footer>
             <Button
               className="submit-button border-0"
-              onClick={() => deletPet(petId)}
+              onClick={(E) => deletPet(E,petId)}
             >
               {t('mypets.yes')}
             </Button>

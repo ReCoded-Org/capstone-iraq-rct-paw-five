@@ -6,6 +6,7 @@ import petReducer, {
   updateMyPet,
 } from './petReducer'
 import user from './user'
+import { AddComment, fetchComments,deleteComment } from '../comments/reducer'
 
 export default combineReducers({
   langReducer,
@@ -14,4 +15,7 @@ export default combineReducers({
   myPets,
   deleteMyPet,
   updateMyPet,
+  AddComment,
+  fetchComments,
+  deleteComment
 })

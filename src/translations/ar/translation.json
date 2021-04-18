@@ -194,6 +194,8 @@
     "warningmessage": "هل تريد فعلا حذف"
   },
   "detalis-page": {
+    "comments":"التعليقات",
+    "addComment":"اترك تعليق",
     "PetDetalis": "تفاصيل الحيوان الأليف",
     "pet-age": ":العمر",
     "pet-species": ":صنف الحيوان الأليف",

@@ -68,13 +68,24 @@ exports[`renders correctly 1`] = `
         <div
           className="col-xl col-lg"
         >
-          <input
+          <select
             className="mb-5 form-borders rounded-0 border-0 w-75 w-form form-control"
             name="species"
             onBlur={true}
             onChange={true}
-            placeholder="add-pet.pet-species"
-          />
+          >
+            <option
+              hidden={true}
+            >
+              add-pet.pet-species
+            </option>
+            <option>
+              add-pet.dog
+            </option>
+            <option>
+              add-pet.cat
+            </option>
+          </select>
           <div
             className="mb-5"
           >
@@ -91,6 +102,135 @@ exports[`renders correctly 1`] = `
             onChange={true}
             placeholder="add-pet.pet-weight"
           />
+          <div
+            className="mb-5"
+          >
+             
+          </div>
+        </div>
+      </div>
+      <div
+        className="form-row"
+      >
+        <div
+          className="col-xl col-lg"
+        >
+          <select
+            className="mb-5 form-borders rounded-0 border-0 w-75 w-form form-control"
+            name="vaccinationStatus"
+            onBlur={true}
+            onChange={true}
+          >
+            <option
+              hidden={true}
+            >
+              add-pet.vaccinationStatus
+            </option>
+            <option>
+              add-pet.yes
+            </option>
+            <option>
+              add-pet.no
+            </option>
+            <option>
+              add-pet.notKnown
+            </option>
+          </select>
+          <div
+            className="mb-5"
+          >
+             
+          </div>
+        </div>
+        <div
+          className="col-xl col-lg"
+        >
+          <select
+            className="mb-5 form-borders rounded-0 border-0 w-75 w-form form-control"
+            name="fertilizationStatus"
+            onBlur={true}
+            onChange={true}
+          >
+            <option
+              hidden={true}
+            >
+              add-pet.fertilizationStatus
+               
+            </option>
+            <option>
+              add-pet.yes
+            </option>
+            <option>
+              add-pet.no
+            </option>
+            <option>
+              add-pet.notKnown
+            </option>
+          </select>
+          <div
+            className="mb-5"
+          >
+             
+          </div>
+        </div>
+      </div>
+      <div
+        className="form-row"
+      >
+        <div
+          className="col-xl col-lg"
+        >
+          <select
+            className="mb-5 form-borders rounded-0 border-0 w-75 w-form form-control"
+            name="dewormingStatus"
+            onBlur={true}
+            onChange={true}
+          >
+            <option
+              hidden={true}
+            >
+              add-pet.dewormingStatus
+            </option>
+            <option>
+              add-pet.yes
+            </option>
+            <option>
+              add-pet.no
+            </option>
+            <option>
+              add-pet.notKnown
+            </option>
+          </select>
+          <div
+            className="mb-5"
+          >
+             
+          </div>
+        </div>
+        <div
+          className="col-xl col-lg"
+        >
+          <select
+            className="mb-5 form-borders rounded-0 border-0 w-75 w-form form-control"
+            name="petHealth"
+            onBlur={true}
+            onChange={true}
+          >
+            <option
+              hidden={true}
+            >
+              add-pet.petHealth
+            </option>
+            <option>
+              add-pet.good
+            </option>
+            <option>
+              add-pet.treatment
+            </option>
+            <option>
+              add-pet.bad
+            </option>
+          </select>
           <div
             className="mb-5"
           >
@@ -161,6 +301,24 @@ exports[`renders correctly 1`] = `
             >
               add-pet.female
             </label>
+            <div
+              className="mr-3 form-check"
+            >
+              <input
+                className="form-check-input position-static"
+                disabled={false}
+                name="gender"
+                onBlur={true}
+                onChange={[Function]}
+                type="radio"
+                value="Male"
+              />
+            </div>
+            <label
+              className="mr-3 form-label"
+            >
+              add-pet.notKnown
+            </label>
           </div>
           <div
             className="mb-5"
@@ -205,7 +363,7 @@ exports[`renders correctly 1`] = `
           </div>
           <input
             accept="images/*"
-            className="d-none"
+            className="mb-5 d-none"
             id="file"
             name="file"
             onChange={[Function]}
@@ -218,6 +376,11 @@ exports[`renders correctly 1`] = `
             src={true}
             width="200"
           />
+          <div
+            className="mb-5"
+          >
+             
+          </div>
         </div>
       </div>
       <h2
@@ -304,13 +467,75 @@ exports[`renders correctly 1`] = `
         <div
           className="col-xl col-lg"
         >
-          <input
+          <select
             className="mb-5 form-borders rounded-0 border-0 w-75 w-form form-control"
             name="city"
             onBlur={true}
             onChange={true}
-            placeholder="add-pet.city"
-          />
+          >
+            <option
+              hidden={true}
+            >
+              add-pet.city
+            </option>
+            <option>
+              add-pet.Baghdad
+            </option>
+            <option>
+              add-pet.Basra
+            </option>
+            <option>
+              add-pet.Najaf
+            </option>
+            <option>
+              add-pet.AlAnbar
+            </option>
+            <option>
+              add-pet.Babil
+            </option>
+            <option>
+              add-pet.AlMuthanna
+            </option>
+            <option>
+              add-pet.Erbil
+            </option>
+            <option>
+              add-pet.Sulaymaniyah
+            </option>
+            <option>
+              add-pet.Maysan
+            </option>
+            <option>
+              add-pet.Karbala
+            </option>
+            <option>
+              add-pet.Wasit
+            </option>
+            <option>
+              add-pet.DhiQar
+            </option>
+            <option>
+              add-pet.Diyala
+            </option>
+            <option>
+              add-pet.Duhok
+            </option>
+            <option>
+              add-pet.Kirkuk
+            </option>
+            <option>
+              add-pet.Halabja
+            </option>
+            <option>
+              add-pet.Salahaldin
+            </option>
+            <option>
+              add-pet.Mosul
+            </option>
+            <option>
+              add-pet.AlDiwaniya
+            </option>
+          </select>
           <div
             className="mb-5"
           >

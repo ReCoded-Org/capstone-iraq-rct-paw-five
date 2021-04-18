@@ -8,7 +8,6 @@ import { PropTypes } from 'prop-types'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMars, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
-import { ADOPT_ROUTE } from '../../routes'
 import Loadingg from '../Loading/Loading'
 
 import './HomePetCard.css'
@@ -91,7 +90,7 @@ export default function PetCard({ pet }) {
             </span>
             <Button
               as={Link}
-              to={`${ADOPT_ROUTE}/${pet.id}`}
+              to={`details/${pet.id}`}
               className={`detailsBtn border-0 ${dirProperties.detailsBtn}`}
               variant="primary"
             >
