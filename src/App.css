@@ -1,3 +1,7 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
 .theme-color {
   background-image: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%);
 }
@@ -31,7 +35,7 @@
   width: 650px;
 }
 
-.gradient-background{
+.gradient-background {
   background: -webkit-linear-gradient(45deg, #ec869c, #f7a173 100%);
 }
 .gradient-text {
@@ -116,7 +120,6 @@ input:-webkit-autofill {
     background-size: cover;
     width: 100% !important;
     height: auto;
-    
   }
 }
 
@@ -158,4 +161,92 @@ input:-webkit-autofill {
 .contactinfo,
 #contact-header {
   background: #f2f2f2;
+}
+
+/* https://i.pinimg.com/originals/f2/1b/24/f21b241d1a99309b7616cd4131cca911.gif
+https://i.makeagif.com/media/2-08-2017/BfEXDC.gif
+
+*/
+
+.aqua-gradient {
+  background-image: url('./images//About-us//BfEXDC.gif');
+  height: 160px;
+}
+.card {
+  border-radius: 5px;
+}
+.imgCard {
+  height: 190px;
+  width: 195px;
+}
+.im2 {
+  width: 1600px;
+  margin-top: 80px;
+}
+
+.cat-pic {
+  z-index: -1;
+}
+.rec-pic,
+.txt-box {
+  z-index: 1;
+}
+@media (max-width: 992px) {
+  .rec-pic {
+    width: 100% !important;
+  }
+  .cat-pic {
+    width: 100% !important;
+  }
+}
+@media (max-width: 600px) {
+  .main-title {
+    font-size: 16px;
+  }
+  .about-us-outline {
+    font-size: 17px;
+  }
+  .about-us-text {
+    font-size: 13px;
+  }
+}
+
+/* storysec */
+.grey-bg {
+  background-color: #f2f2f2;
+  min-height: 70vh;
+}
+.box-col {
+  z-index: 3;
+}
+.box-part {
+  background-color: #fff;
+}
+
+.main-title-s2 {
+  color: #5d62b5;
+}
+.our-impact {
+  background-image: url('../src/images/About-us/ourimpact-bg.svg');
+  min-height: 70vh;
+}
+.our-impact-title {
+  margin-top: 8em;
+  margin-left: 6em;
+  z-index: 1;
+}
+.our-impact-blob {
+  margin-top: -7em;
+  z-index: 0;
+}
+
+.icons {
+  margin-top: 22em;
+  margin-left: 2em;
+  z-index: 1;
+}
+
+.title-our-impact-services {
+  color: #5d62b5;
+  font-size: 14px;
 }
