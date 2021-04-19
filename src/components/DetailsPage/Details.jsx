@@ -8,11 +8,19 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import im2 from '../../images/details-page/Rectangle 79.svg'
 import im3 from '../../images/details-page/Rectangle 80.svg'
 import im4 from '../../images/details-page/image 15.svg'
+import Comment from '../Comment/Comment'
+import Addcomment from '../../containers/AddComment/Addcomment'
 
 function Detail({ match }) {
+  
   const { t } = useTranslation()
-  const { currentPets } = useSelector(state => state.pets)
-  const petInfo = currentPets.find(pet => pet.id === match.params.id)
+  const { data } = useSelector(state => state.pets)
+  const petInfo = data.find(pet => pet.id === match.params.id)
+  const comments = useSelector(state => state.fetchComments)
+  const petComments = comments.filter(pet => pet.petId === match.params.id)
+
+ 
+
   return (
     <Container fluid>
       <Row>
@@ -30,57 +38,73 @@ function Detail({ match }) {
           <Col>{}</Col>
           <Col lg={5} sm={12} md={12} xs={12} className="pt-3 ">
             {' '}
-            <img
-              src={petInfo.file}
-              alt="pet"
-              className="main-image img-fluid mx-2"
-            />
+            {petInfo ? (
+              <img
+                src={petInfo.file}
+                alt="pet"
+                className="main-image img-fluid mx-2"
+              />
+            ) : (
+              ''
+            )}
           </Col>
           {/** image column */}
 
           <Col lg={5} className="pb-3">
-            <h3
-              className="pb-2 pt-3 tips text-center text-lg-left"
-              id="colorset1"
-            >
-              {petInfo.petName}
-            </h3>
+            {petInfo ? (
+              <h3
+                className="pb-2 pt-3 tips text-center text-lg-left"
+                id="colorset1"
+              >
+                {petInfo.petName}
+              </h3>
+            ) : (
+              ''
+            )}
             <Col lg={8} md={12} sm={12}>
               <div className="pt-3">
                 <label htmlFor="pet species" className="label" id="colorset">
                   {t('detalis-page.pet-species')}
                 </label>
-                <span className="pl-2 pr-5 ">{petInfo.species}</span>
+                {petInfo ? (
+                  <span className="pl-2 pr-5 ">{petInfo.species}</span>
+                ) : (
+                  ''
+                )}
               </div>
               <div className="pt-3">
                 <label htmlFor="pet age" className="label" id="colorset">
                   {t('detalis-page.pet-age')}
                 </label>
-                <span className="pl-2">{petInfo.age}</span>
+                {petInfo ? <span className="pl-2">{petInfo.age}</span> : ''}
               </div>
               <div className="pt-3">
                 <label htmlFor="pet-info" className="label" id="colorset">
                   {t('detalis-page.pet-color')}
                 </label>
-                <span className="pl-2">{petInfo.color}</span>
+                {petInfo ? <span className="pl-2">{petInfo.color}</span> : ''}
               </div>
               <div className="pt-3">
                 <label htmlFor="pet gender" className="label" id="colorset">
                   {t('detalis-page.gender')}
                 </label>
-                <span className="pl-2">{petInfo.gender}</span>
+                {petInfo ? <span className="pl-2">{petInfo.gender}</span> : ''}
               </div>
               <div className="pt-3">
                 <label htmlFor="pet weight" className="label" id="colorset">
                   {t('detalis-page.pet-weight')}
                 </label>
-                <span className="pl-2">{petInfo.weight}</span>
+                {petInfo ? <span className="pl-2">{petInfo.weight}</span> : ''}
               </div>
               <div className="pt-3">
                 <label htmlFor="pet story" className="label" id="colorset">
                   {t('detalis-page.pet-story')}
                 </label>
-                <span className="text pl-2">{petInfo.story}</span>
+                {petInfo ? (
+                  <span className="text pl-2">{petInfo.story}</span>
+                ) : (
+                  ''
+                )}
               </div>
             </Col>
 
@@ -107,41 +131,73 @@ function Detail({ match }) {
               <label htmlFor="owner name" className="label" id="colorset">
                 {t('detalis-page.ownerName')}
               </label>
-              <span className="span pl-2">{petInfo.ownerName}</span>
+              {petInfo ? (
+                <span className="span pl-2">{petInfo.ownerName}</span>
+              ) : (
+                ''
+              )}
             </div>
             <div className="pt-3">
               <label htmlFor="about owner" className="label" id="colorset">
                 {t('detalis-page.aboutOwner')}
               </label>
-              <span className="pl-2 pr-5 ">{petInfo.aboutOwner}</span>
+              {petInfo ? (
+                <span className="pl-2 pr-5 ">{petInfo.aboutOwner}</span>
+              ) : (
+                ''
+              )}
             </div>
             <div className="pt-3">
               <label htmlFor="city" className="label" id="colorset">
                 {t('detalis-page.city')}
               </label>
-              <span className="pl-2">{petInfo.city}</span>
+              {petInfo ? <span className="pl-2">{petInfo.city}</span> : ''}
             </div>
             <div className="pt-3">
               <label htmlFor="address" className="label" id="colorset">
                 {t('detalis-page.address')}
               </label>
-              <span className="pl-2">{petInfo.address}</span>
+              {petInfo ? <span className="pl-2">{petInfo.address}</span> : ''}
             </div>
             <div className="pt-3">
               <label htmlFor="email" className="label" id="colorset">
                 {t('detalis-page.email')}
               </label>
-              <span className="pl-2">{petInfo.email}</span>
+              {petInfo ? <span className="pl-2">{petInfo.email}</span> : ''}
             </div>
             <div className="pt-3">
               <label htmlFor="phone number" className="label" id="colorset">
                 {t('detalis-page.phoneNumber')}
               </label>
-              <span className="pl-2">{petInfo.phoneNumber}</span>
+              {petInfo ? (
+                <span className="pl-2">{petInfo.phoneNumber}</span>
+              ) : (
+                ''
+              )}
             </div>
           </Col>
           <Col lg={3}>{}</Col>
         </Row>
+        <Container className="d-flex justify-content-center" fluid>
+          <div className="w-100">
+            <p className="h2 text-danger p-3">{t('detalis-page.comments')}</p>
+            <Addcomment petId={match.params.id} />
+
+            {petComments
+              ? petComments.map(e => {
+                  return (
+                    <Comment
+                      key={e.id}
+                      username={e.name}
+                      usercomment={e.comment}
+                      commentId={e.id}
+                      userId={e.userId}
+                    />
+                  )
+                })
+              : ''}
+          </div>
+        </Container>
         {/** pet gallery */}
         <Row className="pet-gallery">
           <Col>

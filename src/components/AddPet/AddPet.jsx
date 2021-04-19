@@ -16,6 +16,7 @@ function AddPet() {
   const { t } = useTranslation()
   const [file, setFile] = useState(null)
   const userState = useSelector(state => state.user.isLoggedIn)
+  const userInfo = useSelector(state => state.user)
 
   const validationSchema = Yup.object().shape({
     petName: Yup.string().required(t('add-pet.required')),
@@ -96,7 +97,7 @@ function AddPet() {
             .child(values.file.name)
             .getDownloadURL()
             .then(link => {
-              if (userState.user) {
+              if (userState){
                 firebase
                   .firestore()
                   .collection('pets')
@@ -104,7 +105,7 @@ function AddPet() {
                     ...values,
                     adopted: false,
                     currentDate: date,
-                    uid: userState.user.uid,
+                    uid: userInfo.user.uid,
                     file: link,
                   })
                   .then(() => resetForm())

@@ -24,9 +24,10 @@ export default function FetchMyPets() {
   const { t } = useTranslation()
 
   const [pageNumber, setPageNumber] = useState(0)
+  const userInfo = useSelector(state => state.user)
 
   const MyPets = useSelector(state => state.myPets)
-  const currentUser = useSelector(state => state.user)
+  const currentUser = useSelector(state => state.user.isLoggedIn)
 
   const petPerPage = Math.ceil(MyPets.length / 3)
   const pagesVisited = pageNumber * petPerPage
@@ -86,12 +87,12 @@ export default function FetchMyPets() {
   }, [name, sort, uid])
 
   return !currentUser ? (
-    <Redirect to="/login" />
+    <Redirect to="/" />
   ) : (
     <div>
       <Container className=" slid p-5" fluid>
         <h2 className="text-center text-white p-3">
-          {t('mypets.welcome')} Paw-five
+          {t('mypets.welcome')} {userInfo.user.name}
         </h2>
         <Row>
           <Col className="col-7 d-flex justify-content-center">

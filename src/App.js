@@ -1,4 +1,5 @@
 import React from 'react'
+import { useDispatch } from 'react-redux'
 import {
   BrowserRouter as Router,
   Switch,
@@ -31,8 +32,13 @@ import './App.css'
 import Home from './containers/Home/Home'
 import NotFound from './components/NotFound/NotFound'
 import AdoptionPage from './containers/adoptionPage'
+import { fetchPetsInfo } from './redux/actions/pets'
+import { fetchPetcomments } from './redux/comments/actions'
 
 function App() {
+  const dispatch = useDispatch()
+  dispatch(fetchPetsInfo('.'))
+  dispatch(fetchPetcomments())
   return (
     <Router>
       <ScrollToTop />

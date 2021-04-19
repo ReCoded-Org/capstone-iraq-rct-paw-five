@@ -194,6 +194,8 @@
     "warningmessage": "Do you to delete "
   },
   "detalis-page": {
+    "comments":"Comments",
+    "addComment":"Add comment",
     "PetDetalis": "Pet Details",
     "pet-age": "Pet Age:",
     "pet-species": "Pet Species:",

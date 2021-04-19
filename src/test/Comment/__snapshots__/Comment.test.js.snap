@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="p-2"
+>
+  <div
+    className="card "
+    style={
+      Object {
+        "borderRadius": "20px",
+      }
+    }
+  >
+    <div
+      className="card-body"
+    >
+      <p
+        className="card-text"
+      >
+        
+      </p>
+      <p
+        className="card-text"
+      >
+        
+      </p>
+      
+    </div>
+  </div>
+</div>
+`;

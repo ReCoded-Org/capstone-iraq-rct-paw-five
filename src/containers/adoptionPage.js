@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react'
+import React,{useEffect} from 'react'
 import { Container, Row } from 'react-bootstrap'
-import { useDispatch, useSelector } from 'react-redux'
+import { useSelector,useDispatch } from 'react-redux'
 import { PropTypes } from 'prop-types'
 import { fetchPetsInfo } from '../redux/actions/pets'
 import '../components/adoptionPage/style.css'
@@ -11,7 +11,7 @@ import FilterSection from '../components/adoptionPage/filterSection'
 function AdoptionPage({ location }) {
   const dispatch = useDispatch()
   const { loading } = useSelector(state => state.pets)
-  
+
 
   useEffect(() =>
    dispatch(fetchPetsInfo(location))
