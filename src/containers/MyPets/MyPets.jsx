@@ -73,8 +73,8 @@ export default function FetchMyPets() {
   const [uid, setuid] = useState('')
 
   const checkUid = () => {
-    if (currentUser.user) {
-      setuid(currentUser.user.uid)
+    if (currentUser) {
+      setuid(userInfo.user.uid)
     }
   }
 
