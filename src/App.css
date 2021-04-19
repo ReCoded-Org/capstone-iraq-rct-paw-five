@@ -180,7 +180,7 @@ https://i.makeagif.com/media/2-08-2017/BfEXDC.gif
   width: 195px;
 }
 .im2 {
-  width: 900px;
+  width: 1600px;
   margin-top: 80px;
 }
 .im3 {
@@ -188,4 +188,70 @@ https://i.makeagif.com/media/2-08-2017/BfEXDC.gif
   margin-left: -90px;
   margin-top: 20px;
   height: 421px;
+}
+
+.cat-pic {
+  z-index: -1;
+}
+.rec-pic,
+.txt-box {
+  z-index: 1;
+}
+@media (max-width: 992px) {
+  .rec-pic {
+    width: 100% !important;
+  }
+  .cat-pic {
+    width: 100% !important;
+    /* margin-top: -1em; */
+  }
+}
+@media (max-width: 600px) {
+  .main-title {
+    font-size: 16px;
+  }
+  .about-us-outline {
+    font-size: 17px;
+  }
+  .about-us-text {
+    font-size: 13px;
+  }
+}
+
+/* storysec */
+.grey-bg {
+  background-color: #f2f2f2;
+  min-height: 70vh;
+}
+
+.box-part {
+  background-color: #fff;
+}
+
+.main-title-s2 {
+  color: #5d62b5;
+}
+.our-impact {
+  background-image: url('../src/images/About-us/ourimpact-bg.svg');
+  min-height: 70vh;
+}
+.our-impact-title {
+  margin-top: 8em;
+  margin-left: 6em;
+  z-index: 1;
+}
+.our-impact-blob {
+  margin-top: -7em;
+  z-index: 0;
+}
+
+.icons {
+  margin-top: 22em;
+  margin-left: 2em;
+  z-index: 1;
+}
+
+.title-our-impact-services {
+  color: #5d62b5;
+  font-size: 14px;
 }

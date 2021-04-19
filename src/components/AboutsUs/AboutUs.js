@@ -11,7 +11,7 @@ import PupsTrained from '../../images/About-us/dog_love_24x.svg'
 import MealsServed from '../../images/About-us/dog_vet_24x.svg'
 
 import CardSection from '../../containers/CardSection/Card'
-import './AboutUs.css'
+import '../../App.css'
 
 function AboutUs() {
   return (
@@ -31,7 +31,7 @@ function AboutUs() {
             className=" rec-pic"
           />
           <Container className="w-75 position-absolute text-light txt-box">
-            <h6 className="main-title ml-3 mt-3 text-uppercase">
+            <h6 className="main-title ml-3 mt-3 text-uppercase font-weight-light">
               <img src={OverlineMark} alt="OverlineMark" /> Who we are
             </h6>
             <h2 className="about-us-outline ml-3">
@@ -56,11 +56,11 @@ function AboutUs() {
       </Row>
 
       {/* Story Section */}
-      <Row className="story-section grey-bg pl-4 pt-1">
-        <h6 className="main-title-s2 ml-5 text-uppercase">
+      <Row className="story-section grey-bg px-5 py-3">
+        <h6 className="main-title-s2 ml-5 text-uppercase font-weight-light">
           <img src={OverlineMarkIconPurple} alt="OverlineMark" /> Story
         </h6>
-        <Col lg={3} md={6} sm={12} xs={12}>
+        <Col lg={3} md={12} sm={12} xs={12}>
           <Container className="box-part my-5 h-75 rounded">
             <p className="w-75 mx-3">
               “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -93,74 +93,94 @@ function AboutUs() {
       </Row>
       {/* our impact Section */}
       <Row className="our-impact">
-        <Col
-          md="4"
-          className="w-50 position-absolute text-light our-impact-title"
-        >
-          {' '}
-          <h6 className="main-title ml-2 text-uppercase">
-            <img src={OverlineMark} alt="OverlineMark" /> Our impact
-          </h6>
-          <h2 className="about-us-outline ml-3 mt-4">
-            We Are a Paw Project Team Working from Re:Coded
-          </h2>
-        </Col>
-        <Col
-          md={{ span: 4, offset: 5 }}
-          className="position-absolute our-impact-blob"
-        >
-          <img src={Blob} alt="Blob" />
-        </Col>{' '}
-        <Col className="our-service our-ser-1" md={2}>
-          <Row>
-            <Col>
-              {' '}
-              <img src={PuppyBath} alt="PuppyBath" />{' '}
-            </Col>
-            <Col>
-              <h2 className="title-our-impact-services-number">3,700</h2>
-              <p className="title-our-impact-services">puppy baths</p>
-            </Col>
-          </Row>
-        </Col>
-        <Col className=" our-service our-ser-2" md={2}>
-          <Row>
-            <Col>
-              <img src={DogsBoard} alt="DogsBoard" />{' '}
-            </Col>
-            <Col>
-              <h2 className="title-our-impact-services-number">4,500</h2>
-              <p className="title-our-impact-services">dogs boarded</p>
-            </Col>
-          </Row>
-        </Col>
-        <Col className="our-service our-ser-3" md={2}>
-          <Row>
-            <Col>
-              <img src={PupsTrained} alt="PupsTrained" />{' '}
-            </Col>
-            <Col>
-              <h2 className="title-our-impact-services-number">2,900</h2>
-              <p className="title-our-impact-services">pups trained</p>
-            </Col>
-          </Row>
-        </Col>
-        <Col className="our-service our-ser-4" md={2}>
-          <Row>
-            <Col>
-              <img src={MealsServed} alt="MealsServed" />{' '}
-            </Col>
-            <Col>
-              <h2 className="title-our-impact-services-number">12K+</h2>
-              <p className="title-our-impact-services">meals served</p>
-            </Col>
-          </Row>
-        </Col>
+        <Row className="">
+          <Col
+            md="4"
+            className="w-50 position-absolute text-light our-impact-title"
+          >
+            {' '}
+            <h6 className="main-title ml-2 text-uppercase font-weight-light">
+              <img src={OverlineMark} alt="OverlineMark" /> Our impact
+            </h6>
+            <h2 className="about-us-outline ml-3 mt-4">
+              We Are a Paw Project Team Working from Re:Coded
+            </h2>
+          </Col>
+          <Col
+            md={{ span: 4, offset: 5 }}
+            className="position-absolute our-impact-blob"
+          >
+            <img src={Blob} alt="Blob" className="" />
+          </Col>{' '}
+        </Row>
+        <Row className="icons im2">
+          <Col className="our-service our-ser-1 ml-5" md={2}>
+            <Row>
+              <Col>
+                {' '}
+                <img src={PuppyBath} alt="PuppyBath" />{' '}
+              </Col>
+              <Col>
+                <h2 className="title-our-impact-services-number text-white font-weight-bold mt-1">
+                  3,700
+                </h2>
+                <p className="title-our-impact-services font-weight-bold mt-3">
+                  puppy baths
+                </p>
+              </Col>
+            </Row>
+          </Col>
+          <Col className="our-service our-ser-2 ml-5" md={2}>
+            <Row>
+              <Col>
+                <img src={DogsBoard} alt="DogsBoard" />{' '}
+              </Col>
+              <Col>
+                <h2 className="title-our-impact-services-number text-white font-weight-bold  mt-1">
+                  4,500
+                </h2>
+                <p className="title-our-impact-services font-weight-bold mt-3">
+                  dogs boarded
+                </p>
+              </Col>
+            </Row>
+          </Col>
+          <Col className="our-service our-ser-3  ml-5" md={2}>
+            <Row>
+              <Col>
+                <img src={PupsTrained} alt="PupsTrained" />{' '}
+              </Col>
+              <Col>
+                <h2 className="title-our-impact-services-number text-white font-weight-bold  mt-1">
+                  2,900
+                </h2>
+                <p className="title-our-impact-services font-weight-bold mt-3">
+                  pups trained
+                </p>
+              </Col>
+            </Row>
+          </Col>
+          <Col className="our-service our-ser-4 ml-5" md={2}>
+            <Row>
+              <Col>
+                <img src={MealsServed} alt="MealsServed" />{' '}
+              </Col>
+              <Col>
+                <h2 className="title-our-impact-services-number text-white font-weight-bold  mt-1">
+                  12K+
+                </h2>
+                <p className="title-our-impact-services font-weight-bold mt-3">
+                  meals served
+                </p>
+              </Col>
+            </Row>
+          </Col>
+        </Row>
       </Row>
       {/* our members */}
       <Row className="our-members-section m-3">
         <Col>
-          <h6 className="main-title-s2 ml-5 mt-4 text-uppercase">
+          <h6 className="main-title-s2 ml-5 mt-4 text-uppercase font-weight-light">
             <img src={OverlineMarkIconPurple} alt="OverlineMark" /> Our members
           </h6>
         </Col>
