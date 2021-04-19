@@ -250,3 +250,10 @@ https://i.makeagif.com/media/2-08-2017/BfEXDC.gif
   color: #5d62b5;
   font-size: 14px;
 }
+
+.select-language {
+  font-family: 'FontAwesome', 'Second Font name';
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
