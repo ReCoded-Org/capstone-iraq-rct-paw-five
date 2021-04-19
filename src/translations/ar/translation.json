@@ -4,7 +4,7 @@
   "navbar": {
     "home": "الصفحة الرئيسية",
     "adopt": "تبنى",
-    "addapet": "اضف اليفك",
+    "addapet": "اضف حيوان أليف",
     "contact": "تواصل معنا",
     "about": "من نحن",
     "resources": ["مصادر", "نصائح عن القطط", "نصائح عن الكلاب"],
@@ -29,10 +29,10 @@
     "vaccinationStatus":"هل الحيوان الأليف ملقح ؟",
     "yes":"نعم",
     "no":"لا",
-    "notKnown":"غير معروف",
+    "notKnown":"لا اعلم",
     "fertilizationStatus":"هل الحيوان الأليف معقم ؟",
     "dewormingStatus":"هل الحيوان الأليف تلقى حبوب ضد الديدان ؟",
-    "petHealth":">كيف هي صحة الحيوان ألاليف ؟",
+    "petHealth":"كيف هي صحة الحيوان ألاليف ؟",
     "good":"جيدة",
     "bad":"سيئة",
     "treatment":"يحتاج الى رعاية خاصة",
@@ -77,7 +77,7 @@
     "facebook": "تسجيل الدخول  "
   },
   "contactus": {
-    "title": "اتصل بنا",
+    "title": "إتصل بنا",
     "name": "الاسم",
     "email": "البريد الالكتروني",
     "phone": "رقم الهاتف",
@@ -87,7 +87,7 @@
     "required": "هذا الحقل مطلوب",
     "h1text": "اذا كان لديك اي استفسار لاتتردد بالتواصل معنا ",
     "h4text": "اهلا بك",
-    "h6text": "Paw-fiv فريق"
+    "h6text": "Paw-five فريق"
   },
   "footer": {
     "explorLinks": "اكتشف الروابط",
@@ -95,7 +95,7 @@
     "pageDescription": "Paw-Five هي قاعدة بيانات عبر الإنترنت يمكن البحث فيها عن الحيوانات الأليفة التي تحتاج إلى منازل في جميع محافظات العراق.",
     "cites": "بغداد, اربيل",
     "phoneNo": "٠٧٧٠١٢٣٤٥٦٧",
-    "email": " example@example.com",
+    "email": "pawFive@gmail.com",
     "workTime": " الاحد - الخميس ٩ صباحاً - ٤ مساءً",
     "copyright": "فريق Paw-five"
   },
@@ -117,54 +117,54 @@
     "whoweare": {
       "whoweare": "من نحن !",
       "title": "Paw-Five عبارة عن قاعدة بيانات عبر الإنترنت يمكن البحث فيها عن الحيوانات الأليفة التي تحتاج إلى منازل.",
-      "descripton": "وريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبورأنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستر"
+      "descripton": " نحن نحاول مساعدة الحيوانات الأليفة لايجاد المنزل المناسب والحب لهم لكي يعيشوا ويكبروا بصحة جيدة ويحضون بحياة سعيدة. هدفنا ايضاً مساعدة الناس الذين يحتاجون لوجود حب الحيوانات الأليفة في حياتهم من خلال ايجاد الحيوان الأليف المناسب لهم "
     },
-    "adoptnow": "Adopt Now",
+    "adoptnow": "تبنى الان",
     "somestories": "بعض القصص",
     "story1": {
-      "title": "قصه من القصص",
-      "story": "خلافاَ للاعتقاد السائد فإن لوريم إيبسوم ليس نصاَ عشوائياً، بل إن له جذور في الأدب اللاتيني الكلاسيكي منذ العام 45 قبل الميلاد. من كتاب حول أقاصي الخير والشر!"
+      "title": "انقاذ الحيوانات",
+      "story": "اهم اهدافنا من هذا المشروع هو مساعدة الحيوانات في الشوارع وذلك من خلال ايجاد منزل مناسب لهم. لذلك الكثير من الناس ساعدونا من خلال وضع الحيوانات القريبة من منازلهم للتبني لكي يستطيع الناس تبنيهم وتوفير منزل وعناية لهم"
     },
     "story2": {
-      "title": "قصه من القصص",
-      "story": "خلافاَ للاعتقاد السائد فإن لوريم إيبسوم ليس نصاَ عشوائياً، بل إن له جذور في الأدب اللاتيني الكلاسيكي منذ العام 45 قبل الميلاد. من كتاب حول أقاصي الخير والشر!"
+      "title": "دليلك للبيطري",
+      "story": "إستخدام منصتنا لمساعدة الحيوانات يجعلنا سعداء جداً لهذا السبب وضعنا خريطة في موقعنا الألكتروني تحتوي على عنواين الاطباء البيطرين الاقرب في مدينة المستخدم وتحتوي ايضاً على كل المعلومات التي يحتاجها المستخدم عن الطبيب البيطري تستطيع ايجادها في صفحة اتصل بنا"
     },
     "story3": {
-      "title": "قصه من القصص",
-      "story": "خلافاَ للاعتقاد السائد فإن لوريم إيبسوم ليس نصاَ عشوائياً، بل إن له جذور في الأدب اللاتيني الكلاسيكي منذ العام 45 قبل الميلاد. من كتاب 345678هخححول أقاصي الخير والشر!"
+      "title": "الاعتناء بالحيوانات",
+      "story": "واحدة من الاشياء التي نفتخر بها هي صفحة المصادر في موقعنا. فمن خلالها يستطيع المستخدم ايجاد معلومات مهمة عن كيفية الاعتناء بالحيوانات الأليفة سواء كانت قطط او كلاب. العديد من الاشياء الاخرى التي تستطيع ايجادها هناك لابقاء حيوانك الأليف سعيد وصحي"
     }
   },
   "Resource": {
-    "Tips for the First 30 Days of cat Adoption": "Tips for the First 30 Days of cat Adoption",
-    "Before You Bring Your Cat Home": "Before You Bring Your Cat Home",
-    "text1": "1- Cats are territorial and coming into a new home leaves them feeling uneasy. There’s all that  unexplored space, and who knows what may lurk there. Do her a favor and provide a small area to  call her own for the first few days or weeks. A bathroom or laundry room works well. Furnish the room with cat amenities, such as food, water and a litter box. You’ll want to spend time with your  cat, so make sure there’s a comfortable place for you to sit as well.  ",
-    "text2": "2- Fill a litter box with one or two inches of litter and place it in her room where she can use it undisturbed. After all, everyone deserves a modicum of privacy when pottying!    ",
-    "text3": "3- Set up a feeding station with food and water bowls. Locate it away from the litter box.   ",
-    "text4": "4- Cats love to get away from it all in small places. If she came home in a cat carrier, you can use that.  You can also make one by cutting a doorway in the end of a cardboard box, or simply buy a covered  cat bed at a pet supply store. Whatever you choose, make sure the space is big enough for the cat to  stand up and turn around in. Make sure she can see the door to the room, so she won’t be startled. ",
-    "First Day": "First Day: ",
-    "text5": "Now you’re ready for your cat’s homecoming. Bring her home in a cat carrier, if possible. She’s seen a lot  of excitement, so take her directly to her new room (make sure the toilet lid is down, if she’s acclimating  in your bathroom). Ideally, you would restrict her exposure to the whole family, but naturally, everyone is  going to want to see her. Remind them of the ground rules you’ve set up.",
-    "text6": "Sit on the floor and let her come to you. Don’t force her. Just let her get acquainted on her own  terms. If she doesn’t approach, leave her alone and try again later. Some cats are particularly  frightened, and she may retreat to her hidey hole and not come out when you’re around at all. She may only come out at night when the house is quiet. Give her time.",
-    "Itmaytakeyourcataweek or two to adjustBe patient": "It may take your cat a week or two to adjust. Be patient.",
-    "FollowingWeeks": "Following Weeks:",
+    "Tips for the First 30 Days of cat Adoption": "نصائح حول أول 30 يومًا من تبني القطط",
+    "Before You Bring Your Cat Home": "قبل إحضار قطتك إلى المنزل",
+    "text1": "1- القطط تحب منازلها والدخول إلى منزل جديد يجعلهم يشعرون بعدم الارتياح. هناك كل تلك المساحة غير المكتشفة ، ومن يدري ما قد يكمن هناك. قدم لها معروفًا ووفر مساحة صغيرة للاتصال بها في الأيام أو الأسابيع القليلة الأولى. يعمل الحمام أو غرفة الغسيل بشكل جيد. جهز الغرفة بوسائل راحة للقطط ، مثل الطعام والماء وصندوق الفضلات. سترغب في قضاء بعض الوقت مع قطتك ، لذا تأكد من وجود مكان مريح لك للجلوس أيضًا.",
+    "text2": "2- املأ صندوق الفضلات بوصتين أو بوصتين من الفضلات وضعه في غرفته حيث يمكنه استخدامه دون إزعاج. بعد كل شيء ، يستحق كل شخص قدرًا ضئيلًا من الخصوصية عند استخدام الحمام!",
+    "text3": "3- قم بإعداد محطة تغذية بأوعية الطعام والماء. حدد موقعه بعيدًا عن صندوق الفضلات.",
+    "text4": "4- تحب القطط الابتعاد عن كل ذلك في الأماكن الصغيرة. إذا عادت إلى المنزل في حاملة قطط ، فيمكنك استخدامها. يمكنك أيضًا صنع واحدة عن طريق قطع مدخل في نهاية صندوق من الورق المقوى ، أو ببساطة شراء سرير قط مغطى من متجر مستلزمات الحيوانات الأليفة. مهما كان اختيارك ، تأكد من أن المساحة كبيرة بما يكفي لتقف القطة وتستدير. تأكد من أنها تستطيع رؤية باب الغرفة ، حتى لا تندهش.",
+    "First Day": "اليوم الاول: ",
+    "text5": "أنت الآن جاهز لعودة قطتك للوطن. أحضرها إلى المنزل في حاملة قطط ، إن أمكن. لقد شهدت الكثير من الإثارة ، لذا اصطحبها مباشرة إلى غرفتها الجديدة (تأكد من أن غطاء المرحاض مغلق ، إذا كانت تتأقلم في حمامك). من الناحية المثالية ، ستحد من تعرضها لجميع أفراد الأسرة ، ولكن بطبيعة الحال ، سيرغب الجميع في رؤيتها. ذكرهم بالقواعد الأساسية التي أعددتها.",
+    "text6": "اجلس على الأرض ودعها تأتي إليك. لا تجبرها. فقط دعها تتعرف على شروطها الخاصة. إذا لم تقترب ، اتركها وشأنها وحاول مرة أخرى لاحقًا. بعض القطط خائفة بشكل خاص ، وقد تتراجع إلى حفرة مخبأة ولا تخرج عندما تكون موجودًا على الإطلاق. قد تخرج في الليل فقط عندما يكون المنزل هادئًا. امنحها الوقت.",
+    "Itmaytakeyourcataweek or two to adjustBe patient": "قد يستغرق الأمر أسبوعًا أو أسبوعين حتى تتأقلم قطتك. كن صبورا.",
+    "FollowingWeeks": "الاسابيع المقبلة:",
 
-    "text7": "Within a week of being adopted, take your newly adopted cat for her first wellness visit with a  veterinarian. If you have a record of immunizations from the shelter, take it with you.    ",
-    "text8": "As your cat adjusts, she’ll show signs that she wants to explore outside her safe‐haven. Make sure other pets or family memberswon’tstartle her while she gradually expands her territory. She may be ready to play, so you can furnish some toys. Many catslike feather wands from the pet supply store, but homemade toys are often favored. A wad of a tissue paper to bat around or a paper bag to hide in can be fun.  "
+    "text7": "في غضون أسبوع من التبني ، اصطحب قطتك التي تم تبنيها حديثًا في أول زيارة صحية لها مع طبيب بيطري. إذا كان لديك سجل التطعيمات من الملجأ ، خذها معك.",
+    "text8": "بينما تتكيف قطتك ، ستظهر عليها إشارات تدل على رغبتها في الاستكشاف خارج ملاذها الآمن. تأكد من عدم قيام الحيوانات الأليفة الأخرى أو أفراد الأسرة بمداعبتها بينما تقوم بتوسيع أراضيها تدريجيًا. قد تكون مستعدة للعب ، لذا يمكنك تأثيث بعض الألعاب. العديد من عصي الريش شبيهة بالقطط من متجر مستلزمات الحيوانات الأليفة ، ولكن غالبًا ما يفضل اللعب المنزلية. يمكن أن تكون حشوة من المناديل الورقية لتضرب حولها أو كيس ورقي للاختباء فيها ممتعًا."
   },
   "Resource1": {
-    "Tips for the First 30 Days of cat Adoption": "Tips for the First 30 Days of Dog Adoption",
-    "Before You Bring Your Cat Home": "Before You Bring Your Dog Home",
-    "text1": "1-Determine where your dog will be spending most of his time for the first few weeks or months. Because he will be under a lot of stress with the change of environment (from shelter or foster home to your house), he may forget any housebreaking (if any) he’s learned. Often a kitchen will work best for easy clean-up. ",
-    "text2": "2-Dog-proof the area where your pooch will spend most of his time during the first few months. This may meantaping loose electrical cords to baseboards; storing household chemicals on high shelves; removing plants, rugs, and breakables; setting up the crate, and installing baby gates. ",
-    "text3": "3-Training your dog will start the first moment you have him. Take time to create a vocabulary list everyone willuse when giving your dog directions. This will help prevent confusion and help your dog learn his commandsmore quickly. No matter the age or size of the dog, it is recommended that you begin with positive training classes within the first month after adoption. ",
-    "text4": "4-Bring an ID tag with your phone number on it with you when you pick up your dog so that he has an extra measure of safety for the ride home and the first few uneasy days. If he is microchipped, be sure to registeryour contact information with the chip’s company, if the rescue or shelter did not already do so.",
-    "First Day": "First Day: ",
-    "text5": "We know moving is stressful — and your new dog feels the same way! Give him time to acclimate to your home and family before introducing him to strangers. Limit visitors for the first week. We understand that youwant to show off your new dog and many want to meet your new family member but allow your dog some timeto become comfortable with the family and new home before introducing new people. Make sure children know    how to approach the dog without overwhelming him",
-    "text6": "When you pick up your dog, remember to ask what and when he was fed. Replicate that schedule for at leastthe first few days to avoid gastric distress. If you wish to switch to a different brand, do so over a period ofabout a week by adding one part new food to three parts of the old for several days; then switch to half newfood, half old, and then one part old to three parts new. ",
-    "Itmaytakeyourcataweek or two to adjustBe patient": "It may take your Dog a week or two to adjust. Be patient.",
-    "FollowingWeeks": "Following Weeks:",
+    "Tips for the First 30 Days of cat Adoption": "نصائح حول أول 30 يومًا من تبني الكلاب",
+    "Before You Bring Your Cat Home": "قبل إحضار كلبك إلى المنزل",
+    "text1": "1-حدد المكان الذي سيقضي فيه كلبك معظم وقته في الأسابيع أو الأشهر القليلة الأولى. نظرًا لأنه سيكون تحت ضغط كبير مع تغير البيئة (من مأوى أو منزل حاضن إلى منزلك) ، فقد ينسى أي اقتحام منزل (إن وجد) تعلمه. غالبًا ما يعمل المطبخ بشكل أفضل لسهولة التنظيف. ",
+    "text2": "2-احمِ المنطقة التي سيقضي فيها كلبك معظم وقته خلال الأشهر القليلة الأولى. قد يعني هذا ربط أسلاك كهربائية فضفاضة على الألواح ؛ تخزين المواد الكيميائية المنزلية على أرفف عالية ؛ إزالة النباتات والسجاد والمواد القابلة للكسر ؛ نصب الصندوق وتركيب بوابات اطفال.",
+    "text3": "3-سيبدأ تدريب كلبك في اللحظة الأولى لديك. خذ وقتك في إنشاء قائمة مفردات يستخدمها الجميع عند إعطاء توجيهات لكلبك. سيساعد ذلك على منع الارتباك وسيساعد كلبك على تعلم أوامره بسرعة أكبر. بغض النظر عن عمر أو حجم الكلب ، فمن المستحسن أن تبدأ بدروس تدريبية إيجابية خلال الشهر الأول بعد التبني",
+    "text4": "4-أحضر بطاقة هوية تحمل رقم هاتفك معك عندما تلتقط كلبك حتى يكون لديه قدرًا إضافيًا من الأمان لركوبه إلى المنزل والأيام القليلة الأولى المضطربة. إذا كان مزودًا بشريحة إلكترونية ، فتأكد من تسجيل معلومات الاتصال الخاصة بك مع شركة الشريحة ، إذا لم يتم الإنقاذ أو الملجأ بالفعل.",
+    "First Day": "اليوم الاول: ",
+    "text5": "نعلم أن الحركة مرهقة - ويشعر كلبك الجديد بنفس الطريقة! امنحه الوقت للتأقلم مع منزلك وعائلتك قبل تقديمه للغرباء. الحد من الزوار للأسبوع الأول. نحن نتفهم رغبتك في التباهي بكلبك الجديد ويريد الكثيرون مقابلة فرد جديد من عائلتك ولكن اسمح لكلبك ببعض الوقت ليصبح مرتاحًا مع العائلة والمنزل الجديد قبل تقديم أشخاص جدد. تأكد من أن الأطفال يعرفون كيفية الاقتراب من الكلب دون إرباكه",
+    "text6": "عندما تلتقط كلبك ، تذكر أن تسأل ماذا ومتى تم إطعامه. كرر هذا الجدول الزمني للأيام القليلة الأولى على الأقل لتجنب الضيق المعدي. إذا كنت ترغب في التحول إلى علامة تجارية مختلفة ، فافعل ذلك على مدار أسبوع تقريبًا عن طريق إضافة جزء واحد من الطعام الجديد إلى ثلاثة أجزاء من القديم لعدة أيام ؛ ثم التبديل إلى نصف طعام جديد ، ونصف طعام قديم ، ثم جزء قديم إلى ثلاثة أجزاء جديدة.",
+    "Itmaytakeyourcataweek or two to adjustBe patient": "قد يستغرق الأمر أسبوعًا أو أسبوعين حتى يتأقلم الكلب. كن صبورا.",
+    "FollowingWeeks": "الاسابيع المقبلة:",
 
-    "text7": "People often say they don’t see their dog’s true personality until several weeks after adoption. Your dog maybe a bit uneasy at first as he gets to know you. Be patient and understanding while also keeping to the schedule you intend to maintain for feeding, walks, etc. This schedule will show your dog what is expected of him as well as what he can expect from you.",
-    "text8": "After discussing it with your veterinarian to ensure your dog has all the necessary vaccines, you may wish to take your dog to group training classes or the dog park. Pay close attention to your dog’s body language to be sure he’s having a good time — and is not fearful or a dog park bully "
+    "text7": "غالبًا ما يقول الناس إنهم لا يرون شخصية كلبهم الحقيقية إلا بعد عدة أسابيع من التبني. ربما يكون كلبك غير مرتاح قليلاً في البداية عندما يتعرف عليك. كن صبورًا وتفهمًا مع الالتزام أيضًا بالجدول الزمني الذي تنوي الحفاظ عليه للتغذية والمشي وما إلى ذلك. سيُظهر هذا الجدول لكلبك ما هو متوقع منه وكذلك ما يمكن أن يتوقعه منك.",
+    "text8": "بعد مناقشته مع طبيبك البيطري للتأكد من حصول كلبك على جميع اللقاحات اللازمة ، قد ترغب في اصطحاب كلبك إلى صفوف تدريب جماعية أو إلى حديقة الكلاب. انتبه جيدًا للغة جسد كلبك للتأكد من أنه يقضي وقتًا ممتعًا - وأنه ليس خائفًا أو متنمرًا في حديقة الكلاب"
   },
   "adoption-page": {
     "filters": {
