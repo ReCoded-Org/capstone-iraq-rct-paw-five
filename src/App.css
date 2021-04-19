@@ -183,12 +183,6 @@ https://i.makeagif.com/media/2-08-2017/BfEXDC.gif
   width: 1600px;
   margin-top: 80px;
 }
-.im3 {
-  width: 508px;
-  margin-left: -90px;
-  margin-top: 20px;
-  height: 421px;
-}
 
 .cat-pic {
   z-index: -1;
@@ -203,7 +197,6 @@ https://i.makeagif.com/media/2-08-2017/BfEXDC.gif
   }
   .cat-pic {
     width: 100% !important;
-    /* margin-top: -1em; */
   }
 }
 @media (max-width: 600px) {
@@ -223,7 +216,9 @@ https://i.makeagif.com/media/2-08-2017/BfEXDC.gif
   background-color: #f2f2f2;
   min-height: 70vh;
 }
-
+.box-col {
+  z-index: 3;
+}
 .box-part {
   background-color: #fff;
 }

@@ -80,7 +80,7 @@ function AboutUs() {
             </p>
           </Container>
         </Col>
-        <Col lg={3} md={6} sm={12} xs={12}>
+        <Col className="box-col" lg={3} md={6} sm={12} xs={12}>
           <Container className="box-part my-5 h-75 rounded">
             <p className="w-75 mx-3">
               “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -110,7 +110,7 @@ function AboutUs() {
             md={{ span: 4, offset: 5 }}
             className="position-absolute our-impact-blob"
           >
-            <img src={Blob} alt="Blob" className="" />
+            <img src={Blob} alt="Blob" className="blob-pic" />
           </Col>{' '}
         </Row>
         <Row className="icons im2">
