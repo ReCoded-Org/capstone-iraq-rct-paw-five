@@ -13,19 +13,24 @@ export default function Resources() {
   return (
     <Container fluid>
       <Row className="row a justify-content-center pt-3">
-        <h3 className="font-weight-bold">
+        <h3
+          className="font-weight-bold text-center mx-2"
+          style={{ color: '#e79559' }}
+        >
           {t('Resource1.Tips for the First 30 Days of cat Adoption')}
         </h3>
       </Row>
       <Row className="row justify-content-center pt-3 pb-5 ">
-        <img src={im} alt="" className="img-fluid" />
+        <img src={im} alt="" className=" w-75 h-75" />
       </Row>
-      <Row className="pt-3 pl-5 content" id="content">
+      <Row className="pt-3 content" id="content">
         {' '}
         <Col sm={0}>{}</Col>
         <Col lg={10} sm={12}>
           {' '}
-          <h4>{t('Resource1.Before You Bring Your Cat Home')}</h4>
+          <h4 className="text-center">
+            {t('Resource1.Before You Bring Your Cat Home')}
+          </h4>
         </Col>
         <Col sm={0}>{}</Col>
       </Row>
@@ -42,7 +47,7 @@ export default function Resources() {
         <Col>{}</Col>
       </Row>
       <Row className="row justify-content-center pt-5 img-background-color pb-5">
-        <img src={im2} alt="" className="img-fluid" />
+        <img src={im2} alt="" className=" w-75 h-75" />
       </Row>
       <Row className=" pt-5  pl-5 contnet" id="content">
         {' '}
@@ -70,7 +75,7 @@ export default function Resources() {
         style={{ marginTop: '-200px' }}
       >
         {' '}
-        <img src={im3} alt="" className=" img-fluid" />
+        <img src={im3} alt="" className=" w-75 h-75" />
       </Row>
       <Row className="pl-5" md={12} sm={12}>
         {' '}

@@ -73,8 +73,8 @@ export default function FetchMyPets() {
   const [uid, setuid] = useState('')
 
   const checkUid = () => {
-    if (currentUser.user) {
-      setuid(currentUser.user.uid)
+    if (currentUser) {
+      setuid(userInfo.user.uid)
     }
   }
 
@@ -134,12 +134,12 @@ export default function FetchMyPets() {
                 className="card text-center m-lg-5 m-md-3 m-sm-2 m-2 shadow-lg  mypet rounded "
                 key={pet.id}
               >
-                <h5 className="p-3 text-left ">{pet.petName}</h5>
+                <h5 className="p-3 text-center ">{pet.petName}</h5>
                 <Row className="d-flex align-items-center">
                   <Col lg={3} md={6} className="d-flex justify-content-center">
                     {' '}
                     <img
-                      className="card-img-top p-2 img-fluid"
+                      className="card-img-top ml-md-4 mb-2 p-2 img-fluid"
                       style={{
                         height: 'auto',
                         minWidth: '200px',

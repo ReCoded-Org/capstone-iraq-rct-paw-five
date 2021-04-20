@@ -190,7 +190,7 @@ export default function ContactUs() {
         </Row>
       </Container>
       <Container fluid>
-        <Row className="h-50 mt-5 mb-5 ">
+        <Row className="mt-5 ">
           {/* <ResponsiveEmbed className="h-25" aspectRatio="16by9"> */}
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13336.605883119555!2d44.3770677!3d33.3148553!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x927ea3c6fb5cd552!2sAl-Zawraa%20Park!5e0!3m2!1sen!2siq!4v1616624591055!5m2!1sen!2siq"
