@@ -30,7 +30,7 @@ export default function PetCard({ pet }) {
       newdirProperties.detailsBtn = 'float-right'
       newdirProperties.gender = 'float-left'
       newdirProperties.location[0] = '10px'
-      newdirProperties.location[1] = '220px'
+      newdirProperties.location[1] = '10px'
       setDir(newdirProperties)
     } else {
       const newdirProperties = { ...dirProperties }
@@ -38,7 +38,7 @@ export default function PetCard({ pet }) {
       newdirProperties.detailsBtn = 'float-left'
       newdirProperties.gender = 'float-right'
       newdirProperties.location[0] = '10px'
-      newdirProperties.location[1] = '10px'
+      newdirProperties.location[1] = '270px'
       setDir(newdirProperties)
     }
   }
@@ -65,7 +65,7 @@ export default function PetCard({ pet }) {
           <span
             style={{
               top: dirProperties.location[0],
-              left: dirProperties.location[1],
+              right: dirProperties.location[1],
               backgroundColor: 'rgba(255, 255, 255, 0.466)',
               borderRadius: '15px',
             }}
@@ -75,7 +75,7 @@ export default function PetCard({ pet }) {
               className="petLocationIcon"
               icon={faMapMarkerAlt}
             />{' '}
-            {pet.address}{' '}
+            {pet.city}{' '}
           </span>
           <Card.Body>
             <Card.Title style={{ color: '#d18d28' }} align="center">
