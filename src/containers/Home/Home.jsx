@@ -120,7 +120,7 @@ export default function Home() {
             <input
               type="text"
               list="city"
-              className=" first-input text-size outline   w-25 py-3 px-2 m-auto"
+              className=" first-input text-size outline w-25 py-3 px-3 m-auto"
               placeholder={t('homepage.inputs.city')}
               onChange={e => setselectedCity(e.target.value)}
               multiple
@@ -205,8 +205,8 @@ export default function Home() {
       >
         <Container align="center" className="my-0 py-2 m-0" fluid>
           <Row className="container-fluid m-0 h4 my-5 text-danger">
-            <FontAwesomeIcon icon={faBraille} className="text-warning" />{' '}
-            {t('homepage.recentpet')}
+            <FontAwesomeIcon icon={faBraille} className="text-warning mt-1" />{' '}
+            <div className="ml-3">{t('homepage.recentpet')}</div>
           </Row>
           <Row className="d-flex justify-content-center m-0">
             <PetCard pet={pets[0]} />
@@ -216,7 +216,7 @@ export default function Home() {
           <Button
             as={Link}
             to={ADOPT_ROUTE}
-            className=" home-input home-btn px-5 py-3 mb-5 border-0 shadow-none"
+            className=" home-input home-btn px-5 py-3 mb-5 mt-5 border-0 shadow-none"
             style={{ backgroundColor: '#f2726f' }}
           >
             {' '}
@@ -260,18 +260,12 @@ export default function Home() {
             md={6}
             sm={12}
           >
-            <h3>{t('homepage.whoweare.whoweare')}</h3>
-            <h5>{t('homepage.whoweare.title')}</h5>
-            <p className=" text-justify px-5 ">
-              <FontAwesomeIcon
-                className="text-warning ml-5"
-                icon={faQuoteLeft}
-              />{' '}
+            <h3 className="mt-4 mt-md-0">{t('homepage.whoweare.whoweare')}</h3>
+            <h5 className="mt-4">{t('homepage.whoweare.title')}</h5>
+            <p className=" mt-2 px-4 ">
+              <FontAwesomeIcon className="text-warning " icon={faQuoteLeft} />{' '}
               {t('homepage.whoweare.descripton')}
-              <FontAwesomeIcon
-                className="text-warning mr-5"
-                icon={faQuoteRight}
-              />
+              <FontAwesomeIcon className="text-warning " icon={faQuoteRight} />
             </p>
             <Button
               as={Link}
@@ -286,48 +280,52 @@ export default function Home() {
         </Row>
       </Container>
 
-      <Container dir={dir}>
-        <Row className="container-fluid   m-0 h4 mt-5 mb-3 text-danger">
-          <FontAwesomeIcon
-            icon={faBraille}
-            className="text-warning align-self-center"
-          />
-          <h7 className="align-self-center p-2">{t('homepage.somestories')}</h7>
+      <div className="px-5 mx-4" dir={dir}>
+        <Row className="container-fluid m-0 h4 mt-5 mb-3 text-danger">
+          <div className="d-block mx-auto mx-sm-0">
+            <FontAwesomeIcon
+              icon={faBraille}
+              className="text-warning align-self-center"
+            />
+            <h7 className="align-self-center p-2">
+              {t('homepage.somestories')}
+            </h7>
+          </div>
         </Row>
-        <Row className="d-flex justify-content-center text-center p-4">
-          <Col className="col-lg-4 col-md-10" sm={4}>
-            <Row>
-              <Col className="col-lg-3 col-md-3" sm={3}>
+        <Row className="d-flex justify-content-center text-center py-4">
+          <Col className="col-lg-4 col-md-10" sm={12}>
+            <Row className="mb-4 mb-sm-0">
+              <Col className="col-lg-3 col-md-3 mb-3 mb-sm-0" sm={3}>
                 <img src={HP1} className="img-fluid" alt="" />
               </Col>
               <Col className="col-lg-9 col-md-9  text-justify" sm={9}>
-                <h5 className=" text-danger text-center">
+                <h5 className=" text-danger text-center text-sm-left">
                   {t('homepage.story1.title')}{' '}
                 </h5>
                 {t('homepage.story1.story')}{' '}
               </Col>
             </Row>
           </Col>
-          <Col className="col-lg-4 col-md-10 " sm={4}>
-            <Row>
-              <Col className="col-lg-3 col-md-3" sm={3}>
+          <Col className="col-lg-4 col-md-10 " sm={12}>
+            <Row className="mb-4 mb-sm-0">
+              <Col className="col-lg-3 col-md-3 mb-3 mb-sm-0" sm={3}>
                 <img src={HP2} className="img-fluid" alt="" />
               </Col>
               <Col className="col-lg-9 col-md-9  text-justify" sm={9}>
-                <h5 className=" text-danger text-center">
+                <h5 className=" text-danger text-center text-sm-left">
                   {t('homepage.story2.title')}{' '}
                 </h5>
                 {t('homepage.story2.story')}
               </Col>
             </Row>
           </Col>
-          <Col className="col-lg-4 col-md-10" sm={4}>
-            <Row>
-              <Col className="col-lg-3 col-md-3" sm={3}>
+          <Col className="col-lg-4 col-md-10" sm={12}>
+            <Row className="mb-4 mb-sm-0">
+              <Col className="col-lg-3 col-md-3 mb-3 mb-sm-0" sm={3}>
                 <img src={HP3} className="img-fluid" alt="" />
               </Col>
               <Col className="col-lg-9 col-md-9  text-justify" sm={9}>
-                <h5 className=" text-danger text-center">
+                <h5 className=" text-danger text-center text-sm-left">
                   {t('homepage.story3.title')}{' '}
                 </h5>
                 {t('homepage.story3.story')}
@@ -335,7 +333,7 @@ export default function Home() {
             </Row>
           </Col>
         </Row>
-      </Container>
+      </div>
 
       <Container className=" slid mt-5 " fluid>
         <Slider pets={pets} />

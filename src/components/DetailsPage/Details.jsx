@@ -12,14 +12,11 @@ import Comment from '../Comment/Comment'
 import Addcomment from '../../containers/AddComment/Addcomment'
 
 function Detail({ match }) {
-  
   const { t } = useTranslation()
   const { data } = useSelector(state => state.pets)
   const petInfo = data.find(pet => pet.id === match.params.id)
   const comments = useSelector(state => state.fetchComments)
   const petComments = comments.filter(pet => pet.petId === match.params.id)
-
- 
 
   return (
     <Container fluid>
@@ -111,6 +108,72 @@ function Detail({ match }) {
             <Col>{}</Col>
           </Col>
           <Col>{}</Col>
+        </Row>
+        {/** Health Info */}
+        <Row>
+          <Col>
+            <h2
+              className="row justify-content-center pt-5 pb-5 "
+              id="colorset1"
+            >
+              {t('detalis-page.health-info')}
+            </h2>
+          </Col>
+        </Row>
+        <Row className="pb-5 pl-3 pl-lg-0 ">
+          <Col>{}</Col>
+
+          <Col lg={8} md={12} sm={12}>
+            <div>
+              <label htmlFor="pet health" className="label" id="colorset">
+                {t('detalis-page.petHealth')}
+              </label>
+              {petInfo ? (
+                <span className="span pl-2">{petInfo.petHealth}</span>
+              ) : (
+                ''
+              )}
+            </div>
+            <div className="pt-3">
+              <label
+                htmlFor="vaccination status"
+                className="label"
+                id="colorset"
+              >
+                {t('detalis-page.vaccinationStatus')}
+              </label>
+              {petInfo ? (
+                <span className="pl-2 pr-5 ">{petInfo.vaccinationStatus}</span>
+              ) : (
+                ''
+              )}
+            </div>
+            <div className="pt-3">
+              <label
+                htmlFor="fertilization Status"
+                className="label"
+                id="colorset"
+              >
+                {t('detalis-page.fertilizationStatus')}
+              </label>
+              {petInfo ? (
+                <span className="pl-2">{petInfo.fertilizationStatus}</span>
+              ) : (
+                ''
+              )}
+            </div>
+            <div className="pt-3">
+              <label htmlFor="deworming Status" className="label" id="colorset">
+                {t('detalis-page.dewormingStatus')}
+              </label>
+              {petInfo ? (
+                <span className="pl-2">{petInfo.dewormingStatus}</span>
+              ) : (
+                ''
+              )}
+            </div>
+          </Col>
+          <Col lg={3}>{}</Col>
         </Row>
         {/** contact info */}
         <Row id="contact-header">
