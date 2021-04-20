@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Navbar, Nav, Dropdown, Form } from 'react-bootstrap'
+import { Navbar, Nav, Dropdown } from 'react-bootstrap'
 import { useSelector, useDispatch } from 'react-redux'
 import { useTranslation } from 'react-i18next'
 import i18next from 'i18next'
@@ -21,10 +21,11 @@ import {
 import 'bootstrap/dist/css/bootstrap.min.css'
 import logo from '../../images/logo.ico'
 import firebase from '../../firebase'
-import userStatus,{setUserInfo} from '../../redux/actions/user'
+import userStatus, { setUserInfo } from '../../redux/actions/user'
 
 export default function NavBar() {
   const globaleLang = useSelector(state => state.langReducer)
+  const [NavLanguage, setNavLanguage] = useState(globaleLang)
   const userState = useSelector(state => state.user.isLoggedIn)
   const dispatch = useDispatch()
   const { t } = useTranslation()
@@ -39,7 +40,7 @@ export default function NavBar() {
     firebase.auth().onAuthStateChanged(user => {
       if (user) {
         dispatch(userStatus(true))
-       dispatch(setUserInfo({ name: user.displayName, uid: user.uid }))
+        dispatch(setUserInfo({ name: user.displayName, uid: user.uid }))
       } else {
         dispatch(userStatus(false))
       }
@@ -65,6 +66,7 @@ export default function NavBar() {
     localStorage.setItem('lang', e.target.value)
     dispatch(selectedLang(e.target.value))
     selectedLanguage(e.target.value)
+    setNavLanguage(e.target.value)
   }
 
   const handelDir = () => {
@@ -247,28 +249,23 @@ export default function NavBar() {
                 {t('navbar.logIn')}
               </Nav.Link>
             )}
-            <Form.Control
-              className=" fa   m-3 text-light text-danger shadow-none bg-transparent  border-0 "
-              onChange={handelOption}
+            <Nav.Link
               as="select"
-              size="sm"
-              custom
-              value=""
-              style={{ maxWidth: '50px' }}
+              className="select-language m-3 p-0 text-light text-light text-danger shadow-none bg-transparent  border-0 "
+              onChange={handelOption}
+              value={NavLanguage}
+              style={{ outline: 'none' }}
             >
-              <option style={{ display: 'none' }} className="fas p-0">
-                &#xf1ab;
-              </option>
-              <option className="text-danger" value="en">
-                English
+              <option className="text-danger fas " value="en">
+                &#xf0ac; English
               </option>
               <option className="text-danger" value="ar">
-                عربي
+                &#xf0ac; عربي
               </option>
               <option className="text-danger" value="kr">
-                كوردى
+                &#xf0ac; كوردى
               </option>
-            </Form.Control>
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
