@@ -18,7 +18,7 @@ function Select({ title, options }) {
     <>
       <select
         name={title}
-        className=" text-center btn_width  py-2 px-4 rounded bg-white font-weight-bold "
+        className=" text-center btn_width  py-2  px-1 rounded bg-white font-weight-bold text-filter "
         onChange={handelChange}
       >
         <option value="" selected style={{ display: 'none' }}>

@@ -158,6 +158,12 @@ input:-webkit-autofill {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .text-filter {
+    font-size: 10px !important;
+  }
+}
+
 #content,
 .contactinfo,
 #contact-header {
@@ -253,8 +259,7 @@ https://i.makeagif.com/media/2-08-2017/BfEXDC.gif
 }
 
 .select-language {
-  font-family: 'FontAwesome', 'Second Font name';
-
+  font-family: 'FontAwesome';
   -webkit-appearance: none;
   -moz-appearance: none;
 }

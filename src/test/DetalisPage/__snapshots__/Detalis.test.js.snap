@@ -1,0 +1,364 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="container-fluid"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col"
+    >
+      <h2
+        className="row justify-content-center pt-5 pb-5 "
+        id="colorset1"
+      >
+        detalis-page.PetDetalis
+      </h2>
+    </div>
+  </div>
+  <div>
+     
+    <div
+      className=" pr-3 pb-5 row"
+    >
+      <div
+        className="col"
+      />
+      <div
+        className="pt-3  col-lg-5 col-md-12 col-sm-12 col-12"
+      >
+         
+        
+      </div>
+      <div
+        className="pb-3 col-lg-5"
+      >
+        
+        <div
+          className="col-lg-8 col-md-12 col-sm-12"
+        >
+          <div
+            className="pt-3"
+          >
+            <label
+              className="label"
+              htmlFor="pet species"
+              id="colorset"
+            >
+              detalis-page.pet-species
+            </label>
+            
+          </div>
+          <div
+            className="pt-3"
+          >
+            <label
+              className="label"
+              htmlFor="pet age"
+              id="colorset"
+            >
+              detalis-page.pet-age
+            </label>
+            
+          </div>
+          <div
+            className="pt-3"
+          >
+            <label
+              className="label"
+              htmlFor="pet-info"
+              id="colorset"
+            >
+              detalis-page.pet-color
+            </label>
+            
+          </div>
+          <div
+            className="pt-3"
+          >
+            <label
+              className="label"
+              htmlFor="pet gender"
+              id="colorset"
+            >
+              detalis-page.gender
+            </label>
+            
+          </div>
+          <div
+            className="pt-3"
+          >
+            <label
+              className="label"
+              htmlFor="pet weight"
+              id="colorset"
+            >
+              detalis-page.pet-weight
+            </label>
+            
+          </div>
+          <div
+            className="pt-3"
+          >
+            <label
+              className="label"
+              htmlFor="pet story"
+              id="colorset"
+            >
+              detalis-page.pet-story
+            </label>
+            
+          </div>
+        </div>
+        <div
+          className="col"
+        />
+      </div>
+      <div
+        className="col"
+      />
+    </div>
+    <div
+      className="row"
+    >
+      <div
+        className="col"
+      >
+        <h2
+          className="row justify-content-center pt-5 pb-5 "
+          id="colorset1"
+        >
+          detalis-page.health-info
+        </h2>
+      </div>
+    </div>
+    <div
+      className="pb-5 pl-3 pl-lg-0  row"
+    >
+      <div
+        className="col"
+      />
+      <div
+        className="col-lg-8 col-md-12 col-sm-12"
+      >
+        <div>
+          <label
+            className="label"
+            htmlFor="pet health"
+            id="colorset"
+          >
+            detalis-page.petHealth
+          </label>
+          
+        </div>
+        <div
+          className="pt-3"
+        >
+          <label
+            className="label"
+            htmlFor="vaccination status"
+            id="colorset"
+          >
+            detalis-page.vaccinationStatus
+          </label>
+          
+        </div>
+        <div
+          className="pt-3"
+        >
+          <label
+            className="label"
+            htmlFor="fertilization Status"
+            id="colorset"
+          >
+            detalis-page.fertilizationStatus
+          </label>
+          
+        </div>
+        <div
+          className="pt-3"
+        >
+          <label
+            className="label"
+            htmlFor="deworming Status"
+            id="colorset"
+          >
+            detalis-page.dewormingStatus
+          </label>
+          
+        </div>
+      </div>
+      <div
+        className="col-lg-3"
+      />
+    </div>
+    <div
+      className="row"
+      id="contact-header"
+    >
+      <div
+        className="col"
+      >
+        <h2
+          className="row justify-content-center pt-5 pb-5 "
+          id="colorset1"
+        >
+          detalis-page.contact-info
+        </h2>
+      </div>
+    </div>
+    <div
+      className="contactinfo pb-5 pl-3 pl-lg-0  row"
+    >
+      <div
+        className="col"
+      />
+      <div
+        className="col-lg-8 col-md-12 col-sm-12"
+      >
+        <div>
+          <label
+            className="label"
+            htmlFor="owner name"
+            id="colorset"
+          >
+            detalis-page.ownerName
+          </label>
+          
+        </div>
+        <div
+          className="pt-3"
+        >
+          <label
+            className="label"
+            htmlFor="about owner"
+            id="colorset"
+          >
+            detalis-page.aboutOwner
+          </label>
+          
+        </div>
+        <div
+          className="pt-3"
+        >
+          <label
+            className="label"
+            htmlFor="city"
+            id="colorset"
+          >
+            detalis-page.city
+          </label>
+          
+        </div>
+        <div
+          className="pt-3"
+        >
+          <label
+            className="label"
+            htmlFor="address"
+            id="colorset"
+          >
+            detalis-page.address
+          </label>
+          
+        </div>
+        <div
+          className="pt-3"
+        >
+          <label
+            className="label"
+            htmlFor="email"
+            id="colorset"
+          >
+            detalis-page.email
+          </label>
+          
+        </div>
+        <div
+          className="pt-3"
+        >
+          <label
+            className="label"
+            htmlFor="phone number"
+            id="colorset"
+          >
+            detalis-page.phoneNumber
+          </label>
+          
+        </div>
+      </div>
+      <div
+        className="col-lg-3"
+      />
+    </div>
+    <div
+      className="d-flex justify-content-center container-fluid"
+    >
+      <div
+        className="w-100"
+      >
+        <p
+          className="h2 text-danger p-3"
+        >
+          detalis-page.comments
+        </p>
+        <div>
+          
+        </div>
+      </div>
+    </div>
+    <div
+      className="pet-gallery row"
+    >
+      <div
+        className="col"
+      >
+        <h2
+          className=" row justify-content-center pt-3 pb-3 "
+          style={
+            Object {
+              "color": "white",
+            }
+          }
+        >
+          detalis-page.petGallery
+        </h2>
+      </div>
+    </div>
+    <div
+      className="pet-gallery pt-1 pb-5  row"
+    >
+      <div
+        className="col"
+      >
+        <img
+          alt=""
+          className="img-fluid img pt-4 "
+          sm={4}
+          src="Rectangle 79.svg"
+        />
+      </div>
+      <div
+        className="col-sm-4"
+      >
+        <img
+          alt=""
+          className="img-fluid img pt-4 "
+          src="Rectangle 80.svg"
+        />
+      </div>
+      <div
+        className="col-sm-4"
+      >
+        <img
+          alt=""
+          className="img-fluid img pt-4 "
+          src="image 15.svg"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

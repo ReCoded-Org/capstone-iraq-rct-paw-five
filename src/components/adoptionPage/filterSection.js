@@ -1,14 +1,17 @@
 import React, { useEffect, useState } from 'react'
-import { Col } from 'react-bootstrap'
+import { Col, Row } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
-import { useTranslation } from 'react-i18next'
-import TopSection2 from './topSection2'
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSearch } from '@fortawesome/free-solid-svg-icons'
+// import { useTranslation } from 'react-i18next'
+// import TopSection2 from './topSection2'
 import Select from './select'
 import { FilteredPets } from '../../redux/actions/pets'
 /* eslint no-eval: 0 */
 
 function FilterSection() {
-  const { t } = useTranslation()
+  // const { t } = useTranslation()
   const { data, filters } = useSelector(state => state.pets)
   const dispatch = useDispatch()
   const globaleLang = useSelector(state => state.langReducer)
@@ -57,29 +60,27 @@ function FilterSection() {
 
   return (
     <>
-      <Col className="col-12 p-0 position-relative">
-        <TopSection2 className="" />
-        <div
-          dir={dir}
-          className="w-100 px-lg-5 position-absolute top-50 d-flex flex-wrap align-self-center justify-content-around align-items-center"
-          style={{ height: '6rem' }}
-        >
+      {/* <TopSection2 className="" /> */}
+      {/* <Container></Container> */}
+      <Row fluid dir={dir} className="w-100 p-4  my-3 ">
+        <Col className="col-12 d-flex justify-content-center">
           {Object.keys(selections).map(key => (
             <Select title={key} options={selections[key]} />
           ))}
 
           <button
             type="button"
-            className="py-2 px-4 rounded btn_width bg-white font-weight-bold"
+            className="text-center text-white text-filter py-2 px-2 rounded bg-warning font-weight-bold "
             onClick={() => {
               filter()
             }}
           >
-            <i className="fa fa-search pr-3 text-warning" aria-hidden="true" />
-            {t('adoption-page.filters.findAPet')}
+            <FontAwesomeIcon icon={faSearch} className="mx-3"/>
+            {/* <i className="fa fa-search pr-3 text-warning" aria-hidden="true" /> */}
+            {/* {t('adoption-page.filters.findAPet')} */}
           </button>
-        </div>
-      </Col>
+        </Col>
+      </Row>
     </>
   )
 }

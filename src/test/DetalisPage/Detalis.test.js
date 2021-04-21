@@ -12,7 +12,7 @@ it('renders correctly', () => {
   const tree = renderer
     .create(
       <Provider store={store}>
-        <Details match="temp" />
+        <Details match={{ params: 'temp' }} />
       </Provider>
     )
     .toJSON()

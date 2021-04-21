@@ -7,6 +7,7 @@ import '../components/adoptionPage/style.css'
 import ListPets from '../components/adoptionPage/listCards'
 import Pagination from '../components/adoptionPage/pagination'
 import FilterSection from '../components/adoptionPage/filterSection'
+import IMG from '../images/Adoption-page/findApet.png'
 
 function AdoptionPage({ location }) {
   const dispatch = useDispatch()
@@ -23,7 +24,10 @@ function AdoptionPage({ location }) {
         '...loading'
       ) : (
         <>
-          <Row className="">
+        <Row >
+        <img src={IMG} className="img-fluid my-5" alt=""/>
+        </Row>
+          <Row fluid className="d-flex justify-content-center theme-color  mb-5">
             <FilterSection />
           </Row>
 

@@ -152,7 +152,7 @@ exports[`renders correctly 1`] = `
     className="container-fluid"
   >
     <div
-      className="h-50 mt-5 mb-5  row"
+      className="mt-5  row"
     >
       <iframe
         className=" w-100"

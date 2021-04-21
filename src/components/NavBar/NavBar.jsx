@@ -255,6 +255,7 @@ export default function NavBar() {
               onChange={handelOption}
               value={NavLanguage}
               style={{ outline: 'none' }}
+              
             >
               <option className="text-danger fas " value="en">
                 &#xf0ac; English
