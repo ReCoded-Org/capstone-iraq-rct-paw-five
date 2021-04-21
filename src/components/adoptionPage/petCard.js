@@ -9,7 +9,7 @@ function PetCard({ pet }) {
   const { t } = useTranslation()
   return (
     <Card
-      style={{ width: '95%', height: '18rem' }}
+      style={{ width: '95%', height: '20rem' }}
       className="position-relative hidden_border card_rounded mb-2"
     >
       <div className="rounded">
@@ -38,7 +38,7 @@ function PetCard({ pet }) {
         </Card.Text>
 
         <Row className="px-2 pb-4 d-flex  justify-content-between mb-3">
-          <Col className="align-self-center">
+          <Col className="align-self-center col-6">
             {pet.gender === 'male' ? (
               <i className="fa fa-mars ">
                 <p className="text-danger d-inline-block p-1 m-0">
@@ -53,9 +53,9 @@ function PetCard({ pet }) {
               </i>
             )}
           </Col>
-          <Col className="">
+          <Col className="col-6">
             <Link to={`/details/${pet.id}`}>
-              <button type="button" className="rounded py-1 px-4 bg-warning ">
+              <button type="button" className="rounded py-1 px-3 bg-warning float-right ">
                 {t('adoption-page.details')}
               </button>
             </Link>
