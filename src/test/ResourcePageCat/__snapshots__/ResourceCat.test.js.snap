@@ -8,7 +8,12 @@ exports[`renders correctly 1`] = `
     className="row justify-content-center pt-3  row"
   >
     <h3
-      className="font-weight-bold"
+      className="font-weight-bold text-center mx-2"
+      style={
+        Object {
+          "color": "#e79559",
+        }
+      }
     >
       Resource.Tips for the First 30 Days of cat Adoption
     </h3>
@@ -17,13 +22,13 @@ exports[`renders correctly 1`] = `
     className="row justify-content-center pt-3 pb-5  row"
   >
     <img
-      alt=""
-      className=" img-fluid"
+      alt="cat care"
+      className=" w-75 h-75"
       src="Rectangle 1.svg"
     />
   </div>
   <div
-    className="pt-3 pl-5   row"
+    className="pt-3 row"
     id="content"
   >
      
@@ -34,7 +39,9 @@ exports[`renders correctly 1`] = `
       className="col-lg-10 col-sm-12"
     >
        
-      <h4>
+      <h4
+        className="text-center"
+      >
         Resource.Before You Bring Your Cat Home
       </h4>
     </div>
@@ -88,7 +95,7 @@ exports[`renders correctly 1`] = `
   >
     <img
       alt=""
-      className=" img-fluid"
+      className=" w-75 h-75"
       src="Rectangle 2.svg"
     />
   </div>
@@ -113,7 +120,7 @@ exports[`renders correctly 1`] = `
     />
   </div>
   <div
-    className="row    row"
+    className="row row"
     id="content"
     style={
       Object {
@@ -162,7 +169,7 @@ exports[`renders correctly 1`] = `
      
     <img
       alt=""
-      className=" img-fluid"
+      className=" w-75 h-75"
       src="Rectangle 3.svg"
     />
   </div>
