@@ -6,7 +6,8 @@
   background-image: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%);
 }
 .contact-us {
-  box-shadow: 0 20px 50px rgba(88, 65, 51, 0.7);
+  box-shadow: 0 10px 10px -5px;
+  color: rgb(124, 72, 72);
 }
 .img-fluid {
   height: auto;
@@ -164,6 +165,12 @@ input:-webkit-autofill {
     overflow-x: hidden;
   }
 }
+@media screen and (max-width: 480px) {
+  .text-filter {
+    font-size: 10px !important;
+  }
+}
+
 #content,
 .contactinfo,
 #contact-header {
@@ -291,4 +298,9 @@ https://i.makeagif.com/media/2-08-2017/BfEXDC.gif
 }
 .textpink1 {
   font-weight: 800;
+}
+.select-language {
+  font-family: 'FontAwesome';
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
