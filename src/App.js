@@ -46,7 +46,7 @@ function App() {
       <NavBar />
       <Switch>
         <Route path={ADOPT_ROUTE} component={AdoptionPage} />
-        <Route path={DETAILS_ROUTE} component={Details} />
+        <Route path={`${DETAILS_ROUTE}/:id`} component={Details} />
         <Route path={ADD_APET_ROUTE} component={AddPet} />
         <Route path={ABOUT_ROUTE} component={About} />
         <Route path={RESOURCE_CAT_ROUTE} component={ResourceCat} />

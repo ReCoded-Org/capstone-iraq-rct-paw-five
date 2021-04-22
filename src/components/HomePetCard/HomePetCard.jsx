@@ -11,6 +11,9 @@ import { faMars, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 import Loadingg from '../Loading/Loading'
 
 import './HomePetCard.css'
+import {
+  DETAILS_ROUTE
+} from '../../routes'
 
 export default function PetCard({ pet }) {
   const globaleLang = useSelector(state => state.langReducer)
@@ -90,7 +93,7 @@ export default function PetCard({ pet }) {
             </span>
             <Button
               as={Link}
-              to={`details/${pet.id}`}
+              to={`${DETAILS_ROUTE}/${pet.id}`}
               className={`detailsBtn border-0 ${dirProperties.detailsBtn}`}
               variant="primary"
             >

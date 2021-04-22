@@ -304,3 +304,27 @@ https://i.makeagif.com/media/2-08-2017/BfEXDC.gif
   -webkit-appearance: none;
   -moz-appearance: none;
 }
+
+.my-dropdown-toggle:after {
+  display: none;
+}
+
+.notification-link {
+  text-decoration: none !important ;
+  color: #dc4946;
+  padding: 3px;
+}
+
+.scrolll {
+  height: 400px;
+  width: 280PX !important;
+  overflow: scroll;
+  z-index: 10 !important;
+  position: relative !important;
+  background-color: #f1dfd1;
+  background-image: linear-gradient(315deg, #f1dfd1 0%, #f6f0ea 74%);
+}
+
+.notification-front {
+  z-index: 100 !important;
+}
