@@ -1,6 +1,6 @@
 * {
-  margin: 0%;
-  padding: 0%;
+  margin: 0px;
+  padding: 0px;
 }
 .theme-color {
   background-image: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%);
@@ -196,11 +196,12 @@ https://i.makeagif.com/media/2-08-2017/BfEXDC.gif
     #ffc533 100%
   );
   border-radius: 40px;
-  margin-right: -30px;
+  overflow-x: hidden;
 }
 .cardcontrol {
   z-index: 5;
   margin-right: -100px;
+  overflow-x: hidden;
 }
 .catIm {
   width: 700px;
@@ -287,5 +288,8 @@ https://i.makeagif.com/media/2-08-2017/BfEXDC.gif
   .cardCol {
     border-radius: 40px;
     margin-right: 0px;
+  }
+  .im3 {
+    margin-left: 0px;
   }
 }
