@@ -154,6 +154,9 @@ input:-webkit-autofill {
   .text-size {
     font-size: 8px !important;
   }
+  body {
+    overflow-x: hidden;
+  }
 }
 
 #content,
@@ -283,13 +286,4 @@ https://i.makeagif.com/media/2-08-2017/BfEXDC.gif
 }
 .textpink1 {
   font-weight: 800;
-}
-@media only screen and (min-width: 768px) {
-  .cardCol {
-    border-radius: 40px;
-    margin-right: 0px;
-  }
-  .im3 {
-    margin-left: 0px;
-  }
 }

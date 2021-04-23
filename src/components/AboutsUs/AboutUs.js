@@ -21,11 +21,11 @@ function About() {
 
   return (
     <Container fluid>
-      <Row className="pt-5">
-        <Col lg={6} md={12} className="cardcontrol mt-5 pt-3   ">
+      <Row className="All pt-5">
+        <Col lg={6} md={12} className="cardcontrol  text-center mt-5 pt-3   ">
           {' '}
           <Card className="cardCol pt-1 " data-aos="fade-right">
-            <Card.Body className="pl-5  pr-5 pb-5  mt-3">
+            <Card.Body className="pl-5  pr-2 pb-5  mt-3">
               <Card.Title className="pl-1 d-flex flex-end">
                 <img src={OverlineMark} className="im" alt="OverlineMark" />
                 <h6 className="pl-1 pt-2   title1">
@@ -52,7 +52,7 @@ function About() {
         </Col>
         <Col lg={1}>{}</Col>
       </Row>
-      <Row className="pt-3 pb-4 cards pl-5 d-flex flex-end pt-4">
+      <Row className=" All pt-3 pb-4 cards pl-5 d-flex flex-end pt-4">
         <img src={OverlineMarkIconPurple} alt="OverlineMark" className="im" />
         <h5 className="pt-2 text-uppercase font-weight-light ">
           {t('Aboutus.story')}
