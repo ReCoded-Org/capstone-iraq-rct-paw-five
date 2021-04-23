@@ -29,6 +29,7 @@
     "vaccinationStatus":"هل الحيوان الأليف ملقح ؟",
     "yes":"نعم",
     "no":"لا",
+    
     "notKnown":"لا اعلم",
     "fertilizationStatus":"هل الحيوان الأليف معقم ؟",
     "dewormingStatus":"هل الحيوان الأليف تلقى حبوب ضد الديدان ؟",

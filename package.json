@@ -11,6 +11,7 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "aos": "^2.3.4",
     "bootstrap": "^4.6.0",
     "emailjs-com": "^2.6.4",
     "firebase": "^8.3.0",
@@ -44,7 +45,7 @@
     "test": "react-scripts test -u",
     "eject": "react-scripts eject",
     "fix": "prettier --write 'src/**/*.js*' 'src/**/*.css' '!src/**/*/*.snap'",
-    "style":" prettier --write ./src"
+    "style": " prettier --write ./src"
   },
   "eslintConfig": {
     "extends": [

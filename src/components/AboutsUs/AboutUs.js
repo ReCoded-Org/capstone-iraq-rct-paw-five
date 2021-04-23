@@ -1,193 +1,190 @@
-import React from 'react'
-import { Container, Row, Col } from 'react-bootstrap'
-import CatNextToRectangle from '../../images/About-us/CatNextToRectangle.svg'
-import RectangleAboutUs from '../../images/About-us/RectangleAboutUs.svg'
-import OverlineMark from '../../images/About-us/Overline Mark.svg'
-import OverlineMarkIconPurple from '../../images/About-us/Overline Mark Purple.svg'
-import Blob from '../../images/About-us/Blob 2.svg'
+import { Row, Col, Container, Card } from 'react-bootstrap'
+import { useTranslation } from 'react-i18next'
+import React, { useEffect } from 'react'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+import Im from '../../images/About-us/Image.svg'
+import im2 from '../../images/About-us/Blob.svg'
+import '../../App.css'
 import PuppyBath from '../../images/About-us/dog_grooming_24x.svg'
 import DogsBoard from '../../images/About-us/dog_stream_24x.svg'
 import PupsTrained from '../../images/About-us/dog_love_24x.svg'
 import MealsServed from '../../images/About-us/dog_vet_24x.svg'
+import OverlineMark from '../../images/About-us/Overline Mark.svg'
+import OverlineMarkIconPurple from '../../images/About-us/Overline Mark Purple.svg'
 
-import CardSection from '../../containers/CardSection/Card'
-import '../../App.css'
+function About() {
+  const { t } = useTranslation()
+  useEffect(() => {
+    Aos.init({ duration: 2000 })
+  }, [])
 
-function AboutUs() {
   return (
     <Container fluid>
-      {/* first section */}
-      <Row className="about-us-section mt-4 px-4">
+      <Row className="pt-5">
+        <Col lg={6} md={12} className="cardcontrol mt-5 pt-3   ">
+          {' '}
+          <Card className="cardCol pt-1 " data-aos="fade-right">
+            <Card.Body className="pl-5  pr-5 pb-5  mt-3">
+              <Card.Title className="pl-1 d-flex flex-end">
+                <img src={OverlineMark} className="im" alt="OverlineMark" />
+                <h6 className="pl-1 pt-2   title1">
+                  {t('Aboutus.who we are')}
+                </h6>
+              </Card.Title>
+
+              <Card.Text className="p-1 pr-5  ">
+                <h1 className="title pb-2">{t('Aboutus.text1')}</h1>
+                <p className=" about d-flex justify-content-center">
+                  {t('Aboutus.text2')}
+                </p>
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col lg={6} md={12} sm={12} xs={12}>
+          <img
+            src={Im}
+            className="catIm   img-fluid"
+            data-aos="fade-left"
+            alt=""
+          />
+        </Col>
+        <Col lg={1}>{}</Col>
+      </Row>
+      <Row className="pt-3 pb-4 cards pl-5 d-flex flex-end pt-4">
+        <img src={OverlineMarkIconPurple} alt="OverlineMark" className="im" />
+        <h5 className="pt-2 text-uppercase font-weight-light ">
+          {t('Aboutus.story')}
+        </h5>
+      </Row>
+      <Row className="cards pt-4 pb-5 ">
         <Col
-          lg={6}
+          lg={4}
+          md={6}
+          sm={12}
+          className="d-flex justify-content-center pl-3 pr-3 pb-3"
+        >
+          <Card className="card1 w-75 pl-3 pr-3 " data-aos="zoom-in">
+            <Card.Body className="">
+              <Card.Title className="text-center textpink1">
+                {t('Aboutus.brono')}
+              </Card.Title>
+              <Card.Text>
+                <h5 className="cardtext">{t('Aboutus.text4')}</h5>
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+
+        <Col
+          lg={4}
+          md={6}
+          sm={12}
+          className="d-flex justify-content-center pb-3"
+        >
+          <Card className="card1 w-75 pl-3 pr-3" data-aos="zoom-in">
+            <Card.Body className="">
+              <Card.Title className="text-center textpink1">
+                {t('Aboutus.bear')}
+              </Card.Title>
+
+              <Card.Text>
+                <h5 className="cardtext">{t('Aboutus.text5')}</h5>
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col
+          lg={4}
+          md={6}
+          sm={12}
+          className="d-flex justify-content-center pb-3 "
+        >
+          <Card className="card1 w-75 pl-3 pr-3 " data-aos="zoom-in">
+            <Card.Body className="">
+              <Card.Title className="text-center textpink1">
+                {t('Aboutus.milo')}
+              </Card.Title>
+              <Card.Text>
+                <h5 className="cardtext">{t('Aboutus.text6')}</h5>
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+      </Row>
+      <Row className="extra pt-5 pl-5 d-flex flex-end ">
+        <img src={OverlineMarkIconPurple} alt="OverlineMark" className="im" />{' '}
+        <h5 className="pt-2 text-uppercase font-weight texts">
+          {t('Aboutus.ourimpact')}
+        </h5>
+      </Row>
+      <Row className="impact-section pb0t ">
+        <Col lg={1}>{}</Col>
+        <Col
+          lg={5}
+          md={12}
           sm={12}
           xs={12}
-          className="rectangle d-flex align-items-center"
+          className="pt-5 d-flex justify-content-center"
         >
-          {' '}
-          <img
-            src={RectangleAboutUs}
-            alt="about-us-rectangle"
-            className=" rec-pic"
-          />
-          <Container className="w-75 position-absolute text-light txt-box">
-            <h6 className="main-title ml-3 mt-3 text-uppercase font-weight-light">
-              <img src={OverlineMark} alt="OverlineMark" /> Who we are
-            </h6>
-            <h2 className="about-us-outline ml-3">
-              We Are a Paw Project Team Working from Re:Coded
-            </h2>
-            <p className="about-us-text ml-5">
-              Ut enim ad minima veniam, quis nostrum exercitationem ullam
-              corporis suscipit laboriosam nisi ut aliquid ex ea commodi
-              consequatur. Quis autem vel eum iure reprehenderit qui in ea
-              voluptate velit esse quam nihil molestiae consequatur, vel illum
-            </p>
-          </Container>
-        </Col>
-        <Col lg={6} sm={12} xs={12} className="">
-          {' '}
-          <img
-            src={CatNextToRectangle}
-            alt="about-us-cat-pic"
-            className="cat-pic"
-          />
-        </Col>
-      </Row>
-
-      {/* Story Section */}
-      <Row className="story-section grey-bg px-5 py-3">
-        <h6 className="main-title-s2 ml-5 text-uppercase font-weight-light">
-          <img src={OverlineMarkIconPurple} alt="OverlineMark" /> Story
-        </h6>
-        <Col lg={3} md={12} sm={12} xs={12}>
-          <Container className="box-part my-5 h-75 rounded">
-            <p className="w-75 mx-3">
-              “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore ex magna aliqua. Ut
-              enim illum ad minim veniam, quis ea exercitation ullamco cillum ut
-              enim dolore.”
-            </p>
-          </Container>
-        </Col>
-        <Col lg={3} md={6} sm={12} xs={12}>
-          <Container className="box-part my-5 h-75 rounded">
-            <p className="w-75 mx-3">
-              “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore ex magna aliqua. Ut
-              enim illum ad minim veniam, quis ea exercitation ullamco cillum ut
-              enim dolore.”
-            </p>
-          </Container>
-        </Col>
-        <Col className="box-col" lg={3} md={6} sm={12} xs={12}>
-          <Container className="box-part my-5 h-75 rounded">
-            <p className="w-75 mx-3">
-              “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore ex magna aliqua. Ut
-              enim illum ad minim veniam, quis ea exercitation ullamco cillum ut
-              enim dolore.”
-            </p>
-          </Container>
-        </Col>
-      </Row>
-      {/* our impact Section */}
-      <Row className="our-impact">
-        <Row className="">
-          <Col
-            md="4"
-            className="w-50 position-absolute text-light our-impact-title"
-          >
+          <div className="pt-5 ">
             {' '}
-            <h6 className="main-title ml-2 text-uppercase font-weight-light">
-              <img src={OverlineMark} alt="OverlineMark" /> Our impact
-            </h6>
-            <h2 className="about-us-outline ml-3 mt-4">
-              We Are a Paw Project Team Working from Re:Coded
+            <h2 className="texts pt-3" data-aos="fade-down">
+              {t('Aboutus.we can save them')}
             </h2>
-          </Col>
-          <Col
-            md={{ span: 4, offset: 5 }}
-            className="position-absolute our-impact-blob"
-          >
-            <img src={Blob} alt="Blob" className="blob-pic" />
-          </Col>{' '}
-        </Row>
-        <Row className="icons im2">
-          <Col className="our-service our-ser-1 ml-5" md={2}>
-            <Row>
-              <Col>
-                {' '}
-                <img src={PuppyBath} alt="PuppyBath" />{' '}
-              </Col>
-              <Col>
-                <h2 className="title-our-impact-services-number text-white font-weight-bold mt-1">
-                  3,700
-                </h2>
-                <p className="title-our-impact-services font-weight-bold mt-3">
-                  puppy baths
-                </p>
-              </Col>
-            </Row>
-          </Col>
-          <Col className="our-service our-ser-2 ml-5" md={2}>
-            <Row>
-              <Col>
-                <img src={DogsBoard} alt="DogsBoard" />{' '}
-              </Col>
-              <Col>
-                <h2 className="title-our-impact-services-number text-white font-weight-bold  mt-1">
-                  4,500
-                </h2>
-                <p className="title-our-impact-services font-weight-bold mt-3">
-                  dogs boarded
-                </p>
-              </Col>
-            </Row>
-          </Col>
-          <Col className="our-service our-ser-3  ml-5" md={2}>
-            <Row>
-              <Col>
-                <img src={PupsTrained} alt="PupsTrained" />{' '}
-              </Col>
-              <Col>
-                <h2 className="title-our-impact-services-number text-white font-weight-bold  mt-1">
-                  2,900
-                </h2>
-                <p className="title-our-impact-services font-weight-bold mt-3">
-                  pups trained
-                </p>
-              </Col>
-            </Row>
-          </Col>
-          <Col className="our-service our-ser-4 ml-5" md={2}>
-            <Row>
-              <Col>
-                <img src={MealsServed} alt="MealsServed" />{' '}
-              </Col>
-              <Col>
-                <h2 className="title-our-impact-services-number text-white font-weight-bold  mt-1">
-                  12K+
-                </h2>
-                <p className="title-our-impact-services font-weight-bold mt-3">
-                  meals served
-                </p>
-              </Col>
-            </Row>
-          </Col>
-        </Row>
+            <h1 className="texts pt-1" data-aos="fade-down">
+              {t('Aboutus.We can have impact')}
+            </h1>
+            <h2 className="texts pt-1" data-aos="fade-down">
+              {t('Aboutus.see our impact')}
+            </h2>
+          </div>
+        </Col>
+        <Col lg={5} md={12} sm={12} className="text-center ">
+          <img
+            src={im2}
+            className="img-fluid blob  pl-5"
+            data-aos="zoom-out"
+            alt=""
+          />
+        </Col>
+        <Col lg={1}>{}</Col>
       </Row>
-      {/* our members */}
-      <Row className="our-members-section m-3">
-        <Col>
-          <h6 className="main-title-s2 ml-5 mt-4 text-uppercase font-weight-light">
-            <img src={OverlineMarkIconPurple} alt="OverlineMark" /> Our members
-          </h6>
+      <Row className="icons pt-3 pb-5 ">
+        <Col className="text-center " lg={3} md={6} sm={6} xs={6}>
+          <img src={PuppyBath} alt="PuppyBath" data-aos="zoom-in" />
+          <h2 className=" font-weight-bold texts ">{t('Aboutus.3700')}</h2>
+          <p className="title-our-impact-services font-weight-bold mt-3 textpink">
+            {t('Aboutus.puppy baths')}
+          </p>
+        </Col>
+        <Col className="text-center " lg={3} md={6} sm={6} xs={6}>
+          <img src={DogsBoard} alt="DogsBoard" data-aos="zoom-in" />{' '}
+          <h2 className=" text-white font-weight-bold texts ">
+            {t('Aboutus.4500')}
+          </h2>
+          <p className="title-our-impact-services font-weight-bold textpink ">
+            {t('Aboutus.dogs boarded')}
+          </p>
+        </Col>
+        <Col className="text-center " lg={3} md={6} sm={6} xs={6}>
+          <img src={PupsTrained} alt="PupsTrained" data-aos="zoom-in" />{' '}
+          <h2 className="font-weight-bold texts">{t('Aboutus.2900')}</h2>
+          <p className="title-our-impact-services font-weight-bold textpink ">
+            {t('Aboutus.pups trained')}
+          </p>
+        </Col>
+        <Col className="text-center" lg={3} md={6} sm={6} xs={6}>
+          <img src={MealsServed} alt="MealsServed" data-aos="zoom-in" />
+          <h2 className=" font-weight-bold texts ">{t('Aboutus.12000')}</h2>
+          <p className=" font-weight-bold textpink ">
+            {t('Aboutus.meals served')}
+          </p>
         </Col>
       </Row>
-      <CardSection />
     </Container>
   )
 }
 
-export default AboutUs
+export default About
