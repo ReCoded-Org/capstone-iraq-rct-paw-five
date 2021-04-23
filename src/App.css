@@ -159,6 +159,11 @@ input:-webkit-autofill {
   }
 }
 
+@media screen and (max-width: 720px) {
+  body {
+    overflow-x: hidden;
+  }
+}
 #content,
 .contactinfo,
 #contact-header {
