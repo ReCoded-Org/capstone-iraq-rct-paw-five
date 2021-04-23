@@ -24,7 +24,7 @@ function About() {
       <Row className="All pt-5">
         <Col lg={6} md={12} className="cardcontrol  text-center mt-5 pt-3   ">
           {' '}
-          <Card className="cardCol pt-1 " data-aos="fade-right">
+          <Card className="cardCol pt-1 " data-aos="zoom-in">
             <Card.Body className="pl-5  pr-2 pb-5  mt-3">
               <Card.Title className="pl-1 d-flex flex-end">
                 <img src={OverlineMark} className="im" alt="OverlineMark" />
@@ -46,7 +46,7 @@ function About() {
           <img
             src={Im}
             className="catIm   img-fluid"
-            data-aos="fade-left"
+            data-aos="zoom-in"
             alt=""
           />
         </Col>
