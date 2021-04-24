@@ -89,7 +89,7 @@ function About() {
               </Card.Title>
 
               <Card.Text>
-                <hp className="cardtext">{t('Aboutus.text5')}</hp>
+                <p className="cardtext">{t('Aboutus.text5')}</p>
               </Card.Text>
             </Card.Body>
           </Card>
