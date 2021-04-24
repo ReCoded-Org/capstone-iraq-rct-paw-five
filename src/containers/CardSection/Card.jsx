@@ -20,7 +20,7 @@ const CardSection = () => {
       Github: 'https://github.com/MuhannedNoman',
       title: 'Muhanned Noman',
       text:
-        'Dedicated and efficient full stack developer with 6+ years experience in application layers, presentation layers, and databases. Certified in both typescript and react technologies. Spearheaded successful transition from LAMP stack to MEAN which cut latency by 40% and increased effectiveness of database administrators by 20%. ',
+        'passionate, motivated Trainer Assistant at Re:coded React Bootcamp in Iraq with a lot of experience in web development. He tries his best to coaching  fellows to become react js ninjas!',
     },
   ]
   const cardInfo2 = [

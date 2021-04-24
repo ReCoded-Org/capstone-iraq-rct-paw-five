@@ -22,21 +22,19 @@ function About() {
 
   return (
     <Container fluid>
-      <Row className="All pt-5">
-        <Col lg={6} md={12} className="cardcontrol  text-center mt-5 pt-3   ">
+      <Row className="All pt-3">
+        <Col lg={6} md={12} className="cardcontrol  text-center mt-5 pt-3 pb-5">
           {' '}
           <Card className="cardCol pt-1 " data-aos="zoom-in">
-            <Card.Body className="pl-5  pr-2 pb-5  mt-3">
+            <Card.Body className="  ">
               <Card.Title className="pl-1 d-flex flex-end">
                 <img src={OverlineMark} className="im" alt="OverlineMark" />
-                <h6 className="pl-1 pt-2   title1">
-                  {t('Aboutus.who we are')}
-                </h6>
+                <h6 className="pl-1 pt-2  title1">{t('Aboutus.who we are')}</h6>
               </Card.Title>
 
-              <Card.Text className="p-1 pr-5  ">
-                <h1 className="title pb-2">{t('Aboutus.text1')}</h1>
-                <p className=" about d-flex justify-content-center">
+              <Card.Text className="pr-2 ">
+                <h2 className="title pb-1">{t('Aboutus.text1')}</h2>
+                <p className=" about text-light  d-flex justify-content-center">
                   {t('Aboutus.text2')}
                 </p>
               </Card.Text>
@@ -64,7 +62,7 @@ function About() {
           lg={4}
           md={6}
           sm={12}
-          className="d-flex justify-content-center pl-3 pr-3 pb-3"
+          className="d-flex justify-content-center pl-3 pr-3 pb-5"
         >
           <Card className="card1 w-75 pl-3 pr-3 " data-aos="zoom-in">
             <Card.Body className="">
@@ -72,7 +70,7 @@ function About() {
                 {t('Aboutus.brono')}
               </Card.Title>
               <Card.Text>
-                <h5 className="cardtext">{t('Aboutus.text4')}</h5>
+                <p className="cardtext ">{t('Aboutus.text4')}</p>
               </Card.Text>
             </Card.Body>
           </Card>
@@ -82,7 +80,7 @@ function About() {
           lg={4}
           md={6}
           sm={12}
-          className="d-flex justify-content-center pb-3"
+          className="d-flex justify-content-center pb-3 pb-5"
         >
           <Card className="card1 w-75 pl-3 pr-3" data-aos="zoom-in">
             <Card.Body className="">
@@ -91,7 +89,7 @@ function About() {
               </Card.Title>
 
               <Card.Text>
-                <h5 className="cardtext">{t('Aboutus.text5')}</h5>
+                <hp className="cardtext">{t('Aboutus.text5')}</hp>
               </Card.Text>
             </Card.Body>
           </Card>
@@ -100,7 +98,7 @@ function About() {
           lg={4}
           md={6}
           sm={12}
-          className="d-flex justify-content-center pb-3 "
+          className="d-flex justify-content-center pb-5 "
         >
           <Card className="card1 w-75 pl-3 pr-3 " data-aos="zoom-in">
             <Card.Body className="">
@@ -108,7 +106,7 @@ function About() {
                 {t('Aboutus.milo')}
               </Card.Title>
               <Card.Text>
-                <h5 className="cardtext">{t('Aboutus.text6')}</h5>
+                <p className="cardtext">{t('Aboutus.text6')}</p>
               </Card.Text>
             </Card.Body>
           </Card>
