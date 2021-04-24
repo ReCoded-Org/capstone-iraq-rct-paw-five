@@ -6,7 +6,7 @@
     "adopt": "Adopt",
     "addapet": "Add a pet",
     "contact": "Contact Us",
-    "resources": ["Resources", "Tips about cats", "Tips about dogs"],
+    "resources": ["Resources", "Tibs about cats", "Tibs about dogs"],
     "about": "About",
     "logIn": "Log In",
     "signUp": "Sign Up",
@@ -26,21 +26,9 @@
     "pet-name": "Pet Name",
     "pet-age": "Pet Age (optional)",
     "pet-species": "Pet Species",
-    "cat":"Cat",
-    "dog":"Dog",
-    "vaccinationStatus":"Is the pet vaccinated ?",
-    "yes":"Yes",
-    "no":"No",
-    "notKnown":"Unknown",
-    "fertilizationStatus":"Is the pet spayed ?",
-    "dewormingStatus":"Is the pet dewormed ?",
-    "petHealth":"How is the pet health ?",
-    "good":"Good",
-    "bad":"Bad",
-    "treatment":"Needs a speacial treatment",
     "pet-weight": "Pet Weight  (optional)",
     "pet-color": "Pet Color",
-    "gender": "Pet gender",
+    "gender": "Pet gender  (optional)",
     "male": "Male",
     "female": "Female",
     "pet-story": "Pet story",
@@ -52,26 +40,7 @@
     "phoneNumber": "Phone Number",
     "city": "City",
     "address": "Address",
-    "submit": "Submit",
-    "Baghdad":"Baghdad",
-    "Basra":"Basra",
-    "Najaf":"Najaf",
-    "AlAnbar":"Al Anbar",
-    "Babil":"Babil",
-    "AlMuthanna":"Al Muthanna",
-    "Erbil":"Erbil",
-    "Sulaymaniyah":"Sulaymaniyah",
-    "Maysan":"Maysan",
-    "Karbala":"Karbala",
-    "Wasit":"Wasit",
-    "DhiQar":"Dhi Qar",
-    "Diyala":"Diyala",
-    "Duhok":"Duhok",
-    "Kirkuk":"Kirkuk",
-    "Halabja":"Halabja",
-    "Salahaldin":"Salahaldin",
-    "Mosul":"Mosul",
-    "AlDiwaniya":"Al Diwaniya"
+    "submit": "Submit"
   },
   "contactus": {
     "title": "Contact Us",
@@ -82,9 +51,9 @@
     "submit": "Submit",
     "required": "this field required",
     "message": "Mesage",
-    "h1text": "If you have any questions, do not hesitate to contact us",
-    "h4text": "Welcome",
-    "h6text": "Paw-five team"
+    "h1text": "Maxime placeat facere possimus omnis",
+    "h4text": "5,700+",
+    "h6text": "customers served"
   },
   "login": {
     "log-in": " Log in",
@@ -92,12 +61,12 @@
     "facebook": "Sign in"
   },
   "footer": {
-    "explorLinks": "Explore links",
+    "explorLinks": "Explor Links",
     "contactInfo": "Contact Info",
     "pageDescription": "Paw-five is an online, searchable database of pets who need homes in all provinces of Iraq.",
     "cites": "Baghdad, Erbil",
     "phoneNo": "0770028374323",
-    "email": "pawFive@gmail.com",
+    "email": " example@example.com",
     "workTime": "sun - Tur 9:00 AM - 4:00 PM",
     "copyright": "2021 Paw-five team"
   },
@@ -119,25 +88,24 @@
     "whoweare": {
       "whoweare": "Who we are",
       "title": "Paw-five is an online, searchable database of pets who need homes.",
-      "descripton": "We are trying to help pets to find home and love where they can grow healthy and have a happy life. we are also trying to help people who need the love of pets to get a suitable one for them. "
+      "descripton": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur."
     },
-    "adoptnow": "Adopt Now",
     "somestories": "Some stories",
     "story1": {
-      "title": "Rescue pets",
-      "story": "Our first goal of this project is to help homeless pets in the streets to find home. so a lot of people helped us by putting the pets in their neighbourhood for adoption so other people can adopt them and give them a suitable home and a good care "
+      "title": "Lorem ipsum dolor",
+      "story": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, nulla. Voluptatibus quis voluptates quas, autem, molestiae, pariatur quibusdam deserunt nobis possimus delectus animi. Repellendus atque fuga cum cumque explicabo provident!"
     },
     "story2": {
-      "title": "Vets Guide",
-      "story": "Using our platform to help pets make us super happy and that's why we put a map in the website containing the location of the nearest vets in the city of the user and all other information the user needs to know about the vets. you can find it in the contact page."
+      "title": "Lorem ipsum dolor",
+      "story": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, nulla. Voluptatibus quis voluptates quas, autem, molestiae, pariatur quibusdam deserunt nobis possimus delectus animi. Repellendus atque fuga cum cumque explicabo provident!"
     },
     "story3": {
-      "title": "pet care",
-      "story": "one of the things that we are proud of is our Resources page when people can find helpful information about how to take care of their pets whether it's a dog or a cat. many things you can find their to help you keep your pet healthy and happy "
+      "title": "Lorem ipsum dolor",
+      "story": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, nulla. Voluptatibus quis voluptates quas, autem, molestiae, pariatur quibusdam deserunt nobis possimus delectus animi. Repellendus atque fuga cum cumque explicabo provident!"
     }
   },
   "Resource": {
-    "Tips for the First 30 Days of cat Adoption": "Tips for the First 30 Days of Cat adoption",
+    "Tips for the First 30 Days of cat Adoption": "Tips for the First 30 Days of cat Adoption",
     "Before You Bring Your Cat Home": "Before You Bring Your Cat Home",
     "text1": "1- Cats are territorial and coming into a new home leaves them feeling uneasy. There’s all that  unexplored space, and who knows what may lurk there. Do her a favor and provide a small area to  call her own for the first few days or weeks. A bathroom or laundry room works well. Furnish the room with cat amenities, such as food, water and a litter box. You’ll want to spend time with your  cat, so make sure there’s a comfortable place for you to sit as well.  ",
     "text2": "2- Fill a litter box with one or two inches of litter and place it in her room where she can use it undisturbed. After all, everyone deserves a modicum of privacy when pottying!    ",
@@ -191,36 +159,66 @@
     "adopted": "Adopted",
     "yes": "Yes",
     "no": "No",
-    "warningmessage": "Do you want to delete"
+    "warningmessage": "Do you to delete "
+  },
+  "Aboutus":{
+    "who we are":"who we are",
+    "text1":"we are paw five team working togther to save Homless animals.",
+    "text2":"paw five is an online platform who works toward saving pets from All over iraq by providing a away in which people who want to adope pets can easily find a pet to adopt from all cities of iraq and kurdistan and people who want to adopt a can add pets to the website to be adopted. tha main goal of this webiste is to rescue homless animals.",
+    "text3":"",
+    "story":"story",
+    "text4":" We adopted Brono earlier this year. While looking at dogs, we came across her picture on a paw five site. She was one of the last few dogs left unadopted. When I asked if there was a reason why, the paw five said it is because she is Pit bull mix. We fell in love with her as soon as we met her. She is the sweetest dog and just loves to cuddle and give kisses. She did noy take long to make herself right at home and become part of the family.",
+    "text5":"  When Bear was still just a puppy, he was hit by a car at a gas station around Erbil. The accident led him to lose both of his eyes, and when his owner saw him at the pet hospital, she just left them there that it was another bad story for him. Luckily,someone through the paw five website put him to be adoptedand after a while she adopted and she welcomed the pit bull into her home andzher heart. Now, he is the happiest pup ever.",
+    "text6":"I went to a party at a friend's house, and she told me she had found a kitten on paw five. She is the tiniest little thing. I texted my parents and after two hours and three phone calls, I was allowed to adopt her. She is the cutest thing and she has made me fall in love with cats. As I write this, she's currently clawing at my pants and I will gladly let her destroy every pair I own because  I love her so much. Adopting Ally was one of the best things that happened to me this year!",
+     "brono":"brono",
+     "bear":"bear",
+     "milo":"milo",
+     "ourimpact":"our ipmact",
+     "we can save them":"we can save them",
+     "We can have impact":"we can have impact on commuinty",
+     "see our impact":"see our impact",
+     "puppy baths":"puppy baths",
+     "dogs boarded":"dogs boarded",
+     "pups trained":"pups trained",
+     "meals served":"meals served",
+     "3700":"3700",
+     "4500":"4500",
+     "2900":"2900",
+     "12000":"1200"
+
+
+
+
+
   },
   "detalis-page": {
-    "comments":"Comments",
-    "addComment":"Add comment",
-    "PetDetalis": "Pet Details",
-    "pet-age": "Pet Age:",
-    "pet-species": "Pet Species:",
-    "pet-weight": "Pet Weight:",
-    "pet-color": "Pet Color:",
-    "gender": "Pet gender:",
-    "pet-story": "Pet story:",
-    "health-info":"Health Info",
-    "vaccinationStatus":"Vaccination Status:",
-    "yes":"Yes",
+    "comments":"commens",
+    "addComment":"add a comment",
+    "PetDetalis": "pet details",
+    "pet-age": "age:",
+    "pet-species": "species:",
+    "pet-weight": "weight:",
+    "pet-color": "color:",
+    "gender": "gender: ",
+    "pet-story": "story:",
+    "health-info":"health information",
+    "vaccinationStatus":"vaccinationstatus:",
+    "yes":"yes",
     "no":"No",
-    "notKnown":"Unknown",
-    "fertilizationStatus":"Fertilization Status:",
-    "dewormingStatus":"Deworming Status:",
-    "petHealth":"Pet Health:",
-    "good":"Good",
-    "bad":"Bad",
-    "treatment":"Needs a speacial treatment",
-    "contact-info": "Contact Info",
-    "ownerName": "Owner Name:",
-    "aboutOwner": "About Owner:",
+    "notKnown":"not known",
+    "fertilizationStatus":"feritilization status:",
+    "dewormingStatus":"deworming status:",
+    "petHealth":"pet health:",
+    "good":"good",
+    "bad":"bad",
+    "treatment":"treatment",
+    "contact-info": "contact information",
+    "ownerName": "owenrName:",
+    "aboutOwner": "About owner:",
     "email": "Email:",
-    "phoneNumber": "Phone Number:",
-    "city": "City:",
+    "phoneNumber": "phone Number:",
+    "city": "city:",
     "address": "Address:",
-    "petGallery": "Pet Gallery"
-  }
+    "petGallery": "pet gallery"
+}
 }

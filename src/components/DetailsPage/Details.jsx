@@ -40,6 +40,7 @@ function Detail({ match }) {
                 src={petInfo.file}
                 alt="pet"
                 className="main-image img-fluid mx-2"
+                style={{ borderRadius: '10%' }}
               />
             ) : (
               ''

@@ -1,13 +1,12 @@
 * {
-  margin: 0%;
-  padding: 0%;
+  margin: 0px;
+  padding: 0px;
 }
 .theme-color {
   background-image: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%);
 }
 .contact-us {
-  box-shadow: 0 10px 10px -5px;
-  color: rgb(124, 72, 72);
+  box-shadow: 0 20px 50px rgba(88, 65, 51, 0.7);
 }
 .img-fluid {
   height: auto;
@@ -33,7 +32,6 @@
 }
 .main-image {
   width: 650px;
-  height: 400px;
 }
 
 .gradient-background {
@@ -156,14 +154,16 @@ input:-webkit-autofill {
   .text-size {
     font-size: 8px !important;
   }
-}
-
-@media screen and (max-width: 480px) {
-  .text-filter {
-    font-size: 10px !important;
+  body {
+    overflow-x: hidden;
   }
 }
 
+@media screen and (max-width: 720px) {
+  body {
+    overflow-x: hidden;
+  }
+}
 #content,
 .contactinfo,
 #contact-header {
@@ -187,79 +187,108 @@ https://i.makeagif.com/media/2-08-2017/BfEXDC.gif
   width: 195px;
 }
 .im2 {
-  width: 1600px;
+  width: 900px;
   margin-top: 80px;
 }
+.im3 {
+  width: 508px;
+  margin-left: -90px;
+  margin-top: 20px;
+  height: 421px;
+}
+.cardCol {
+  background: linear-gradient(
+    88.51deg,
+    #dc4946 0.29%,
+    #f2726f 49.91%,
+    #ffc533 100%
+  );
+  border-radius: 40px;
+  overflow-x: hidden;
+}
+.cardcontrol {
+  z-index: 5;
+  margin-right: -100px;
+  overflow-x: hidden;
+}
+.catIm {
+  width: 700px;
+}
+.card1 {
+  /* Service Card 2 */
 
-.cat-pic {
-  z-index: -1;
-}
-.rec-pic,
-.txt-box {
-  z-index: 1;
-}
-@media (max-width: 992px) {
-  .rec-pic {
-    width: 100% !important;
-  }
-  .cat-pic {
-    width: 100% !important;
-  }
-}
-@media (max-width: 600px) {
-  .main-title {
-    font-size: 16px;
-  }
-  .about-us-outline {
-    font-size: 17px;
-  }
-  .about-us-text {
-    font-size: 13px;
-  }
-}
+  /* /Neutral/White */
+  background: #ffffff;
+  border-radius: 20px;
 
-/* storysec */
-.grey-bg {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+  letter-spacing: 0.15px;
+
+  /* /Neutral/Gray 1 */
+  color: #4b4b4b;
+  background-color: #ffffff;
+}
+.cards {
   background-color: #f2f2f2;
-  min-height: 70vh;
 }
-.box-col {
-  z-index: 3;
+.impact-section,
+.icons,
+.extra {
+  background: linear-gradient(
+    88.51deg,
+    #dc4946 0.29%,
+    #f2726f 49.91%,
+    #ffc533 100%
+  );
 }
-.box-part {
-  background-color: #fff;
-}
+.title {
+  /* Overline Mark */
+  color: rgb(243, 232, 232);
 
-.main-title-s2 {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.im {
+  width: 40px;
+}
+.about {
+  font-size: 20px;
+  color: white;
+  line-height: 33px;
+}
+.title1 {
+  /* Who we are */
+
+  /* /Neutral/Gray 4 */
+  color: rgb(243, 232, 232);
+}
+.cardtext {
+  line-height: 30px;
+}
+.story {
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 24px;
+
   color: #5d62b5;
 }
-.our-impact {
-  background-image: url('../src/images/About-us/ourimpact-bg.svg');
-  min-height: 70vh;
+.card1 {
+  box-shadow: -60px 0px 50px -90px gray, 60px 0px 50px -90px gray;
 }
-.our-impact-title {
-  margin-top: 8em;
-  margin-left: 6em;
-  z-index: 1;
+.blob {
+  width: 650px;
 }
-.our-impact-blob {
-  margin-top: -7em;
-  z-index: 0;
+.texts {
+  color: white;
 }
-
-.icons {
-  margin-top: 22em;
-  margin-left: 2em;
-  z-index: 1;
-}
-
-.title-our-impact-services {
+.textpink {
   color: #5d62b5;
-  font-size: 14px;
 }
-
-.select-language {
-  font-family: 'FontAwesome';
-  -webkit-appearance: none;
-  -moz-appearance: none;
+.textpink1 {
+  font-weight: 800;
 }
