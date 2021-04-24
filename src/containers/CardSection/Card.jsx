@@ -8,20 +8,16 @@ import Ali from '../../images/About-us/Team/ali.jpg'
 import Faeza from '../../images/About-us/Team/faeza.jpg'
 import Zena from '../../images/About-us/Team/zena.jpg'
 import MemberBg from '../../images/About-us/bgmembers.svg'
-import Facebook from '../../images/About-us/facebook 1.svg'
-import Youtube from '../../images/About-us/youtube 1.svg'
-import Twitter from '../../images/About-us/twitter 1.svg'
-import Instagram from '../../images/About-us/instagram.svg'
+import Linkedin from '../../images/About-us/linkedin.svg'
+import Github from '../../images/About-us/github.svg'
 
 const CardSection = () => {
   const cardInfo1 = [
     {
       MemberBg: { MemberBg },
       Ellipsemember: Muhanned,
-      Youtube: 'https://www.youtube.com/',
-      Facebook: 'https://www.facebook.com/',
-      Twitter: 'https://www.twitter.com/',
-      Instagram: 'https://www.instagram.com/',
+      Linkedin: 'https://www.linkedin.com/in/muhannednoman/',
+      Github: 'https://github.com/MuhannedNoman',
       title: 'Muhanned Noman',
       text:
         'Dedicated and efficient full stack developer with 6+ years experience in application layers, presentation layers, and databases. Certified in both typescript and react technologies. Spearheaded successful transition from LAMP stack to MEAN which cut latency by 40% and increased effectiveness of database administrators by 20%. ',
@@ -31,10 +27,8 @@ const CardSection = () => {
     {
       MemberBg: { MemberBg },
       Ellipsemember: Mohammed,
-      Youtube: 'https://www.youtube.com/',
-      Facebook: 'https://www.facebook.com/',
-      Twitter: 'https://www.twitter.com/',
-      Instagram: 'https://www.instagram.com/',
+      Linkedin: 'http://linkedin.com/in/mohammedalihasan',
+      Github: 'https://github.com/klay964',
       title: 'Mohammed Ali',
       text:
         'A front-end web developer with 1 year of experience in front-end web development. A passionate,communicative developer who specializes in React.js library and front-end web development technologies ,University student interested in software development.',
@@ -44,10 +38,8 @@ const CardSection = () => {
     {
       MemberBg: { MemberBg },
       Ellipsemember: Areeg,
-      Youtube: 'https://www.youtube.com/',
-      Facebook: 'https://www.facebook.com/',
-      Twitter: 'https://www.twitter.com/',
-      Instagram: 'https://www.instagram.com/',
+      Linkedin: 'https://www.linkedin.com/in/areeg-fahad/',
+      Github: 'https://github.com/AREEG94FAHAD',
       title: 'Areeg Fahad',
       text:
         'Network Engineer and Full Stack Developer with 2+ years of hands-on experience designing, developing, and implementing applications and solutions using a range of technologies and programming languages.',
@@ -57,10 +49,8 @@ const CardSection = () => {
     {
       MemberBg: { MemberBg },
       Ellipsemember: Faeza,
-      Youtube: 'https://www.youtube.com/',
-      Facebook: 'https://www.facebook.com/',
-      Twitter: 'https://www.twitter.com/',
-      Instagram: 'https://www.instagram.com/',
+      Linkedin: '',
+      Github: 'https://github.com/Faeza97',
       title: 'Faeza Salman',
       text:
         'A Frontend web developer graduated at ReCoded. Her passion is to work and get a job as a full stack developer to make her world a better place.',
@@ -71,33 +61,29 @@ const CardSection = () => {
     {
       MemberBg: { MemberBg },
       Ellipsemember: Ali,
-      Youtube: 'https://www.youtube.com/',
-      Facebook: 'https://www.facebook.com/',
-      Twitter: 'https://www.twitter.com/',
-      Instagram: 'https://www.instagram.com/',
+      Linkedin: 'https://www.linkedin.com/in/ali-mustafa-195a321a0',
+      Github: 'https://github.com/Ali-mustafa8?tab=repositories',
       title: 'Ali Mustafa',
       text:
-        'Organized, collaborative, and highly skilled iOS developer with 6+ years of professional experience in dynamic and deadline-driven work environments. Eager to join BrambleSoft to delight its customers with magical experiences.',
+        'undergraduate college student who is Passionate and motivated in software development and always look for Opportunities to take my skills to the next level.',
     },
   ]
   const cardInfo6 = [
     {
       MemberBg: { MemberBg },
       Ellipsemember: Zena,
-      Youtube: 'https://www.youtube.com/',
-      Facebook: 'https://www.facebook.com/',
-      Twitter: 'https://www.twitter.com/',
-      Instagram: 'https://www.instagram.com/',
+      Linkedin: 'https://www.linkedin.com/in/zena-alhello-b768111ab',
+      Github: 'https://github.com/ZeenaKareemAlhello',
       title: 'Zena Abdulakreem',
       text:
-        ' web developer with over 2 years of front end experience and passion for responsive website design and a firm believer in the mobile-first approach. W3C certified. Implemented new responsive website approach which increased mobile traffic by 20%.',
+        'Im a fullstack web developer by reactjs, nextjs,nodejs,express Also Im a data analyst, Im working now on my startup called ادائي to track the performance for the children by their parents',
     },
   ]
   const renderCard = (card, index) => (
     <Card key={index} className="card m-3 mt-5 mb-5 pb-5 h-75 ">
       <Card.Header className="aqua-gradient text-center ">
         <Card.Img
-          style={{}}
+          style={{ objectFit: 'cover' }}
           variant="top"
           src={card.Ellipsemember ? card.Ellipsemember : Ellipsemember}
           alt="Ellipsemember"
@@ -110,23 +96,13 @@ const CardSection = () => {
           {card.text}
           <ul className="list-unstyled list-inline font-small mt-3">
             <li className="list-inline-item pr-2">
-              <a href={card.Facebook} target="_blank" rel="noreferrer">
-                <img src={Facebook} alt="facebook" />{' '}
+              <a href={card.Linkedin} target="_blank" rel="noreferrer">
+                <img src={Linkedin} alt="linkedin" />{' '}
               </a>
             </li>
             <li className="list-inline-item pr-2">
-              <a href={card.Twitter} target="_blank" rel="noreferrer">
-                <img src={Twitter} alt="twitter" />{' '}
-              </a>
-            </li>
-            <li className="list-inline-item">
-              <a href={card.Instagram} target="_blank" rel="noreferrer">
-                <img src={Instagram} alt="Instagram" />{' '}
-              </a>
-            </li>
-            <li className="list-inline-item">
-              <a href={card.Youtube} target="_blank" rel="noreferrer">
-                <img src={Youtube} alt="Youtube" />{' '}
+              <a href={card.Github} target="_blank" rel="noreferrer">
+                <img src={Github} alt="github" />{' '}
               </a>
             </li>
           </ul>
