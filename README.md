@@ -34,7 +34,7 @@ Complete
 2. [Areeg Fahad](https://github.com/AREEG94FAHAD)
 3. [Mohammed Ali](https://github.com/klay964)
 4. [Faeza Salman](https://github.com/Faeza97)
-5. [Ali Mustafa](https://github.com/Ali-mustafa8?tab=repositories)
+5. [Ali Mustafa](https://github.com/Ali-mustafa8)
 6. [Zena Abdulakreem](https://github.com/ZeenaKareemAlhello)
 
 
