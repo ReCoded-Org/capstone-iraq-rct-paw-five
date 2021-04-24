@@ -14,7 +14,7 @@ export default function Resources() {
     <Container fluid>
       <Row className="row justify-content-center pt-3 ">
         <h3
-          className="font-weight-bold text-center mx-2"
+          className="font-weight-bold text-center "
           style={{ color: '#e79559' }}
         >
           {t('Resource.Tips for the First 30 Days of cat Adoption')}
