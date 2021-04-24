@@ -2,6 +2,7 @@ import { Row, Col, Container, Card } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
 import React, { useEffect } from 'react'
 import Aos from 'aos'
+import CardSection from '../../containers/CardSection/Card'
 import 'aos/dist/aos.css'
 import Im from '../../images/About-us/Image.svg'
 import im2 from '../../images/About-us/Blob.svg'
@@ -183,6 +184,14 @@ function About() {
           </p>
         </Col>
       </Row>
+      <Row className="our-members-section m-3">
+        <Col>
+          <h6 className="main-title-s2 ml-5 mt-4 text-uppercase font-weight-light">
+            <img src={OverlineMarkIconPurple} alt="OverlineMark" /> Our members
+          </h6>
+        </Col>
+      </Row>
+      <CardSection />
     </Container>
   )
 }

@@ -1,126 +1,108 @@
 import React from 'react'
 import { Card, Container, Row, Col } from 'react-bootstrap'
 import Ellipsemember from '../../images/About-us/Ellipse 15.svg'
+import Mohammed from '../../images/About-us/Team/mohammed.JPG'
+import Muhanned from '../../images/About-us/Team/muhanned.jpg'
+import Areeg from '../../images/About-us/Team/areeg.jpg'
+import Ali from '../../images/About-us/Team/ali.jpg'
+import Faeza from '../../images/About-us/Team/faeza.jpg'
+import Zena from '../../images/About-us/Team/zena.jpg'
 import MemberBg from '../../images/About-us/bgmembers.svg'
-import Facebook from '../../images/About-us/facebook 1.svg'
-import Youtube from '../../images/About-us/youtube 1.svg'
-import Twitter from '../../images/About-us/twitter 1.svg'
-import Instagram from '../../images/About-us/instagram.svg'
+import Linkedin from '../../images/About-us/linkedin.svg'
+import Github from '../../images/About-us/github.svg'
 
 const CardSection = () => {
   const cardInfo1 = [
     {
       MemberBg: { MemberBg },
-      Ellipsemember: '',
-      Youtube: 'https://www.youtube.com/',
-      Facebook: 'https://www.facebook.com/',
-      Twitter: 'https://www.twitter.com/',
-      Instagram: 'https://www.instagram.com/',
-      title: 'Sara Lara',
+      Ellipsemember: Muhanned,
+      Linkedin: 'https://www.linkedin.com/in/muhannednoman/',
+      Github: 'https://github.com/MuhannedNoman',
+      title: 'Muhanned Noman',
       text:
-        'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore ex magna aliqua Ut enim illum ad minim veniam, quis ea exercitation ullamco cillum ut enim dolore',
+        'Dedicated and efficient full stack developer with 6+ years experience in application layers, presentation layers, and databases. Certified in both typescript and react technologies. Spearheaded successful transition from LAMP stack to MEAN which cut latency by 40% and increased effectiveness of database administrators by 20%. ',
     },
   ]
   const cardInfo2 = [
     {
       MemberBg: { MemberBg },
-      Ellipsemember: '',
-      Youtube: 'https://www.youtube.com/',
-      Facebook: 'https://www.facebook.com/',
-      Twitter: 'https://www.twitter.com/',
-      Instagram: 'https://www.instagram.com/',
-      title: 'Sara Lara',
+      Ellipsemember: Mohammed,
+      Linkedin: 'http://linkedin.com/in/mohammedalihasan',
+      Github: 'https://github.com/klay964',
+      title: 'Mohammed Ali',
       text:
-        'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore ex magna aliqua Ut enim illum ad minim veniam, quis ea exercitation ullamco cillum ut enim dolore',
+        'A front-end web developer with 1 year of experience in front-end web development. A passionate,communicative developer who specializes in React.js library and front-end web development technologies ,University student interested in software development.',
     },
   ]
   const cardInfo3 = [
     {
       MemberBg: { MemberBg },
-      Ellipsemember: '',
-      Youtube: 'https://www.youtube.com/',
-      Facebook: 'https://www.facebook.com/',
-      Twitter: 'https://www.twitter.com/',
-      Instagram: 'https://www.instagram.com/',
-      title: 'Sara Lara',
+      Ellipsemember: Areeg,
+      Linkedin: 'https://www.linkedin.com/in/areeg-fahad/',
+      Github: 'https://github.com/AREEG94FAHAD',
+      title: 'Areeg Fahad',
       text:
-        'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore ex magna aliqua Ut enim illum ad minim veniam, quis ea exercitation ullamco cillum ut enim dolore',
+        'Network Engineer and Full Stack Developer with 2+ years of hands-on experience designing, developing, and implementing applications and solutions using a range of technologies and programming languages.',
     },
   ]
   const cardInfo4 = [
     {
       MemberBg: { MemberBg },
-      Ellipsemember: '',
-      Youtube: 'https://www.youtube.com/',
-      Facebook: 'https://www.facebook.com/',
-      Twitter: 'https://www.twitter.com/',
-      Instagram: 'https://www.instagram.com/',
-      title: 'Sara Lara',
+      Ellipsemember: Faeza,
+      Linkedin: '',
+      Github: 'https://github.com/Faeza97',
+      title: 'Faeza Salman',
       text:
-        'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore ex magna aliqua Ut enim illum ad minim veniam, quis ea exercitation ullamco cillum ut enim dolore',
+        'A Frontend web developer graduated at ReCoded. Her passion is to work and get a job as a full stack developer to make her world a better place.',
     },
   ]
 
   const cardInfo5 = [
     {
       MemberBg: { MemberBg },
-      Ellipsemember: '',
-      Youtube: 'https://www.youtube.com/',
-      Facebook: 'https://www.facebook.com/',
-      Twitter: 'https://www.twitter.com/',
-      Instagram: 'https://www.instagram.com/',
-      title: 'Sara Lara',
+      Ellipsemember: Ali,
+      Linkedin: 'https://www.linkedin.com/in/ali-mustafa-195a321a0',
+      Github: 'https://github.com/Ali-mustafa8?tab=repositories',
+      title: 'Ali Mustafa',
       text:
-        'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore ex magna aliqua Ut enim illum ad minim veniam, quis ea exercitation ullamco cillum ut enim dolore',
+        'undergraduate college student who is Passionate and motivated in software development and always look for Opportunities to take my skills to the next level.',
     },
   ]
   const cardInfo6 = [
     {
       MemberBg: { MemberBg },
-
-      Youtube: 'https://www.youtube.com/',
-      Facebook: 'https://www.facebook.com/',
-      Twitter: 'https://www.twitter.com/',
-      Instagram: 'https://www.instagram.com/',
-      title: 'Sara Lara',
+      Ellipsemember: Zena,
+      Linkedin: 'https://www.linkedin.com/in/zena-alhello-b768111ab',
+      Github: 'https://github.com/ZeenaKareemAlhello',
+      title: 'Zena Abdulakreem',
       text:
-        'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore ex magna aliqua Ut enim illum ad minim veniam, quis ea exercitation ullamco cillum ut enim dolore',
+        'Im a fullstack web developer by reactjs, nextjs,nodejs,express Also Im a data analyst, Im working now on my startup called ادائي to track the performance for the children by their parents',
     },
   ]
   const renderCard = (card, index) => (
-    <Card key={index} className="card m-3 mt-5 mb-5 ">
+    <Card key={index} className="card m-3 mt-5 mb-5 pb-5 h-75 ">
       <Card.Header className="aqua-gradient text-center ">
         <Card.Img
-          style={{}}
+          style={{ objectFit: 'cover' }}
           variant="top"
           src={card.Ellipsemember ? card.Ellipsemember : Ellipsemember}
           alt="Ellipsemember"
-          className="imgCard rounded-circle w-50 px-3 h-100 mt-5"
+          className="imgCard rounded-circle  px-4 h-100 mt-5"
         />
       </Card.Header>
       <Card.Body className="text-center mt-3">
-        <Card.Title>{card.title}</Card.Title>
+        <Card.Title className="mt-4">{card.title}</Card.Title>
         <Card.Text>
           {card.text}
           <ul className="list-unstyled list-inline font-small mt-3">
             <li className="list-inline-item pr-2">
-              <a href={card.Facebook} target="_blank" rel="noreferrer">
-                <img src={Facebook} alt="facebook" />{' '}
+              <a href={card.Linkedin} target="_blank" rel="noreferrer">
+                <img src={Linkedin} alt="linkedin" />{' '}
               </a>
             </li>
             <li className="list-inline-item pr-2">
-              <a href={card.Twitter} target="_blank" rel="noreferrer">
-                <img src={Twitter} alt="twitter" />{' '}
-              </a>
-            </li>
-            <li className="list-inline-item">
-              <a href={card.Instagram} target="_blank" rel="noreferrer">
-                <img src={Instagram} alt="Instagram" />{' '}
-              </a>
-            </li>
-            <li className="list-inline-item">
-              <a href={card.Youtube} target="_blank" rel="noreferrer">
-                <img src={Youtube} alt="Youtube" />{' '}
+              <a href={card.Github} target="_blank" rel="noreferrer">
+                <img src={Github} alt="github" />{' '}
               </a>
             </li>
           </ul>
