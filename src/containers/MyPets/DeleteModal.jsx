@@ -4,6 +4,7 @@ import { PropTypes } from 'prop-types'
 import { useTranslation } from 'react-i18next'
 import { useDispatch, useSelector } from 'react-redux'
 import { deleteMyPett } from '../../redux/actions/actions'
+import {deleteAllCommentofPet} from '../../redux/comments/actions'
 
 export default function DeleteModal({
   show,
@@ -16,8 +17,11 @@ export default function DeleteModal({
 
   const { t } = useTranslation()
   const dispatch = useDispatch()
+
   const deletPet = (e, id) => {
+    dispatch(deleteAllCommentofPet(id))
     dispatch(deleteMyPett(id))
+    
     handleClose()
     return false
   }

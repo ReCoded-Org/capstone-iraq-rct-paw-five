@@ -5,9 +5,11 @@ import { useTranslation } from 'react-i18next'
 import i18next from 'i18next'
 import { NavLink, Redirect } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faBell } from '@fortawesome/free-solid-svg-icons'
 import { selectedLang } from '../../redux/actions/actions'
 import Login from '../Modals/Login/Login'
+
+
 import {
   HOME_ROUTE,
   ADOPT_ROUTE,
@@ -22,11 +24,16 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import logo from '../../images/logo.ico'
 import firebase from '../../firebase'
 import userStatus, { setUserInfo } from '../../redux/actions/user'
+import Nofication from '../Notifcation/Nofication'
+// import Nofication from '../Notifcation/Nofication'
 
 export default function NavBar() {
   const globaleLang = useSelector(state => state.langReducer)
   const [NavLanguage, setNavLanguage] = useState(globaleLang)
   const userState = useSelector(state => state.user.isLoggedIn)
+  const userId = useSelector(state => state.user)
+
+  const [showNotification, setshowNotification] = useState(false)
   const dispatch = useDispatch()
   const { t } = useTranslation()
   const [dirProperties, setDir] = useState({
@@ -35,6 +42,7 @@ export default function NavBar() {
     textDir: 'text-left',
   })
   const [showLoginModal, setShowLoginModal] = useState(false)
+
   // check the user if loggedin or not
   useEffect(() => {
     firebase.auth().onAuthStateChanged(user => {
@@ -97,6 +105,23 @@ export default function NavBar() {
   useEffect(() => {
     handelDir()
   }, [globaleLang])
+
+
+
+  const comments = useSelector(state => state.fetchComments)
+  const notification = comments.filter(comment =>comment.userId !== userId.user.uid && comment.viewed !==true )
+  const { data } = useSelector(state => state.pets)
+
+   const fetchPets = data.filter(pet=>pet.uid === userId.user.uid  )
+
+  let numOfNotification =0;
+  for(let i=0;i<notification.length;i+=1){
+    if(fetchPets.find(pet=>pet.id === notification[i].petId)){
+      numOfNotification+=1;
+    }
+  }
+
+
 
   return (
     <div dir={dirProperties.dir}>
@@ -222,6 +247,47 @@ export default function NavBar() {
               ''
             )}
 
+            {/*   notification   */}
+            {userState ? (
+              <Dropdown>
+                <Dropdown.Toggle
+                  variant="success"
+                  className="text-light bg-transparent shadow-none my-dropdown-toggle border-0 p-0 m-3"
+                >
+                  <FontAwesomeIcon
+                    icon={faBell}
+                    className=" text-large position-relative"
+                    style={{ fontSize: '20px' }}
+                    onClick={() => setshowNotification(!showNotification)}
+                  />
+                  <div
+                    className="position-absolute  "
+                    style={{
+                      top: '10px',
+                      backgroundColor: 'red',
+                      borderRadius: '90%',
+                      fontSize: '10px',
+                      padding: '1px 2px',
+                    }}
+                  >
+                    {numOfNotification}
+                  </div>
+                </Dropdown.Toggle>
+              </Dropdown>
+            ) : (
+              ''
+            )}
+
+            <div
+              className={`position-fixed align-items-center bg-white rounded notification-front ${
+                showNotification ? 'd-block' : 'd-none'
+              }`}
+
+              style={{top:'70px',right:'100px'}}
+            >
+              <Nofication className="" />
+            </div>
+
             {userState ? (
               <Nav.Link
                 activeStyle={{
@@ -255,7 +321,6 @@ export default function NavBar() {
               onChange={handelOption}
               value={NavLanguage}
               style={{ outline: 'none' }}
-              
             >
               <option className="text-danger fas " value="en">
                 &#xf0ac; English
