@@ -63,7 +63,7 @@ function FilterSection() {
       {/* <TopSection2 className="" /> */}
       {/* <Container></Container> */}
       <Row fluid dir={dir} className="w-100 p-4  my-3 ">
-        <Col className="col-12 d-flex justify-content-center">
+        <Col className="col-12 d-flex justify-content-center justify-content-md-around ">
           {Object.keys(selections).map(key => (
             <Select title={key} options={selections[key]} />
           ))}
@@ -75,7 +75,7 @@ function FilterSection() {
               filter()
             }}
           >
-            <FontAwesomeIcon icon={faSearch} className="mx-3"/>
+            <FontAwesomeIcon icon={faSearch} className="mx-3" />
             {/* <i className="fa fa-search pr-3 text-warning" aria-hidden="true" /> */}
             {/* {t('adoption-page.filters.findAPet')} */}
           </button>
