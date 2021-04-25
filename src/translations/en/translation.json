@@ -82,9 +82,9 @@
     "submit": "Submit",
     "required": "this field required",
     "message": "Mesage",
-    "h1text": "Maxime placeat facere possimus omnis",
-    "h4text": "5,700+",
-    "h6text": "customers served"
+    "h1text": "If you have any questions, do not hesitate to contact us",
+    "h4text": "Welcome",
+    "h6text": "Paw-five team"
   },
   "login": {
     "log-in": " Log in",
@@ -92,7 +92,7 @@
     "facebook": "Sign in"
   },
   "footer": {
-    "explorLinks": "Explor Links",
+    "explorLinks": "Explore Links",
     "contactInfo": "Contact Info",
     "pageDescription": "Paw-five is an online, searchable database of pets who need homes in all provinces of Iraq.",
     "cites": "Baghdad, Erbil",
@@ -119,20 +119,21 @@
     "whoweare": {
       "whoweare": "Who we are",
       "title": "Paw-five is an online, searchable database of pets who need homes.",
-      "descripton": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur."
+      "descripton": "We are trying to help pets to find home and love where they can grow healthy and have a happy life. we are also trying to help people who need the love of pets to get a suitable one for them. "
     },
+    "adoptnow": "Adopt Now",
     "somestories": "Some stories",
     "story1": {
-      "title": "Lorem ipsum dolor",
-      "story": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, nulla. Voluptatibus quis voluptates quas, autem, molestiae, pariatur quibusdam deserunt nobis possimus delectus animi. Repellendus atque fuga cum cumque explicabo provident!"
+      "title": "Rescue pets",
+      "story": "Our first goal of this project is to help homeless pets in the streets to find home. so a lot of people helped us by putting the pets in their neighbourhood for adoption so other people can adopt them and give them a suitable home and a good care "
     },
     "story2": {
-      "title": "Lorem ipsum dolor",
-      "story": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, nulla. Voluptatibus quis voluptates quas, autem, molestiae, pariatur quibusdam deserunt nobis possimus delectus animi. Repellendus atque fuga cum cumque explicabo provident!"
+      "title": "Vets Guide",
+      "story": "Using our platform to help pets make us super happy and that's why we put a map in the website containing the location of the nearest vets in the city of the user and all other information the user needs to know about the vets. you can find it in the contact page."
     },
     "story3": {
-      "title": "Lorem ipsum dolor",
-      "story": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, nulla. Voluptatibus quis voluptates quas, autem, molestiae, pariatur quibusdam deserunt nobis possimus delectus animi. Repellendus atque fuga cum cumque explicabo provident!"
+      "title": "pet care",
+      "story": "one of the things that we are proud of is our Resources page when people can find helpful information about how to take care of their pets whether it's a dog or a cat. many things you can find their to help you keep your pet healthy and happy "
     }
   },
   "Resource": {
@@ -190,7 +191,7 @@
     "adopted": "Adopted",
     "yes": "Yes",
     "no": "No",
-    "warningmessage": "Do you to delete "
+    "warningmessage": "Do you want to delete ? "
   },
   "Aboutus":{
     "who we are":"who we are",
@@ -223,33 +224,33 @@
 
   },
   "detalis-page": {
-    "comments":"commens",
+    "comments":"comments",
     "addComment":"add a comment",
-    "PetDetalis": "pet details",
+    "PetDetalis": "Pet Details",
     "pet-age": "age:",
     "pet-species": "species:",
     "pet-weight": "weight:",
     "pet-color": "color:",
     "gender": "gender: ",
     "pet-story": "story:",
-    "health-info":"health information",
-    "vaccinationStatus":"vaccinationstatus:",
+    "health-info":"Health Information",
+    "vaccinationStatus":"Vaccination Status:",
     "yes":"yes",
     "no":"No",
     "notKnown":"not known",
-    "fertilizationStatus":"feritilization status:",
-    "dewormingStatus":"deworming status:",
-    "petHealth":"pet health:",
+    "fertilizationStatus":"Feritilization Status:",
+    "dewormingStatus":"Deworming Status:",
+    "petHealth":"Pet Health:",
     "good":"good",
     "bad":"bad",
-    "treatment":"treatment",
-    "contact-info": "contact information",
-    "ownerName": "owenrName:",
+    "treatment":"Treatment",
+    "contact-info": "Contact Information",
+    "ownerName": "Owenr Name:",
     "aboutOwner": "About owner:",
     "email": "Email:",
-    "phoneNumber": "phone Number:",
+    "phoneNumber": "Phone Number:",
     "city": "city:",
     "address": "Address:",
-    "petGallery": "pet gallery"
+    "petGallery": "Pet Gallery"
 }
 }
