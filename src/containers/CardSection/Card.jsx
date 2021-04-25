@@ -49,7 +49,7 @@ const CardSection = () => {
     {
       MemberBg: { MemberBg },
       Ellipsemember: Faeza,
-      Linkedin: '',
+      Linkedin: 'https://www.linkedin.com/in/faezasalman/',
       Github: 'https://github.com/Faeza97',
       title: 'Faeza Salman',
       text:
