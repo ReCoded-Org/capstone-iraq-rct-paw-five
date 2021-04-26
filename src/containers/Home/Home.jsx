@@ -280,7 +280,7 @@ export default function Home() {
         </Row>
       </Container>
 
-      <div className="px-5 mx-4" dir={dir}>
+      <div className="px-5 mx-4">
         <Row className="container-fluid m-0 h4 mt-5 mb-3 text-danger">
           <div className="d-block mx-auto mx-sm-0">
             <FontAwesomeIcon
